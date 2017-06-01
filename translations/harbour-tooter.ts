@@ -5,36 +5,36 @@
     <name></name>
     <message id="Set demo conf">
         <source></source>
-        <translation type="unfinished">Tooter</translation>
+        <translation>Tooter</translation>
     </message>
 </context>
 <context>
     <name>FirstPage</name>
     <message>
         <source>Show Page 2</source>
-        <translation type="unfinished"></translation>
+        <translation>Mostrar página 2</translation>
     </message>
 </context>
 <context>
     <name>MyList</name>
     <message>
         <source>Settings</source>
-        <translation type="unfinished"></translation>
+        <translation>Ajustes</translation>
     </message>
     <message>
         <source>Load more</source>
-        <translation type="unfinished"></translation>
+        <translation>Cargar más</translation>
     </message>
 </context>
 <context>
     <name>SecondPage</name>
     <message>
         <source>Nested Page</source>
-        <translation type="unfinished"></translation>
+        <translation>Página anidada</translation>
     </message>
     <message>
         <source>Item</source>
-        <translation type="unfinished"></translation>
+        <translation>Artículo</translation>
     </message>
 </context>
 </TS>
