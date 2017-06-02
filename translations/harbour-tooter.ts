@@ -5,29 +5,25 @@
     <name></name>
     <message id="Logout">
         <source></source>
-        <translation type="unfinished">Tooter</translation>
-    </message>
-    <message id="Login">
-        <source></source>
-        <translation type="unfinished">Tooter</translation>
+        <translation>Tooter</translation>
     </message>
 </context>
 <context>
-    <name>MainPage</name>
+    <name>Settings</name>
     <message>
-        <source>Show Page 2</source>
-        <translation type="unfinished"></translation>
+        <source>Load more</source>
+        <translation>Cargar más</translation>
     </message>
 </context>
 <context>
     <name>SecondPage</name>
     <message>
         <source>Nested Page</source>
-        <translation type="unfinished"></translation>
+        <translation>Página anidada</translation>
     </message>
     <message>
         <source>Item</source>
-        <translation type="unfinished"></translation>
+        <translation>Artículo</translation>
     </message>
 </context>
 </TS>
