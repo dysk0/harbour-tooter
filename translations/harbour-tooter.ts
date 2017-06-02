@@ -3,24 +3,13 @@
 <TS version="2.1">
 <context>
     <name></name>
-    <message id="Set demo conf">
+    <message id="Logout">
         <source></source>
         <translation>Tooter</translation>
     </message>
 </context>
 <context>
-    <name>FirstPage</name>
-    <message>
-        <source>Show Page 2</source>
-        <translation>Mostrar página 2</translation>
-    </message>
-</context>
-<context>
-    <name>MyList</name>
-    <message>
-        <source>Settings</source>
-        <translation>Ajustes</translation>
-    </message>
+    <name>Settings</name>
     <message>
         <source>Load more</source>
         <translation>Cargar más</translation>
