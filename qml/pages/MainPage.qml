@@ -34,7 +34,7 @@ import "../lib/API.js" as Logic
 
 
 Page {
-    id: page
+    id: mainPage
 
     // The effective value will be restricted by ApplicationWindow.allowedOrientations
     allowedOrientations: Orientation.All
@@ -43,16 +43,28 @@ Page {
     SilicaFlickable {
         anchors.fill: parent
 
+        PageHeader {
+            title: "Tooter"
+        }
+
         // PullDownMenu and PushUpMenu must be declared in SilicaFlickable, SilicaListView or SilicaGridView
         PullDownMenu {
             MenuItem {
-                text: qsTrId("Set demo conf")
+                text: Logic.conf['login'] ? qsTrId("Logout"): qsTrId("Login")
                 onClicked: {
-                    Logic.conf['login'] = true
-                    Logic.conf['instance'] = "https://mastodon.social";
-                    Logic.conf['api_user_token'] = '6d8cb23e3ebf3c7a97dd9adf204e47ad159f1a3d07dbbd0325e98981368d8c51';
+                    if (Logic.conf['login']) {
+                        Logic.conf['login'] = false
+                        Logic.conf['instance'] = null;
+                        Logic.conf['api_user_token'] = null;
+                        Logic.conf['dysko'] = null;
+                    } else {
+                        Logic.conf['login'] = true
+                        Logic.conf['instance'] = "https://mastodon.social";
+                        Logic.conf['api_user_token'] = '6d8cb23e3ebf3c7a97dd9adf204e47ad159f1a3d07dbbd0325e98981368d8c51';
+                    }
                 }
             }
+
             MenuItem {
                 text: qsTr("Show Page 2")
                 onClicked: pageStack.push(Qt.resolvedUrl("SecondPage.qml"))
@@ -60,13 +72,7 @@ Page {
         }
 
 
-        MyList {
-            id: myList
-            anchors.fill: parent
-            model: ListModel {
-                id: model
-            }
-        }
+
     }
 
     Component.onCompleted: {
@@ -76,37 +82,8 @@ Page {
             // data is the http response object
             //sidenote: please do not actually execute this request, you could be bullied by your friends
         });*/
-        var tootParser = function(data){
-            console.log(data)
-            var ret = {};
-            ret.id = data.id
-            ret.content = data.content
-            ret.created_at = data.created_at
-            ret.in_reply_to_account_id = data.in_reply_to_account_id
-            ret.in_reply_to_id = data.in_reply_to_id
 
-            ret.user_id = data.account.id
-            ret.user_locked = data.account.locked
-            ret.username = data.account.username
-            ret.display_name = data.account.display_name
-            ret.avatar_static = data.account.avatar_static
-
-
-            ret.favourited = data.favourited ? true : false
-            ret.favourites_count = data.favourites_count ? data.favourites_count : 0
-
-            ret.reblog = data.reblog ? true : false
-            ret.reblogged = data.reblogged ? true : false
-            ret.reblogs_count = data.reblogs_count ? data.reblogs_count : false
-
-            ret.muted = data.muted ? true : false
-            ret.sensitive = data.sensitive ? true : false
-            ret.visibility = data.visibility ? data.visibility : false
-            ret.section = (new Date(ret.created_at)).toLocaleDateString()
-            console.log(ret)
-            return ret;
-        }
-        Logic.api.get("timelines/home", [
+        /*Logic.api.get("timelines/home", [
                           //["since_id", 420],
                           //["max_id", 1337]
                       ], function(data) {
@@ -115,12 +92,11 @@ Page {
                           //model.append(data)
                           for (var i in data) {
                                               if (data.hasOwnProperty(i)) {
-                                                  var toot = tootParser(data[i])
-                                                  model.append(toot)
+                                                  console.log(JSON.stringify(data[i]))
                                               }
                                           }
-                          console.log(model.count)
-                      });
+
+                      });*/
         console.log(Logic.test)
     }
 }

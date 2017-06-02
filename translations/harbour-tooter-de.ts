@@ -3,27 +3,20 @@
 <TS version="2.1">
 <context>
     <name></name>
-    <message id="Set demo conf">
+    <message id="Logout">
+        <source></source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message id="Login">
         <source></source>
         <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
-    <name>FirstPage</name>
+    <name>MainPage</name>
     <message>
         <source>Show Page 2</source>
-        <translation>Zur Seite 2</translation>
-    </message>
-</context>
-<context>
-    <name>MyList</name>
-    <message>
-        <source>Settings</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Load more</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Zur Seite 2</translation>
     </message>
 </context>
 <context>

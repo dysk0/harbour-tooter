@@ -18,7 +18,6 @@ SOURCES += src/harbour-tooter.cpp
 
 OTHER_FILES += qml/harbour-tooter.qml \
     qml/cover/CoverPage.qml \
-    qml/pages/FirstPage.qml \
     qml/pages/SecondPage.qml \
     rpm/harbour-tooter.changes.in \
     rpm/harbour-tooter.spec \
@@ -40,5 +39,7 @@ TRANSLATIONS += translations/harbour-tooter-de.ts
 
 DISTFILES += \
     qml/lib/API.js \
-    qml/pages/MyList.qml \
-    qml/pages/Tweet.qml
+    qml/pages/MainPage.qml \
+    qml/pages/LoginPage.qml \
+    qml/pages/JSONListModel.qml \
+    qml/lib/jsonpath.js

@@ -45,12 +45,16 @@ ApplicationWindow
             console.log('confLoaded');
             console.log(JSON.stringify(Logic.conf))
             if (Logic.conf['instance']) {
-                Logic.api = Logic.MastodonAPI({ instance: Logic.conf['instance'], api_user_token: "" });
+                Logic.api = new Logic.MastodonAPI({ instance: Logic.conf['instance'], api_user_token: "" });
             }
             if (Logic.conf['login']) {
                 Logic.api.setConfig("api_user_token", Logic.conf['api_user_token'])
+                pageStack.push(Qt.resolvedUrl("./pages/MainPage.qml"), {})
+            } else {
+                pageStack.push(Qt.resolvedUrl("./pages/LoginPage.qml"), {})
             }
-            pageStack.push(Qt.resolvedUrl("./pages/FirstPage.qml"), {})
+
+
         });
         Logic.init()
     }

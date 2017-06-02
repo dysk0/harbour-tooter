@@ -57,13 +57,19 @@ var init = function(){
 };
 
 function saveData() {
+    console.log("SAVING CONF TO DB")
     db.transaction(function(tx) {
         for (var key in conf) {
             if (conf.hasOwnProperty(key)){
                 console.log(key + "\t>\t"+conf[key]);
-                tx.executeSql('INSERT OR REPLACE INTO settings (key, value) VALUES (?, ?) ', [key, JSON.stringify(conf[key])])
+                if (typeof conf[key] === "object" && conf[key] === null) {
+                    tx.executeSql('DELETE FROM settings WHERE key=? ', [key])
+                } else {
+                    tx.executeSql('INSERT OR REPLACE INTO settings (key, value) VALUES (?, ?) ', [key, JSON.stringify(conf[key])])
+                }
             }
         }
+        console.log("ENF OF SAVING")
     });
 }
 
@@ -268,27 +274,34 @@ var MastodonAPI = function(config) {
             if (typeof scopes !== "string") {
                 scopes = scopes.join(" ");
             }
-            $.ajax({
-                       url: apiBase + "apps",
-                       type: "POST",
-                       data: {
-                           client_name: client_name,
-                           redirect_uris: redirect_uri,
-                           scopes: scopes,
-                           website: website
-                       },
-                       success: function (data, textStatus) {
-                           console.log("Registered Application: " + data);
-                           callback(data);
-                       }
-                   });
+
+            var http = new XMLHttpRequest()
+            var url = apiBase + "apps";
+            var params = 'client_name=' + client_name + '&redirect_uris=' + redirect_uri + '&scopes=' + scopes + '&website=' + website;
+            console.log(params)
+            http.open("POST", url, true);
+
+            // Send the proper header information along with the request
+            http.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
+
+            http.onreadystatechange = function() { // Call a function when the state changes.
+                if (http.readyState == 4) {
+                    if (http.status == 200) {
+                        console.log("Registered Application: " + http.response);
+                        callback(http.response)
+                    } else {
+                        console.log("error: " + http.status)
+                    }
+                }
+            }
+            http.send(params);
         },
         generateAuthLink: function (client_id, redirect_uri, responseType, scopes) {
             return config.instance + "/oauth/authorize?client_id=" + client_id + "&redirect_uri=" + redirect_uri +
                     "&response_type=" + responseType + "&scope=" + scopes.join("+");
         },
         getAccessTokenFromAuthCode: function (client_id, client_secret, redirect_uri, code, callback) {
-            $.ajax({
+            /*$.ajax({
                        url: config.instance + "/oauth/token",
                        type: "POST",
                        data: {
@@ -302,7 +315,27 @@ var MastodonAPI = function(config) {
                            console.log("Got Token: " + data);
                            callback(data);
                        }
-                   });
+                   });*/
+            var http = new XMLHttpRequest()
+            var url = config.instance + "/oauth/token";
+            var params = 'client_id=' + client_id + '&client_secret=' + client_secret + '&redirect_uri=' + redirect_uri + '&grant_type=authorization_code&code=' + code;
+            console.log(params)
+            http.open("POST", url, true);
+
+            // Send the proper header information along with the request
+            http.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
+
+            http.onreadystatechange = function() { // Call a function when the state changes.
+                if (http.readyState == 4) {
+                    if (http.status == 200) {
+                        console.log("Got Token: " + http.response);
+                        callback(http.response)
+                    } else {
+                        console.log("error: " + http.status)
+                    }
+                }
+            }
+            http.send(params);
         }
     };
 };
