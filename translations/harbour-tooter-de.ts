@@ -28,6 +28,29 @@
     </message>
 </context>
 <context>
+    <name>Conversation</name>
+    <message>
+        <source>Content warning!</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>public</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>unlisted</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>followers only</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>direct</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
     <name>MainPage</name>
     <message>
         <source>Home</source>
@@ -43,6 +66,10 @@
     </message>
     <message>
         <source>Search</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>New Toot</source>
         <translation type="unfinished"></translation>
     </message>
 </context>

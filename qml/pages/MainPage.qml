@@ -134,6 +134,25 @@ Page {
         Component.onCompleted: {
         }
     }
+    IconButton {
+        anchors {
+            right: (mainPage.isPortrait ? parent.right : infoPanel.left)
+            bottom: (mainPage.isPortrait ? infoPanel.top : parent.bottom)
+            margins: {
+                left: Theme.paddingLarge
+                bottom: Theme.paddingLarge
+            }
+        }
+
+        id: newTweet
+        width: Theme.iconSizeLarge
+        height: width
+        visible: !isPortrait ? true : !infoPanel.open
+        icon.source: "image://theme/icon-l-add"
+        onClicked: {
+            pageStack.push(Qt.resolvedUrl("Conversation.qml"), {title: qsTr("New Toot"), type: "new"})
+        }
+    }
 
     function onLinkActivated(href){
         if (href[0] === '#' || href[0] === '@' ) {

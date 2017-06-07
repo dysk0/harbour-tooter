@@ -134,7 +134,7 @@ function parseToot (data){
     }
     if(data['account']){
         item['account_id'] = data['account']['id'];
-        item['account_username'] = data['account']['username'];
+        item['account_username'] = data['account']['acct'];
         item['account_display_name'] = data['account']['display_name'];
         item['account_locked'] = data['account']['locked'];
         item['account_avatar'] = data['account']['avatar'];

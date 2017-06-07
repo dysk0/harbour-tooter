@@ -55,4 +55,5 @@ DISTFILES += \
     qml/pages/Browser.qml \
     qml/pages/Profile.qml \
     qml/pages/components/ProfileHeader.qml \
-    qml/images/boosted.svg
+    qml/images/boosted.svg \
+    qml/pages/Conversation.qml

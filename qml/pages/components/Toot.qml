@@ -177,5 +177,13 @@ BackgroundItem {
         font.pixelSize: Theme.fontSizeSmall
         color: (pressed ? Theme.highlightColor : Theme.primaryColor)
     }
-
+    onClicked: {
+        pageStack.push(Qt.resolvedUrl("../Conversation.qml"), {
+                           toot_id: id,
+                           title: account_display_name,
+                           description: '@'+account_username,
+                           avatar: account_avatar,
+                           type: "reply"
+                       })
+    }
 }
