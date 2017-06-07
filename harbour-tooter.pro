@@ -19,6 +19,11 @@ SOURCES += src/harbour-tooter.cpp
 OTHER_FILES += qml/harbour-tooter.qml \
     qml/cover/CoverPage.qml \
     qml/pages/SecondPage.qml \
+    qml/pages/MainPage.qml \
+    qml/pages/LoginPage.qml \
+    qml/pages/components/MyList.qml \
+    qml/pages/components/JSONListModel.qml \
+    qml/pages/components/Navigation.qml \
     rpm/harbour-tooter.changes.in \
     rpm/harbour-tooter.spec \
     rpm/harbour-tooter.yaml \
@@ -39,7 +44,16 @@ TRANSLATIONS += translations/harbour-tooter-de.ts
 
 DISTFILES += \
     qml/lib/API.js \
-    qml/pages/MainPage.qml \
-    qml/pages/LoginPage.qml \
-    qml/pages/JSONListModel.qml \
-    qml/lib/jsonpath.js
+    qml/lib/jsonpath.js \
+    qml/images/notification.svg \
+    qml/images/home.svg \
+    qml/images/mesagess.svg \
+    qml/images/search.svg \
+    qml/images/verified.svg \
+    qml/lib/Mastodon.js \
+    qml/lib/Worker.js \
+    qml/pages/components/Toot.qml \
+    qml/pages/Browser.qml \
+    qml/pages/Profile.qml \
+    qml/pages/components/ProfileHeader.qml \
+    qml/pages/components/Notification.qml

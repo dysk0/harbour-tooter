@@ -45,7 +45,7 @@ CoverBackground {
         CoverAction {
             iconSource: "image://theme/icon-cover-next"
              onTriggered: {
-                 label.text = Logic.test
+                 label.text = Logic.modelTLhome.count
              }
         }
 

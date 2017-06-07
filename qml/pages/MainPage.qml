@@ -31,6 +31,7 @@
 import QtQuick 2.0
 import Sailfish.Silica 1.0
 import "../lib/API.js" as Logic
+import "./components/"
 
 
 Page {
@@ -39,41 +40,96 @@ Page {
     // The effective value will be restricted by ApplicationWindow.allowedOrientations
     allowedOrientations: Orientation.All
 
-    // To enable PullDownMenu, place our content in a SilicaFlickable
-    SilicaFlickable {
-        anchors.fill: parent
-
-        PageHeader {
-            title: "Tooter"
-        }
-
-        // PullDownMenu and PushUpMenu must be declared in SilicaFlickable, SilicaListView or SilicaGridView
-        PullDownMenu {
-            MenuItem {
-                text: Logic.conf['login'] ? qsTrId("Logout"): qsTrId("Login")
-                onClicked: {
-                    if (Logic.conf['login']) {
-                        Logic.conf['login'] = false
-                        Logic.conf['instance'] = null;
-                        Logic.conf['api_user_token'] = null;
-                        Logic.conf['dysko'] = null;
-                    } else {
-                        Logic.conf['login'] = true
-                        Logic.conf['instance'] = "https://mastodon.social";
-                        Logic.conf['api_user_token'] = '6d8cb23e3ebf3c7a97dd9adf204e47ad159f1a3d07dbbd0325e98981368d8c51';
-                    }
-                }
-            }
-
-            MenuItem {
-                text: qsTr("Show Page 2")
-                onClicked: pageStack.push(Qt.resolvedUrl("SecondPage.qml"))
+    DockedPanel {
+        id: infoPanel
+        open: true
+        width: mainPage.isPortrait ? parent.width : Theme.itemSizeLarge
+        height: mainPage.isPortrait ? Theme.itemSizeLarge : parent.height
+        dock: mainPage.isPortrait ? Dock.Bottom : Dock.Right
+        Navigation {
+            id: navigation
+            isPortrait: !mainPage.isPortrait
+            onSlideshowShow: {
+                console.log(vIndex)
+                slideshow.positionViewAtIndex(vIndex, ListView.SnapToItem)
             }
         }
+    }
 
+    SlideshowView {
+        id: slideshow
+        width: parent.width
+        height: parent.height
+        itemWidth: parent.width
+        clip: true
+        onCurrentIndexChanged: {
+            navigation.slideshowIndexChanged(currentIndex)
+        }
 
+        anchors {
+            fill: parent
+            leftMargin: 0
+            top: parent.top
+            topMargin: 0
+            rightMargin: mainPage.isPortrait ? 0 : infoPanel.visibleSize
+            bottomMargin: mainPage.isPortrait ? infoPanel.visibleSize : 0
+        }
+        model: VisualItemModel {
+            MyList{
+                id: tlHome;
+                title: qsTr("Home")
+                type: "timelines/home"
+                mdl: Logic.modelTLhome
+                width: parent.width
+                height: parent.height
+                onOpenDrawer:  infoPanel.open = setDrawer
+            }
+            MyList{
+                id: tlPublic;
+                title: qsTr("Timeline")
+                type: "timelines/public"
+                mdl: Logic.modelTLpublic
+                width: parent.width
+                height: parent.height
+                onOpenDrawer:  infoPanel.open = setDrawer
+            }
+            MyList{
+                id: tlNotifications;
+                title: qsTr("Notifications")
+                type: "notifications"
+                mdl: Logic.modelTLnotifications
+                width: parent.width
+                height: parent.height
+                onOpenDrawer:  infoPanel.open = setDrawer
+                delegate: Notification {}
+            }
+            /*
+            MyList{
+                id: timeline2;
+                width: parent.width
+                height: parent.height
+                model: 0
+                onOpenDrawer:  infoPanel.open = setDrawer
+            }
+            MyList{
+                id: timeline3;
+                width: parent.width
+                height: parent.height
+                model: 30
+                onOpenDrawer:  infoPanel.open = setDrawer
+            }
+            MyList{
+                id: timeline4;
+                width: parent.width
+                height: parent.height
+                model: 4
+                onOpenDrawer:  infoPanel.open = setDrawer
+            }*/
+
+        }
 
     }
+
 
     Component.onCompleted: {
         /*Mastodon.api.post("statuses", {status:"First toot by Tooter - Mastodon client for #SailfishOS"}, function (data) {
