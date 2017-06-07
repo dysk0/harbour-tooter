@@ -26,7 +26,10 @@ WorkerScript.onMessage = function(msg) {
         var items = [];
         for (var i in data) {
             if (data.hasOwnProperty(i)) {
-                if(msg.action === "notifications") {
+                if(msg.action === "accounts/search") {
+                    var item = parseAccounts(data[i]);
+                    items.push(item)
+                } else if(msg.action === "notifications") {
                     console.log("Is notification... parsing...")
                     var item = parseNotification(data[i]);
                     items.push(item)
@@ -59,7 +62,12 @@ function addDataToModel (model, mode, items){
 
     model.sync()
 }
+function parseAccounts(data){
+    return (data);
+}
+
 function parseNotification(data){
+    console.log(JSON.stringify(data))
     var item = {
         id: data.id,
         type: data.type,
@@ -73,15 +81,26 @@ function parseNotification(data){
     };
     switch (item['type']){
     case "mention":
+        item = parseToot(data.status)
+        item['typeIcon'] = "image://theme/icon-s-retweet"
         item['typeIcon'] = "image://theme/icon-s-alarm"
         break;
     case "reblog":
+        item = parseToot(data.status)
+        item['isReblog'] = true;
+        item['type'] = "reblog";
+        item['retweetScreenName'] = data['account']['username'];
         item['typeIcon'] = "image://theme/icon-s-retweet"
         break;
     case "favourite":
+        item = parseToot(data.status)
         item['typeIcon'] = "image://theme/icon-s-favorite"
+        item['type'] = "favourite";
+        item['retweetScreenName'] = data['account']['username'];
         break;
     case "follow":
+        item['type'] = "follow";
+        item['retweetScreenName'] = data['account']['username'];
         item['typeIcon'] = "image://theme/icon-s-installed"
         break;
     default:
@@ -96,8 +115,8 @@ function parseNotification(data){
 function parseToot (data){
     //console.log(JSON.stringify(data))
     var item = {};
-    item['username'] = "Mjau"
-
+    item['account_username'] = "Mjau"
+    item['type'] = "";
     item['retweetScreenName'] = '';
     item['isVerified'] = false;
     item['isReblog'] = false;
@@ -115,18 +134,18 @@ function parseToot (data){
     }
     if(data['account']){
         item['account_id'] = data['account']['id'];
-        item['username'] = data['account']['username'];
-        item['displayname'] = data['account']['display_name'];
+        item['account_username'] = data['account']['username'];
+        item['account_display_name'] = data['account']['display_name'];
         item['account_locked'] = data['account']['locked'];
         item['account_avatar'] = data['account']['avatar'];
     }
     if(data['reblog']){
-        item['isReblog'] = true;
         item['retweetScreenName'] = data['account']['username'];
+        item['type'] = "reblog";
         item['reblog_id'] = data['reblog']['id'];
         item['account_id'] = data['reblog']['account']['id'];
-        item['username'] = data['reblog']['account']['username'];
-        item['displayname'] = data['reblog']['account']['display_name'];
+        item['account_username'] = data['reblog']['account']['username'];
+        item['account_display_name'] = data['reblog']['account']['display_name'];
         item['account_locked'] = data['reblog']['account']['locked'];
         item['account_avatar'] = data['reblog']['account']['avatar'];
 
@@ -141,13 +160,11 @@ function parseToot (data){
     item['content'] = item['content'].split(" ")
     for(var i = 0; i < item['content'].length ; i++){
         if(item['content'][i][0] === "#"){
-            item['content'][i] = '<a href="#'+item['content'][i]+'">'+item['content'][i]+'</a>';
+            item['content'][i] = '<a href="'+item['content'][i]+'">'+item['content'][i]+'</a>';
         }
         if(item['content'][i][0] === "@"){
-            item['content'][i] = '<a href="@'+item['content'][i]+'">'+item['content'][i]+'</a>';
+            item['content'][i] = '<a href="'+item['content'][i]+'">'+item['content'][i]+'</a>';
         }
-
-        console.log(item['content'][i])
     }
     item['content'] = item['content'].join(" ").autoLink()
 

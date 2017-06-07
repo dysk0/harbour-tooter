@@ -18,7 +18,6 @@ SOURCES += src/harbour-tooter.cpp
 
 OTHER_FILES += qml/harbour-tooter.qml \
     qml/cover/CoverPage.qml \
-    qml/pages/SecondPage.qml \
     qml/pages/MainPage.qml \
     qml/pages/LoginPage.qml \
     qml/pages/components/MyList.qml \
@@ -56,4 +55,4 @@ DISTFILES += \
     qml/pages/Browser.qml \
     qml/pages/Profile.qml \
     qml/pages/components/ProfileHeader.qml \
-    qml/pages/components/Notification.qml
+    qml/images/boosted.svg

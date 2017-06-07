@@ -33,6 +33,23 @@ Page {
         source: "../lib/Worker.js"
         onMessage: {
             console.log(JSON.stringify(messageObject))
+            if(messageObject.action.indexOf("accounts/search") > -1 ){
+                user_id = messageObject.data.id
+                followers_count = messageObject.data.followers_count
+                following_count = messageObject.data.following_count
+                username = messageObject.data.username
+                displayname = messageObject.data.display_name
+                profileImage = messageObject.data.avatar_static
+
+                var msg = {
+                    'action'    : "accounts/relationships/",
+                    'params'    : [ {name: "id", data: user_id}],
+                    'conf'      : Logic.conf
+                };
+                worker.sendMessage(msg);
+                list.loadData("prepend")
+            }
+
             if(messageObject.action === "accounts/relationships/"){
                 console.log(JSON.stringify(messageObject))
                 following= messageObject.data.following
@@ -87,22 +104,32 @@ Page {
     // The effective value will be restricted by ApplicationWindow.allowedOrientations
     allowedOrientations: Orientation.All
     Component.onCompleted: {
-        var msg = {
-            'action'    : "accounts/relationships/",
-            'params'    : [ {name: "id", data: user_id}],
-            'conf'      : Logic.conf
-        };
-        worker.sendMessage(msg);
-        msg = {
-            'action'    : "accounts/"+user_id,
-            'conf'      : Logic.conf
-        };
-        worker.sendMessage(msg);
+        var msg;
+        if (user_id) {
+            msg = {
+                'action'    : "accounts/relationships/",
+                'params'    : [ {name: "id", data: user_id}],
+                'conf'      : Logic.conf
+            };
+            worker.sendMessage(msg);
+            msg = {
+                'action'    : "accounts/"+user_id,
+                'conf'      : Logic.conf
+            };
+            worker.sendMessage(msg);
+        } else {
+            msg = {
+                'action'    : "accounts/search?limit=1&q="+username,
+                'conf'      : Logic.conf
+            };
+            worker.sendMessage(msg);
+        }
     }
 
 
 
     MyList {
+        id: list
         header: ProfileHeader {
             id: header
             title: displayname
@@ -121,7 +148,7 @@ Page {
         model: ListModel {}
         type: "accounts/"+user_id+"/statuses"
         vars: {}
-        conf: Logic.getConfTW()
+        conf: Logic.conf
     }
 
 

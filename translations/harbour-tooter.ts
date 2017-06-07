@@ -16,118 +16,107 @@
     <name>Browser</name>
     <message>
         <source>Open in Browser</source>
-        <translation type="unfinished"></translation>
+        <translation>Open in Browser</translation>
     </message>
     <message>
         <source>Web mode</source>
-        <translation type="unfinished"></translation>
+        <translation>Web mode</translation>
     </message>
     <message>
         <source>Reading mode</source>
-        <translation type="unfinished"></translation>
+        <translation>Reading mode</translation>
     </message>
 </context>
 <context>
     <name>MainPage</name>
     <message>
-        <source>Timeline</source>
-        <translation type="unfinished"></translation>
+        <source>Home</source>
+        <translation>Home</translation>
     </message>
     <message>
-        <source>Home</source>
-        <translation type="unfinished"></translation>
+        <source>Timeline</source>
+        <translation>Timeline</translation>
     </message>
     <message>
         <source>Notifications</source>
-        <translation type="unfinished"></translation>
+        <translation>Notifications</translation>
+    </message>
+    <message>
+        <source>Search</source>
+        <translation>Search</translation>
     </message>
 </context>
 <context>
     <name>MyList</name>
     <message>
         <source>Load more</source>
-        <translation type="unfinished">Cargar más</translation>
-    </message>
-</context>
-<context>
-    <name>Notification</name>
-    <message>
-        <source>metioned you</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>boosted your status</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>favourited your status</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>followed you</source>
-        <translation type="unfinished"></translation>
+        <translation>Load more</translation>
     </message>
 </context>
 <context>
     <name>Profile</name>
     <message>
         <source>Unfollow</source>
-        <translation type="unfinished"></translation>
+        <translation>Unfollow</translation>
     </message>
     <message>
         <source>Follow request sent!</source>
-        <translation type="unfinished"></translation>
+        <translation>Follow request sent!</translation>
     </message>
     <message>
         <source>Following</source>
-        <translation type="unfinished"></translation>
+        <translation>Following</translation>
     </message>
     <message>
         <source>Mute</source>
-        <translation type="unfinished"></translation>
+        <translation>Mute</translation>
     </message>
     <message>
         <source>Unmute</source>
-        <translation type="unfinished"></translation>
+        <translation>Unmute</translation>
     </message>
     <message>
         <source>Unblock</source>
-        <translation type="unfinished"></translation>
+        <translation>Unblock</translation>
     </message>
     <message>
         <source>Block</source>
-        <translation type="unfinished"></translation>
+        <translation>Block</translation>
     </message>
     <message>
         <source>Statuses</source>
-        <translation type="unfinished"></translation>
+        <translation>Statuses</translation>
     </message>
     <message>
         <source>Favourites</source>
-        <translation type="unfinished"></translation>
+        <translation>Favourites</translation>
     </message>
     <message>
         <source>Follow</source>
-        <translation type="unfinished"></translation>
+        <translation>Follow</translation>
     </message>
     <message>
         <source>Summary</source>
-        <translation type="unfinished"></translation>
+        <translation>Summary</translation>
     </message>
     <message>
         <source>Followers</source>
-        <translation type="unfinished"></translation>
+        <translation>Followers</translation>
     </message>
 </context>
 <context>
-    <name>SecondPage</name>
+    <name>Toot</name>
     <message>
-        <source>Nested Page</source>
-        <translation>Página anidada</translation>
+        <source>boosted</source>
+        <translation>boosted</translation>
     </message>
     <message>
-        <source>Item</source>
-        <translation>Artículo</translation>
+        <source>favourited</source>
+        <translation>favourited</translation>
+    </message>
+    <message>
+        <source>followed you</source>
+        <translation>followed you</translation>
     </message>
 </context>
 </TS>

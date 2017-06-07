@@ -36,6 +36,7 @@ import "./components/"
 
 Page {
     id: mainPage
+    property bool isFirstPage: true
 
     // The effective value will be restricted by ApplicationWindow.allowedOrientations
     allowedOrientations: Orientation.All
@@ -55,6 +56,61 @@ Page {
             }
         }
     }
+    VisualItemModel {
+        id: visualModel
+        MyList{
+            id: tlHome;
+            title: qsTr("Home")
+            type: "timelines/home"
+            mdl: Logic.modelTLhome
+            width: parent.width
+            height: parent.height
+            onOpenDrawer:  infoPanel.open = setDrawer
+        }
+        MyList{
+            id: tlPublic;
+            title: qsTr("Timeline")
+            type: "timelines/public"
+            mdl: Logic.modelTLpublic
+            width: parent.width
+            height: parent.height
+            onOpenDrawer:  infoPanel.open = setDrawer
+        }
+        MyList{
+            id: tlNotifications;
+            title: qsTr("Notifications")
+            type: "notifications"
+            mdl: Logic.modelTLnotifications
+            width: parent.width
+            height: parent.height
+            onOpenDrawer:  infoPanel.open = setDrawer
+            //delegate: Notification {}
+        }
+        MyList{
+            property string search;
+            id: tlSearch;
+            title: qsTr("Search")
+            type: "search"
+            mdl: Logic.modelTLsearch
+            width: parent.width
+            height: parent.height
+            onOpenDrawer:  infoPanel.open = setDrawer
+            delegate: Notification {}
+            header: SearchField {
+                width: parent.width
+                text: tlSearch.search
+                placeholderText: "Search"
+                labelVisible: false
+                EnterKey.iconSource: "image://theme/icon-m-enter-close"
+                EnterKey.onClicked: {
+                    tlSearch.search = text
+                    focus = false
+                }
+            }
+        }
+
+    }
+
 
     SlideshowView {
         id: slideshow
@@ -74,86 +130,19 @@ Page {
             rightMargin: mainPage.isPortrait ? 0 : infoPanel.visibleSize
             bottomMargin: mainPage.isPortrait ? infoPanel.visibleSize : 0
         }
-        model: VisualItemModel {
-            MyList{
-                id: tlHome;
-                title: qsTr("Home")
-                type: "timelines/home"
-                mdl: Logic.modelTLhome
-                width: parent.width
-                height: parent.height
-                onOpenDrawer:  infoPanel.open = setDrawer
-            }
-            MyList{
-                id: tlPublic;
-                title: qsTr("Timeline")
-                type: "timelines/public"
-                mdl: Logic.modelTLpublic
-                width: parent.width
-                height: parent.height
-                onOpenDrawer:  infoPanel.open = setDrawer
-            }
-            MyList{
-                id: tlNotifications;
-                title: qsTr("Notifications")
-                type: "notifications"
-                mdl: Logic.modelTLnotifications
-                width: parent.width
-                height: parent.height
-                onOpenDrawer:  infoPanel.open = setDrawer
-                delegate: Notification {}
-            }
-            /*
-            MyList{
-                id: timeline2;
-                width: parent.width
-                height: parent.height
-                model: 0
-                onOpenDrawer:  infoPanel.open = setDrawer
-            }
-            MyList{
-                id: timeline3;
-                width: parent.width
-                height: parent.height
-                model: 30
-                onOpenDrawer:  infoPanel.open = setDrawer
-            }
-            MyList{
-                id: timeline4;
-                width: parent.width
-                height: parent.height
-                model: 4
-                onOpenDrawer:  infoPanel.open = setDrawer
-            }*/
-
+        model: visualModel
+        Component.onCompleted: {
         }
-
     }
 
+    function onLinkActivated(href){
+        if (href[0] === '#' || href[0] === '@' ) {
+            slideshow.positionViewAtIndex(3, ListView.SnapToItem)
+            navigation.navigateTo('search')
 
-    Component.onCompleted: {
-        /*Mastodon.api.post("statuses", {status:"First toot by Tooter - Mastodon client for #SailfishOS"}, function (data) {
-            console.log(JSON.stringify(data))
-            // will be called if the toot was successful
-            // data is the http response object
-            //sidenote: please do not actually execute this request, you could be bullied by your friends
-        });*/
-
-        /*Logic.api.get("timelines/home", [
-                          //["since_id", 420],
-                          //["max_id", 1337]
-                      ], function(data) {
-                          // returns all users account id 1 is following in the id range from 420 to 1337
-                          // you don't have to supply the parameters, you can also just go with .get(endpoint, callback)
-                          //model.append(data)
-                          for (var i in data) {
-                                              if (data.hasOwnProperty(i)) {
-                                                  console.log(JSON.stringify(data[i]))
-                                              }
-                                          }
-
-                      });*/
-        console.log(Logic.test)
+        } else {
+            pageStack.push(Qt.resolvedUrl("Browser.qml"), {"href" : href})
+        }
     }
 }
 

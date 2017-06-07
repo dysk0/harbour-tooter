@@ -9,33 +9,50 @@ BackgroundItem {
     //property string text: "0"
     width: parent.width
     signal navigateTo(string link)
-    height: lblText.paintedHeight + (lblText.text.length > 0 ? Theme.paddingLarge : 0 )+ lblName.paintedHeight + (isReblog ? Theme.paddingLarge + iconRT.height : 0) + Theme.paddingLarge
+    height: lblText.paintedHeight + (lblText.text.length > 0 ? Theme.paddingLarge : 0 )+ lblName.paintedHeight + (type.length ? Theme.paddingLarge + iconRT.height : 0) + Theme.paddingLarge
     Image {
         id: iconRT
         y: Theme.paddingLarge
         anchors {
             right: avatar.right
         }
-        visible: isReblog
+        visible: type.length
         width: Theme.iconSizeExtraSmall
         height: width
-        source: "image://theme/icon-s-retweet?" + (pressed ? Theme.primaryColor : Theme.secondaryColor)
+        source: "../../images/boosted.svg"
     }
     Label {
         id: lblRtByName
-        visible: isReblog
+        visible: type.length
         anchors {
             left: lblName.left
             bottom: iconRT.bottom
         }
-        text: '@' + retweetScreenName + ' boosted'
+        text: {
+            var action;
+            switch(type){
+            case "reblog":
+                action =  qsTr('boosted');
+                break;
+            case "favourite":
+                action =  qsTr('favourited');
+                break;
+            case "follow":
+                action =  qsTr('followed you');
+                break;
+            default:
+                action = type;
+            }
+            return '@' + retweetScreenName + ' ' +  action
+        }
+
         font.pixelSize: Theme.fontSizeExtraSmall
         color: Theme.secondaryColor
     }
     Image {
         id: avatar
         x: Theme.horizontalPageMargin
-        y: Theme.paddingLarge + (isReblog ? iconRT.height+Theme.paddingMedium : 0)
+        y: Theme.paddingLarge + (type.length ? iconRT.height+Theme.paddingMedium : 0)
         asynchronous: true
         width: Theme.iconSizeMedium
         height: width
@@ -46,9 +63,8 @@ BackgroundItem {
             anchors.fill: parent
             onClicked: {
                 pageStack.push(Qt.resolvedUrl("../Profile.qml"), {
-                                   "user_id": account_id,
-                                   "displayname": displayname,
-                                   "username": username,
+                                   "displayname": account_display_name,
+                                   "username": account_username,
                                    "profileImage": account_avatar
                                })
             }
@@ -64,7 +80,7 @@ BackgroundItem {
             left: avatar.right
             leftMargin: Theme.paddingMedium
         }
-        text: displayname
+        text: account_display_name
         font.weight: Font.Bold
         font.pixelSize: Theme.fontSizeSmall
         color: (pressed ? Theme.highlightColor : Theme.primaryColor)
@@ -83,8 +99,8 @@ BackgroundItem {
         opacity: 0.8
         height: width
         source: "image://theme/icon-s-secure?" + (pressed
-                                                ? Theme.highlightColor
-                                                : Theme.primaryColor)
+                                                  ? Theme.highlightColor
+                                                  : Theme.primaryColor)
     }
 
 
@@ -97,7 +113,7 @@ BackgroundItem {
             baseline: lblName.baseline
         }
         truncationMode: TruncationMode.Fade
-        text: '@'+username
+        text: '@'+account_username
         font.pixelSize: Theme.fontSizeExtraSmall
         color: (pressed ? Theme.secondaryHighlightColor : Theme.secondaryColor)
     }
@@ -139,12 +155,12 @@ BackgroundItem {
                                })
             } else if (link[0] === "#") {
 
-                    pageStack.pop(pageStack.find(function(page) {
-                        var check = page.isFirstPage === true;
-                        if (check)
-                            page.onLinkActivated(link)
-                        return check;
-                    }));
+                pageStack.pop(pageStack.find(function(page) {
+                    var check = page.isFirstPage === true;
+                    if (check)
+                        page.onLinkActivated(link)
+                    return check;
+                }));
 
                 send(link)
             } else {

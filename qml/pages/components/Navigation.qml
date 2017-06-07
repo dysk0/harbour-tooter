@@ -1,6 +1,5 @@
 import QtQuick 2.0
 import Sailfish.Silica 1.0
-import QtGraphicalEffects 1.0
 
 SilicaGridView {
     signal slideshowShow(int vIndex);
@@ -14,27 +13,27 @@ SilicaGridView {
     ListModel {
         id: listModel
         ListElement {
-            icon: "../../images/home.svg"
+            icon: "image://theme/icon-m-home"
             slug: "timeline"
             name: "Timeline"
             active: true
             unread: false
         }
         ListElement {
-            icon: "../../images/home.svg"
+            icon: "image://theme/icon-m-region"
             slug: "mentions"
             name: "Mentions"
             active: false
             unread: false
         }
         ListElement {
-            icon: "../../images/notification.svg"
+            icon: "image://theme/icon-m-alarm"
             slug: "msgs"
             name: "Messagess"
             active: false
         }
         ListElement {
-            icon: "../../images/search.svg"
+            icon: "image://theme/icon-m-search"
             slug: "search"
             name: "Search"
             active: false
@@ -45,8 +44,8 @@ SilicaGridView {
     anchors.fill: parent
     currentIndex: -1
 
-    cellWidth: isPortrait ? gridView.width : gridView.width / listModel.count
-    cellHeight: isPortrait ? gridView.height/listModel.count : gridView.height
+    cellWidth: isPortrait ? gridView.width : gridView.width / model.count
+    cellHeight: isPortrait ? gridView.height/model.count : gridView.height
 
 
     delegate: BackgroundItem {
@@ -97,20 +96,13 @@ SilicaGridView {
         }*/
         Image {
             id: image
-            source: model.icon + (highlighted
+            source: model.icon +'?'+ (highlighted
                                   ? Theme.highlightColor
                                   : (model.active ? Theme.primaryColor : Theme.secondaryHighlightColor))
             anchors.centerIn: parent
             smooth: true
-            visible: false
         }
-        ColorOverlay {
-            anchors.fill: image
-            source: image
-            color: (highlighted
-                    ? Theme.highlightColor
-                    : (model.active ? Theme.primaryColor : Theme.secondaryHighlightColor))
-        }
+
         Text {
             anchors.centerIn: parent
             visible: false

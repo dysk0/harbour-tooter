@@ -92,7 +92,7 @@ SilicaListView {
         criteria: ViewSection.FullString
         delegate: SectionHeader  {
             text: {
-                var dat = Date.fromLocaleDateString(locale, section);
+                var dat = Date.fromLocaleDateString(locale, created_at);
                 dat = Format.formatDate(dat, Formatter.TimepointRelativeCurrentDay)
                 if (dat === "00:00:00" || dat === "00:00") {
                     visible = false;

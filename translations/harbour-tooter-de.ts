@@ -30,15 +30,19 @@
 <context>
     <name>MainPage</name>
     <message>
-        <source>Timeline</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <source>Home</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
+        <source>Timeline</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <source>Notifications</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Search</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -46,25 +50,6 @@
     <name>MyList</name>
     <message>
         <source>Load more</source>
-        <translation type="unfinished"></translation>
-    </message>
-</context>
-<context>
-    <name>Notification</name>
-    <message>
-        <source>metioned you</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>boosted your status</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>favourited your status</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>followed you</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -120,14 +105,18 @@
     </message>
 </context>
 <context>
-    <name>SecondPage</name>
+    <name>Toot</name>
     <message>
-        <source>Nested Page</source>
-        <translation>Unterseite</translation>
+        <source>followed you</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>Item</source>
-        <translation>Element</translation>
+        <source>boosted</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>favourited</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 </TS>
