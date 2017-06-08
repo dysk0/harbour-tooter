@@ -22,6 +22,11 @@ OTHER_FILES += qml/harbour-tooter.qml \
     qml/pages/LoginPage.qml \
     qml/pages/components/MyList.qml \
     qml/pages/components/Navigation.qml \
+    qml/pages/Conversation.qml \
+    qml/pages/components/Toot.qml \
+    qml/pages/Browser.qml \
+    qml/pages/Profile.qml \
+    qml/pages/components/ProfileHeader.qml \
     rpm/harbour-tooter.changes.in \
     rpm/harbour-tooter.spec \
     rpm/harbour-tooter.yaml \
@@ -49,9 +54,4 @@ DISTFILES += \
     qml/images/verified.svg \
     qml/lib/Mastodon.js \
     qml/lib/Worker.js \
-    qml/pages/components/Toot.qml \
-    qml/pages/Browser.qml \
-    qml/pages/Profile.qml \
-    qml/pages/components/ProfileHeader.qml \
-    qml/images/boosted.svg \
-    qml/pages/Conversation.qml
+    qml/images/boosted.svg
