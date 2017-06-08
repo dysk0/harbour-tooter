@@ -21,7 +21,6 @@ OTHER_FILES += qml/harbour-tooter.qml \
     qml/pages/MainPage.qml \
     qml/pages/LoginPage.qml \
     qml/pages/components/MyList.qml \
-    qml/pages/components/JSONListModel.qml \
     qml/pages/components/Navigation.qml \
     rpm/harbour-tooter.changes.in \
     rpm/harbour-tooter.spec \
@@ -43,7 +42,6 @@ TRANSLATIONS += translations/harbour-tooter-de.ts
 
 DISTFILES += \
     qml/lib/API.js \
-    qml/lib/jsonpath.js \
     qml/images/notification.svg \
     qml/images/home.svg \
     qml/images/mesagess.svg \
