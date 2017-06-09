@@ -113,6 +113,7 @@ Page {
                 right: parent.right
                 rightMargin: Theme.paddingLarge
             }
+            enabled: toot.text !== ""
             onClicked: {
                 var visibility = [ "public", "unlisted", "private", "direct"];
                 var msg = {
@@ -132,8 +133,10 @@ Page {
                     msg.params['spoiler_text'] = warningContent.text
                 }
 
-                worker.sendMessage(msg);
+                worker.sendMessage(msg);                
                 console.log(JSON.stringify(msg));
+                warningContent.text = ""
+                toot.text = ""
             }
         }
     }

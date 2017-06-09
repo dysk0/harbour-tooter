@@ -36,10 +36,10 @@ CoverBackground {
     Label {
         id: label
         anchors.centerIn: parent
-        text: Logic.test //qsTr("My Cover")
+        text: qsTr("Tooter")
     }
 
-    CoverActionList {
+    /*CoverActionList {
         id: coverAction
 
         CoverAction {
@@ -52,6 +52,6 @@ CoverBackground {
         CoverAction {
             iconSource: "image://theme/icon-cover-pause"
         }
-    }
+    }*/
 }
 
