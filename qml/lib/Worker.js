@@ -36,6 +36,7 @@ WorkerScript.onMessage = function(msg) {
                 } else  if (data[i].hasOwnProperty("content")){
                     console.log("Is toot... parsing...")
                     var item = parseToot(data[i]);
+                    item['id'] = item['status_id']
                     items.push(item)
                 } else {
                     WorkerScript.sendMessage({ 'action': msg.action, 'success': true,  key: i, "data": data[i]})
@@ -62,22 +63,27 @@ function addDataToModel (model, mode, items){
 
     model.sync()
 }
-function parseAccounts(data){
-    return (data);
+function parseAccounts(collection, prefix, data){
+    var res = collection;
+
+    res[prefix + 'account_id'] = data["id"]
+    res[prefix + 'account_username'] = data["username"]
+    res[prefix + 'account_acct'] = data["acct"]
+    res[prefix + 'account_display_name'] = data["display_name"]
+    res[prefix + 'account_locked'] = data["locked"]
+    res[prefix + 'account_created_at'] = data["created_at"]
+    res[prefix + 'account_avatar'] = data["avatar"]
+
+    //    /console.log(JSON.stringify(res))
+    return (res);
 }
 
 function parseNotification(data){
-    console.log(JSON.stringify(data))
+    //console.log(JSON.stringify(data))
     var item = {
         id: data.id,
         type: data.type,
-        created_at: data.created_at,
-        account_id: data.account.id,
-        account_acct: data.account.acct,
-        account_username: data.account.username,
-        account_display_name: data.account.display_name,
-        account_avatar: data.account.avatar,
-        account_locked: data.account.locked
+        created_at: new Date(data.created_at)
     };
     switch (item['type']){
     case "mention":
@@ -87,57 +93,117 @@ function parseNotification(data){
         break;
     case "reblog":
         item = parseToot(data.status)
-        item['isReblog'] = true;
+        item = parseAccounts(item, "reblog_", data["account"])
+        item = parseAccounts(item, "", data["status"]["account"])
+        item['status_reblog'] = true;
         item['type'] = "reblog";
-        item['retweetScreenName'] = data['account']['username'];
         item['typeIcon'] = "image://theme/icon-s-retweet"
         break;
     case "favourite":
         item = parseToot(data.status)
+        item = parseAccounts(item, "reblog_", data["account"])
+        item = parseAccounts(item, "", data["status"]["account"])
+        item['status_reblog'] = true;
         item['typeIcon'] = "image://theme/icon-s-favorite"
         item['type'] = "favourite";
-        item['retweetScreenName'] = data['account']['username'];
+        //item['retweetScreenName'] = item['reblog_account_username'];
         break;
     case "follow":
         item['type'] = "follow";
-        item['retweetScreenName'] = data['account']['username'];
+        item = parseAccounts(item, "", data["account"])
+        item = parseAccounts(item, "reblog_", data["account"])
+        item['content'] = data['account']['note']
         item['typeIcon'] = "image://theme/icon-s-installed"
+
         break;
     default:
         item['typeIcon'] = "image://theme/icon-s-sailfish"
     }
 
-
+    item['id'] = data.id
 
     return item;
 }
 
+function collect() {
+    var ret = {};
+    var len = arguments.length;
+    for (var i=0; i<len; i++) {
+        for (p in arguments[i]) {
+            if (arguments[i].hasOwnProperty(p)) {
+                ret[p] = arguments[i][p];
+            }
+        }
+    }
+    return ret;
+}
 function parseToot (data){
     //console.log(JSON.stringify(data))
     var item = {};
-    item['account_username'] = "Mjau"
-    item['type'] = "";
+    item['status_id'] = data["id"]
+    item['status_uri'] = data["uri"]
+    item['status_in_reply_to_id'] = data["in_reply_to_id"]
+    item['status_in_reply_to_account_id'] = data["in_reply_to_account_id"]
+    item['status_reblog'] = data["reblog"] ? true : false
+    item['status_content'] = data["content"]
+    item['status_created_at'] = item['created_at'] = new Date(data["created_at"]);
+    item['status_reblogs_count'] = data["reblogs_count"]
+    item['status_favourites_count'] = data["favourites_count"]
+    item['status_reblogged'] = data["reblogged"]
+    item['status_favourited'] = data["favourited"]
+    item['status_sensitive'] = data["sensitive"]
+    item['status_spoiler_text'] = data["spoiler_text"]
+    item['status_visibility'] = data["visibility"]
+
+
+    //item.concat(parseAccounts("", data["account"]));
+    //item = collect(item, );
+
+    if(item['status_reblog']){
+        item['type'] = "reblog";
+        item['typeIcon'] = "image://theme/icon-s-retweet"
+        item = parseAccounts(item, "", data['reblog']["account"])
+        item = parseAccounts(item, "reblog_", data["account"])
+    } else {
+        item = parseAccounts(item, "", data["account"])
+    }
+
+
+    //item['application_name'] = data["application"]["name"]
+    //item['application_website'] = data["application"]["website"]
+    // account
+    /*
+
+
+
+    */
+
+
+
+
+
+    /*item['type'] = "";
     item['retweetScreenName'] = '';
     item['isVerified'] = false;
     item['isReblog'] = false;
     item['favourited'] = data['favourited'];
     item['reblogged'] = data['reblogged'];
     item['muted'] = data['muted'];
-    item['reblogs_count'] = data['reblogs_count'];
-    item['favourites_count'] = data['favourites_count'];
+    item['status_reblogs_count'] = data['reblogs_count'];
+    item['status_favourites_count'] = data['favourites_count'];
 
     if(data['id']){
-        item['id'] = data['id'];
+        item['status_id'] = data['id'];
     }
     if(data['created_at']){
-        item['created_at'] = data['created_at'];
+        item['status_created_at'] = data['created_at'];
     }
     if(data['account']){
-        item['account_id'] = data['account']['id'];
-        item['account_username'] = data['account']['acct'];
-        item['account_display_name'] = data['account']['display_name'];
-        item['account_locked'] = data['account']['locked'];
-        item['account_avatar'] = data['account']['avatar'];
+        item['status_account_id'] = data['account']['id'];
+        item['status_account_username'] = data['account']['acct'];
+        item['status_account_display_name'] = data['account']['display_name'];
+        item['status_account_locked'] = data['account']['locked'];
+        item['status_account_avatar'] = data['account']['avatar'];
     }
     if(data['reblog']){
         item['retweetScreenName'] = data['account']['username'];
@@ -149,14 +215,20 @@ function parseToot (data){
         item['account_locked'] = data['reblog']['account']['locked'];
         item['account_avatar'] = data['reblog']['account']['avatar'];
 
-        item['reblogs_count'] = data['reblog']['reblogs_count'];
-        item['favourites_count'] = data['reblog']['favourites_count'];
-        item['favourited'] = data['reblog']['favourited'];
-        item['reblogged'] = data['reblog']['reblogged'];
-        item['muted'] = data['reblog']['muted'];
+        item['status_reblogs_count'] = data['reblog']['reblogs_count'];
+        item['status_favourites_count'] = data['reblog']['favourites_count'];
+        item['status_favourited'] = data['reblog']['favourited'];
+        item['status_reblogged'] = data['reblog']['reblogged'];
+        item['status_muted'] = data['reblog']['muted'];
     }
-
+    */
     item['content'] = data['content'].replace(/(<([^>]+)>)/ig,"");
+    /*for(var i = 0; i < data['tags'].length ; i++){
+        var tag = data['tags'][i]['name'];
+        console.log(tag)
+        item['content'] = item['content'].replaceAll('#'+tag, '<a href="#'+tag+'">'+tag+'</a>')
+    }*/
+
     item['content'] = item['content'].split(" ")
     for(var i = 0; i < item['content'].length ; i++){
         if(item['content'][i][0] === "#"){
@@ -168,7 +240,7 @@ function parseToot (data){
     }
     item['content'] = item['content'].join(" ").autoLink()
 
-
+    console.log(JSON.stringify(item))
 
     return item;
 }

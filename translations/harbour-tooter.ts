@@ -81,6 +81,21 @@
     </message>
 </context>
 <context>
+    <name>MiniStatus</name>
+    <message>
+        <source>boosted</source>
+        <translation type="unfinished">boosted</translation>
+    </message>
+    <message>
+        <source>favourited</source>
+        <translation type="unfinished">favourited</translation>
+    </message>
+    <message>
+        <source>followed you</source>
+        <translation type="unfinished">followed you</translation>
+    </message>
+</context>
+<context>
     <name>MyList</name>
     <message>
         <source>Load more</source>

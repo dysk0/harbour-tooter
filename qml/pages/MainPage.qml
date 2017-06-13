@@ -84,7 +84,6 @@ Page {
             width: parent.width
             height: parent.height
             onOpenDrawer:  infoPanel.open = setDrawer
-            //delegate: Notification {}
         }
         MyList{
             property string search;

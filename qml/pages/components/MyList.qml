@@ -107,7 +107,7 @@ SilicaListView {
         }
     }
 
-    delegate: Toot {}
+    delegate: VisualContainer {} //Toot {}
 
     add: Transition {
         NumberAnimation { property: "opacity"; from: 0; to: 1.0; duration: 800 }

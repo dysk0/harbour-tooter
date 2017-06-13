@@ -54,4 +54,7 @@ DISTFILES += \
     qml/images/verified.svg \
     qml/lib/Mastodon.js \
     qml/lib/Worker.js \
-    qml/images/boosted.svg
+    qml/images/boosted.svg \
+    qml/pages/components/VisualContainer.qml \
+    qml/pages/components/MiniStatus.qml \
+    qml/pages/components/MiniHeader.qml

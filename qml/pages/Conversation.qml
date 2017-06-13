@@ -27,7 +27,7 @@ Page {
         id: panel
         open: true
         width: parent.width
-        height: toot.height + btnAddImages.height + Theme.paddingMedium + (warningContent.visible ? warningContent.height : 0)
+        height: toot.height + btnContentWarning.height + Theme.paddingMedium + (warningContent.visible ? warningContent.height : 0)
         dock: Dock.Bottom
         TextField {
             id: warningContent
@@ -66,23 +66,11 @@ Page {
             }
         }
         IconButton {
-            id: btnAddImages
-            enabled: false
-            anchors {
-                verticalCenter: btnSend.verticalCenter
-                left: parent.left
-                leftMargin: Theme.paddingMedium
-            }
-            icon.source: "image://theme/icon-s-attach?" + (pressed
-                             ? Theme.highlightColor
-                             : Theme.primaryColor)
-            onClicked: console.log("Delete!")
-        }
-        IconButton {
             id: btnContentWarning
             anchors {
-                verticalCenter: btnSend.verticalCenter
-                left: btnAddImages.right
+                verticalCenter: privacy.verticalCenter
+                left: parent.left
+                leftMargin: Theme.paddingMedium
             }
             icon.source: "image://theme/icon-s-high-importance?" + (pressed
                              ? Theme.highlightColor
@@ -93,6 +81,7 @@ Page {
             id: privacy
             anchors {
                 top: toot.bottom
+                topMargin: -Theme.paddingSmall*2
                 left: btnContentWarning.right
                 right: btnSend.left
             }
