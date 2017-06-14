@@ -129,4 +129,7 @@ Page {
             }
         }
     }
+    Component.onCompleted: {
+        toot.cursorPosition = toot.text.length
+    }
 }

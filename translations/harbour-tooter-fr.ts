@@ -41,7 +41,7 @@
         <source>unlisted</source>
         <translation>non-listé</translation>
     </message>
-	<message>
+    <message>
         <source>followers only</source>
         <translation>abonnés uniquement</translation>
     </message>
@@ -81,10 +81,41 @@
     </message>
 </context>
 <context>
+    <name>MiniStatus</name>
+    <message>
+        <source>boosted</source>
+        <translation type="unfinished">a partagé</translation>
+    </message>
+    <message>
+        <source>favourited</source>
+        <translation type="unfinished">a ajouté à ses favoris</translation>
+    </message>
+    <message>
+        <source>followed you</source>
+        <translation type="unfinished">vous suit</translation>
+    </message>
+</context>
+<context>
     <name>MyList</name>
     <message>
         <source>Load more</source>
         <translation>Charger davantage</translation>
+    </message>
+    <message>
+        <source>favourited</source>
+        <translation type="unfinished">a ajouté à ses favoris</translation>
+    </message>
+    <message>
+        <source>followed you</source>
+        <translation type="unfinished">vous suit</translation>
+    </message>
+    <message>
+        <source>boosted</source>
+        <translation type="unfinished">a partagé</translation>
+    </message>
+    <message>
+        <source>said</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>

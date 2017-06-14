@@ -2,9 +2,20 @@ import QtQuick 2.0
 import Sailfish.Silica 1.0
 import "../../lib/API.js" as Logic
 import "."
+import org.nemomobile.notifications 1.0
 
 
 SilicaListView {
+
+
+
+    Notification {
+        id: notification
+        category: "x-nemo.example"
+        urgency: Notification.Normal
+        onClicked: console.log("Clicked")
+    }
+
     id: myList
     property string type;
     property string title
@@ -17,6 +28,7 @@ SilicaListView {
     property string action: ""
     property variant vars
     property variant conf
+    property bool notifier : false;
     model:  mdl
     signal notify (string what, int num)
     onNotify: {
@@ -63,10 +75,6 @@ SilicaListView {
                     Logic.conf['instance'] = null;
                     Logic.conf['api_user_token'] = null;
                     Logic.conf['dysko'] = null;
-                } else {
-                    Logic.conf['login'] = true
-                    Logic.conf['instance'] = "https://mastodon.social";
-                    Logic.conf['api_user_token'] = '6d8cb23e3ebf3c7a97dd9adf204e47ad159f1a3d07dbbd0325e98981368d8c51';
                 }
             }
         }
@@ -89,21 +97,8 @@ SilicaListView {
     clip: true
     section {
         property: 'section'
-        criteria: ViewSection.FullString
         delegate: SectionHeader  {
-            text: {
-                var dat = Date.fromLocaleDateString(locale, created_at);
-                dat = Format.formatDate(dat, Formatter.TimepointRelativeCurrentDay)
-                if (dat === "00:00:00" || dat === "00:00") {
-                    visible = false;
-                    height = 0;
-                    return  " ";
-                }else {
-                    return dat;
-                }
-
-            }
-
+            text: section
         }
     }
 
@@ -146,9 +141,55 @@ SilicaListView {
             if (messageObject.error){
                 console.log(JSON.stringify(messageObject))
             }
-            if (messageObject.notifyNewItems){
-                console.log(JSON.stringify(messageObject.notifyNewItems))
+            if (messageObject.fireNotification && notifier){
+                console.log(JSON.stringify(messageObject.data.id))
+                var item = messageObject.data
+                item.content = item.content.replace(/(<([^>]+)>)/ig,"").replaceAll("&quot;", "\"")
+                if(notification.replacesId){
+                    notification.replacesId = 0
+                }
+
+                switch (item.type){
+                case "favourite":
+                    notification.urgency = Notification.Normal
+                    notification.timestamp = item.created_at
+                    notification.summary = (item.reblog_account_display_name !== "" ? item.reblog_account_display_name : '@'+item.reblog_account_username) + ' ' + qsTr("favourited")
+                    notification.body = item.content
+                    notification.publish()
+                    break;
+                case "follow":
+                    notification.urgency = Notification.Critical
+                    notification.timestamp = item.created_at
+                    notification.summary = (item.account_display_name !== "" ? item.account_display_name : '@'+item.account_acct)
+                    notification.body = qsTr("followed you")
+                    notification.publish()
+                    break;
+
+                case "reblog":
+                    notification.urgency = Notification.Low
+                    notification.timestamp = item.created_at
+                    notification.summary = (item.account_display_name !== "" ? item.account_display_name : '@'+item.account_acct) + ' ' + qsTr("boosted")
+                    notification.body = item.content
+                    notification.publish()
+                    break;
+                case "mention":
+                    notification.urgency = Notification.Critical
+                    notification.timestamp = item.created_at
+                    notification.summary = (item.account_display_name !== "" ? item.account_display_name : '@'+item.account_acct) + ' ' + qsTr("said")
+                    notification.previewSummary = notification.summary
+                    notification.body = item.content
+                    notification.previewBody = notification.body
+                    notification.publish()
+                    break;
+                default:
+                    console.log(JSON.stringify(messageObject.data))
+                    break;
+                }
+
+
+
             }
+
         }
     }
 
@@ -161,6 +202,14 @@ SilicaListView {
             'conf'      : Logic.conf
         };
         worker.sendMessage(msg);
+    }
+
+    Timer {
+        triggeredOnStart: true; interval: 5*60*1000; running: true; repeat: true
+        onTriggered: {
+            console.log(title + ' ' +Date().toString())
+            loadData("prepend")
+        }
     }
     function loadData(mode){
         var p = [];

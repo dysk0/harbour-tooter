@@ -25,17 +25,18 @@ WorkerScript.onMessage = function(msg) {
     API.get(msg.action, msg.params, function(data) {
         var items = [];
         for (var i in data) {
+            var item;
             if (data.hasOwnProperty(i)) {
                 if(msg.action === "accounts/search") {
-                    var item = parseAccounts(data[i]);
+                    item = parseAccounts(data[i]);
                     items.push(item)
                 } else if(msg.action === "notifications") {
                     console.log("Is notification... parsing...")
-                    var item = parseNotification(data[i]);
+                    item = parseNotification(data[i]);
                     items.push(item)
                 } else  if (data[i].hasOwnProperty("content")){
                     console.log("Is toot... parsing...")
-                    var item = parseToot(data[i]);
+                    item = parseToot(data[i]);
                     item['id'] = item['status_id']
                     items.push(item)
                 } else {
@@ -83,13 +84,15 @@ function parseNotification(data){
     var item = {
         id: data.id,
         type: data.type,
-        created_at: new Date(data.created_at)
+        created_at: new Date(data.created_at),
+        section: new Date(data["created_at"]).toLocaleDateString()
     };
     switch (item['type']){
     case "mention":
         item = parseToot(data.status)
         item['typeIcon'] = "image://theme/icon-s-retweet"
         item['typeIcon'] = "image://theme/icon-s-alarm"
+        item['type'] = "mention";
         break;
     case "reblog":
         item = parseToot(data.status)
@@ -122,6 +125,8 @@ function parseNotification(data){
 
     item['id'] = data.id
 
+    //WorkerScript.sendMessage({ 'fireNotification': true, "data": item})
+
     return item;
 }
 
@@ -147,6 +152,7 @@ function parseToot (data){
     item['status_reblog'] = data["reblog"] ? true : false
     item['status_content'] = data["content"]
     item['status_created_at'] = item['created_at'] = new Date(data["created_at"]);
+    item['section'] = new Date(data["created_at"]).toLocaleDateString()
     item['status_reblogs_count'] = data["reblogs_count"]
     item['status_favourites_count'] = data["favourites_count"]
     item['status_reblogged'] = data["reblogged"]
@@ -172,56 +178,7 @@ function parseToot (data){
     //item['application_name'] = data["application"]["name"]
     //item['application_website'] = data["application"]["website"]
     // account
-    /*
 
-
-
-    */
-
-
-
-
-
-    /*item['type'] = "";
-    item['retweetScreenName'] = '';
-    item['isVerified'] = false;
-    item['isReblog'] = false;
-    item['favourited'] = data['favourited'];
-    item['reblogged'] = data['reblogged'];
-    item['muted'] = data['muted'];
-    item['status_reblogs_count'] = data['reblogs_count'];
-    item['status_favourites_count'] = data['favourites_count'];
-
-    if(data['id']){
-        item['status_id'] = data['id'];
-    }
-    if(data['created_at']){
-        item['status_created_at'] = data['created_at'];
-    }
-    if(data['account']){
-        item['status_account_id'] = data['account']['id'];
-        item['status_account_username'] = data['account']['acct'];
-        item['status_account_display_name'] = data['account']['display_name'];
-        item['status_account_locked'] = data['account']['locked'];
-        item['status_account_avatar'] = data['account']['avatar'];
-    }
-    if(data['reblog']){
-        item['retweetScreenName'] = data['account']['username'];
-        item['type'] = "reblog";
-        item['reblog_id'] = data['reblog']['id'];
-        item['account_id'] = data['reblog']['account']['id'];
-        item['account_username'] = data['reblog']['account']['username'];
-        item['account_display_name'] = data['reblog']['account']['display_name'];
-        item['account_locked'] = data['reblog']['account']['locked'];
-        item['account_avatar'] = data['reblog']['account']['avatar'];
-
-        item['status_reblogs_count'] = data['reblog']['reblogs_count'];
-        item['status_favourites_count'] = data['reblog']['favourites_count'];
-        item['status_favourited'] = data['reblog']['favourited'];
-        item['status_reblogged'] = data['reblog']['reblogged'];
-        item['status_muted'] = data['reblog']['muted'];
-    }
-    */
     item['content'] = data['content'].replace(/(<([^>]+)>)/ig,"");
     /*for(var i = 0; i < data['tags'].length ; i++){
         var tag = data['tags'][i]['name'];
@@ -240,7 +197,7 @@ function parseToot (data){
     }
     item['content'] = item['content'].join(" ").autoLink()
 
-    console.log(JSON.stringify(item))
+    //console.log(JSON.stringify(item))
 
     return item;
 }

@@ -77,11 +77,30 @@
     </message>
     <message>
         <source>New Toot</source>
-        <translation type="unfinished"></translation>
+        <translation>New</translation>
     </message>
 </context>
 <context>
     <name>MiniStatus</name>
+    <message>
+        <source>boosted</source>
+        <translation>boosted</translation>
+    </message>
+    <message>
+        <source>favourited</source>
+        <translation>favourited</translation>
+    </message>
+    <message>
+        <source>followed you</source>
+        <translation>followed you</translation>
+    </message>
+</context>
+<context>
+    <name>MyList</name>
+    <message>
+        <source>Load more</source>
+        <translation>Load more</translation>
+    </message>
     <message>
         <source>boosted</source>
         <translation type="unfinished">boosted</translation>
@@ -94,12 +113,9 @@
         <source>followed you</source>
         <translation type="unfinished">followed you</translation>
     </message>
-</context>
-<context>
-    <name>MyList</name>
     <message>
-        <source>Load more</source>
-        <translation>Load more</translation>
+        <source>said</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>

@@ -80,6 +80,7 @@ Page {
             id: tlNotifications;
             title: qsTr("Notifications")
             type: "notifications"
+            notifier: true
             mdl: Logic.modelTLnotifications
             width: parent.width
             height: parent.height

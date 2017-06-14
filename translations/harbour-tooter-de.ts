@@ -101,6 +101,22 @@
         <source>Load more</source>
         <translation type="unfinished"></translation>
     </message>
+    <message>
+        <source>boosted</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>favourited</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>followed you</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>said</source>
+        <translation type="unfinished"></translation>
+    </message>
 </context>
 <context>
     <name>Profile</name>
