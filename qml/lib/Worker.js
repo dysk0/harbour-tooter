@@ -83,9 +83,7 @@ function parseNotification(data){
     //console.log(JSON.stringify(data))
     var item = {
         id: data.id,
-        type: data.type,
-        created_at: new Date(data.created_at),
-        section: new Date(data["created_at"]).toLocaleDateString()
+        type: data.type
     };
     switch (item['type']){
     case "mention":
@@ -124,6 +122,8 @@ function parseNotification(data){
     }
 
     item['id'] = data.id
+    item['created_at'] =  new Date(data.created_at)
+    item['section'] =  new Date(data["created_at"]).toLocaleDateString()
 
     //WorkerScript.sendMessage({ 'fireNotification': true, "data": item})
 

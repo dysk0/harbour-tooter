@@ -57,7 +57,7 @@ BackgroundItem {
                 width: Theme.iconSizeSmall
                 height: width
                 smooth: true
-                source: reblog_account_avatar
+                source: typeof reblog_account_avatar !== "undefined" ? reblog_account_avatar : ''
                 visible: typeof status_reblog !== "undefined" && status_reblog
             }
         }
