@@ -45,6 +45,8 @@ ApplicationWindow
         obj.subscribe('confLoaded', function(){
             console.log('confLoaded');
             console.log(JSON.stringify(Logic.conf))
+            if (!Logic.conf['notificationLastID'])
+                Logic.conf['notificationLastID'] = 0;
             if (Logic.conf['instance']) {
                 Logic.api = new Logic.MastodonAPI({ instance: Logic.conf['instance'], api_user_token: "" });
             }

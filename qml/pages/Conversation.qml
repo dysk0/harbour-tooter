@@ -122,7 +122,7 @@ Page {
                     msg.params['spoiler_text'] = warningContent.text
                 }
 
-                worker.sendMessage(msg);                
+                worker.sendMessage(msg);
                 console.log(JSON.stringify(msg));
                 warningContent.text = ""
                 toot.text = ""

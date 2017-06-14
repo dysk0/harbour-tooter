@@ -142,52 +142,7 @@ SilicaListView {
                 console.log(JSON.stringify(messageObject))
             }
             if (messageObject.fireNotification && notifier){
-                console.log(JSON.stringify(messageObject.data.id))
-                var item = messageObject.data
-                item.content = item.content.replace(/(<([^>]+)>)/ig,"").replaceAll("&quot;", "\"")
-                if(notification.replacesId){
-                    notification.replacesId = 0
-                }
-
-                switch (item.type){
-                case "favourite":
-                    notification.urgency = Notification.Normal
-                    notification.timestamp = item.created_at
-                    notification.summary = (item.reblog_account_display_name !== "" ? item.reblog_account_display_name : '@'+item.reblog_account_username) + ' ' + qsTr("favourited")
-                    notification.body = item.content
-                    notification.publish()
-                    break;
-                case "follow":
-                    notification.urgency = Notification.Critical
-                    notification.timestamp = item.created_at
-                    notification.summary = (item.account_display_name !== "" ? item.account_display_name : '@'+item.account_acct)
-                    notification.body = qsTr("followed you")
-                    notification.publish()
-                    break;
-
-                case "reblog":
-                    notification.urgency = Notification.Low
-                    notification.timestamp = item.created_at
-                    notification.summary = (item.account_display_name !== "" ? item.account_display_name : '@'+item.account_acct) + ' ' + qsTr("boosted")
-                    notification.body = item.content
-                    notification.publish()
-                    break;
-                case "mention":
-                    notification.urgency = Notification.Critical
-                    notification.timestamp = item.created_at
-                    notification.summary = (item.account_display_name !== "" ? item.account_display_name : '@'+item.account_acct) + ' ' + qsTr("said")
-                    notification.previewSummary = notification.summary
-                    notification.body = item.content
-                    notification.previewBody = notification.body
-                    notification.publish()
-                    break;
-                default:
-                    console.log(JSON.stringify(messageObject.data))
-                    break;
-                }
-
-
-
+                Logic.notifier(messageObject.data)
             }
 
         }
@@ -205,7 +160,7 @@ SilicaListView {
     }
 
     Timer {
-        triggeredOnStart: true; interval: 5*60*1000; running: true; repeat: true
+        triggeredOnStart: false; interval: 5*60*1000; running: true; repeat: true
         onTriggered: {
             console.log(title + ' ' +Date().toString())
             loadData("prepend")

@@ -13,6 +13,25 @@
     </message>
 </context>
 <context>
+    <name>API</name>
+    <message>
+        <source>favourited</source>
+        <translation type="unfinished">favourited</translation>
+    </message>
+    <message>
+        <source>followed you</source>
+        <translation type="unfinished">followed you</translation>
+    </message>
+    <message>
+        <source>boosted</source>
+        <translation type="unfinished">boosted</translation>
+    </message>
+    <message>
+        <source>said</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
     <name>Browser</name>
     <message>
         <source>Open in Browser</source>
@@ -100,22 +119,6 @@
     <message>
         <source>Load more</source>
         <translation>Load more</translation>
-    </message>
-    <message>
-        <source>boosted</source>
-        <translation type="unfinished">boosted</translation>
-    </message>
-    <message>
-        <source>favourited</source>
-        <translation type="unfinished">favourited</translation>
-    </message>
-    <message>
-        <source>followed you</source>
-        <translation type="unfinished">followed you</translation>
-    </message>
-    <message>
-        <source>said</source>
-        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>

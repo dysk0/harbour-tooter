@@ -110,7 +110,77 @@ Qt.include("Mastodon.js")
 var modelTLhome = Qt.createQmlObject('import QtQuick 2.0; ListModel {   }', Qt.application, 'InternalQmlObject');
 var modelTLpublic = Qt.createQmlObject('import QtQuick 2.0; ListModel {   }', Qt.application, 'InternalQmlObject');
 var modelTLnotifications = Qt.createQmlObject('import QtQuick 2.0; ListModel {   }', Qt.application, 'InternalQmlObject');
+var notificationsList = []
+var notificationGenerator = function(item){
+    var notification;
+    switch (item.urgency){
+    case "normal":
+        notification = Qt.createQmlObject('import org.nemomobile.notifications 1.0; Notification { category: "x-nemo.example"; urgency: Notification.Normal; }', Qt.application, 'InternalQmlObject');
+        break;
+    case "critical":
+        notification = Qt.createQmlObject('import org.nemomobile.notifications 1.0; Notification { category: "x-nemo.example"; urgency: Notification.Critical; }', Qt.application, 'InternalQmlObject');
+        break;
+    default:
+        notification = Qt.createQmlObject('import org.nemomobile.notifications 1.0; Notification { category: "x-nemo.example"; urgency: Notification.Low; }', Qt.application, 'InternalQmlObject');
+    }
+    notification.timestamp = item.timestamp
+    notification.summary = item.summary
+    notification.body = item.body
+    if(item.previewBody)
+        notification.previewBody = item.previewBody;
+    if(item.previewSummary)
+        notification.previewSummary = item.previewSummary;
+    if(notification.replacesId){ notification.replacesId = 0 }
+    notification.publish()
+}
 
+var notifier = function(item){
+
+    item.content = item.content.replace(/(<([^>]+)>)/ig,"").replaceAll("&quot;", "\"")
+
+    var msg;
+    switch (item.type){
+    case "favourite":
+        msg = {
+            urgency: "normal",
+            timestamp: item.created_at,
+            summary: (item.reblog_account_display_name !== "" ? item.reblog_account_display_name : '@'+item.reblog_account_username) + ' ' + qsTr("favourited"),
+            body: item.content
+        }
+        break;
+    case "follow":
+        msg = {
+            urgency: "critical",
+            timestamp: item.created_at,
+            summary: (item.account_display_name !== "" ? item.account_display_name : '@'+item.account_acct),
+            body: qsTr("followed you")
+        }
+        break;
+
+    case "reblog":
+        msg = {
+            urgency: "low",
+            timestamp: item.created_at,
+            summary: (item.account_display_name !== "" ? item.account_display_name : '@'+item.account_acct) + ' ' + qsTr("boosted"),
+            body: item.content
+        }
+        break;
+    case "mention":
+        msg = {
+            urgency: "critical",
+            timestamp: item.created_at,
+            summary: (item.account_display_name !== "" ? item.account_display_name : '@'+item.account_acct) + ' ' + qsTr("said"),
+            body: item.content,
+            previewBody: (item.account_display_name !== "" ? item.account_display_name : '@'+item.account_acct) + ' ' + qsTr("said") + ': ' + item.content
+        }
+        break;
+    default:
+        console.log(JSON.stringify(messageObject.data))
+        return;
+    }
+    conf['notificationLastID'] = item.id
+    notificationGenerator(msg)
+}
 
 var api;
 

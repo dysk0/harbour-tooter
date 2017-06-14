@@ -5,6 +5,15 @@ WorkerScript.onMessage = function(msg) {
     console.log("Mode > " + msg.mode)
     console.log("Conf > " + JSON.stringify(msg.conf))
     console.log("Params > " + JSON.stringify(msg.params))
+
+    // order notifications in ASC order
+    function orderNotifications(items){
+        for (var i = items.length-1; i > 0; i--){
+            if (items[i].id > msg.conf.notificationLastID)
+                WorkerScript.sendMessage({ 'fireNotification': true, "data": items[i]})
+        }
+    }
+
     if (!msg.conf.login){
         console.log("Not loggedin")
         return;
@@ -46,9 +55,13 @@ WorkerScript.onMessage = function(msg) {
         }
         if(msg.model)
             addDataToModel(msg.model, msg.mode, items)
+        if(msg.action === "notifications")
+            orderNotifications(items)
     });
-
 }
+
+
+
 //WorkerScript.sendMessage({ 'notifyNewItems': length - i })
 function addDataToModel (model, mode, items){
     var length = items.length;
@@ -124,9 +137,6 @@ function parseNotification(data){
     item['id'] = data.id
     item['created_at'] =  new Date(data.created_at)
     item['section'] =  new Date(data["created_at"]).toLocaleDateString()
-
-    //WorkerScript.sendMessage({ 'fireNotification': true, "data": item})
-
     return item;
 }
 

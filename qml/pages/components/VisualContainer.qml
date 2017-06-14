@@ -34,9 +34,10 @@ BackgroundItem {
             anchors.fill: parent
             onClicked: {
                 pageStack.push(Qt.resolvedUrl("../Profile.qml"), {
-                                   "displayname": model.status_account_display_name,
-                                   "username": model.status_account_acct,
-                                   "profileImage": model.status_account_avatar
+                                   "displayname": model.account_username,
+                                   "username": model.account_acct,
+                                   "user_id": model.account_id,
+                                   "profileImage": model.account_avatar
                                })
             }
 
@@ -121,7 +122,7 @@ BackgroundItem {
         pageStack.push(Qt.resolvedUrl("../Conversation.qml"), {
                            toot_id: id,
                            title: account_display_name,
-                           description: '@'+account_username,
+                           description: '@'+account_acct,
                            avatar: account_avatar,
                            type: "reply"
                        })
