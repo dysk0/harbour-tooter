@@ -224,7 +224,20 @@ function parseToot (data){
         console.log(tag)
         item['content'] = item['content'].replaceAll('#'+tag, '<a href="#'+tag+'">'+tag+'</a>')
     }*/
-
+    item['attachments'] = [];
+    for(var i = 0; i < data['media_attachments'].length ; i++){
+        var attachments = data['media_attachments'][i];
+        console.log(JSON.stringify(attachments))
+        item['content'] = item['content'].replaceAll(attachments['text_url'], '')
+        item['attachments'].push({
+                                     id: attachments['id'],
+                                     id: attachments['id'],
+                                     type: attachments['type'],
+                                     url: attachments['remote_url'] !=="" ? attachments['remote_url'] : attachments['url'] ,
+                                                                            preview_url: attachments['preview_url']
+                                 })
+    }
+    console.log(JSON.stringify(item['attachments']))
     item['content'] = item['content'].split(" ")
     for(var i = 0; i < item['content'].length ; i++){
         if(item['content'][i][0] === "#"){

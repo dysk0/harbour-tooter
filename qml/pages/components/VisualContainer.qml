@@ -6,7 +6,7 @@ BackgroundItem {
     signal send (string notice)
     signal navigateTo(string link)
     width: parent.width
-    height: miniHeader.height + lblContent.height + Theme.paddingLarge + (ministatus.visible ? ministatus.height : 0) +Theme.paddingLarge
+    height: miniHeader.height + media.height + lblContent.height + Theme.paddingLarge + (ministatus.visible ? ministatus.height : 0) +Theme.paddingLarge
     MiniStatus {
         id: ministatus
         anchors {
@@ -113,6 +113,19 @@ BackgroundItem {
         wrapMode: Text.Wrap
         font.pixelSize: Theme.fontSizeSmall
         color: (pressed ? Theme.highlightColor : (highlight ? Theme.primaryColor : Theme.secondaryColor))
+    }
+    Label {
+        id: media
+        anchors {
+            left: parent.left
+            leftMargin: Theme.paddingMedium
+            right: parent.right
+            rightMargin: Theme.horizontalPageMargin
+            top: lblContent.bottom
+            topMargin: Theme.paddingSmall
+            bottomMargin: Theme.paddingLarge
+        }
+        text: attachments.count + "Aaa"
     }
 
 
