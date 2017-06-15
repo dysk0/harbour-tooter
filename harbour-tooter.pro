@@ -45,6 +45,7 @@ CONFIG += sailfishapp_i18n
 # modify the localized app name in the the .desktop file.
 TRANSLATIONS += \
     translations/harbour-tooter-fr.ts \
+    translations/harbour-tooter-nl.ts \
     translations/harbour-tooter-oc.ts
 
 DISTFILES += \

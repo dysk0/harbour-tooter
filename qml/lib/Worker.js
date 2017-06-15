@@ -39,12 +39,40 @@ WorkerScript.onMessage = function(msg) {
                 if(msg.action === "accounts/search") {
                     item = parseAccounts(data[i]);
                     items.push(item)
+
                 } else if(msg.action === "notifications") {
-                    console.log("Is notification... parsing...")
+                    // notification
+                    //console.log("Is notification... parsing...")
                     item = parseNotification(data[i]);
                     items.push(item)
+
+                } else if(msg.action.indexOf("statuses") >-1 && msg.action.indexOf("context") >-1 && i === "ancestors") {
+                    // status ancestors toots - conversation
+                    console.log("ancestors")
+                    for (var j = 0; j < data[i].length; j ++) {
+                        item = parseToot(data[i][j]);
+                        item['id'] = item['status_id']
+                        items.push(item)
+                        console.log(JSON.stringify(data[i][j]))
+                    }
+                    addDataToModel (msg.model, "prepend", items);
+                    items = [];
+
+                    //console.log(JSON.stringify(i))
+                } else if(msg.action.indexOf("statuses") >-1 && msg.action.indexOf("context") >-1 && i === "descendants") {
+                    // status ancestors toots - conversation
+                    console.log("descendants")
+                    for (var j = 0; j < data[i].length; j ++) {
+                        item = parseToot(data[i][j]);
+                        item['id'] = item['status_id']
+                        items.push(item)
+                        console.log(JSON.stringify(data[i][j]))
+                    }
+                    addDataToModel (msg.model, "append", items);
+                    items = [];
+
                 } else  if (data[i].hasOwnProperty("content")){
-                    console.log("Is toot... parsing...")
+                    //console.log("Is toot... parsing...")
                     item = parseToot(data[i]);
                     item['id'] = item['status_id']
                     items.push(item)
@@ -53,7 +81,7 @@ WorkerScript.onMessage = function(msg) {
                 }
             }
         }
-        if(msg.model)
+        if(msg.model && items.length)
             addDataToModel(msg.model, msg.mode, items)
         if(msg.action === "notifications")
             orderNotifications(items)
@@ -155,6 +183,7 @@ function collect() {
 function parseToot (data){
     //console.log(JSON.stringify(data))
     var item = {};
+    item['highlight'] = false
     item['status_id'] = data["id"]
     item['status_uri'] = data["uri"]
     item['status_in_reply_to_id'] = data["in_reply_to_id"]

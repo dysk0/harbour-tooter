@@ -112,18 +112,21 @@ BackgroundItem {
         linkColor : Theme.highlightColor
         wrapMode: Text.Wrap
         font.pixelSize: Theme.fontSizeSmall
-        color: (pressed ? Theme.highlightColor : Theme.primaryColor)
+        color: (pressed ? Theme.highlightColor : (highlight ? Theme.primaryColor : Theme.secondaryColor))
     }
 
 
 
 
     onClicked: {
+        var m = Qt.createQmlObject('import QtQuick 2.0; ListModel {   }', Qt.application, 'InternalQmlObject');
+        m.append(mdl.get(index))
         pageStack.push(Qt.resolvedUrl("../Conversation.qml"), {
-                           toot_id: id,
+                           toot_id: status_id,
                            title: account_display_name,
                            description: '@'+account_acct,
                            avatar: account_avatar,
+                           mdl: m,
                            type: "reply"
                        })
     }

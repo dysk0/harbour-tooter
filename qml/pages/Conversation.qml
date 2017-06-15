@@ -10,6 +10,7 @@ Page {
     property alias description: header.description
     property alias avatar: header.image
     property int toot_id
+    property ListModel mdl;
 
     WorkerScript {
         id: worker
@@ -21,6 +22,34 @@ Page {
 
     ProfileHeader {
         id: header
+        visible: false
+    }
+    SilicaListView {
+        id: conversationList
+        header: PageHeader {
+            title: qsTr("Conversation")
+        }
+        clip: true;
+        anchors {
+            top: parent.top
+            bottom: panel.top
+            left: parent.left
+            right: parent.right
+        }
+        model: mdl
+        delegate: VisualContainer {}
+        onCountChanged: {
+            for (var i = 0; i < mdl.count; i++){
+                if (mdl.get(i).status_id === toot_id) {
+                    console.log(mdl.get(i).status_id)
+                    positionViewAtIndex(i, ListView.Center )
+                }
+            }
+
+            //last_id_MN
+
+        }
+
     }
 
     DockedPanel {
@@ -57,7 +86,7 @@ Page {
             }
             autoScrollEnabled: true
             labelVisible: false
-            focus: true
+//            focus: true
             text: description !== "" && (description.charAt(0) == '@' || description.charAt(0) == '#') ? description+' '  : ''
             height: implicitHeight
             horizontalAlignment: Text.AlignLeft
@@ -73,8 +102,8 @@ Page {
                 leftMargin: Theme.paddingMedium
             }
             icon.source: "image://theme/icon-s-high-importance?" + (pressed
-                             ? Theme.highlightColor
-                             : (warningContent.visible ? Theme.secondaryHighlightColor : Theme.primaryColor))
+                                                                    ? Theme.highlightColor
+                                                                    : (warningContent.visible ? Theme.secondaryHighlightColor : Theme.primaryColor))
             onClicked: warningContent.visible = !warningContent.visible
         }
         ComboBox {
@@ -95,8 +124,8 @@ Page {
         IconButton {
             id: btnSend
             icon.source: "image://theme/icon-m-enter?" + (pressed
-                                                                    ? Theme.highlightColor
-                                                                    : Theme.primaryColor)
+                                                          ? Theme.highlightColor
+                                                          : Theme.primaryColor)
             anchors {
                 top: toot.bottom
                 right: parent.right
@@ -123,7 +152,6 @@ Page {
                 }
 
                 worker.sendMessage(msg);
-                console.log(JSON.stringify(msg));
                 warningContent.text = ""
                 toot.text = ""
             }
@@ -131,5 +159,12 @@ Page {
     }
     Component.onCompleted: {
         toot.cursorPosition = toot.text.length
+        worker.sendMessage({
+                               'action'    : 'statuses/'+mdl.get(0).status_id+'/context',
+                               'method'    : 'GET',
+                               'model'     : mdl,
+                               'params'    : { },
+                               'conf'      : Logic.conf
+                           });
     }
 }

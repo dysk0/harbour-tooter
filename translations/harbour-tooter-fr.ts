@@ -49,24 +49,28 @@
 <context>
     <name>Conversation</name>
     <message>
+        <source>Conversation</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <source>Content warning!</source>
-        <translation>Contenu sensible !</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>public</source>
-        <translation>public</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>unlisted</source>
-        <translation>non-listé</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>followers only</source>
-        <translation>abonnés uniquement</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>direct</source>
-        <translation>direct</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
