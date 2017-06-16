@@ -5,30 +5,30 @@
     <name></name>
     <message id="Logout">
         <source></source>
-        <translation></translation>
+        <translation>Déconnexion</translation>
     </message>
     <message id="Login">
         <source></source>
-        <translation></translation>
+        <translation>Connexion</translation>
     </message>
 </context>
 <context>
     <name>API</name>
     <message>
         <source>favourited</source>
-        <translation type="unfinished">a ajouté à ses favoris</translation>
+        <translation>a ajouté à ses favoris</translation>
     </message>
     <message>
         <source>followed you</source>
-        <translation type="unfinished">vous suit</translation>
+        <translation>vous suit</translation>
     </message>
     <message>
         <source>boosted</source>
-        <translation type="unfinished">a partagé</translation>
+        <translation>a partagé</translation>
     </message>
     <message>
         <source>said</source>
-        <translation type="unfinished"></translation>
+        <translation>a dit</translation>
     </message>
 </context>
 <context>
@@ -50,27 +50,27 @@
     <name>Conversation</name>
     <message>
         <source>Conversation</source>
-        <translation type="unfinished"></translation>
+        <translation>Conversation</translation>
     </message>
     <message>
         <source>Content warning!</source>
-        <translation type="unfinished"></translation>
+        <translation>Contenu sensible !</translation>
     </message>
     <message>
         <source>public</source>
-        <translation type="unfinished"></translation>
+        <translation>public</translation>
     </message>
     <message>
         <source>unlisted</source>
-        <translation type="unfinished"></translation>
+        <translation>non-listé</translation>
     </message>
     <message>
         <source>followers only</source>
-        <translation type="unfinished"></translation>
+        <translation>abonnés uniquement</translation>
     </message>
     <message>
         <source>direct</source>
-        <translation type="unfinished"></translation>
+        <translation>direct</translation>
     </message>
 </context>
 <context>
@@ -107,15 +107,15 @@
     <name>MiniStatus</name>
     <message>
         <source>boosted</source>
-        <translation type="unfinished">a partagé</translation>
+        <translation>a partagé</translation>
     </message>
     <message>
         <source>favourited</source>
-        <translation type="unfinished">a ajouté à ses favoris</translation>
+        <translation>a ajouté à ses favoris</translation>
     </message>
     <message>
         <source>followed you</source>
-        <translation type="unfinished">vous suit</translation>
+        <translation>vous suit</translation>
     </message>
 </context>
 <context>
