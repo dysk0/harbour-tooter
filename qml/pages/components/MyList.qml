@@ -2,20 +2,9 @@ import QtQuick 2.0
 import Sailfish.Silica 1.0
 import "../../lib/API.js" as Logic
 import "."
-import org.nemomobile.notifications 1.0
 
 
 SilicaListView {
-
-
-
-    Notification {
-        id: notification
-        category: "x-nemo.example"
-        urgency: Notification.Normal
-        onClicked: console.log("Clicked")
-    }
-
     id: myList
     property string type;
     property string title
@@ -86,19 +75,20 @@ SilicaListView {
             }
         }
     }
-    PushUpMenu {
+    /*PushUpMenu {
         MenuItem {
             text: qsTr("Load more")
             onClicked: {
                 loadData("append")
             }
         }
-    }
+    }*/
     clip: true
     section {
         property: 'section'
         delegate: SectionHeader  {
-            text: section
+            height: Theme.itemSizeExtraSmall
+            text: Format.formatDate(section, Formatter.DateMedium)
         }
     }
 
@@ -114,11 +104,29 @@ SilicaListView {
     }
 
     onCountChanged: {
-        contentY = scrollOffset
-        console.log("CountChanged!")
+        loadStarted = false;
+        /*contentY = scrollOffset
+        console.log("CountChanged!")*/
 
-        //last_id_MN
-
+    }
+    footer: Item{
+        width: parent.width
+        height: Theme.itemSizeLarge
+        Button {
+            anchors.horizontalCenter: parent.horizontalCenter
+            anchors.margins: Theme.paddingSmall
+            anchors.bottomMargin: Theme.paddingLarge
+            visible: false
+            onClicked: {
+                loadData("append")
+            }            
+        }
+        BusyIndicator {
+            size: BusyIndicatorSize.Small
+            running: loadStarted;
+            //anchors.verticalCenter: parent.verticalCenter
+            anchors.horizontalCenter: parent.horizontalCenter
+        }
     }
     onContentYChanged: {
 
@@ -126,9 +134,12 @@ SilicaListView {
             openDrawer(false)
 
         } else {
-            if (contentY < 100 && !loadStarted){
-            }
             openDrawer(true)
+        }
+
+        if(contentY+height > footerItem.y && !loadStarted){
+            loadData("append")
+            loadStarted = true;
         }
         scrollOffset = contentY
     }

@@ -122,7 +122,7 @@
     <name>MyList</name>
     <message>
         <source>Load more</source>
-        <translation>Load more</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>

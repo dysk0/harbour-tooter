@@ -21,10 +21,20 @@ WorkerScript.onMessage = function(msg) {
     var API = MastodonAPI({ instance: msg.conf.instance, api_user_token: msg.conf.api_user_token});
     if (msg.method === "POST"){
         API.post(msg.action, msg.params, function(data) {
-            for (var i in data) {
-                if (data.hasOwnProperty(i)) {
-                    console.log(JSON.stringify(data[i]))
-                    WorkerScript.sendMessage({ 'action': msg.action, 'success': true,  key: i, "data": data[i]})
+            if (msg.action === "statuses"){
+                // status posted
+                if(msg.model){
+                var item = parseToot(data);
+                   msg.model.append(item)
+                    msg.model.sync();
+                }
+
+            } else {
+                for (var i in data) {
+                    if (data.hasOwnProperty(i)) {
+                        console.log(JSON.stringify(data[i]))
+                        WorkerScript.sendMessage({ 'action': msg.action, 'success': true,  key: i, "data": data[i]})
+                    }
                 }
             }
         });
@@ -83,8 +93,8 @@ WorkerScript.onMessage = function(msg) {
         }
         if(msg.model && items.length)
             addDataToModel(msg.model, msg.mode, items)
-        if(msg.action === "notifications")
-            orderNotifications(items)
+        /*if(msg.action === "notifications")
+            orderNotifications(items)*/
     });
 }
 
@@ -124,7 +134,8 @@ function parseNotification(data){
     //console.log(JSON.stringify(data))
     var item = {
         id: data.id,
-        type: data.type
+        type: data.type,
+        attachments: []
     };
     switch (item['type']){
     case "mention":
@@ -156,6 +167,7 @@ function parseNotification(data){
         item = parseAccounts(item, "reblog_", data["account"])
         item['content'] = data['account']['note']
         item['typeIcon'] = "image://theme/icon-s-installed"
+        item['attachments'] = []
 
         break;
     default:
@@ -164,7 +176,7 @@ function parseNotification(data){
 
     item['id'] = data.id
     item['created_at'] =  new Date(data.created_at)
-    item['section'] =  new Date(data["created_at"]).toLocaleDateString()
+    item['section'] =  getDate(data["created_at"])
     return item;
 }
 
@@ -180,6 +192,10 @@ function collect() {
     }
     return ret;
 }
+function getDate(dateStr){
+    var ts = new Date(dateStr);
+    return new Date(ts.getFullYear(), ts.getMonth(), ts.getDate(), 0, 0, 0)
+}
 function parseToot (data){
     //console.log(JSON.stringify(data))
     var item = {};
@@ -191,7 +207,7 @@ function parseToot (data){
     item['status_reblog'] = data["reblog"] ? true : false
     item['status_content'] = data["content"]
     item['status_created_at'] = item['created_at'] = new Date(data["created_at"]);
-    item['section'] = new Date(data["created_at"]).toLocaleDateString()
+    item['section'] = getDate(data["created_at"]);
     item['status_reblogs_count'] = data["reblogs_count"]
     item['status_favourites_count'] = data["favourites_count"]
     item['status_reblogged'] = data["reblogged"]
@@ -212,13 +228,13 @@ function parseToot (data){
     } else {
         item = parseAccounts(item, "", data["account"])
     }
-
+    item['content'] = data['content'].replaceAll('</span><span class="invisible">', '').replaceAll('<span class="invisible">', '').replaceAll('</span><span class="ellipsis">', '');
 
     //item['application_name'] = data["application"]["name"]
     //item['application_website'] = data["application"]["website"]
     // account
 
-    item['content'] = data['content'].replace(/(<([^>]+)>)/ig,"");
+    //item['content'] = data['content'].replace(/(<([^>]+)>)/ig,"");
     /*for(var i = 0; i < data['tags'].length ; i++){
         var tag = data['tags'][i]['name'];
         console.log(tag)
@@ -227,7 +243,6 @@ function parseToot (data){
     item['attachments'] = [];
     for(var i = 0; i < data['media_attachments'].length ; i++){
         var attachments = data['media_attachments'][i];
-        console.log(JSON.stringify(attachments))
         item['content'] = item['content'].replaceAll(attachments['text_url'], '')
         item['attachments'].push({
                                      id: attachments['id'],
@@ -237,8 +252,7 @@ function parseToot (data){
                                                                             preview_url: attachments['preview_url']
                                  })
     }
-    console.log(JSON.stringify(item['attachments']))
-    item['content'] = item['content'].split(" ")
+    /*item['content'] = item['content'].split(" ")
     for(var i = 0; i < item['content'].length ; i++){
         if(item['content'][i][0] === "#"){
             item['content'][i] = '<a href="'+item['content'][i]+'">'+item['content'][i]+'</a>';
@@ -247,9 +261,8 @@ function parseToot (data){
             item['content'][i] = '<a href="'+item['content'][i]+'">'+item['content'][i]+'</a>';
         }
     }
-    item['content'] = item['content'].join(" ").autoLink()
+    item['content'] = item['content'].join(" ").autoLink()*/
 
     //console.log(JSON.stringify(item))
-
     return item;
 }
