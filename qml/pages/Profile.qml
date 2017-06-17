@@ -145,7 +145,7 @@ Page {
         }
         clip: true
 
-        model: ListModel {}
+        mdl: ListModel {}
         type: "accounts/"+user_id+"/statuses"
         vars: {}
         conf: Logic.conf

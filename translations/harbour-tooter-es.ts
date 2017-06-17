@@ -5,72 +5,72 @@
     <name></name>
     <message id="Logout">
         <source></source>
-        <translation>Déconnexion</translation>
+        <translation>Cerrar sesión</translation>
     </message>
     <message id="Login">
         <source></source>
-        <translation>Connexion</translation>
+        <translation>Iniciar sesión</translation>
     </message>
 </context>
 <context>
     <name>API</name>
     <message>
         <source>favourited</source>
-        <translation>a ajouté à ses favoris</translation>
+        <translation>favorecido</translation>
     </message>
     <message>
         <source>followed you</source>
-        <translation>vous suit</translation>
+        <translation>te siguió</translation>
     </message>
     <message>
         <source>boosted</source>
-        <translation>a partagé</translation>
+        <translation>Aumentado</translation>
     </message>
     <message>
         <source>said</source>
-        <translation>a dit</translation>
+        <translation>Dijo</translation>
     </message>
 </context>
 <context>
     <name>Browser</name>
     <message>
         <source>Open in Browser</source>
-        <translation>Ouvrir dans le navigateur</translation>
+        <translation>Abrir en el navegador</translation>
     </message>
     <message>
         <source>Web mode</source>
-        <translation>Mode Web</translation>
+        <translation>Modo Web</translation>
     </message>
     <message>
         <source>Reading mode</source>
-        <translation>Mode lecture</translation>
+        <translation>Modo Leyendo</translation>
     </message>
 </context>
 <context>
     <name>Conversation</name>
     <message>
         <source>Conversation</source>
-        <translation>Conversation</translation>
+        <translation>Conversación</translation>
     </message>
     <message>
         <source>Content warning!</source>
-        <translation>Contenu sensible !</translation>
+        <translation>Advertencia de contenido!</translation>
     </message>
     <message>
         <source>public</source>
-        <translation>public</translation>
+        <translation>Público</translation>
     </message>
     <message>
         <source>unlisted</source>
-        <translation>non-listé</translation>
+        <translation>Deslistado</translation>
     </message>
     <message>
         <source>followers only</source>
-        <translation>abonnés uniquement</translation>
+        <translation>Sólo seguidores</translation>
     </message>
     <message>
         <source>direct</source>
-        <translation>direct</translation>
+        <translation>Directo</translation>
     </message>
 </context>
 <context>
@@ -84,111 +84,111 @@
     <name>MainPage</name>
     <message>
         <source>Home</source>
-        <translation>Accueil</translation>
+        <translation>Inicio</translation>
     </message>
     <message>
         <source>Timeline</source>
-        <translation>Fil</translation>
+        <translation>Cronograma</translation>
     </message>
     <message>
         <source>Notifications</source>
-        <translation>Notifications</translation>
+        <translation>Notificaciones</translation>
     </message>
     <message>
         <source>Search</source>
-        <translation>Recherche</translation>
+        <translation>Buscar</translation>
     </message>
     <message>
         <source>New Toot</source>
-        <translation>Nouveau pouet</translation>
+        <translation>Nuevo toot</translation>
     </message>
 </context>
 <context>
     <name>MiniStatus</name>
     <message>
         <source>boosted</source>
-        <translation>a partagé</translation>
+        <translation>Aumentado</translation>
     </message>
     <message>
         <source>favourited</source>
-        <translation>a ajouté à ses favoris</translation>
+        <translation>favorecido</translation>
     </message>
     <message>
         <source>followed you</source>
-        <translation>vous suit</translation>
+        <translation>te siguió</translation>
     </message>
 </context>
 <context>
     <name>MyList</name>
     <message>
         <source>Load more</source>
-        <translation type="unfinished"></translation>
+        <translation>Cargar más</translation>
     </message>
 </context>
 <context>
     <name>Profile</name>
     <message>
         <source>Unfollow</source>
-        <translation>Ne plus suivre</translation>
+        <translation>Dejar de seguir</translation>
     </message>
     <message>
         <source>Follow request sent!</source>
-        <translation>Demande d’abonnement envoyée !</translation>
+        <translation>Seguir la solicitud enviada!</translation>
     </message>
     <message>
         <source>Following</source>
-        <translation>Abonnements</translation>
+        <translation>Siguiendo</translation>
     </message>
     <message>
         <source>Mute</source>
-        <translation>Masquer</translation>
+        <translation>Mudo</translation>
     </message>
     <message>
         <source>Unmute</source>
-        <translation>Ne plus masquer</translation>
+        <translation>Desmudar</translation>
     </message>
     <message>
         <source>Unblock</source>
-        <translation>Débloquer</translation>
+        <translation>Desbloquiar</translation>
     </message>
     <message>
         <source>Block</source>
-        <translation>Bloquer</translation>
+        <translation>Bloquiar</translation>
     </message>
     <message>
         <source>Statuses</source>
-        <translation>Statuts</translation>
+        <translation>Estados</translation>
     </message>
     <message>
         <source>Favourites</source>
-        <translation>Favoris</translation>
+        <translation>Favoritos</translation>
     </message>
     <message>
         <source>Follow</source>
-        <translation>Suivre</translation>
+        <translation>Seguir</translation>
     </message>
     <message>
         <source>Summary</source>
-        <translation>Résumé</translation>
+        <translation>Resumen</translation>
     </message>
     <message>
         <source>Followers</source>
-        <translation>Abonnés</translation>
+        <translation>Seguidores</translation>
     </message>
 </context>
 <context>
     <name>Toot</name>
     <message>
         <source>boosted</source>
-        <translation>a partagé</translation>
+        <translation>aumentado</translation>
     </message>
     <message>
         <source>favourited</source>
-        <translation>a ajouté à ses favoris</translation>
+        <translation>favorecido</translation>
     </message>
     <message>
         <source>followed you</source>
-        <translation>vous suit</translation>
+        <translation>te siguió</translation>
     </message>
 </context>
 </TS>

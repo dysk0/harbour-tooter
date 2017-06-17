@@ -137,6 +137,8 @@ Page {
                 var msg = {
                     'action'    : 'statuses',
                     'method'    : 'POST',
+                    'model'     : mdl,
+                    'mode'     : "append",
                     'params'    : {
                         "status": toot.text,
                         "visibility": visibility[privacy.currentIndex]

@@ -18,7 +18,7 @@ Item {
         visible: type.length
         width: Theme.iconSizeExtraSmall
         height: width
-        source: typeIcon
+        source: typeof typeIcon !== "undefined" ? typeIcon : ""
 
     }
     Label {
@@ -45,7 +45,7 @@ Item {
                 ministatus.visible = false
                 action = type;
             }
-            return '@' + reblog_account_username + ' ' +  action
+            return typeof reblog_account_username !== "undefined" ? '@' + reblog_account_username + ' ' +  action : ''
         }
 
         font.pixelSize: Theme.fontSizeExtraSmall

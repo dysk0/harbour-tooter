@@ -6,7 +6,7 @@ BackgroundItem {
     signal send (string notice)
     signal navigateTo(string link)
     width: parent.width
-    height: miniHeader.height + media.height + lblContent.height + Theme.paddingLarge + (ministatus.visible ? ministatus.height : 0) +Theme.paddingLarge
+    height: miniHeader.height + (attachments && attachments.count ? media.height + Theme.paddingLarge + Theme.paddingMedium: Theme.paddingLarge) + lblContent.height + Theme.paddingLarge + (ministatus.visible ? ministatus.height : 0)
     MiniStatus {
         id: ministatus
         anchors {
@@ -24,6 +24,8 @@ BackgroundItem {
             left: parent.left
             leftMargin: Theme.horizontalPageMargin
         }
+        opacity: status === Image.Ready ? 1.0 : 0.0
+        Behavior on opacity { FadeAnimator {} }
         asynchronous: true
         width: Theme.iconSizeMedium
         height: width
@@ -58,6 +60,8 @@ BackgroundItem {
                 width: Theme.iconSizeSmall
                 height: width
                 smooth: true
+                opacity: status === Image.Ready ? 1.0 : 0.0
+                Behavior on opacity { FadeAnimator {} }
                 source: typeof reblog_account_avatar !== "undefined" ? reblog_account_avatar : ''
                 visible: typeof status_reblog !== "undefined" && status_reblog
             }
@@ -107,25 +111,37 @@ BackgroundItem {
 
 
         }
-        text: content
-        textFormat: Text.StyledText
+        text: content.replace(new RegExp("<a ", 'g'), '<a style="text-decoration: none; color:'+Theme.highlightColor+'" ')
+        textFormat: Text.RichText
         linkColor : Theme.highlightColor
         wrapMode: Text.Wrap
         font.pixelSize: Theme.fontSizeSmall
-        color: (pressed ? Theme.highlightColor : (highlight ? Theme.primaryColor : Theme.secondaryColor))
+        color: (pressed ? Theme.highlightColor : (!highlight ? Theme.primaryColor : Theme.secondaryColor))
     }
-    Label {
+    MediaBlock {
         id: media
         anchors {
-            left: parent.left
-            leftMargin: Theme.paddingMedium
-            right: parent.right
-            rightMargin: Theme.horizontalPageMargin
+            left: lblContent.left
+            right: lblContent.right
             top: lblContent.bottom
             topMargin: Theme.paddingSmall
             bottomMargin: Theme.paddingLarge
         }
-        text: attachments.count + "Aaa"
+        model: typeof attachments !== "undefined" ? attachments : []
+        height: 100
+        Rectangle {
+            anchors.fill: parent
+            color: Theme.highlightDimmerColor
+            visible: status_sensitive
+            Image {
+                source: "image://theme/icon-l-attention?"+Theme.highlightColor
+                anchors.centerIn: parent
+            }
+            MouseArea {
+                anchors.fill: parent
+                onClicked: parent.visible = false;
+            }
+        }
     }
 
 
@@ -142,5 +158,8 @@ BackgroundItem {
                            mdl: m,
                            type: "reply"
                        })
+    }
+    onPressAndHold: {
+        console.log(lblContent.text)
     }
 }

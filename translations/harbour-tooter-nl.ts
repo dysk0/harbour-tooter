@@ -5,11 +5,11 @@
     <name></name>
     <message id="Logout">
         <source></source>
-        <translation>Uitloggen</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message id="Login">
         <source></source>
-        <translation>Inloggen</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -122,7 +122,7 @@
     <name>MyList</name>
     <message>
         <source>Load more</source>
-        <translation>Meer laden</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>

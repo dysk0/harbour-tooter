@@ -5,6 +5,7 @@
     <name></name>
     <message id="Logout">
         <source></source>
+
         <translation>Se desconnectar</translation>
     </message>
     <message id="Login">
@@ -122,7 +123,7 @@
     <name>MyList</name>
     <message>
         <source>Load more</source>
-        <translation>Cargar mai</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
