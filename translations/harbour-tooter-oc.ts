@@ -5,30 +5,31 @@
     <name></name>
     <message id="Logout">
         <source></source>
-        <translation type="unfinished"></translation>
+
+        <translation>Se desconnectar</translation>
     </message>
     <message id="Login">
         <source></source>
-        <translation type="unfinished"></translation>
+        <translation>Connexion</translation>
     </message>
 </context>
 <context>
     <name>API</name>
     <message>
         <source>favourited</source>
-        <translation type="unfinished">a mes en favorit</translation>
+        <translation>a mes en favorit</translation>
     </message>
     <message>
         <source>followed you</source>
-        <translation type="unfinished">vos sèc</translation>
+        <translation>vos sèc</translation>
     </message>
     <message>
         <source>boosted</source>
-        <translation type="unfinished">a tornat partejar</translation>
+        <translation>a tornat partejar</translation>
     </message>
     <message>
         <source>said</source>
-        <translation type="unfinished"></translation>
+        <translation>a dich</translation>
     </message>
 </context>
 <context>
@@ -50,27 +51,27 @@
     <name>Conversation</name>
     <message>
         <source>Conversation</source>
-        <translation type="unfinished"></translation>
+        <translation>Conversacion</translation>
     </message>
     <message>
         <source>Content warning!</source>
-        <translation type="unfinished"></translation>
+        <translation>Contengut sensible !</translation>
     </message>
     <message>
         <source>public</source>
-        <translation type="unfinished"></translation>
+        <translation>public</translation>
     </message>
     <message>
         <source>unlisted</source>
-        <translation type="unfinished"></translation>
+        <translation>pas listat</translation>
     </message>
     <message>
         <source>followers only</source>
-        <translation type="unfinished"></translation>
+        <translation>seguidors solament</translation>
     </message>
     <message>
         <source>direct</source>
-        <translation type="unfinished"></translation>
+        <translation>dirècte</translation>
     </message>
 </context>
 <context>
@@ -107,15 +108,15 @@
     <name>MiniStatus</name>
     <message>
         <source>boosted</source>
-        <translation type="unfinished">a tornat partejar</translation>
+        <translation>a tornat partejar</translation>
     </message>
     <message>
         <source>favourited</source>
-        <translation type="unfinished">a mes en favorit</translation>
+        <translation>a mes en favorit</translation>
     </message>
     <message>
         <source>followed you</source>
-        <translation type="unfinished">vos sèc</translation>
+        <translation>vos sèc</translation>
     </message>
 </context>
 <context>
