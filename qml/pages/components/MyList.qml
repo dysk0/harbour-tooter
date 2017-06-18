@@ -124,7 +124,7 @@ SilicaListView {
         BusyIndicator {
             size: BusyIndicatorSize.Small
             running: loadStarted;
-            //anchors.verticalCenter: parent.verticalCenter
+            anchors.verticalCenter: parent.verticalCenter
             anchors.horizontalCenter: parent.horizontalCenter
         }
     }

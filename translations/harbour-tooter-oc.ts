@@ -5,7 +5,6 @@
     <name></name>
     <message id="Logout">
         <source></source>
-
         <translation>Se desconnectar</translation>
     </message>
     <message id="Login">

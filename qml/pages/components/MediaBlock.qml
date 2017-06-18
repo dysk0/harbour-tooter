@@ -87,11 +87,6 @@ Item {
                 return false
             }
         }
-        Image {
-            visible: model.count && (model.get(0).type === "video" || model.get(0).type === "gifv")
-            anchors.centerIn: parent
-            source: "image://theme/icon-l-play"
-        }
     }
     MyImage {
         id: placeholder2

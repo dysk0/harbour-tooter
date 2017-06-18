@@ -88,8 +88,30 @@ BackgroundItem {
         }
         height: content.length ? paintedHeight : 0
         onLinkActivated: {
+            var test = link.split("/")
             console.log(link)
-            if (link[0] === "@") {
+            console.log(JSON.stringify(test))
+            console.log(JSON.stringify(test.length))
+
+            if (test.length === 5 && (test[3] === "tags" || test[3] === "tag") ) {
+                pageStack.pop(pageStack.find(function(page) {
+                    var check = page.isFirstPage === true;
+                    if (check)
+                        page.onLinkActivated(link)
+                    return check;
+                }));
+                send(link)
+            } else if (test.length === 4 && test[3][0] === "@" ) {
+                pageStack.push(Qt.resolvedUrl("../Profile.qml"), {
+                                   "name": "",
+                                   "username": test[3].substring(1),
+                                   "profileImage": ""
+                               })
+            } else {
+                pageStack.push(Qt.resolvedUrl("Browser.qml"), {"href" : href})
+            }
+
+            /*if (link[0] === "@") {
                 pageStack.push(Qt.resolvedUrl("../Profile.qml"), {
                                    "name": "",
                                    "username": link.substring(1),
@@ -97,17 +119,10 @@ BackgroundItem {
                                })
             } else if (link[0] === "#") {
 
-                pageStack.pop(pageStack.find(function(page) {
-                    var check = page.isFirstPage === true;
-                    if (check)
-                        page.onLinkActivated(link)
-                    return check;
-                }));
 
-                send(link)
             } else {
                 pageStack.push(Qt.resolvedUrl("../Browser.qml"), {"href" : link})
-            }
+            }*/
 
 
         }
@@ -129,19 +144,6 @@ BackgroundItem {
         }
         model: typeof attachments !== "undefined" ? attachments : []
         height: 100
-        Rectangle {
-            anchors.fill: parent
-            color: Theme.highlightDimmerColor
-            visible: status_sensitive
-            Image {
-                source: "image://theme/icon-l-attention?"+Theme.highlightColor
-                anchors.centerIn: parent
-            }
-            MouseArea {
-                anchors.fill: parent
-                onClicked: parent.visible = false;
-            }
-        }
     }
 
 

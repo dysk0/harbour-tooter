@@ -107,6 +107,10 @@ Page {
                     focus = false
                 }
             }
+            ViewPlaceholder {
+                                enabled: Logic.modelTLsearch.count === 0
+                                text: "Not implemented"
+                            }
         }
 
     }
@@ -155,7 +159,12 @@ Page {
     }
 
     function onLinkActivated(href){
-        if (href[0] === '#' || href[0] === '@' ) {
+        var test = href.split("/")
+        console.log(href)
+        console.log(JSON.stringify(test))
+        console.log(JSON.stringify(test.length))
+        if (test.length === 5 && (test[3] === "tags" || test[3] === "tag") ) {
+            tlSearch.search = "#"+test[4]
             slideshow.positionViewAtIndex(3, ListView.SnapToItem)
             navigation.navigateTo('search')
 
