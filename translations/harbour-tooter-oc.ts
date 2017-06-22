@@ -24,7 +24,7 @@
     </message>
     <message>
         <source>boosted</source>
-        <translation>a tornat partejar</translation>
+        <translation>a partejat</translation>
     </message>
     <message>
         <source>said</source>
