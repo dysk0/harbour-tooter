@@ -37,6 +37,13 @@ Page {
             right: parent.right
         }
         model: mdl
+        section {
+            property: 'section'
+            delegate: SectionHeader  {
+                height: Theme.itemSizeExtraSmall
+                text: Format.formatDate(section, Formatter.DateMedium)
+            }
+        }
         delegate: VisualContainer {}
         onCountChanged: {
             for (var i = 0; i < mdl.count; i++){
@@ -55,6 +62,12 @@ Page {
     DockedPanel {
         id: panel
         open: true
+        onExpandedChanged: {
+            if (!expanded) {
+                show()
+            }
+        }
+
         width: parent.width
         height: toot.height + btnContentWarning.height + Theme.paddingMedium + (warningContent.visible ? warningContent.height : 0)
         dock: Dock.Bottom

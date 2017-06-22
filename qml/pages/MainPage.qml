@@ -87,11 +87,21 @@ Page {
             onOpenDrawer:  infoPanel.open = setDrawer
         }
         MyList{
-            property string search;
             id: tlSearch;
+            property string search;
+            onSearchChanged: {
+                mdl = Qt.createQmlObject('import QtQuick 2.0; ListModel {   }', Qt.application, 'InternalQmlObject');
+                if (search[0] === "#") {
+                    tlSearch.type = "timelines/tag/"+search.substring(1)
+                    loadData("append")
+                }
+            }
+            onTypeChanged: {
+                console.log("type changed")
+            }
             title: qsTr("Search")
-            type: "search"
-            mdl: Logic.modelTLsearch
+            type: ""
+            mdl: ListModel {}
             width: parent.width
             height: parent.height
             onOpenDrawer:  infoPanel.open = setDrawer
@@ -108,8 +118,8 @@ Page {
                 }
             }
             ViewPlaceholder {
-                                enabled: Logic.modelTLsearch.count === 0
-                                text: "Not implemented"
+                                enabled: tlSearch.mdl === 0
+                                text: "Only #hastag search works"
                             }
         }
 
@@ -164,7 +174,7 @@ Page {
         console.log(JSON.stringify(test))
         console.log(JSON.stringify(test.length))
         if (test.length === 5 && (test[3] === "tags" || test[3] === "tag") ) {
-            tlSearch.search = "#"+test[4]
+            tlSearch.search = "#"+decodeURIComponent(test[4])
             slideshow.positionViewAtIndex(3, ListView.SnapToItem)
             navigation.navigateTo('search')
 

@@ -1,12 +1,13 @@
-import QtQuick 2.0
+import QtQuick 2.2
 import Sailfish.Silica 1.0
 
 BackgroundItem {
+
     id: delegate
     signal send (string notice)
     signal navigateTo(string link)
     width: parent.width
-    height: miniHeader.height + (attachments && attachments.count ? media.height + Theme.paddingLarge + Theme.paddingMedium: Theme.paddingLarge) + lblContent.height + Theme.paddingLarge + (ministatus.visible ? ministatus.height : 0)
+    height: mnu.height +  miniHeader.height + (typeof attachments !== "undefined" && attachments.count ? media.height + Theme.paddingLarge + Theme.paddingMedium: Theme.paddingLarge) + lblContent.height + Theme.paddingLarge + (ministatus.visible ? ministatus.height : 0)
     MiniStatus {
         id: ministatus
         anchors {
@@ -108,25 +109,14 @@ BackgroundItem {
                                    "profileImage": ""
                                })
             } else {
-                pageStack.push(Qt.resolvedUrl("Browser.qml"), {"href" : href})
+                pageStack.push(Qt.resolvedUrl("../Browser.qml"), {"href" : link})
             }
 
-            /*if (link[0] === "@") {
-                pageStack.push(Qt.resolvedUrl("../Profile.qml"), {
-                                   "name": "",
-                                   "username": link.substring(1),
-                                   "profileImage": ""
-                               })
-            } else if (link[0] === "#") {
 
-
-            } else {
-                pageStack.push(Qt.resolvedUrl("../Browser.qml"), {"href" : link})
-            }*/
 
 
         }
-        text: content.replace(new RegExp("<a ", 'g'), '<a style="text-decoration: none; color:'+Theme.highlightColor+'" ')
+        text: content.replace(new RegExp("<a ", 'g'), '<a style="text-decoration: none; color:'+(pressed ?  Theme.secondaryColor : Theme.highlightColor)+'" ')
         textFormat: Text.RichText
         linkColor : Theme.highlightColor
         wrapMode: Text.Wrap
@@ -145,6 +135,16 @@ BackgroundItem {
         model: typeof attachments !== "undefined" ? attachments : []
         height: 100
     }
+    ContextMenu {
+        id: mnu
+                    MenuItem {
+                        text: "Toggle bold font"
+                    }
+                    MenuItem {
+                        text: "Remove"
+                        onClicked: model.remove(model.index)
+                    }
+                }
 
 
 
@@ -163,5 +163,9 @@ BackgroundItem {
     }
     onPressAndHold: {
         console.log(lblContent.text)
+        mnu.show(delegate)
+    }
+    onDoubleClicked: {
+        console.log("double click")
     }
 }

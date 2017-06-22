@@ -1,4 +1,4 @@
-import QtQuick 2.0
+import QtQuick 2.2
 import Sailfish.Silica 1.0
 import "../../lib/API.js" as Logic
 import "."
@@ -23,6 +23,7 @@ SilicaListView {
     onNotify: {
         console.log(what + " - " + num)
     }
+
 
 
     signal openDrawer (bool setDrawer)
@@ -92,7 +93,8 @@ SilicaListView {
         }
     }
 
-    delegate: VisualContainer {} //Toot {}
+    delegate: VisualContainer {
+    } //Toot {}
 
     add: Transition {
         NumberAnimation { property: "opacity"; from: 0; to: 1.0; duration: 800 }
@@ -160,14 +162,7 @@ SilicaListView {
     }
 
     Component.onCompleted: {
-        var msg = {
-            'action'    : type,
-            'params'    : [ ],
-            'model'     : model,
-            'mode'      : "append",
-            'conf'      : Logic.conf
-        };
-        worker.sendMessage(msg);
+        loadData("prepend")
     }
 
     Timer {
@@ -193,6 +188,7 @@ SilicaListView {
             'mode'      : mode,
             'conf'      : Logic.conf
         };
-        worker.sendMessage(msg);
+        if (type !== "")
+            worker.sendMessage(msg);
     }
 }

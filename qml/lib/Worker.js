@@ -75,6 +75,8 @@ WorkerScript.onMessage = function(msg) {
                     for (var j = 0; j < data[i].length; j ++) {
                         item = parseToot(data[i][j]);
                         item['id'] = item['status_id']
+                        if (typeof item['attachments'] === "undefined")
+                            item['attachments'] = [];
                         items.push(item)
                         console.log(JSON.stringify(data[i][j]))
                     }

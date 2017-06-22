@@ -68,7 +68,7 @@ Page {
                 if ( xhr.status === 200 ) {
                     console.log(xhr.responseText)
                     var response = JSON.parse(xhr.responseText);
-                    if (response.date_published)
+                    //if (response.date_published)
                         //articleDate = new Date(response.date_published.replace(/^(\w+) (\w+) (\d+) ([\d:]+) \+0000 (\d+)$/,"$1, $2 $3 $5 $4 GMT"));
                         if (response.title)
                             articleTitle = response.title;

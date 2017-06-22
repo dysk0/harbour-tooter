@@ -16,3 +16,6 @@
 - Toot rendering reverted to the HTML
 - Translations added: FR, NL, OC, ES
 
+* Tue Jun 20 2017 Dusko Angirevic <dysko@me.com> 0.1.6-1
+- Hashtag search added
+- Coversation with sections

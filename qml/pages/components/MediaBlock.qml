@@ -17,8 +17,10 @@ Item {
             }
             //console.log(JSON.stringify(model.get(0)))
         }
-
-        switch(model.count){
+        var count = 0
+        if (model && model.count)
+            count = model.count
+        switch(count){
         case 1:
             placeholder1.width = holder.width
             placeholder1.height = placeholder1.width*hRatio

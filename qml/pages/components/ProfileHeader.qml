@@ -41,7 +41,7 @@ Item {
     }
     Column {
         anchors {
-            left: icon.left
+            left: icon.right
             leftMargin: Theme.paddingLarge
             right: parent.right
             rightMargin: Theme.paddingLarge
