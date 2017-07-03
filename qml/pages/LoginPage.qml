@@ -137,9 +137,12 @@ Page {
         opacity: 0
         onLoadingChanged: {
             console.log(url)
-            if ((url+"").substr(0, 37) === 'http://localhost/harbour-tooter?code=') {
+            if (
+                    (url+"").substr(0, 37) === 'http://localhost/harbour-tooter?code=' ||
+                    (url+"").substr(0, 38) === 'https://localhost/harbour-tooter?code='
+             ) {
                 visible = false;
-                var authCode = (url+"").substr(37)
+                var authCode = (url+"").substr(-64)
                 console.log(authCode)
 
                 Logic.api.getAccessTokenFromAuthCode(
