@@ -1,5 +1,6 @@
 import QtQuick 2.2
 import Sailfish.Silica 1.0
+import "../../lib/API.js" as Logic
 
 BackgroundItem {
 
@@ -43,6 +44,19 @@ BackgroundItem {
                                    "profileImage": model.account_avatar
                                })
             }
+
+        }
+        Image {
+            id: iconTR
+            anchors {
+                top: avatar.bottom
+                topMargin: Theme.paddingMedium
+                left: avatar.left
+            }
+            visible: typeof status_reblogged !== "undefined" && status_reblogged
+            width: Theme.iconSizeExtraSmall
+            height: width
+            source: "image://theme/icon-s-retweet"
 
         }
         Rectangle {
@@ -137,14 +151,37 @@ BackgroundItem {
     }
     ContextMenu {
         id: mnu
-                    MenuItem {
-                        text: "Toggle bold font"
-                    }
-                    MenuItem {
-                        text: "Remove"
-                        onClicked: model.remove(model.index)
-                    }
-                }
+        MenuItem {
+            visible: model.type === "retoot" || model.type === "toot"
+            text: typeof status_reblogged !== "undefined" && status_reblogged ? qsTr("Unboost") : qsTr("Boost")
+            onClicked: {
+                var reblogged = typeof status_reblogged !== "undefined" && status_reblogged
+                worker.sendMessage({
+                                       "conf"   : Logic.conf,
+                                       "params" : [],
+                                       "method" : "POST",
+                                       //"bgAction": true,
+                                       "action" : "statuses/"+model.status_id+"/" + (reblogged ? "unreblog" : "reblog")
+                                   })
+                model['status_reblogged'] = !reblogged
+            }
+        }
+        MenuItem {
+            visible: model.type === "retoot" || model.type === "toot"
+            text: typeof status_favourited !== "undefined" && status_favourited ? qsTr("Unfavorite") : qsTr("Favorite")
+            onClicked: {
+                var favourited = typeof status_favourited !== "undefined" && status_favourited
+                worker.sendMessage({
+                                       "conf"   : Logic.conf,
+                                       "params" : [],
+                                       "method" : "POST",
+                                       //"bgAction": true,
+                                       "action" : "statuses/"+model.status_id+"/" + (favourited ? "unfavourite" : "favourite")
+                                   })
+                model['status_favourited'] = !favourited
+            }
+        }
+    }
 
 
 
@@ -162,7 +199,7 @@ BackgroundItem {
                        })
     }
     onPressAndHold: {
-        console.log(lblContent.text)
+        console.log(model['status_reblogged'])
         mnu.show(delegate)
     }
     onDoubleClicked: {

@@ -31,6 +31,9 @@ OTHER_FILES += qml/harbour-tooter.qml \
     rpm/harbour-tooter.spec \
     rpm/harbour-tooter.yaml \
     translations/*.ts \
+    qml/pages/components/VisualContainer.qml \
+    qml/pages/components/MiniStatus.qml \
+    qml/pages/components/MiniHeader.qml \
     harbour-tooter.desktop
 
 SAILFISHAPP_ICONS = 86x86 108x108 128x128 256x256
@@ -58,7 +61,4 @@ DISTFILES += \
     qml/images/verified.svg \
     qml/lib/Mastodon.js \
     qml/lib/Worker.js \
-    qml/images/boosted.svg \
-    qml/pages/components/VisualContainer.qml \
-    qml/pages/components/MiniStatus.qml \
-    qml/pages/components/MiniHeader.qml
+    qml/images/boosted.svg

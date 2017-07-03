@@ -45,10 +45,13 @@ Item {
 
             placeholder1.width = holder.width - Theme.paddingSmall - Theme.itemSizeLarge;
             placeholder1.height = Theme.itemSizeLarge*2+Theme.paddingSmall
+            holder.height = placeholder1.height
 
             placeholder2.width = Theme.itemSizeLarge;
-            placeholder2.height = placeholder2.width
-            placeholder2.x = placeholder1.x + placeholder1.width + Theme.paddingSmall;
+            placeholder3.height = placeholder3.width = placeholder2.height = placeholder2.width
+            placeholder3.x = placeholder2.x = placeholder1.x + placeholder1.width + Theme.paddingSmall;
+            placeholder3.y = placeholder2.y + placeholder2.height + Theme.paddingSmall;
+
             break;
         case 4:
             placeholder1.visible = true;
@@ -67,6 +70,7 @@ Item {
             break;
         default:
             holder.height = 0
+            placeholder1.visible = placeholder2.visible = placeholder3.visible = placeholder4.visible = false;
         }
     }
 

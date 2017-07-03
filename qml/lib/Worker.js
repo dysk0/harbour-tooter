@@ -14,18 +14,20 @@ WorkerScript.onMessage = function(msg) {
         }
     }
 
-    if (!msg.conf.login){
+    if (!msg.conf || !msg.conf.login){
         console.log("Not loggedin")
         return;
     }
     var API = MastodonAPI({ instance: msg.conf.instance, api_user_token: msg.conf.api_user_token});
     if (msg.method === "POST"){
         API.post(msg.action, msg.params, function(data) {
-            if (msg.action === "statuses"){
+            if (msg.bgAction){
+                console.log(JSON.stringify(data))
+            } else if (msg.action === "statuses"){
                 // status posted
                 if(msg.model){
-                var item = parseToot(data);
-                   msg.model.append(item)
+                    var item = parseToot(data);
+                    msg.model.append(item)
                     msg.model.sync();
                 }
 
@@ -201,6 +203,7 @@ function getDate(dateStr){
 function parseToot (data){
     //console.log(JSON.stringify(data))
     var item = {};
+    item['type'] = "toot"
     item['highlight'] = false
     item['status_id'] = data["id"]
     item['status_uri'] = data["uri"]
