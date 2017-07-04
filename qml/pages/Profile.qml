@@ -14,6 +14,7 @@ Page {
     property int following_count;
     property int followers_count;
     property int favourites_count;
+    property int reblogs_count;
     property int count_moments;
     property string profile_background : "";
     property string note: "";

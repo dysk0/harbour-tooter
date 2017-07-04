@@ -132,18 +132,15 @@ SilicaListView {
     }
     onContentYChanged: {
 
-        if (contentY > scrollOffset) {
-            openDrawer(false)
-
-        } else {
-            openDrawer(true)
+        if (Math.abs(contentY - scrollOffset) > Theme.itemSizeMedium) {
+            openDrawer(contentY - scrollOffset  > 0 ? false : true )
+            scrollOffset = contentY
         }
 
         if(contentY+height > footerItem.y && !loadStarted){
             loadData("append")
             loadStarted = true;
         }
-        scrollOffset = contentY
     }
     VerticalScrollDecorator {}
 

@@ -153,7 +153,7 @@ var notifier = function(item){
         msg = {
             urgency: "critical",
             timestamp: item.created_at,
-            summary: (item.account_display_name !== "" ? item.account_display_name : '@'+item.account_acct),
+            summary: (item.account_display_name !== "" ? item.account_display_name : '@'+item.account_username),
             body: qsTr("followed you")
         }
         break;
@@ -162,7 +162,7 @@ var notifier = function(item){
         msg = {
             urgency: "low",
             timestamp: item.created_at,
-            summary: (item.account_display_name !== "" ? item.account_display_name : '@'+item.account_acct) + ' ' + qsTr("boosted"),
+            summary: (item.account_display_name !== "" ? item.account_display_name : '@'+item.account_username) + ' ' + qsTr("boosted"),
             body: item.content
         }
         break;
@@ -170,16 +170,15 @@ var notifier = function(item){
         msg = {
             urgency: "critical",
             timestamp: item.created_at,
-            summary: (item.account_display_name !== "" ? item.account_display_name : '@'+item.account_acct) + ' ' + qsTr("said"),
+            summary: (item.account_display_name !== "" ? item.account_display_name : '@'+item.account_username) + ' ' + qsTr("said"),
             body: item.content,
-            previewBody: (item.account_display_name !== "" ? item.account_display_name : '@'+item.account_acct) + ' ' + qsTr("said") + ': ' + item.content
+            previewBody: (item.account_display_name !== "" ? item.account_display_name : '@'+item.account_username) + ' ' + qsTr("said") + ': ' + item.content
         }
         break;
     default:
         console.log(JSON.stringify(messageObject.data))
         return;
     }
-    conf['notificationLastID'] = item.id
     notificationGenerator(msg)
 }
 

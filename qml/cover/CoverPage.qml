@@ -33,10 +33,64 @@ import Sailfish.Silica 1.0
 import "../lib/API.js" as Logic
 
 CoverBackground {
+    onStatusChanged: {
+        switch (status ){
+        case PageStatus.Activating:
+            console.log("PageStatus.Activating")
+            timer.triggered()
+            break;
+        case PageStatus.Inactive:
+            timer.triggered()
+            console.log("PageStatus.Inactive")
+            break;
+        }
+    }
+    Image {
+        id: bg
+        anchors {
+            bottom : parent.bottom
+            left: parent.left
+        }
+
+        source: "../images/tooter.svg"
+    }
+    Timer {
+        id: timer
+        interval: 60*1000
+        triggeredOnStart: true
+        repeat: true
+        onTriggered: checkNotifications();
+    }
+
+    Image {
+        id: iconNot
+        anchors {
+            left: parent.left
+            top: parent.top
+            leftMargin: Theme.paddingLarge
+            topMargin: Theme.paddingLarge
+        }
+        source: "image://theme/icon-s-alarm?" + Theme.highlightColor
+    }
     Label {
-        id: label
-        anchors.centerIn: parent
-        text: qsTr("Tooter")
+        id: notificationsLbl
+        anchors {
+            left: iconNot.right
+            leftMargin: Theme.paddingMedium
+            verticalCenter: iconNot.verticalCenter
+        }
+        text: " "
+        color: Theme.highlightColor
+    }
+
+    Label {
+        anchors {
+            right: parent.right
+            rightMargin: Theme.paddingLarge
+            verticalCenter: iconNot.verticalCenter
+        }
+        text: "Tooter"
+        color: Theme.primaryColor
     }
 
     /*CoverActionList {
@@ -53,5 +107,23 @@ CoverBackground {
             iconSource: "image://theme/icon-cover-pause"
         }
     }*/
+    function checkNotifications(){
+        console.log("checkNotifications")
+        var notificationsNum = 0
+        var notificationLastID = Logic.conf.notificationLastID;
+        //Logic.conf.notificationLastID = 0;
+        for(var i = 0; i < Logic.modelTLnotifications.count; i++) {
+            if (notificationLastID < Logic.modelTLnotifications.get(i).id) {
+                notificationLastID = Logic.modelTLnotifications.get(i).id
+            }
+
+            if (Logic.conf.notificationLastID < Logic.modelTLnotifications.get(i).id) {
+                notificationsNum++
+                Logic.notifier(Logic.modelTLnotifications.get(i))
+            }
+        }
+        notificationsLbl.text = notificationsNum;
+        Logic.conf.notificationLastID = notificationLastID;
+    }
 }
 

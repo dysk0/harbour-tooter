@@ -213,10 +213,10 @@ function parseToot (data){
     item['status_content'] = data["content"]
     item['status_created_at'] = item['created_at'] = new Date(data["created_at"]);
     item['section'] = getDate(data["created_at"]);
-    item['status_reblogs_count'] = data["reblogs_count"]
-    item['status_favourites_count'] = data["favourites_count"]
-    item['status_reblogged'] = data["reblogged"]
-    item['status_favourited'] = data["favourited"]
+    item['reblogs_count'] = data["reblogs_count"]
+    item['favourites_count'] = data["favourites_count"]
+    item['reblogged'] = data["reblogged"]
+    item['favourited'] = data["favourited"]
     item['status_sensitive'] = data["sensitive"]
     item['status_spoiler_text'] = data["spoiler_text"]
     item['status_visibility'] = data["visibility"]

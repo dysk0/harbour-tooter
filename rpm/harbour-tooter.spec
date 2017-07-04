@@ -13,7 +13,7 @@ Name:       harbour-tooter
 %{!?qtc_make:%define qtc_make make}
 %{?qtc_builddir:%define _builddir %qtc_builddir}
 Summary:    Tooter
-Version:    0.1.6
+Version:    0.1.8
 Release:    1
 Group:      Qt/Qt
 License:    LICENSE
@@ -28,7 +28,7 @@ BuildRequires:  pkgconfig(Qt5Quick)
 BuildRequires:  desktop-file-utils
 
 %description
-Short description of my Sailfish OS Application
+Tooter is native client for Mastodon network instances.
 
 
 %prep

@@ -18,4 +18,14 @@
 
 * Tue Jun 20 2017 Dusko Angirevic <dysko@me.com> 0.1.6-1
 - Hashtag search added
-- Coversation with sections
+- Conversation with sections
+
+* Tue July 4 2017 Dusko Angirevic <dysko@me.com> 0.1.7-0
+- Added spoiler support for toots
+- Press and hold for boost and favorite option
+- Updated harbour-tooter-es.ts by Caballlero
+- Unable to connect to unixcorn.xyz [#12] [bugfix]
+
+* Tue July 4 2017 Dusko Angirevic <dysko@me.com> 0.1.8-0
+- Added notifications
+- App Cover redesigned

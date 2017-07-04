@@ -46,6 +46,7 @@ BackgroundItem {
             }
 
         }
+
         Image {
             id: iconTR
             anchors {
@@ -57,7 +58,6 @@ BackgroundItem {
             width: Theme.iconSizeExtraSmall
             height: width
             source: "image://theme/icon-s-retweet"
-
         }
         Rectangle {
             color: Theme.highlightDimmerColor
@@ -125,10 +125,6 @@ BackgroundItem {
             } else {
                 pageStack.push(Qt.resolvedUrl("../Browser.qml"), {"href" : link})
             }
-
-
-
-
         }
         text: content.replace(new RegExp("<a ", 'g'), '<a style="text-decoration: none; color:'+(pressed ?  Theme.secondaryColor : Theme.highlightColor)+'" ')
         textFormat: Text.RichText
@@ -136,6 +132,25 @@ BackgroundItem {
         wrapMode: Text.Wrap
         font.pixelSize: Theme.fontSizeSmall
         color: (pressed ? Theme.highlightColor : (!highlight ? Theme.primaryColor : Theme.secondaryColor))
+        Rectangle {
+            anchors.fill: parent
+            radius: 2
+            color: Theme.highlightDimmerColor
+            visible: status_spoiler_text.length > 0
+            Label {
+                font.pixelSize: Theme.fontSizeExtraSmall
+                horizontalAlignment: Text.AlignHCenter
+
+                anchors.centerIn: parent
+                color: Theme.highlightColor
+                text: model.status_spoiler_text
+            }
+            MouseArea {
+                anchors.fill: parent
+                onClicked: parent.visible = false;
+            }
+
+        }
     }
     MediaBlock {
         id: media
@@ -152,33 +167,77 @@ BackgroundItem {
     ContextMenu {
         id: mnu
         MenuItem {
-            visible: model.type === "retoot" || model.type === "toot"
-            text: typeof status_reblogged !== "undefined" && status_reblogged ? qsTr("Unboost") : qsTr("Boost")
+            enabled: model.type !== "follow"
+            text: typeof model.reblogged !== "undefined" && model.reblogged ? qsTr("Unboost") : qsTr("Boost")
             onClicked: {
-                var reblogged = typeof status_reblogged !== "undefined" && status_reblogged
+                var status = typeof model.reblogged !== "undefined" && model.reblogged
                 worker.sendMessage({
                                        "conf"   : Logic.conf,
                                        "params" : [],
                                        "method" : "POST",
-                                       //"bgAction": true,
-                                       "action" : "statuses/"+model.status_id+"/" + (reblogged ? "unreblog" : "reblog")
+                                       "bgAction": true,
+                                       "action" : "statuses/"+model.status_id+"/" + (status ? "unreblog" : "reblog")
                                    })
-                model['status_reblogged'] = !reblogged
+                model.reblogs_count = !status ? model.reblogs_count+1 : (model.reblogs_count > 0 ? model.reblogs_count-1 : model.reblogs_count);
+                model.reblogged = !model.reblogged
+            }
+            Image {
+                id: icRT
+                anchors {
+                    leftMargin: Theme.horizontalPageMargin
+                    left: parent.left
+                    verticalCenter: parent.verticalCenter
+                }
+                width: Theme.iconSizeExtraSmall
+                height: width
+                source: "image://theme/icon-s-retweet?" + (!model.reblogged ? Theme.highlightColor : Theme.primaryColor)
+            }
+            Label {
+                anchors {
+                    left: icRT.right
+                    leftMargin: Theme.paddingMedium
+                    verticalCenter: parent.verticalCenter
+                }
+                text: reblogs_count
+                font.pixelSize: Theme.fontSizeExtraSmall
+                color: !model.reblogged ? Theme.highlightColor : Theme.primaryColor
             }
         }
         MenuItem {
-            visible: model.type === "retoot" || model.type === "toot"
-            text: typeof status_favourited !== "undefined" && status_favourited ? qsTr("Unfavorite") : qsTr("Favorite")
+            enabled: model.type !== "follow"
+            text: typeof model.favourited !== "undefined" && model.favourited ? qsTr("Unfavorite") : qsTr("Favorite")
             onClicked: {
-                var favourited = typeof status_favourited !== "undefined" && status_favourited
+                var status = typeof model.favourited !== "undefined" && model.favourited
                 worker.sendMessage({
                                        "conf"   : Logic.conf,
                                        "params" : [],
                                        "method" : "POST",
-                                       //"bgAction": true,
-                                       "action" : "statuses/"+model.status_id+"/" + (favourited ? "unfavourite" : "favourite")
+                                       "bgAction": true,
+                                       "action" : "statuses/"+model.status_id+"/" + (status ? "unfavourite" : "favourite")
                                    })
-                model['status_favourited'] = !favourited
+                model.favourites_count = !status ? model.favourites_count+1 : (model.favourites_count > 0 ? model.favourites_count-1 : model.favourites_count);
+                model.favourited = !model.favourited
+            }
+            Image {
+                id: icFA
+                anchors {
+                    leftMargin: Theme.horizontalPageMargin
+                    left: parent.left
+                    verticalCenter: parent.verticalCenter
+                }
+                width: Theme.iconSizeExtraSmall
+                height: width
+                source: "image://theme/icon-s-favorite?" + (!model.favourited ? Theme.highlightColor : Theme.primaryColor)
+            }
+            Label {
+                anchors {
+                    left: icFA.right
+                    leftMargin: Theme.paddingMedium
+                    verticalCenter: parent.verticalCenter
+                }
+                text: favourites_count
+                font.pixelSize: Theme.fontSizeExtraSmall
+                color: !model.favourited ? Theme.highlightColor : Theme.primaryColor
             }
         }
     }
@@ -199,7 +258,9 @@ BackgroundItem {
                        })
     }
     onPressAndHold: {
-        console.log(model['status_reblogged'])
+        console.log(model['status_sensitive'])
+        console.log(model['status_spoiler_text'])
+        console.log(model['type'])
         mnu.show(delegate)
     }
     onDoubleClicked: {

@@ -59,6 +59,7 @@ DISTFILES += \
     qml/images/mesagess.svg \
     qml/images/search.svg \
     qml/images/verified.svg \
+    qml/images/tooter.svg \
     qml/lib/Mastodon.js \
     qml/lib/Worker.js \
     qml/images/boosted.svg

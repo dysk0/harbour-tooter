@@ -74,13 +74,6 @@
     </message>
 </context>
 <context>
-    <name>CoverPage</name>
-    <message>
-        <source>Tooter</source>
-        <translation>Tooter</translation>
-    </message>
-</context>
-<context>
     <name>MainPage</name>
     <message>
         <source>Home</source>
