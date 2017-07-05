@@ -14,7 +14,8 @@ TARGET = harbour-tooter
 
 CONFIG += sailfishapp
 
-SOURCES += src/harbour-tooter.cpp
+SOURCES += src/harbour-tooter.cpp \
+    src/imageuploader.cpp
 
 OTHER_FILES += qml/harbour-tooter.qml \
     qml/cover/CoverPage.qml \
@@ -63,3 +64,6 @@ DISTFILES += \
     qml/lib/Mastodon.js \
     qml/lib/Worker.js \
     qml/images/boosted.svg
+
+HEADERS += \
+    src/imageuploader.h

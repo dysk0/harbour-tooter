@@ -1,5 +1,6 @@
 import QtQuick 2.0
 import Sailfish.Silica 1.0
+import harbour.tooter.Uploader 1.0
 import "../lib/API.js" as Logic
 import "./components/"
 
@@ -99,7 +100,7 @@ Page {
             }
             autoScrollEnabled: true
             labelVisible: false
-//            focus: true
+            //            focus: true
             text: description !== "" && (description.charAt(0) == '@' || description.charAt(0) == '#') ? description+' '  : ''
             height: implicitHeight
             horizontalAlignment: Text.AlignLeft
@@ -119,12 +120,76 @@ Page {
                                                                     : (warningContent.visible ? Theme.secondaryHighlightColor : Theme.primaryColor))
             onClicked: warningContent.visible = !warningContent.visible
         }
+        IconButton {
+            id: btnAddImage
+            anchors {
+                verticalCenter: privacy.verticalCenter
+                left: btnContentWarning.right
+                leftMargin: Theme.paddingSmall
+            }
+            icon.source: "image://theme/icon-s-attach?" + (pressed
+                                                           ? Theme.highlightColor
+                                                           : (warningContent.visible ? Theme.secondaryHighlightColor : Theme.primaryColor))
+            onClicked: {
+                //receiver.receiveFromQml(42);
+                //imageUploader.run()
+                var once = true;
+                var imagePicker = pageStack.push("Sailfish.Pickers.MultiImagePickerDialog", { "allowedOrientations" : Orientation.All });
+                imagePicker.selectedContentChanged.connect(function () {
+                    if (once) {
+                        for(var i = 0; i < imagePicker.selectedContent.count; i++){
+                            var file = imagePicker.selectedContent.get(i);
+                            console.log(JSON.stringify(file))
+                            imageUploader.setFile(file.url);
+                            imageUploader.setAuthorizationHeader(Logic.conf.api_user_token);
+                            imageUploader.upload();
+                        }
+                        once = false;
+                    }
+
+
+                    /*var file = imagePicker.selectedContent + "";
+                    //file = file.replace("file://", "");
+                    console.log(file)
+                    imageUploader.setFile(file);
+                    imageUploader.setAuthorizationHeader(Logic.conf.api_user_token);
+                    imageUploader.upload();*/
+                });
+            }
+        }
+        ImageUploader {
+                id: imageUploader
+
+                onProgressChanged: {
+                    console.log("progress "+progress)
+                }
+
+                onSuccess: {
+                    console.log(replyData);
+                }
+
+                onFailure: {
+                    console.log(status)
+                    console.log(statusText)
+
+                }
+
+                function run() {
+                    imageUploader.setFile('file:///media/sdcard/686E-E026/Pictures/Camera/20170701_143819.jpg');
+                    imageUploader.setParameters("imageUploadData.imageAlbum", "imageUploadData.imageTitle", "imageUploadData.imageDesc");
+
+                    imageUploader.setAuthorizationHeader(Logic.conf.api_user_token);
+                    imageUploader.setUserAgent("constant.userAgent");
+
+                    imageUploader.upload();
+                }
+            }
         ComboBox {
             id: privacy
             anchors {
                 top: toot.bottom
                 topMargin: -Theme.paddingSmall*2
-                left: btnContentWarning.right
+                left: btnAddImage.right
                 right: btnSend.left
             }
             menu: ContextMenu {
