@@ -101,7 +101,7 @@ SilicaListView {
         NumberAnimation { property: "x"; duration: 800; easing.type: Easing.InOutBack }
     }
 
-    displaced: Transition {
+    remove: Transition {
         NumberAnimation { properties: "x,y"; duration: 800; easing.type: Easing.InOutBack }
     }
 

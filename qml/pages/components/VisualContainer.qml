@@ -161,7 +161,7 @@ BackgroundItem {
             topMargin: Theme.paddingSmall
             bottomMargin: Theme.paddingLarge
         }
-        model: typeof attachments !== "undefined" ? attachments : []
+        model: typeof attachments !== "undefined" ? attachments : Qt.createQmlObject('import QtQuick 2.0; ListModel {   }', Qt.application, 'InternalQmlObject');
         height: 100
     }
     ContextMenu {

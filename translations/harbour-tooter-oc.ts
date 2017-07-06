@@ -61,6 +61,18 @@
         <source>direct</source>
         <translation type="unfinished"></translation>
     </message>
+    <message>
+        <source>Delete</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Emojis</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Tap to insert</source>
+        <translation type="unfinished"></translation>
+    </message>
 </context>
 <context>
     <name>ImageUploader</name>

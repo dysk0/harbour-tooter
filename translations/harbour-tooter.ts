@@ -39,7 +39,7 @@
     <name>Conversation</name>
     <message>
         <source>Conversation</source>
-        <translation>Conversation</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Content warning!</source>
@@ -47,19 +47,31 @@
     </message>
     <message>
         <source>public</source>
-        <translation>Content warning!</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>unlisted</source>
-        <translation>unlisted</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>followers only</source>
-        <translation>followers only</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>direct</source>
-        <translation>direct</translation>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Delete</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Emojis</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Tap to insert</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>

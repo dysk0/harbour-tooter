@@ -14,6 +14,9 @@ Page {
     property ListModel mdl;
     ListModel {
         id: mediaModel
+        onCountChanged: {
+            btnAddImage.enabled = mediaModel.count < 4
+        }
     }
 
     WorkerScript {
@@ -73,7 +76,7 @@ Page {
         }
 
         width: parent.width
-        height: toot.height + btnContentWarning.height + Theme.paddingMedium + (warningContent.visible ? warningContent.height : 0)
+        height: toot.height + (mediaModel.count ? uploadedImages.height : 0) + btnContentWarning.height + Theme.paddingMedium + (warningContent.visible ? warningContent.height : 0)
         dock: Dock.Bottom
         TextField {
             id: warningContent
@@ -100,6 +103,7 @@ Page {
                 topMargin: Theme.paddingMedium
                 left: parent.left
                 right: parent.right
+                rightMargin: Theme.paddingMedium
             }
             autoScrollEnabled: true
             labelVisible: false
@@ -112,6 +116,60 @@ Page {
             }
         }
         IconButton {
+            id: btnSmileys
+            property string selection
+            onSelectionChanged: {
+                console.log(selection)
+            }
+
+            anchors {
+                bottom: bottom.top
+                right: parent.right
+                rightMargin: Theme.paddingSmall
+            }
+            icon.source: "image://theme/icon-s-mms?" + (pressed
+                                                           ? Theme.highlightColor
+                                                           : (warningContent.visible ? Theme.secondaryHighlightColor : Theme.primaryColor))
+            onClicked: pageStack.push(firstWizardPage)
+        }
+        SilicaGridView {
+            id: uploadedImages
+            width: parent.width
+            anchors.bottom: parent.bottom
+            height: mediaModel.count ? Theme.itemSizeSmall : 0
+            model: mediaModel
+            cellWidth: uploadedImages.width / 4
+            cellHeight: Theme.itemSizeSmall
+            delegate: BackgroundItem {
+                id: myDelegate
+                width: uploadedImages.cellWidth
+                height: uploadedImages.cellHeight
+                RemorseItem { id: remorse }
+                Image {
+                    anchors.fill: parent
+                    source: model.preview_url
+                }
+
+                onClicked: {
+                    var idx = index
+                    console.log(idx)
+                    //mediaModel.remove(idx)
+                    remorse.execute(myDelegate, qsTr("Delete"), function() { mediaModel.remove(idx) } )
+                }
+            }
+            add: Transition {
+                NumberAnimation { property: "opacity"; from: 0; to: 1.0; duration: 800 }
+            }
+
+            remove: Transition {
+                NumberAnimation { property: "opacity"; from: 1.0; to: 0; duration: 800 }
+            }
+            displaced: Transition {
+                NumberAnimation { properties: "x,y"; duration: 800; easing.type: Easing.InOutBack }
+            }
+        }
+        IconButton {
+
             id: btnContentWarning
             anchors {
                 verticalCenter: privacy.verticalCenter
@@ -125,6 +183,7 @@ Page {
         }
         IconButton {
             id: btnAddImage
+            enabled: mediaModel.count < 4
             anchors {
                 verticalCenter: privacy.verticalCenter
                 left: btnContentWarning.right
@@ -135,8 +194,6 @@ Page {
                                                            : (warningContent.visible ? Theme.secondaryHighlightColor : Theme.primaryColor))
             onClicked: {
                 btnAddImage.enabled = false;
-                //receiver.receiveFromQml(42);
-                //imageUploader.run()
                 var once = true;
                 // MultiImagePickerDialog
                 var imagePicker = pageStack.push("Sailfish.Pickers.ImagePickerPage", { "allowedOrientations" : Orientation.All });
@@ -167,16 +224,20 @@ Page {
 
                 onProgressChanged: {
                     console.log("progress "+progress)
+                    uploadProgress.width = parent.width*progress
                 }
 
                 onSuccess: {
+                    uploadProgress.width =0
                     console.log(replyData);
+
                     mediaModel.append(JSON.parse(replyData))
-                    btnAddImage.enabled = true;
+
 
                 }
 
                 onFailure: {
+                    uploadProgress.width =0
                     btnAddImage.enabled = true;
                     console.log(status)
                     console.log(statusText)
@@ -252,6 +313,16 @@ Page {
                 toot.text = ""
             }
         }
+
+
+
+        Rectangle {
+            id: uploadProgress
+            color: Theme.highlightBackgroundColor
+            anchors.bottom: parent.bottom
+            anchors.left: parent.left
+            height: 3
+        }
     }
     Component.onCompleted: {
         toot.cursorPosition = toot.text.length
@@ -262,5 +333,160 @@ Page {
                                'params'    : { },
                                'conf'      : Logic.conf
                            });
+    }
+    Component {
+        id: firstWizardPage
+
+        Dialog {
+            id: emoticonsDialog
+            canAccept: false; //selector.currentIndex >= 0
+            //acceptDestination: conversationPage
+
+            onAcceptPendingChanged: {
+                if (acceptPending) {
+                    // Tell the destination page what the selected category is
+                   // acceptDestinationInstance.category = selector.value
+                }
+            }
+
+            SilicaGridView {
+                id: gridView
+                anchors.fill: parent
+                cellWidth: gridView.width / 6
+                cellHeight: cellWidth
+                header: PageHeader {
+                    title: qsTr("Emojis")
+                    description: qsTr("Tap to insert")
+                }
+                model: ListModel {
+                    ListElement { section: "smileys"; glyph: "😁" }
+                    ListElement { section: "smileys"; glyph: "😂" }
+                    ListElement { section: "smileys"; glyph: "😃" }
+                    ListElement { section: "smileys"; glyph: "😄" }
+                    ListElement { section: "smileys"; glyph: "😅" }
+                    ListElement { section: "smileys"; glyph: "😆" }
+                    ListElement { section: "smileys"; glyph: "😉" }
+                    ListElement { section: "smileys"; glyph: "😊" }
+                    ListElement { section: "smileys"; glyph: "😋" }
+                    ListElement { section: "smileys"; glyph: "😌" }
+                    ListElement { section: "smileys"; glyph: "😍" }
+                    ListElement { section: "smileys"; glyph: "😏" }
+                    ListElement { section: "smileys"; glyph: "😒" }
+                    ListElement { section: "smileys"; glyph: "😓" }
+                    ListElement { section: "smileys"; glyph: "😔" }
+                    ListElement { section: "smileys"; glyph: "😖" }
+                    ListElement { section: "smileys"; glyph: "😘" }
+                    ListElement { section: "smileys"; glyph: "😚" }
+                    ListElement { section: "smileys"; glyph: "😜" }
+                    ListElement { section: "smileys"; glyph: "😝" }
+                    ListElement { section: "smileys"; glyph: "😞" }
+                    ListElement { section: "smileys"; glyph: "😠" }
+                    ListElement { section: "smileys"; glyph: "😡" }
+                    ListElement { section: "smileys"; glyph: "😢" }
+                    ListElement { section: "smileys"; glyph: "😣" }
+                    ListElement { section: "smileys"; glyph: "😤" }
+                    ListElement { section: "smileys"; glyph: "😥" }
+                    ListElement { section: "smileys"; glyph: "😨" }
+                    ListElement { section: "smileys"; glyph: "😩" }
+                    ListElement { section: "smileys"; glyph: "😪" }
+                    ListElement { section: "smileys"; glyph: "😫" }
+                    ListElement { section: "smileys"; glyph: "😭" }
+                    ListElement { section: "smileys"; glyph: "😰" }
+                    ListElement { section: "smileys"; glyph: "😱" }
+                    ListElement { section: "smileys"; glyph: "😲" }
+                    ListElement { section: "smileys"; glyph: "😳" }
+                    ListElement { section: "smileys"; glyph: "😵" }
+                    ListElement { section: "smileys"; glyph: "😷" }
+                    ListElement { section: "smileys"; glyph: "😸" }
+                    ListElement { section: "smileys"; glyph: "😹" }
+                    ListElement { section: "smileys"; glyph: "😺" }
+                    ListElement { section: "smileys"; glyph: "😻" }
+                    ListElement { section: "smileys"; glyph: "😼" }
+                    ListElement { section: "smileys"; glyph: "😽" }
+                    ListElement { section: "smileys"; glyph: "😾" }
+                    ListElement { section: "smileys"; glyph: "😿" }
+                    ListElement { section: "smileys"; glyph: "🙀" }
+                    ListElement { section: "smileys"; glyph: "🙅" }
+                    ListElement { section: "smileys"; glyph: "🙆" }
+                    ListElement { section: "smileys"; glyph: "🙇" }
+                    ListElement { section: "smileys"; glyph: "🙈" }
+                    ListElement { section: "smileys"; glyph: "🙉" }
+                    ListElement { section: "smileys"; glyph: "🙊" }
+                    ListElement { section: "smileys"; glyph: "🙋" }
+                    ListElement { section: "smileys"; glyph: "🙌" }
+                    ListElement { section: "smileys"; glyph: "🙍" }
+                    ListElement { section: "smileys"; glyph: "🙎" }
+                    ListElement { section: "smileys"; glyph: "🙏" }
+
+
+                    ListElement { section: "Transport and map"; glyph: "🚀" }
+                    ListElement { section: "Transport and map"; glyph: "🚃" }
+                    ListElement { section: "Transport and map"; glyph: "🚀" }
+                    ListElement { section: "Transport and map"; glyph: "🚄" }
+                    ListElement { section: "Transport and map"; glyph: "🚅" }
+                    ListElement { section: "Transport and map"; glyph: "🚇" }
+                    ListElement { section: "Transport and map"; glyph: "🚉" }
+                    ListElement { section: "Transport and map"; glyph: "🚌" }
+                    ListElement { section: "Transport and map"; glyph: "🚏" }
+                    ListElement { section: "Transport and map"; glyph: "🚑" }
+                    ListElement { section: "Transport and map"; glyph: "🚒" }
+                    ListElement { section: "Transport and map"; glyph: "🚓" }
+                    ListElement { section: "Transport and map"; glyph: "🚕" }
+                    ListElement { section: "Transport and map"; glyph: "🚗" }
+                    ListElement { section: "Transport and map"; glyph: "🚙" }
+                    ListElement { section: "Transport and map"; glyph: "🚚" }
+                    ListElement { section: "Transport and map"; glyph: "🚢" }
+                    ListElement { section: "Transport and map"; glyph: "🚨" }
+                    ListElement { section: "Transport and map"; glyph: "🚩" }
+                    ListElement { section: "Transport and map"; glyph: "🚪" }
+                    ListElement { section: "Transport and map"; glyph: "🚫" }
+                    ListElement { section: "Transport and map"; glyph: "🚬" }
+                    ListElement { section: "Transport and map"; glyph: "🚭" }
+                    ListElement { section: "Transport and map"; glyph: "🚲" }
+                    ListElement { section: "Transport and map"; glyph: "🚶" }
+                    ListElement { section: "Transport and map"; glyph: "🚹" }
+                    ListElement { section: "Transport and map"; glyph: "🚺" }
+                    ListElement { section: "Transport and map"; glyph: "🚻" }
+                    ListElement { section: "Transport and map"; glyph: "🚼" }
+                    ListElement { section: "Transport and map"; glyph: "🚽" }
+                    ListElement { section: "Transport and map"; glyph: "🚾" }
+                    ListElement { section: "Transport and map"; glyph: "🛀" }
+
+                    ListElement { section: "Horoscope Signs"; glyph: "♈" }
+                    ListElement { section: "Horoscope Signs"; glyph: "♉" }
+                    ListElement { section: "Horoscope Signs"; glyph: "♊" }
+                    ListElement { section: "Horoscope Signs"; glyph: "♋" }
+                    ListElement { section: "Horoscope Signs"; glyph: "♌" }
+                    ListElement { section: "Horoscope Signs"; glyph: "♍" }
+                    ListElement { section: "Horoscope Signs"; glyph: "♎" }
+                    ListElement { section: "Horoscope Signs"; glyph: "♏" }
+                    ListElement { section: "Horoscope Signs"; glyph: "♐" }
+                    ListElement { section: "Horoscope Signs"; glyph: "♑" }
+                    ListElement { section: "Horoscope Signs"; glyph: "♒" }
+                    ListElement { section: "Horoscope Signs"; glyph: "♓" }
+
+
+
+
+
+                }
+                delegate: BackgroundItem {
+                    width: gridView.cellWidth
+                    height: gridView.cellHeight
+                    Label {
+                        anchors.centerIn: parent
+                        color: (highlighted ? Theme.secondaryHighlightColor : Theme.secondaryColor)
+                        font.pixelSize: Theme.fontSizeLarge
+                        text: glyph
+                    }
+                    onClicked: {
+                        toot.text = toot.text + model.glyph
+                        emoticonsDialog.canAccept = true;
+                        emoticonsDialog.accept()
+
+                    }
+                }
+            }
+        }
     }
 }

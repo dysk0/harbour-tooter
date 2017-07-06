@@ -61,6 +61,18 @@
         <source>direct</source>
         <translation type="unfinished"></translation>
     </message>
+    <message>
+        <source>Delete</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Emojis</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Tap to insert</source>
+        <translation type="unfinished"></translation>
+    </message>
 </context>
 <context>
     <name>ImageUploader</name>
@@ -122,11 +134,11 @@
     </message>
     <message>
         <source>Logout</source>
-        <translation type="finished">Cerrar sesión</translation>
+        <translation>Cerrar sesión</translation>
     </message>
     <message>
         <source>Login</source>
-        <translation type="finished">Iniciar sesión</translation>
+        <translation>Iniciar sesión</translation>
     </message>
 </context>
 <context>

@@ -2,6 +2,7 @@
 #include <QtQuick>
 #endif
 
+
 #include <sailfishapp.h>
 #include "imageuploader.h"
 
@@ -10,7 +11,7 @@ int main(int argc, char *argv[])
 {
     QScopedPointer<QGuiApplication> app(SailfishApp::application(argc, argv));
     QScopedPointer<QQuickView> view(SailfishApp::createView());
-    QQmlContext *context = view.data()->rootContext();
+    //QQmlContext *context = view.data()->rootContext();
 
     qmlRegisterType<ImageUploader>("harbour.tooter.Uploader", 1, 0, "ImageUploader");
 
