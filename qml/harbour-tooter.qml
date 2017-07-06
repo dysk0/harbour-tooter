@@ -52,8 +52,8 @@ ApplicationWindow
             }
             if (Logic.conf['login']) {
                 Logic.api.setConfig("api_user_token", Logic.conf['api_user_token'])
-                //pageStack.push(Qt.resolvedUrl("./pages/MainPage.qml"), {})
-                pageStack.push(Qt.resolvedUrl("./pages/Conversation.qml"), {})
+                pageStack.push(Qt.resolvedUrl("./pages/MainPage.qml"), {})
+                //pageStack.push(Qt.resolvedUrl("./pages/Conversation.qml"), {})
             } else {
                 pageStack.push(Qt.resolvedUrl("./pages/LoginPage.qml"), {})
             }

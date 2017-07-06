@@ -2,33 +2,22 @@
 <!DOCTYPE TS>
 <TS version="2.1">
 <context>
-    <name></name>
-    <message id="Logout">
-        <source></source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message id="Login">
-        <source></source>
-        <translation type="unfinished"></translation>
-    </message>
-</context>
-<context>
     <name>API</name>
     <message>
         <source>favourited</source>
-        <translation type="unfinished">favourited</translation>
+        <translation>favourited</translation>
     </message>
     <message>
         <source>followed you</source>
-        <translation type="unfinished">followed you</translation>
+        <translation>followed you</translation>
     </message>
     <message>
         <source>boosted</source>
-        <translation type="unfinished">boosted</translation>
+        <translation>boosted</translation>
     </message>
     <message>
         <source>said</source>
-        <translation type="unfinished"></translation>
+        <translation>said</translation>
     </message>
 </context>
 <context>
@@ -50,7 +39,7 @@
     <name>Conversation</name>
     <message>
         <source>Conversation</source>
-        <translation type="unfinished"></translation>
+        <translation>Conversation</translation>
     </message>
     <message>
         <source>Content warning!</source>
@@ -58,19 +47,33 @@
     </message>
     <message>
         <source>public</source>
-        <translation type="unfinished"></translation>
+        <translation>Content warning!</translation>
     </message>
     <message>
         <source>unlisted</source>
-        <translation type="unfinished"></translation>
+        <translation>unlisted</translation>
     </message>
     <message>
         <source>followers only</source>
-        <translation type="unfinished"></translation>
+        <translation>followers only</translation>
     </message>
     <message>
         <source>direct</source>
-        <translation type="unfinished"></translation>
+        <translation>direct</translation>
+    </message>
+</context>
+<context>
+    <name>ImageUploader</name>
+    <message>
+        <source>The file %1 does not exists</source>
+        <translation>The file %1 does not exists</translation>
+    </message>
+</context>
+<context>
+    <name>LoginPage</name>
+    <message>
+        <source>Login</source>
+        <translation>Login</translation>
     </message>
 </context>
 <context>
@@ -115,7 +118,15 @@
     <name>MyList</name>
     <message>
         <source>Load more</source>
-        <translation type="unfinished"></translation>
+        <translation>Load more</translation>
+    </message>
+    <message>
+        <source>Logout</source>
+        <translation>Logout</translation>
+    </message>
+    <message>
+        <source>Login</source>
+        <translation>Login</translation>
     </message>
 </context>
 <context>
@@ -188,19 +199,19 @@
     <name>VisualContainer</name>
     <message>
         <source>Unboost</source>
-        <translation type="unfinished"></translation>
+        <translation>Unboost</translation>
     </message>
     <message>
         <source>Boost</source>
-        <translation type="unfinished"></translation>
+        <translation>Boost</translation>
     </message>
     <message>
         <source>Unfavorite</source>
-        <translation type="unfinished"></translation>
+        <translation>Unfavorite</translation>
     </message>
     <message>
         <source>Favorite</source>
-        <translation type="unfinished"></translation>
+        <translation>Favorite</translation>
     </message>
 </context>
 </TS>

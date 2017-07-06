@@ -12,6 +12,9 @@ Page {
     property alias avatar: header.image
     property int toot_id
     property ListModel mdl;
+    ListModel {
+        id: mediaModel
+    }
 
     WorkerScript {
         id: worker
@@ -131,29 +134,31 @@ Page {
                                                            ? Theme.highlightColor
                                                            : (warningContent.visible ? Theme.secondaryHighlightColor : Theme.primaryColor))
             onClicked: {
+                btnAddImage.enabled = false;
                 //receiver.receiveFromQml(42);
                 //imageUploader.run()
                 var once = true;
-                var imagePicker = pageStack.push("Sailfish.Pickers.MultiImagePickerDialog", { "allowedOrientations" : Orientation.All });
+                // MultiImagePickerDialog
+                var imagePicker = pageStack.push("Sailfish.Pickers.ImagePickerPage", { "allowedOrientations" : Orientation.All });
                 imagePicker.selectedContentChanged.connect(function () {
-                    if (once) {
+                    var imagePath = imagePicker.selectedContent;
+                    console.log(imagePath)
+                    imageUploader.setUploadUrl(Logic.conf.instance + "/api/v1/media")
+                    imageUploader.setFile(imagePath);
+                    imageUploader.setAuthorizationHeader(Logic.conf.api_user_token);
+                    imageUploader.upload();
+                    /*if (once) {
                         for(var i = 0; i < imagePicker.selectedContent.count; i++){
                             var file = imagePicker.selectedContent.get(i);
                             console.log(JSON.stringify(file))
+                            imageUploader.setUploadUrl("https://mastodon.social/api/v1/media")
+                            //imageUploader.setUploadUrl("https://httpbin.org/post")
                             imageUploader.setFile(file.url);
                             imageUploader.setAuthorizationHeader(Logic.conf.api_user_token);
                             imageUploader.upload();
                         }
                         once = false;
-                    }
-
-
-                    /*var file = imagePicker.selectedContent + "";
-                    //file = file.replace("file://", "");
-                    console.log(file)
-                    imageUploader.setFile(file);
-                    imageUploader.setAuthorizationHeader(Logic.conf.api_user_token);
-                    imageUploader.upload();*/
+                    }*/
                 });
             }
         }
@@ -166,15 +171,19 @@ Page {
 
                 onSuccess: {
                     console.log(replyData);
+                    mediaModel.append(JSON.parse(replyData))
+                    btnAddImage.enabled = true;
+
                 }
 
                 onFailure: {
+                    btnAddImage.enabled = true;
                     console.log(status)
                     console.log(statusText)
 
                 }
 
-                function run() {
+                /*function run() {
                     imageUploader.setFile('file:///media/sdcard/686E-E026/Pictures/Camera/20170701_143819.jpg');
                     imageUploader.setParameters("imageUploadData.imageAlbum", "imageUploadData.imageTitle", "imageUploadData.imageDesc");
 
@@ -182,7 +191,7 @@ Page {
                     imageUploader.setUserAgent("constant.userAgent");
 
                     imageUploader.upload();
-                }
+                }*/
             }
         ComboBox {
             id: privacy
@@ -212,6 +221,12 @@ Page {
             enabled: toot.text !== ""
             onClicked: {
                 var visibility = [ "public", "unlisted", "private", "direct"];
+                var media_ids = [];
+                for(var k = 0; k < mediaModel.count; k++){
+                    console.log(mediaModel.get(k).id)
+                    media_ids.push(mediaModel.get(k).id)
+                }
+
                 var msg = {
                     'action'    : 'statuses',
                     'method'    : 'POST',
@@ -219,7 +234,8 @@ Page {
                     'mode'     : "append",
                     'params'    : {
                         "status": toot.text,
-                        "visibility": visibility[privacy.currentIndex]
+                        "visibility": visibility[privacy.currentIndex],
+                        "media_ids": media_ids
                     },
                     'conf'      : Logic.conf
                 };

@@ -17,7 +17,7 @@ public:
 
     Q_INVOKABLE void setFile(const QString &fileName);
     Q_INVOKABLE void setAuthorizationHeader(const QString &authorizationHeader);
-    Q_INVOKABLE void setUserAgent(const QString &userAgent);
+    Q_INVOKABLE void setUploadUrl(const QString &userAgent);
     Q_INVOKABLE void setParameters(const QString &album,  const QString &title, const QString &description);
     Q_INVOKABLE void upload();
 
@@ -38,7 +38,7 @@ private:
 
     QString m_fileName;
     QByteArray m_authorizationHeader;
-    QByteArray m_userAgent;
+    QString m_uploadUrl;
     QByteArray postdata;
     QNetworkReply *m_reply;
 };

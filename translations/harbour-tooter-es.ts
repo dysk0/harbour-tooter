@@ -2,17 +2,6 @@
 <!DOCTYPE TS>
 <TS version="2.1">
 <context>
-    <name></name>
-    <message id="Logout">
-        <source></source>
-        <translation>Cerrar sesión</translation>
-    </message>
-    <message id="Login">
-        <source></source>
-        <translation>Iniciar sesión</translation>
-    </message>
-</context>
-<context>
     <name>API</name>
     <message>
         <source>favourited</source>
@@ -24,11 +13,11 @@
     </message>
     <message>
         <source>boosted</source>
-        <translation>Aumentado</translation>
+        <translation>aumentado</translation>
     </message>
     <message>
         <source>said</source>
-        <translation>Dijo</translation>
+        <translation>dijo</translation>
     </message>
 </context>
 <context>
@@ -50,27 +39,41 @@
     <name>Conversation</name>
     <message>
         <source>Conversation</source>
-        <translation>Conversación</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Content warning!</source>
-        <translation>Advertencia de contenido!</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>public</source>
-        <translation>Público</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>unlisted</source>
-        <translation>Deslistado</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>followers only</source>
-        <translation>Sólo seguidores</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>direct</source>
-        <translation>Directo</translation>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>ImageUploader</name>
+    <message>
+        <source>The file %1 does not exists</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>LoginPage</name>
+    <message>
+        <source>Login</source>
+        <translation type="unfinished">Iniciar sesión</translation>
     </message>
 </context>
 <context>
@@ -116,6 +119,14 @@
     <message>
         <source>Load more</source>
         <translation>Cargar más</translation>
+    </message>
+    <message>
+        <source>Logout</source>
+        <translation type="finished">Cerrar sesión</translation>
+    </message>
+    <message>
+        <source>Login</source>
+        <translation type="finished">Iniciar sesión</translation>
     </message>
 </context>
 <context>

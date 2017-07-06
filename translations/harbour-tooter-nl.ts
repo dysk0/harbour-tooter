@@ -2,17 +2,6 @@
 <!DOCTYPE TS>
 <TS version="2.1" language="nl">
 <context>
-    <name></name>
-    <message id="Logout">
-        <source></source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message id="Login">
-        <source></source>
-        <translation type="unfinished"></translation>
-    </message>
-</context>
-<context>
     <name>API</name>
     <message>
         <source>favourited</source>
@@ -50,27 +39,41 @@
     <name>Conversation</name>
     <message>
         <source>Conversation</source>
-        <translation>Gesprek</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Content warning!</source>
-        <translation>Gevoelige inhoud!</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>public</source>
-        <translation>openbaar</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>unlisted</source>
-        <translation>niet op lijst</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>followers only</source>
-        <translation>alleen volgers</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>direct</source>
-        <translation>direct</translation>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>ImageUploader</name>
+    <message>
+        <source>The file %1 does not exists</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>LoginPage</name>
+    <message>
+        <source>Login</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -115,6 +118,14 @@
     <name>MyList</name>
     <message>
         <source>Load more</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Logout</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Login</source>
         <translation type="unfinished"></translation>
     </message>
 </context>

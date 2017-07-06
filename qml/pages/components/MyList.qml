@@ -58,7 +58,7 @@ SilicaListView {
 
     PullDownMenu {
         MenuItem {
-            text: Logic.conf['login'] ? qsTrId("Logout"): qsTrId("Login")
+            text: Logic.conf['login'] ? qsTr("Logout"): qsTr("Login")
             onClicked: {
                 if (Logic.conf['login']) {
                     Logic.conf['login'] = false

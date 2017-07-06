@@ -53,7 +53,7 @@ Page {
             id: column
             width: parent.width
 
-            PageHeader { title: "Login" }
+            PageHeader { title: qsTr("Login") }
 
             SectionHeader {
                 text: "Instance"

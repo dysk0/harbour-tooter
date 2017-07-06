@@ -2,17 +2,6 @@
 <!DOCTYPE TS>
 <TS version="2.1">
 <context>
-    <name></name>
-    <message id="Logout">
-        <source></source>
-        <translation>Déconnexion</translation>
-    </message>
-    <message id="Login">
-        <source></source>
-        <translation>Connexion</translation>
-    </message>
-</context>
-<context>
     <name>API</name>
     <message>
         <source>favourited</source>
@@ -50,27 +39,41 @@
     <name>Conversation</name>
     <message>
         <source>Conversation</source>
-        <translation>Conversation</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Content warning!</source>
-        <translation>Contenu sensible !</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>public</source>
-        <translation>public</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>unlisted</source>
-        <translation>non-listé</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>followers only</source>
-        <translation>abonnés uniquement</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>direct</source>
-        <translation>direct</translation>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>ImageUploader</name>
+    <message>
+        <source>The file %1 does not exists</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>LoginPage</name>
+    <message>
+        <source>Login</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -116,6 +119,14 @@
     <message>
         <source>Load more</source>
         <translation>Charger plus</translation>
+    </message>
+    <message>
+        <source>Logout</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Login</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
