@@ -39,53 +39,53 @@
     <name>Conversation</name>
     <message>
         <source>Conversation</source>
-        <translation type="unfinished"></translation>
+        <translation>Conversación</translation>
     </message>
     <message>
         <source>Content warning!</source>
-        <translation type="unfinished"></translation>
+        <translation>Advertencia! de contenido</translation>
     </message>
     <message>
         <source>public</source>
-        <translation type="unfinished"></translation>
+        <translation>público</translation>
     </message>
     <message>
         <source>unlisted</source>
-        <translation type="unfinished"></translation>
+        <translation>deslistado</translation>
     </message>
     <message>
         <source>followers only</source>
-        <translation type="unfinished"></translation>
+        <translation>solo seguidores</translation>
     </message>
     <message>
         <source>direct</source>
-        <translation type="unfinished"></translation>
+        <translation>directo</translation>
     </message>
     <message>
         <source>Delete</source>
-        <translation type="unfinished"></translation>
+        <translation>Borrar</translation>
     </message>
     <message>
         <source>Emojis</source>
-        <translation type="unfinished"></translation>
+        <translation>Emojis</translation>
     </message>
     <message>
         <source>Tap to insert</source>
-        <translation type="unfinished"></translation>
+        <translation>Tocar para insertar</translation>
     </message>
 </context>
 <context>
     <name>ImageUploader</name>
     <message>
         <source>The file %1 does not exists</source>
-        <translation type="unfinished"></translation>
+        <translation>El archivo %1 no existe</translation>
     </message>
 </context>
 <context>
     <name>LoginPage</name>
     <message>
         <source>Login</source>
-        <translation type="unfinished">Iniciar sesión</translation>
+        <translation>Iniciar sesión</translation>
     </message>
 </context>
 <context>
@@ -219,7 +219,7 @@
     </message>
     <message>
         <source>Unfavorite</source>
-        <translation>Desfavorizar</translation>
+        <translation>Desfavoritizar</translation>
     </message>
     <message>
         <source>Favorite</source>
