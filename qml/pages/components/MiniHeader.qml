@@ -61,7 +61,7 @@ Item {
         anchors {
             right: parent.right
             baseline: lblName.baseline
-            rightMargin: Theme.paddingLarge
+            rightMargin: Theme.horizontalPageMargin
         }
     }
 }

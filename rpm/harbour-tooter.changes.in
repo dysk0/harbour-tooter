@@ -33,3 +33,9 @@
 * Thu July 7 2017 Dusko Angirevic <dysko@me.com> 0.1.9-0
 - Image Upload added [#9]
 - Emoji pannel added
+- ES lang update by Carlos Gonzales
+
+* Thu July 20 2017 Dusko Angirevic <dysko@me.com> 0.2.0-0
+- Better tablet displaying
+- "boosted" notification bugfix
+- ES lang update by Caballlero

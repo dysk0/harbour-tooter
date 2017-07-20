@@ -6,6 +6,16 @@ Item {
     property string type : ""
     property string previewURL: ""
     property string mediaURL: ""
+    Rectangle {
+        opacity: 0.2
+        anchors.fill: parent
+        color: Theme.highlightDimmerColor
+
+    }
+    Image {
+        anchors.centerIn: parent
+        source: "image://theme/icon-m-image"
+    }
     Image {
         id: img
         anchors.fill: parent
@@ -46,4 +56,5 @@ Item {
             }
         }
     }
+
 }

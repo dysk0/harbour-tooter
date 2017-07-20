@@ -162,7 +162,7 @@ var notifier = function(item){
         msg = {
             urgency: "low",
             timestamp: item.created_at,
-            summary: (item.account_display_name !== "" ? item.account_display_name : '@'+item.account_username) + ' ' + qsTr("boosted"),
+            summary: (item.reblog_account_display_name !== "" ? item.reblog_account_display_name : '@'+item.reblog_account_username) + ' ' + qsTr("boosted"),
             body: item.content
         }
         break;

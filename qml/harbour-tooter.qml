@@ -51,6 +51,7 @@ ApplicationWindow
                 Logic.api = new Logic.MastodonAPI({ instance: Logic.conf['instance'], api_user_token: "" });
             }
             if (Logic.conf['login']) {
+                //Logic.conf['notificationLastID'] = 0
                 Logic.api.setConfig("api_user_token", Logic.conf['api_user_token'])
                 pageStack.push(Qt.resolvedUrl("./pages/MainPage.qml"), {})
                 //pageStack.push(Qt.resolvedUrl("./pages/Conversation.qml"), {})

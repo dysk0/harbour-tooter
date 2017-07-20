@@ -133,12 +133,8 @@
         <translation>Charger plus</translation>
     </message>
     <message>
-        <source>Logout</source>
-        <translation>Déconnexion</translation>
-    </message>
-    <message>
-        <source>Login</source>
-        <translation>Connexion</translation>
+        <source>Settings</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -190,6 +186,53 @@
     <message>
         <source>Followers</source>
         <translation>Abonnés</translation>
+    </message>
+</context>
+<context>
+    <name>Settings</name>
+    <message>
+        <source>Settings</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Remove Account</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Add Account</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Load images in toots</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Credits</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>UI/UX design and development</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Translate</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Deauthorize this app and remove your account</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Authorize this app to use your Mastodon account in your behalf</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Disable this option if you want to preserve your data connection</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Use Transifex to help with app translation to your language</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>

@@ -12,6 +12,7 @@ Page {
     property alias avatar: header.image
     property int toot_id
     property ListModel mdl;
+    allowedOrientations: Orientation.All
     ListModel {
         id: mediaModel
         onCountChanged: {

@@ -39,46 +39,46 @@
     <name>Conversation</name>
     <message>
         <source>Conversation</source>
-        <translation type="unfinished"></translation>
+        <translation>Conversation</translation>
     </message>
     <message>
         <source>Content warning!</source>
-        <translation type="unfinished"></translation>
+        <translation>Content warning!</translation>
     </message>
     <message>
         <source>public</source>
-        <translation type="unfinished"></translation>
+        <translation>public</translation>
     </message>
     <message>
         <source>unlisted</source>
-        <translation type="unfinished"></translation>
+        <translation>unlisted</translation>
     </message>
     <message>
         <source>followers only</source>
-        <translation type="unfinished"></translation>
+        <translation>followers only</translation>
     </message>
     <message>
         <source>direct</source>
-        <translation type="unfinished"></translation>
+        <translation>direct</translation>
     </message>
     <message>
         <source>Delete</source>
-        <translation type="unfinished"></translation>
+        <translation>Delete</translation>
     </message>
     <message>
         <source>Emojis</source>
-        <translation type="unfinished"></translation>
+        <translation>Emojis</translation>
     </message>
     <message>
         <source>Tap to insert</source>
-        <translation type="unfinished"></translation>
+        <translation>Tap to insert</translation>
     </message>
 </context>
 <context>
     <name>ImageUploader</name>
     <message>
         <source>The file %1 does not exists</source>
-        <translation>The file %1 does not exists</translation>
+        <translation></translation>
     </message>
 </context>
 <context>
@@ -133,12 +133,8 @@
         <translation>Load more</translation>
     </message>
     <message>
-        <source>Logout</source>
-        <translation>Logout</translation>
-    </message>
-    <message>
-        <source>Login</source>
-        <translation>Login</translation>
+        <source>Settings</source>
+        <translation>Settings</translation>
     </message>
 </context>
 <context>
@@ -190,6 +186,53 @@
     <message>
         <source>Followers</source>
         <translation>Followers</translation>
+    </message>
+</context>
+<context>
+    <name>Settings</name>
+    <message>
+        <source>Settings</source>
+        <translation>Settings</translation>
+    </message>
+    <message>
+        <source>Remove Account</source>
+        <translation>Remove Account</translation>
+    </message>
+    <message>
+        <source>Add Account</source>
+        <translation>Add Account</translation>
+    </message>
+    <message>
+        <source>Authorize this app to use your Mastodon account in your behalf</source>
+        <translation>Authorize this app to use your Mastodon account in your behalf</translation>
+    </message>
+    <message>
+        <source>Load images in toots</source>
+        <translation>Load images in toots</translation>
+    </message>
+    <message>
+        <source>Deauthorize this app and remove your account</source>
+        <translation>Deauthorize this app and remove your account</translation>
+    </message>
+    <message>
+        <source>Credits</source>
+        <translation>Credits</translation>
+    </message>
+    <message>
+        <source>Translate</source>
+        <translation>Translate</translation>
+    </message>
+    <message>
+        <source>Use Transifex to help with app translation to your language</source>
+        <translation>Use Transifex to help with app translation to your language</translation>
+    </message>
+    <message>
+        <source>Disable this option if you want to preserve your data connection</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>UI/UX design and development</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>

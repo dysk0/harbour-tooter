@@ -58,14 +58,9 @@ SilicaListView {
 
     PullDownMenu {
         MenuItem {
-            text: Logic.conf['login'] ? qsTr("Logout"): qsTr("Login")
+            text: qsTr("Settings")
             onClicked: {
-                if (Logic.conf['login']) {
-                    Logic.conf['login'] = false
-                    Logic.conf['instance'] = null;
-                    Logic.conf['api_user_token'] = null;
-                    Logic.conf['dysko'] = null;
-                }
+                pageStack.push(Qt.resolvedUrl("../Settings.qml"), {})
             }
         }
 

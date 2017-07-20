@@ -37,6 +37,7 @@ import "./components/"
 Page {
     id: mainPage
     property bool isFirstPage: true
+    property bool isTablet: true; //Screen.sizeCategory >= Screen.Large
 
     // The effective value will be restricted by ApplicationWindow.allowedOrientations
     allowedOrientations: Orientation.All
@@ -63,8 +64,8 @@ Page {
             title: qsTr("Home")
             type: "timelines/home"
             mdl: Logic.modelTLhome
-            width: parent.width
-            height: parent.height
+            width: parent.itemWidth
+            height: parent.itemHeight
             onOpenDrawer:  infoPanel.open = setDrawer
         }
         MyList{
@@ -72,8 +73,8 @@ Page {
             title: qsTr("Timeline")
             type: "timelines/public"
             mdl: Logic.modelTLpublic
-            width: parent.width
-            height: parent.height
+            width: parent.itemWidth
+            height: parent.itemHeight
             onOpenDrawer:  infoPanel.open = setDrawer
         }
         MyList{
@@ -82,8 +83,8 @@ Page {
             type: "notifications"
             notifier: true
             mdl: Logic.modelTLnotifications
-            width: parent.width
-            height: parent.height
+            width: parent.itemWidth
+            height: parent.itemHeight
             onOpenDrawer:  infoPanel.open = setDrawer
         }
         MyList{
@@ -102,8 +103,8 @@ Page {
             title: qsTr("Search")
             type: ""
             mdl: ListModel {}
-            width: parent.width
-            height: parent.height
+            width: parent.itemWidth
+            height: parent.itemHeight
             onOpenDrawer:  infoPanel.open = setDrawer
 
             header: SearchField {
@@ -130,7 +131,8 @@ Page {
         id: slideshow
         width: parent.width
         height: parent.height
-        itemWidth: parent.width
+        itemWidth: isTablet ? Math.round(parent.width) : parent.width
+        itemHeight: height
         clip: true
         onCurrentIndexChanged: {
             navigation.slideshowIndexChanged(currentIndex)
@@ -148,6 +150,7 @@ Page {
         Component.onCompleted: {
         }
     }
+
     IconButton {
         anchors {
             right: (mainPage.isPortrait ? parent.right : infoPanel.left)

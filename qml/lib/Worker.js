@@ -1,4 +1,5 @@
 Qt.include("Mastodon.js")
+var loadImages = true;
 WorkerScript.onMessage = function(msg) {
     console.log("Action > " + msg.action)
     console.log("Model > " + msg.model)
@@ -18,6 +19,9 @@ WorkerScript.onMessage = function(msg) {
         console.log("Not loggedin")
         return;
     }
+    if (typeof msg.conf['loadImages'] !== "undefined")
+        loadImages = msg.conf['loadImages']
+
     var API = MastodonAPI({ instance: msg.conf.instance, api_user_token: msg.conf.api_user_token});
     if (msg.method === "POST"){
         API.post(msg.action, msg.params, function(data) {
@@ -246,6 +250,8 @@ function parseToot (data){
         item['content'] = item['content'].replaceAll('#'+tag, '<a href="#'+tag+'">'+tag+'</a>')
     }*/
     item['attachments'] = [];
+    console.log("Image "+loadImages)
+
     for(var i = 0; i < data['media_attachments'].length ; i++){
         var attachments = data['media_attachments'][i];
         item['content'] = item['content'].replaceAll(attachments['text_url'], '')
@@ -254,7 +260,7 @@ function parseToot (data){
                                      id: attachments['id'],
                                      type: attachments['type'],
                                      url: attachments['remote_url'] !=="" ? attachments['remote_url'] : attachments['url'] ,
-                                                                            preview_url: attachments['preview_url']
+                                                                            preview_url: loadImages ? attachments['preview_url'] : ''
                                  })
     }
     /*item['content'] = item['content'].split(" ")

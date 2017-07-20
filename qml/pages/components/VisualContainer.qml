@@ -34,6 +34,13 @@ BackgroundItem {
         smooth: true
         source: account_avatar
         visible: true
+        onStatusChanged: {
+            if (avatar.status === Image.Error)
+                source = "image://theme/icon-m-person?" + (pressed
+                 ? Theme.highlightColor
+                 : Theme.primaryColor)
+        }
+
         MouseArea {
             anchors.fill: parent
             onClicked: {
@@ -101,7 +108,7 @@ BackgroundItem {
             topMargin: Theme.paddingSmall
             bottomMargin: Theme.paddingLarge
         }
-        height: content.length ? paintedHeight : 0
+        height: content.length ? (contentWarningLabel.paintedHeight > paintedHeight ? contentWarningLabel.paintedHeight : paintedHeight) : 0
         onLinkActivated: {
             var test = link.split("/")
             console.log(link)
@@ -138,11 +145,22 @@ BackgroundItem {
             color: Theme.highlightDimmerColor
             visible: status_spoiler_text.length > 0
             Label {
+                id: contentWarningLabel
                 font.pixelSize: Theme.fontSizeExtraSmall
                 horizontalAlignment: Text.AlignHCenter
-
-                anchors.centerIn: parent
+                anchors {
+                    topMargin: Theme.paddingSmall
+                    left: parent.left
+                    leftMargin: Theme.paddingMedium
+                    centerIn: parent
+                    right: parent.right
+                    rightMargin: Theme.paddingMedium
+                    bottomMargin: Theme.paddingSmall
+                }
+                width: parent.width
+                truncationMode: TruncationMode.Fade
                 color: Theme.highlightColor
+                wrapMode: Text.WordWrap
                 text: model.status_spoiler_text
             }
             MouseArea {
