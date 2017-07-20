@@ -23,13 +23,21 @@ Page {
                     text: Logic.conf['login'] ? qsTr("Remove Account"): qsTr("Add Account")
                     description: Logic.conf['login'] ? qsTr("Deauthorize this app and remove your account") : qsTr("Authorize this app to use your Mastodon account in your behalf")
                     icon.source: Logic.conf['login'] ? "image://theme/icon-m-people" : "image://theme/icon-m-add"
-                    onClicked: {
+                    onCheckedChanged: {
+                        busy = true;
+                        checked = false;
+                        timer1.start()
                         if (Logic.conf['login']) {
                             Logic.conf['login'] = false
                             Logic.conf['instance'] = null;
                             Logic.conf['api_user_token'] = null;
                         }
                         pageStack.push(Qt.resolvedUrl("LoginPage.qml"))
+                    }
+                    Timer {
+                        id: timer1
+                        interval: 4700
+                        onTriggered: parent.busy = false
                     }
                 }
                 IconTextSwitch {
@@ -46,8 +54,16 @@ Page {
                     text: qsTr("Translate")
                     description: qsTr("Use Transifex to help with app translation to your language")
                     icon.source: "image://theme/icon-m-presence"
-                    onClicked: {
+                    onCheckedChanged: {
+                        busy = true;
+                        checked = false;
                         Qt.openUrlExternally("https://www.transifex.com/dysko/tooter/");
+                        timer2.start()
+                    }
+                    Timer {
+                        id: timer2
+                        interval: 4700
+                        onTriggered: parent.busy = false
                     }
                 }
             }

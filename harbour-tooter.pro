@@ -66,7 +66,8 @@ DISTFILES += \
     qml/images/boosted.svg \
     qml/pages/Settings.qml \
     qml/pages/components/MediaBlock.qml \
-    qml/pages/components/MyImage.qml
+    qml/pages/components/MyImage.qml \
+    qml/pages/components/ImageFullScreen.qml
 
 HEADERS += \
     src/imageuploader.h

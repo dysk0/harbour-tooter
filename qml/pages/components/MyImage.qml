@@ -16,6 +16,13 @@ Item {
         anchors.centerIn: parent
         source: "image://theme/icon-m-image"
     }
+    Rectangle {
+        id: progressRec
+        anchors.bottom: parent.bottom
+        width: 0
+        height: Theme.paddingSmall
+        color: Theme.highlightBackgroundColor
+    }
     Image {
         id: img
         anchors.fill: parent
@@ -24,6 +31,15 @@ Item {
         opacity: status === Image.Ready ? 1.0 : 0.0
         Behavior on opacity { FadeAnimator {} }
         source: previewURL
+        onProgressChanged: {
+            if (progress != 1)
+                progressRec.width = parent.width * progress
+            else {
+                progressRec.width = 0;
+            }
+        }
+
+
         MouseArea {
             anchors.fill: parent
             onClicked: {

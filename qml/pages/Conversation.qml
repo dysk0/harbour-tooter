@@ -312,6 +312,7 @@ Page {
                 worker.sendMessage(msg);
                 warningContent.text = ""
                 toot.text = ""
+                mediaModel.clear()
             }
         }
 
