@@ -43,7 +43,7 @@
     </message>
     <message>
         <source>Content warning!</source>
-        <translation>Advertencia! de contenido</translation>
+        <translation>Advertencia de contenido!</translation>
     </message>
     <message>
         <source>public</source>
@@ -134,14 +134,14 @@
     </message>
     <message>
         <source>Settings</source>
-        <translation type="unfinished"></translation>
+        <translation>Ajustes</translation>
     </message>
 </context>
 <context>
     <name>Profile</name>
     <message>
         <source>Unfollow</source>
-        <translation>Dejar de seguir</translation>
+        <translation>Deseguir</translation>
     </message>
     <message>
         <source>Follow request sent!</source>
@@ -192,47 +192,47 @@
     <name>Settings</name>
     <message>
         <source>Settings</source>
-        <translation type="unfinished"></translation>
+        <translation>Ajustes</translation>
     </message>
     <message>
         <source>Remove Account</source>
-        <translation type="unfinished"></translation>
+        <translation>Remover cuenta</translation>
     </message>
     <message>
         <source>Add Account</source>
-        <translation type="unfinished"></translation>
+        <translation>Agregar cuenta</translation>
     </message>
     <message>
         <source>Load images in toots</source>
-        <translation type="unfinished"></translation>
+        <translation>Cargar imágenes en toots</translation>
     </message>
     <message>
         <source>Credits</source>
-        <translation type="unfinished"></translation>
+        <translation>Creditos</translation>
     </message>
     <message>
         <source>UI/UX design and development</source>
-        <translation type="unfinished"></translation>
+        <translation>Diseño y desarrollo de UI/UX</translation>
     </message>
     <message>
         <source>Translate</source>
-        <translation type="unfinished"></translation>
+        <translation>Traducir</translation>
     </message>
     <message>
         <source>Deauthorize this app and remove your account</source>
-        <translation type="unfinished"></translation>
+        <translation>Desautorizar esta apl y remover su cuenta</translation>
     </message>
     <message>
         <source>Authorize this app to use your Mastodon account in your behalf</source>
-        <translation type="unfinished"></translation>
+        <translation>Autorizar esta apl para usar su cuenta de Mastodon a su favor</translation>
     </message>
     <message>
         <source>Disable this option if you want to preserve your data connection</source>
-        <translation type="unfinished"></translation>
+        <translation>Inhabilitar esta opción si usted quiere preservar su conexión de datos</translation>
     </message>
     <message>
         <source>Use Transifex to help with app translation to your language</source>
-        <translation type="unfinished"></translation>
+        <translation>Usar transifex para traducir esta apl a su lenguaje</translation>
     </message>
 </context>
 <context>
@@ -262,7 +262,7 @@
     </message>
     <message>
         <source>Unfavorite</source>
-        <translation>Desfavoritizar</translation>
+        <translation>Desfavorar</translation>
     </message>
     <message>
         <source>Favorite</source>
