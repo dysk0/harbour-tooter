@@ -39,3 +39,6 @@
 - Better tablet displaying
 - "boosted" notification bugfix
 - ES lang update by Caballlero
+
+* Thu October 10 2017 Dusko Angirevic <dysko@me.com> 0.2.1-0
+- Added bugs for later (merging branches and cotributions)
