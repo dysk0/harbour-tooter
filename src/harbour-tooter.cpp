@@ -4,6 +4,9 @@
 
 
 #include <sailfishapp.h>
+#include <QQuickView>
+#include <QtQml>
+#include <QtGui/QGuiApplication>
 #include "imageuploader.h"
 
 
