@@ -34,6 +34,10 @@
         <source>Reading mode</source>
         <translation>Reading mode</translation>
     </message>
+    <message>
+        <source>Copy URL</source>
+        <translation>Copy URL</translation>
+    </message>
 </context>
 <context>
     <name>Conversation</name>

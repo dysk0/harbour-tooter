@@ -30,6 +30,7 @@
 
 import QtQuick 2.0
 import Sailfish.Silica 1.0
+import QtGraphicalEffects 1.0
 import "../lib/API.js" as Logic
 
 CoverBackground {
@@ -50,7 +51,12 @@ CoverBackground {
         anchors {
             bottom : parent.bottom
             left: parent.left
+            right: parent.right
+            top: parent.top
         }
+        horizontalAlignment: Image.AlignLeft
+        verticalAlignment: Image.AlignBottom
+        fillMode: Image.PreserveAspectFit
 
         source: "../images/tooter.svg"
     }

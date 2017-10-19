@@ -168,10 +168,12 @@ Page {
         PullDownMenu {
             id: pullDownMenu2
             MenuItem {
+                text: qsTr("Copy URL")
+                onClicked: Clipboard.text = href
+            }
+            MenuItem {
                 text: qsTr("Open in Browser")
-                onClicked: {
-                    Qt.openUrlExternally(href);
-                }
+                onClicked: Qt.openUrlExternally(href);
             }
             MenuItem {
                 text: screenReaderMode ? qsTr("Web mode") : qsTr("Reading mode")
