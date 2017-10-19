@@ -20,6 +20,7 @@ Page {
         }
     }
 
+
     WorkerScript {
         id: worker
         source: "../lib/Worker.js"
@@ -54,15 +55,13 @@ Page {
         }
         delegate: VisualContainer {}
         onCountChanged: {
-            for (var i = 0; i < mdl.count; i++){
-                if (mdl.get(i).status_id === toot_id) {
-                    console.log(mdl.get(i).status_id)
-                    positionViewAtIndex(i, ListView.Center )
+            if (mdl)
+                for (var i = 0; i < mdl.count; i++){
+                    if (mdl.get(i).status_id === toot_id) {
+                        console.log(mdl.get(i).status_id)
+                        positionViewAtIndex(i, ListView.Center )
+                    }
                 }
-            }
-
-            //last_id_MN
-
         }
 
     }
@@ -196,7 +195,6 @@ Page {
             onClicked: {
                 btnAddImage.enabled = false;
                 var once = true;
-                // MultiImagePickerDialog
                 var imagePicker = pageStack.push("Sailfish.Pickers.ImagePickerPage", { "allowedOrientations" : Orientation.All });
                 imagePicker.selectedContentChanged.connect(function () {
                     var imagePath = imagePicker.selectedContent;
@@ -205,18 +203,6 @@ Page {
                     imageUploader.setFile(imagePath);
                     imageUploader.setAuthorizationHeader(Logic.conf.api_user_token);
                     imageUploader.upload();
-                    /*if (once) {
-                        for(var i = 0; i < imagePicker.selectedContent.count; i++){
-                            var file = imagePicker.selectedContent.get(i);
-                            console.log(JSON.stringify(file))
-                            imageUploader.setUploadUrl("https://mastodon.social/api/v1/media")
-                            //imageUploader.setUploadUrl("https://httpbin.org/post")
-                            imageUploader.setFile(file.url);
-                            imageUploader.setAuthorizationHeader(Logic.conf.api_user_token);
-                            imageUploader.upload();
-                        }
-                        once = false;
-                    }*/
                 });
             }
         }
@@ -245,15 +231,6 @@ Page {
 
                 }
 
-                /*function run() {
-                    imageUploader.setFile('file:///media/sdcard/686E-E026/Pictures/Camera/20170701_143819.jpg');
-                    imageUploader.setParameters("imageUploadData.imageAlbum", "imageUploadData.imageTitle", "imageUploadData.imageDesc");
-
-                    imageUploader.setAuthorizationHeader(Logic.conf.api_user_token);
-                    imageUploader.setUserAgent("constant.userAgent");
-
-                    imageUploader.upload();
-                }*/
             }
         ComboBox {
             id: privacy
@@ -328,6 +305,28 @@ Page {
     }
     Component.onCompleted: {
         toot.cursorPosition = toot.text.length
+        if (mdl.count > 0) {
+            var setIndex = 0;
+            switch (mdl.get(0).status_visibility){
+                case "unlisted":
+                    setIndex = 1;
+                    break;
+                case "private":
+                    setIndex = 2;
+                    break;
+                case "direct":
+                    privacy.enabled = false;
+                    setIndex = 3;
+                    break;
+                default:
+                    privacy.enabled = true;
+                    setIndex = 0;
+            }
+            privacy.currentIndex = setIndex;
+        }
+
+        console.log(JSON.stringify())
+
         worker.sendMessage({
                                'action'    : 'statuses/'+mdl.get(0).status_id+'/context',
                                'method'    : 'GET',

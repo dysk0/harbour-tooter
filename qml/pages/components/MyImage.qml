@@ -61,7 +61,7 @@ Item {
         Rectangle {
             anchors.fill: parent
             color: Theme.highlightDimmerColor
-            visible: status_sensitive
+            visible: typeof status_sensitive != 'undefined' && status_sensitive ? true : false
             Image {
                 source: "image://theme/icon-l-attention?"+Theme.highlightColor
                 anchors.centerIn: parent
