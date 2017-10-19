@@ -1,7 +1,7 @@
 Name: harbour-tooter
 Summary: Tooter
-Version: 0.2.1
-Release:
+Version: 0.2.2
+Release: 0
 # The contents of the Group field should be one of the groups listed here:
 # http://gitorious.org/meego-developer-tools/spectacle/blobs/master/data/GROUPS
 Group: Qt/Qt
