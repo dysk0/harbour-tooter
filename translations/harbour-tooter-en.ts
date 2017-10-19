@@ -1,61 +1,59 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE TS>
-<TS version="2.1" language="nl">
+<?xml version="1.0" ?><!DOCTYPE TS><TS language="en" version="2.1">
 <context>
     <name>API</name>
     <message>
         <source>favourited</source>
-        <translation>favoriet gemaakt</translation>
+        <translation>favourited</translation>
     </message>
     <message>
         <source>followed you</source>
-        <translation>volgde jou</translation>
+        <translation>followed you</translation>
     </message>
     <message>
         <source>boosted</source>
-        <translation>boostte</translation>
+        <translation>boosted</translation>
     </message>
     <message>
         <source>said</source>
-        <translation>zei</translation>
+        <translation>said</translation>
     </message>
 </context>
 <context>
     <name>Browser</name>
     <message>
         <source>Open in Browser</source>
-        <translation>Openen in browser</translation>
+        <translation>Open in Browser</translation>
     </message>
     <message>
         <source>Web mode</source>
-        <translation>Webmodus</translation>
+        <translation>Web mode</translation>
     </message>
     <message>
         <source>Reading mode</source>
-        <translation>Leesmodus</translation>
+        <translation>Reading mode</translation>
     </message>
 </context>
 <context>
     <name>Conversation</name>
     <message>
         <source>Conversation</source>
-        <translation>Gesprek</translation>
+        <translation>Conversation</translation>
     </message>
     <message>
         <source>Content warning!</source>
-        <translation>Gevoelige inhoud!</translation>
+        <translation>Content warning!</translation>
     </message>
     <message>
         <source>public</source>
-        <translation>openbaar</translation>
+        <translation>public</translation>
     </message>
     <message>
         <source>unlisted</source>
-        <translation>niet op lijst</translation>
+        <translation>unlisted</translation>
     </message>
     <message>
         <source>followers only</source>
-        <translation>alleen volgers</translation>
+        <translation>followers only</translation>
     </message>
     <message>
         <source>direct</source>
@@ -63,210 +61,210 @@
     </message>
     <message>
         <source>Delete</source>
-        <translation type="unfinished"></translation>
+        <translation>Delete</translation>
     </message>
     <message>
         <source>Emojis</source>
-        <translation type="unfinished"></translation>
+        <translation>Emojis</translation>
     </message>
     <message>
         <source>Tap to insert</source>
-        <translation type="unfinished"></translation>
+        <translation>Tap to insert</translation>
     </message>
 </context>
 <context>
     <name>ImageUploader</name>
     <message>
         <source>The file %1 does not exists</source>
-        <translation type="unfinished"></translation>
+        <translation>The file %1 does not exists</translation>
     </message>
 </context>
 <context>
     <name>LoginPage</name>
     <message>
         <source>Login</source>
-        <translation type="unfinished"></translation>
+        <translation>Login</translation>
     </message>
 </context>
 <context>
     <name>MainPage</name>
     <message>
         <source>Home</source>
-        <translation>Thuis</translation>
+        <translation>Home</translation>
     </message>
     <message>
         <source>Timeline</source>
-        <translation>Tijdlijn</translation>
+        <translation>Timeline</translation>
     </message>
     <message>
         <source>Notifications</source>
-        <translation>Meldingen</translation>
+        <translation>Notifications</translation>
     </message>
     <message>
         <source>Search</source>
-        <translation>Zoeken</translation>
+        <translation>Search</translation>
     </message>
     <message>
         <source>New Toot</source>
-        <translation>Nieuw</translation>
+        <translation>New</translation>
     </message>
 </context>
 <context>
     <name>MiniStatus</name>
     <message>
         <source>boosted</source>
-        <translation>heeft geboost</translation>
+        <translation>boosted</translation>
     </message>
     <message>
         <source>favourited</source>
-        <translation>favoriet gemaakt</translation>
+        <translation>favourited</translation>
     </message>
     <message>
         <source>followed you</source>
-        <translation>volgde jou</translation>
+        <translation>followed you</translation>
     </message>
 </context>
 <context>
     <name>MyList</name>
     <message>
         <source>Load more</source>
-        <translation>Meer laden</translation>
+        <translation>Load more</translation>
     </message>
     <message>
         <source>Settings</source>
-        <translation type="unfinished"></translation>
+        <translation>Settings</translation>
     </message>
 </context>
 <context>
     <name>Profile</name>
     <message>
         <source>Unfollow</source>
-        <translation>Ontvolgen</translation>
+        <translation>Unfollow</translation>
     </message>
     <message>
         <source>Follow request sent!</source>
-        <translation>Volgverzoek verstuurd!</translation>
+        <translation>Follow request sent!</translation>
     </message>
     <message>
         <source>Following</source>
-        <translation>Volgend</translation>
+        <translation>Following</translation>
     </message>
     <message>
         <source>Mute</source>
-        <translation>Dempen</translation>
+        <translation>Mute</translation>
     </message>
     <message>
         <source>Unmute</source>
-        <translation>Ontdempen</translation>
+        <translation>Unmute</translation>
     </message>
     <message>
         <source>Unblock</source>
-        <translation>Deblokkeren</translation>
+        <translation>Unblock</translation>
     </message>
     <message>
         <source>Block</source>
-        <translation>Blokkeren</translation>
+        <translation>Block</translation>
     </message>
     <message>
         <source>Statuses</source>
-        <translation>Statussen</translation>
+        <translation>Statuses</translation>
     </message>
     <message>
         <source>Favourites</source>
-        <translation>Favorieten</translation>
+        <translation>Favourites</translation>
     </message>
     <message>
         <source>Follow</source>
-        <translation>Volgen</translation>
+        <translation>Follow</translation>
     </message>
     <message>
         <source>Summary</source>
-        <translation>Samenvatting</translation>
+        <translation>Summary</translation>
     </message>
     <message>
         <source>Followers</source>
-        <translation>Volgers</translation>
+        <translation>Followers</translation>
     </message>
 </context>
 <context>
     <name>Settings</name>
     <message>
         <source>Settings</source>
-        <translation type="unfinished"></translation>
+        <translation>Settings</translation>
     </message>
     <message>
         <source>Remove Account</source>
-        <translation type="unfinished"></translation>
+        <translation>Remove Account</translation>
     </message>
     <message>
         <source>Add Account</source>
-        <translation type="unfinished"></translation>
+        <translation>Add Account</translation>
     </message>
     <message>
         <source>Authorize this app to use your Mastodon account in your behalf</source>
-        <translation type="unfinished"></translation>
+        <translation>Authorize this app to use your Mastodon account in your behalf</translation>
     </message>
     <message>
         <source>Load images in toots</source>
-        <translation type="unfinished"></translation>
+        <translation>Load images in toots</translation>
     </message>
     <message>
         <source>Deauthorize this app and remove your account</source>
-        <translation type="unfinished"></translation>
+        <translation>Deauthorize this app and remove your account</translation>
     </message>
     <message>
         <source>Credits</source>
-        <translation type="unfinished"></translation>
+        <translation>Credits</translation>
     </message>
     <message>
         <source>Translate</source>
-        <translation type="unfinished"></translation>
+        <translation>Translate</translation>
     </message>
     <message>
         <source>Use Transifex to help with app translation to your language</source>
-        <translation type="unfinished"></translation>
+        <translation>Use Transifex to help with app translation to your language</translation>
     </message>
     <message>
         <source>Disable this option if you want to preserve your data connection</source>
-        <translation type="unfinished"></translation>
+        <translation>Disable this option if you want to preserve your data connection</translation>
     </message>
     <message>
         <source>UI/UX design and development</source>
-        <translation type="unfinished"></translation>
+        <translation>UI/UX design and development</translation>
     </message>
 </context>
 <context>
     <name>Toot</name>
     <message>
         <source>boosted</source>
-        <translation>boostte</translation>
+        <translation>boosted</translation>
     </message>
     <message>
         <source>favourited</source>
-        <translation>maakte favoriet</translation>
+        <translation>favourited</translation>
     </message>
     <message>
         <source>followed you</source>
-        <translation>volgde jou</translation>
+        <translation>followed you</translation>
     </message>
 </context>
 <context>
     <name>VisualContainer</name>
     <message>
         <source>Unboost</source>
-        <translation type="unfinished"></translation>
+        <translation>Unboost</translation>
     </message>
     <message>
         <source>Boost</source>
-        <translation type="unfinished"></translation>
+        <translation>Boost</translation>
     </message>
     <message>
         <source>Unfavorite</source>
-        <translation type="unfinished"></translation>
+        <translation>Unfavorite</translation>
     </message>
     <message>
         <source>Favorite</source>
-        <translation type="unfinished"></translation>
+        <translation>Favorite</translation>
     </message>
 </context>
 </TS>

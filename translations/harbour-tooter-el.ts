@@ -1,272 +1,270 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE TS>
-<TS version="2.1" language="nl">
+<?xml version="1.0" ?><!DOCTYPE TS><TS language="el" version="2.1">
 <context>
     <name>API</name>
     <message>
         <source>favourited</source>
-        <translation>favoriet gemaakt</translation>
+        <translation>στους σελιδοδείκτες</translation>
     </message>
     <message>
         <source>followed you</source>
-        <translation>volgde jou</translation>
+        <translation>σας ακολουθούν</translation>
     </message>
     <message>
         <source>boosted</source>
-        <translation>boostte</translation>
+        <translation>προωθημένο</translation>
     </message>
     <message>
         <source>said</source>
-        <translation>zei</translation>
+        <translation>είπε</translation>
     </message>
 </context>
 <context>
     <name>Browser</name>
     <message>
         <source>Open in Browser</source>
-        <translation>Openen in browser</translation>
+        <translation>Άνοιγμα στον φυλλομετρητή</translation>
     </message>
     <message>
         <source>Web mode</source>
-        <translation>Webmodus</translation>
+        <translation>Λειτουργία ιστού</translation>
     </message>
     <message>
         <source>Reading mode</source>
-        <translation>Leesmodus</translation>
+        <translation>Λειτουργία ανάγνωσης</translation>
     </message>
 </context>
 <context>
     <name>Conversation</name>
     <message>
         <source>Conversation</source>
-        <translation>Gesprek</translation>
+        <translation>Συνομιλία</translation>
     </message>
     <message>
         <source>Content warning!</source>
-        <translation>Gevoelige inhoud!</translation>
+        <translation>Προειδοποίηση περιεχομένου!</translation>
     </message>
     <message>
         <source>public</source>
-        <translation>openbaar</translation>
+        <translation>δημόσιο</translation>
     </message>
     <message>
         <source>unlisted</source>
-        <translation>niet op lijst</translation>
+        <translation>μη καταχωρημένο</translation>
     </message>
     <message>
         <source>followers only</source>
-        <translation>alleen volgers</translation>
+        <translation>μόνο αυτοί που σας ακολουθούν</translation>
     </message>
     <message>
         <source>direct</source>
-        <translation>direct</translation>
+        <translation>απευθείας</translation>
     </message>
     <message>
         <source>Delete</source>
-        <translation type="unfinished"></translation>
+        <translation>Διαγραφή</translation>
     </message>
     <message>
         <source>Emojis</source>
-        <translation type="unfinished"></translation>
+        <translation>Emoji</translation>
     </message>
     <message>
         <source>Tap to insert</source>
-        <translation type="unfinished"></translation>
+        <translation>Κτυπήστε για εισαγωγή</translation>
     </message>
 </context>
 <context>
     <name>ImageUploader</name>
     <message>
         <source>The file %1 does not exists</source>
-        <translation type="unfinished"></translation>
+        <translation>Το αρχείο %1 δεν υπάρχει</translation>
     </message>
 </context>
 <context>
     <name>LoginPage</name>
     <message>
         <source>Login</source>
-        <translation type="unfinished"></translation>
+        <translation>Σύνδεση</translation>
     </message>
 </context>
 <context>
     <name>MainPage</name>
     <message>
         <source>Home</source>
-        <translation>Thuis</translation>
+        <translation>Οικοσελίδα</translation>
     </message>
     <message>
         <source>Timeline</source>
-        <translation>Tijdlijn</translation>
+        <translation>Γραμμή χρονοδιαγράμματος</translation>
     </message>
     <message>
         <source>Notifications</source>
-        <translation>Meldingen</translation>
+        <translation>Ειδοποιήσεις</translation>
     </message>
     <message>
         <source>Search</source>
-        <translation>Zoeken</translation>
+        <translation>Αναζήτηση</translation>
     </message>
     <message>
         <source>New Toot</source>
-        <translation>Nieuw</translation>
+        <translation>Νέο Toot</translation>
     </message>
 </context>
 <context>
     <name>MiniStatus</name>
     <message>
         <source>boosted</source>
-        <translation>heeft geboost</translation>
+        <translation>προωθημένο</translation>
     </message>
     <message>
         <source>favourited</source>
-        <translation>favoriet gemaakt</translation>
+        <translation>στους σελιδοδείκτες</translation>
     </message>
     <message>
         <source>followed you</source>
-        <translation>volgde jou</translation>
+        <translation>σας ακολουθούν</translation>
     </message>
 </context>
 <context>
     <name>MyList</name>
     <message>
         <source>Load more</source>
-        <translation>Meer laden</translation>
+        <translation>Φόρτωση περισσοτέρων</translation>
     </message>
     <message>
         <source>Settings</source>
-        <translation type="unfinished"></translation>
+        <translation>Ρυθμίσεις</translation>
     </message>
 </context>
 <context>
     <name>Profile</name>
     <message>
         <source>Unfollow</source>
-        <translation>Ontvolgen</translation>
+        <translation>Αναίρεση παρακολούθησης</translation>
     </message>
     <message>
         <source>Follow request sent!</source>
-        <translation>Volgverzoek verstuurd!</translation>
+        <translation>Η αίτηση παρακολούθησης εστάλη!</translation>
     </message>
     <message>
         <source>Following</source>
-        <translation>Volgend</translation>
+        <translation>Σε παρακολούθηση</translation>
     </message>
     <message>
         <source>Mute</source>
-        <translation>Dempen</translation>
+        <translation>Σίγαση</translation>
     </message>
     <message>
         <source>Unmute</source>
-        <translation>Ontdempen</translation>
+        <translation>Αναίρεση σίγασης</translation>
     </message>
     <message>
         <source>Unblock</source>
-        <translation>Deblokkeren</translation>
+        <translation>Αναίρεση φραγής</translation>
     </message>
     <message>
         <source>Block</source>
-        <translation>Blokkeren</translation>
+        <translation>Φραγή</translation>
     </message>
     <message>
         <source>Statuses</source>
-        <translation>Statussen</translation>
+        <translation>Κατάσταση</translation>
     </message>
     <message>
         <source>Favourites</source>
-        <translation>Favorieten</translation>
+        <translation>Σελιδοδείκτες</translation>
     </message>
     <message>
         <source>Follow</source>
-        <translation>Volgen</translation>
+        <translation>Παρακολούθηση</translation>
     </message>
     <message>
         <source>Summary</source>
-        <translation>Samenvatting</translation>
+        <translation>Σύνοψη</translation>
     </message>
     <message>
         <source>Followers</source>
-        <translation>Volgers</translation>
+        <translation>Σας ακολουθούν</translation>
     </message>
 </context>
 <context>
     <name>Settings</name>
     <message>
         <source>Settings</source>
-        <translation type="unfinished"></translation>
+        <translation>Ρυθμίσεις</translation>
     </message>
     <message>
         <source>Remove Account</source>
-        <translation type="unfinished"></translation>
+        <translation>Αφαίρεση λογαριασμού</translation>
     </message>
     <message>
         <source>Add Account</source>
-        <translation type="unfinished"></translation>
+        <translation>Προσθήκη λογαριασμού</translation>
     </message>
     <message>
         <source>Authorize this app to use your Mastodon account in your behalf</source>
-        <translation type="unfinished"></translation>
+        <translation>Να επιτρέπεται στην εφαρμογή να χρησιμοποιεί τον λογαριασμό σας στο Mastodon εκ μέρους σας</translation>
     </message>
     <message>
         <source>Load images in toots</source>
-        <translation type="unfinished"></translation>
+        <translation>Φόρτωση των εικόνων στα toot</translation>
     </message>
     <message>
         <source>Deauthorize this app and remove your account</source>
-        <translation type="unfinished"></translation>
+        <translation>Άρση της αδειοδότησης της εφαρμογής και αφαίρεση του λογαριασμού σας</translation>
     </message>
     <message>
         <source>Credits</source>
-        <translation type="unfinished"></translation>
+        <translation>Ευχαριστίες</translation>
     </message>
     <message>
         <source>Translate</source>
-        <translation type="unfinished"></translation>
+        <translation>Μετάφραση</translation>
     </message>
     <message>
         <source>Use Transifex to help with app translation to your language</source>
-        <translation type="unfinished"></translation>
+        <translation>Χρησιμοποιήστε το Transifex για να βοηθήσετε την μετάφραση της εφαρμογής στην γλώσσα σας</translation>
     </message>
     <message>
         <source>Disable this option if you want to preserve your data connection</source>
-        <translation type="unfinished"></translation>
+        <translation>Απενεργοποιήστε αυτήν την επιλογή αν θέλετε να διατηρήσετε την σύνδεση των δεδομένων σας</translation>
     </message>
     <message>
         <source>UI/UX design and development</source>
-        <translation type="unfinished"></translation>
+        <translation>UI/UX σχεδιασμός και ανάπτυξη</translation>
     </message>
 </context>
 <context>
     <name>Toot</name>
     <message>
         <source>boosted</source>
-        <translation>boostte</translation>
+        <translation>προωθημένο</translation>
     </message>
     <message>
         <source>favourited</source>
-        <translation>maakte favoriet</translation>
+        <translation>στους σελιδοδείκτες</translation>
     </message>
     <message>
         <source>followed you</source>
-        <translation>volgde jou</translation>
+        <translation>σας ακολουθούν</translation>
     </message>
 </context>
 <context>
     <name>VisualContainer</name>
     <message>
         <source>Unboost</source>
-        <translation type="unfinished"></translation>
+        <translation>Αναίρεση προώθησης</translation>
     </message>
     <message>
         <source>Boost</source>
-        <translation type="unfinished"></translation>
+        <translation>Προώθηση</translation>
     </message>
     <message>
         <source>Unfavorite</source>
-        <translation type="unfinished"></translation>
+        <translation>Αφαίρεση από τους σελιδοδείκτες</translation>
     </message>
     <message>
         <source>Favorite</source>
-        <translation type="unfinished"></translation>
+        <translation>Σελιδοδείκτης</translation>
     </message>
 </context>
 </TS>

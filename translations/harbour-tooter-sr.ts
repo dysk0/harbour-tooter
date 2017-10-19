@@ -1,272 +1,270 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE TS>
-<TS version="2.1" language="nl">
+<?xml version="1.0" ?><!DOCTYPE TS><TS language="sr" version="2.1">
 <context>
     <name>API</name>
     <message>
         <source>favourited</source>
-        <translation>favoriet gemaakt</translation>
+        <translation>омиљен</translation>
     </message>
     <message>
         <source>followed you</source>
-        <translation>volgde jou</translation>
+        <translation>вас прати</translation>
     </message>
     <message>
         <source>boosted</source>
-        <translation>boostte</translation>
+        <translation>разглашено</translation>
     </message>
     <message>
         <source>said</source>
-        <translation>zei</translation>
+        <translation>каже</translation>
     </message>
 </context>
 <context>
     <name>Browser</name>
     <message>
         <source>Open in Browser</source>
-        <translation>Openen in browser</translation>
+        <translation>Отвори у прегледнику веба</translation>
     </message>
     <message>
         <source>Web mode</source>
-        <translation>Webmodus</translation>
+        <translation>Прегледник веба</translation>
     </message>
     <message>
         <source>Reading mode</source>
-        <translation>Leesmodus</translation>
+        <translation>Мод за читање</translation>
     </message>
 </context>
 <context>
     <name>Conversation</name>
     <message>
         <source>Conversation</source>
-        <translation>Gesprek</translation>
+        <translation>Разговор</translation>
     </message>
     <message>
         <source>Content warning!</source>
-        <translation>Gevoelige inhoud!</translation>
+        <translation>Упозорење на садржај</translation>
     </message>
     <message>
         <source>public</source>
-        <translation>openbaar</translation>
+        <translation>јавно</translation>
     </message>
     <message>
         <source>unlisted</source>
-        <translation>niet op lijst</translation>
+        <translation>не приказано</translation>
     </message>
     <message>
         <source>followers only</source>
-        <translation>alleen volgers</translation>
+        <translation>само за пратиоце</translation>
     </message>
     <message>
         <source>direct</source>
-        <translation>direct</translation>
+        <translation>директна порука</translation>
     </message>
     <message>
         <source>Delete</source>
-        <translation type="unfinished"></translation>
+        <translation>Обриши</translation>
     </message>
     <message>
         <source>Emojis</source>
-        <translation type="unfinished"></translation>
+        <translation>Емотикони</translation>
     </message>
     <message>
         <source>Tap to insert</source>
-        <translation type="unfinished"></translation>
+        <translation>Тапни за убацивање</translation>
     </message>
 </context>
 <context>
     <name>ImageUploader</name>
     <message>
         <source>The file %1 does not exists</source>
-        <translation type="unfinished"></translation>
+        <translation>Фајл %1 не постоји</translation>
     </message>
 </context>
 <context>
     <name>LoginPage</name>
     <message>
         <source>Login</source>
-        <translation type="unfinished"></translation>
+        <translation>Пријава</translation>
     </message>
 </context>
 <context>
     <name>MainPage</name>
     <message>
         <source>Home</source>
-        <translation>Thuis</translation>
+        <translation>Почетна</translation>
     </message>
     <message>
         <source>Timeline</source>
-        <translation>Tijdlijn</translation>
+        <translation>Временска линија</translation>
     </message>
     <message>
         <source>Notifications</source>
-        <translation>Meldingen</translation>
+        <translation>Обавјештење</translation>
     </message>
     <message>
         <source>Search</source>
-        <translation>Zoeken</translation>
+        <translation>Претрага</translation>
     </message>
     <message>
         <source>New Toot</source>
-        <translation>Nieuw</translation>
+        <translation>Нова</translation>
     </message>
 </context>
 <context>
     <name>MiniStatus</name>
     <message>
         <source>boosted</source>
-        <translation>heeft geboost</translation>
+        <translation>разглашено</translation>
     </message>
     <message>
         <source>favourited</source>
-        <translation>favoriet gemaakt</translation>
+        <translation>омиљено</translation>
     </message>
     <message>
         <source>followed you</source>
-        <translation>volgde jou</translation>
+        <translation>вас прати</translation>
     </message>
 </context>
 <context>
     <name>MyList</name>
     <message>
         <source>Load more</source>
-        <translation>Meer laden</translation>
+        <translation>учитај још</translation>
     </message>
     <message>
         <source>Settings</source>
-        <translation type="unfinished"></translation>
+        <translation>Подешавања</translation>
     </message>
 </context>
 <context>
     <name>Profile</name>
     <message>
         <source>Unfollow</source>
-        <translation>Ontvolgen</translation>
+        <translation>Одпрати</translation>
     </message>
     <message>
         <source>Follow request sent!</source>
-        <translation>Volgverzoek verstuurd!</translation>
+        <translation>Захтјев за праћењем поднесен!</translation>
     </message>
     <message>
         <source>Following</source>
-        <translation>Volgend</translation>
+        <translation>Пратите</translation>
     </message>
     <message>
         <source>Mute</source>
-        <translation>Dempen</translation>
+        <translation>Утишај</translation>
     </message>
     <message>
         <source>Unmute</source>
-        <translation>Ontdempen</translation>
+        <translation>Укини утишање</translation>
     </message>
     <message>
         <source>Unblock</source>
-        <translation>Deblokkeren</translation>
+        <translation>Одблокирати</translation>
     </message>
     <message>
         <source>Block</source>
-        <translation>Blokkeren</translation>
+        <translation>Блокирати</translation>
     </message>
     <message>
         <source>Statuses</source>
-        <translation>Statussen</translation>
+        <translation>Статуси</translation>
     </message>
     <message>
         <source>Favourites</source>
-        <translation>Favorieten</translation>
+        <translation>Омиљени</translation>
     </message>
     <message>
         <source>Follow</source>
-        <translation>Volgen</translation>
+        <translation>Прати</translation>
     </message>
     <message>
         <source>Summary</source>
-        <translation>Samenvatting</translation>
+        <translation>Детаљи</translation>
     </message>
     <message>
         <source>Followers</source>
-        <translation>Volgers</translation>
+        <translation>Пратиоци</translation>
     </message>
 </context>
 <context>
     <name>Settings</name>
     <message>
         <source>Settings</source>
-        <translation type="unfinished"></translation>
+        <translation>Подешавања</translation>
     </message>
     <message>
         <source>Remove Account</source>
-        <translation type="unfinished"></translation>
+        <translation>Уклони налог</translation>
     </message>
     <message>
         <source>Add Account</source>
-        <translation type="unfinished"></translation>
+        <translation>Додај налог</translation>
     </message>
     <message>
         <source>Authorize this app to use your Mastodon account in your behalf</source>
-        <translation type="unfinished"></translation>
+        <translation>Дозволите овој апликацији да користи ваш Mastodon налог</translation>
     </message>
     <message>
         <source>Load images in toots</source>
-        <translation type="unfinished"></translation>
+        <translation>Прикажи слике у објавама</translation>
     </message>
     <message>
         <source>Deauthorize this app and remove your account</source>
-        <translation type="unfinished"></translation>
+        <translation>Укините дозволе за кориштење и уклоните налог с телефона</translation>
     </message>
     <message>
         <source>Credits</source>
-        <translation type="unfinished"></translation>
+        <translation>Спомен плоча</translation>
     </message>
     <message>
         <source>Translate</source>
-        <translation type="unfinished"></translation>
+        <translation>Преведи</translation>
     </message>
     <message>
         <source>Use Transifex to help with app translation to your language</source>
-        <translation type="unfinished"></translation>
+        <translation>Користите Transifex и помозите у преводу апликације на други језик</translation>
     </message>
     <message>
         <source>Disable this option if you want to preserve your data connection</source>
-        <translation type="unfinished"></translation>
+        <translation>Искључите ову опцију уколико желите да уштедите на преносу података</translation>
     </message>
     <message>
         <source>UI/UX design and development</source>
-        <translation type="unfinished"></translation>
+        <translation>интерфејс дизајн и развој</translation>
     </message>
 </context>
 <context>
     <name>Toot</name>
     <message>
         <source>boosted</source>
-        <translation>boostte</translation>
+        <translation>разглашено</translation>
     </message>
     <message>
         <source>favourited</source>
-        <translation>maakte favoriet</translation>
+        <translation>омиљено</translation>
     </message>
     <message>
         <source>followed you</source>
-        <translation>volgde jou</translation>
+        <translation>вас прати</translation>
     </message>
 </context>
 <context>
     <name>VisualContainer</name>
     <message>
         <source>Unboost</source>
-        <translation type="unfinished"></translation>
+        <translation>Уклони разглас</translation>
     </message>
     <message>
         <source>Boost</source>
-        <translation type="unfinished"></translation>
+        <translation>Разгласи</translation>
     </message>
     <message>
         <source>Unfavorite</source>
-        <translation type="unfinished"></translation>
+        <translation>Уклони из омиљених</translation>
     </message>
     <message>
         <source>Favorite</source>
-        <translation type="unfinished"></translation>
+        <translation>Омиљено</translation>
     </message>
 </context>
 </TS>

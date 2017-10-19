@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE TS>
-<TS version="2.1">
+<TS version="2.1" language="fr">
 <context>
     <name>API</name>
     <message>
@@ -28,7 +28,7 @@
     </message>
     <message>
         <source>Web mode</source>
-        <translation>Mode Web</translation>
+        <translation>Vue internet</translation>
     </message>
     <message>
         <source>Reading mode</source>
@@ -51,7 +51,7 @@
     </message>
     <message>
         <source>unlisted</source>
-        <translation>non-listé</translation>
+        <translation>non listé</translation>
     </message>
     <message>
         <source>followers only</source>
@@ -63,7 +63,7 @@
     </message>
     <message>
         <source>Delete</source>
-        <translation>Effacer</translation>
+        <translation>Supprimer</translation>
     </message>
     <message>
         <source>Emojis</source>
@@ -71,21 +71,21 @@
     </message>
     <message>
         <source>Tap to insert</source>
-        <translation>Tapoter pour insérer</translation>
+        <translation>Appuyez pour insérer</translation>
     </message>
 </context>
 <context>
     <name>ImageUploader</name>
     <message>
         <source>The file %1 does not exists</source>
-        <translation>Le fichier %1 n’existe pas</translation>
+        <translation>Le fichier %1 n&apos;existe pas</translation>
     </message>
 </context>
 <context>
     <name>LoginPage</name>
     <message>
         <source>Login</source>
-        <translation>Connexion</translation>
+        <translation>Login</translation>
     </message>
 </context>
 <context>
@@ -96,7 +96,7 @@
     </message>
     <message>
         <source>Timeline</source>
-        <translation>Fil</translation>
+        <translation>Chronologie</translation>
     </message>
     <message>
         <source>Notifications</source>
@@ -108,7 +108,7 @@
     </message>
     <message>
         <source>New Toot</source>
-        <translation>Nouveau pouet</translation>
+        <translation>Nouveau</translation>
     </message>
 </context>
 <context>
@@ -123,7 +123,7 @@
     </message>
     <message>
         <source>followed you</source>
-        <translation>vous suit</translation>
+        <translation>vous a suivi</translation>
     </message>
 </context>
 <context>
@@ -145,11 +145,11 @@
     </message>
     <message>
         <source>Follow request sent!</source>
-        <translation>Demande d’abonnement envoyée !</translation>
+        <translation>Demande de suivi envoyée !</translation>
     </message>
     <message>
         <source>Following</source>
-        <translation>Abonnements</translation>
+        <translation>Suivre</translation>
     </message>
     <message>
         <source>Mute</source>
@@ -157,7 +157,7 @@
     </message>
     <message>
         <source>Unmute</source>
-        <translation>Ne plus masquer</translation>
+        <translation>Démasquer</translation>
     </message>
     <message>
         <source>Unblock</source>
@@ -169,7 +169,7 @@
     </message>
     <message>
         <source>Statuses</source>
-        <translation>Statuts</translation>
+        <translation>Status</translation>
     </message>
     <message>
         <source>Favourites</source>
@@ -192,7 +192,7 @@
     <name>Settings</name>
     <message>
         <source>Settings</source>
-        <translation>Paramètres</translation>
+        <translation>Préférences</translation>
     </message>
     <message>
         <source>Remove Account</source>
@@ -203,43 +203,43 @@
         <translation>Ajouter un compte</translation>
     </message>
     <message>
+        <source>Authorize this app to use your Mastodon account in your behalf</source>
+        <translation>Autoriser cette application à utiliser votre compte Mastodon en votre nom</translation>
+    </message>
+    <message>
         <source>Load images in toots</source>
         <translation>Charger les images des pouets</translation>
+    </message>
+    <message>
+        <source>Deauthorize this app and remove your account</source>
+        <translation>Supprimer votre compte de l&apos;application</translation>
     </message>
     <message>
         <source>Credits</source>
         <translation>Crédits</translation>
     </message>
     <message>
-        <source>UI/UX design and development</source>
-        <translation>UI/UX design et développement</translation>
-    </message>
-    <message>
         <source>Translate</source>
         <translation>Traduire</translation>
     </message>
     <message>
-        <source>Deauthorize this app and remove your account</source>
-        <translation>Révoquer et supprimer le compte de l’application</translation>
-    </message>
-    <message>
-        <source>Authorize this app to use your Mastodon account in your behalf</source>
-        <translation>Autoriser l’application à utiliser votre compte Mastodon en votre nom</translation>
+        <source>Use Transifex to help with app translation to your language</source>
+        <translation>Utilisez Transifex pour aider à la traduction de l&apos;application dans votre langue</translation>
     </message>
     <message>
         <source>Disable this option if you want to preserve your data connection</source>
-        <translation>Désactiver cette option pour moins solliciter la connexion Internet</translation>
+        <translation>Désactivez cette option si vous souhaitez économiser votre consommation de données</translation>
     </message>
     <message>
-        <source>Use Transifex to help with app translation to your language</source>
-        <translation>Utiliser Transifex pour aider à traduire cette application dans votre langue</translation>
+        <source>UI/UX design and development</source>
+        <translation>design et développement de l&apos;interface</translation>
     </message>
 </context>
 <context>
     <name>Toot</name>
     <message>
         <source>boosted</source>
-        <translation>a partagé</translation>
+        <translation>boosté</translation>
     </message>
     <message>
         <source>favourited</source>
@@ -254,19 +254,19 @@
     <name>VisualContainer</name>
     <message>
         <source>Unboost</source>
-        <translation>Ne plus partager</translation>
+        <translation>ne plus partager</translation>
     </message>
     <message>
         <source>Boost</source>
-        <translation>Partager</translation>
+        <translation>partager</translation>
     </message>
     <message>
         <source>Unfavorite</source>
-        <translation>Retirer des favoris</translation>
+        <translation>supprimer de ses favoris </translation>
     </message>
     <message>
         <source>Favorite</source>
-        <translation>Ajouter aux favoris</translation>
+        <translation>ajouter aux favoris</translation>
     </message>
 </context>
 </TS>

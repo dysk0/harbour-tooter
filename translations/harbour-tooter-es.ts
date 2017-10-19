@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE TS>
-<TS version="2.1">
+<TS version="2.1" language="es">
 <context>
     <name>API</name>
     <message>
         <source>favourited</source>
-        <translation>favorecido</translation>
+        <translation>marcó como favorito</translation>
     </message>
     <message>
         <source>followed you</source>
-        <translation>te siguió</translation>
+        <translation>te empezó a seguir</translation>
     </message>
     <message>
         <source>boosted</source>
-        <translation>aumentado</translation>
+        <translation>retooteó</translation>
     </message>
     <message>
         <source>said</source>
@@ -24,7 +24,7 @@
     <name>Browser</name>
     <message>
         <source>Open in Browser</source>
-        <translation>Abrir en el navegador</translation>
+        <translation>Abrir en navegador</translation>
     </message>
     <message>
         <source>Web mode</source>
@@ -32,7 +32,7 @@
     </message>
     <message>
         <source>Reading mode</source>
-        <translation>Modo Leyendo</translation>
+        <translation>Modo lectura</translation>
     </message>
 </context>
 <context>
@@ -43,7 +43,7 @@
     </message>
     <message>
         <source>Content warning!</source>
-        <translation>Advertencia de contenido!</translation>
+        <translation>Advertencia de contenido</translation>
     </message>
     <message>
         <source>public</source>
@@ -51,11 +51,11 @@
     </message>
     <message>
         <source>unlisted</source>
-        <translation>deslistado</translation>
+        <translation>sin federar</translation>
     </message>
     <message>
         <source>followers only</source>
-        <translation>solo seguidores</translation>
+        <translation>sólo seguidores</translation>
     </message>
     <message>
         <source>direct</source>
@@ -67,11 +67,11 @@
     </message>
     <message>
         <source>Emojis</source>
-        <translation>Emojis</translation>
+        <translation>Emoticonos</translation>
     </message>
     <message>
         <source>Tap to insert</source>
-        <translation>Tocar para insertar</translation>
+        <translation>Toca para insertar</translation>
     </message>
 </context>
 <context>
@@ -85,7 +85,7 @@
     <name>LoginPage</name>
     <message>
         <source>Login</source>
-        <translation>Iniciar sesión</translation>
+        <translation>Acceso</translation>
     </message>
 </context>
 <context>
@@ -96,7 +96,7 @@
     </message>
     <message>
         <source>Timeline</source>
-        <translation>Cronograma</translation>
+        <translation>Historia federada</translation>
     </message>
     <message>
         <source>Notifications</source>
@@ -115,15 +115,15 @@
     <name>MiniStatus</name>
     <message>
         <source>boosted</source>
-        <translation>Aumentado</translation>
+        <translation>retooteó</translation>
     </message>
     <message>
         <source>favourited</source>
-        <translation>favorecido</translation>
+        <translation>marcó como favorito</translation>
     </message>
     <message>
         <source>followed you</source>
-        <translation>te siguió</translation>
+        <translation>te empezó a seguir</translation>
     </message>
 </context>
 <context>
@@ -141,11 +141,11 @@
     <name>Profile</name>
     <message>
         <source>Unfollow</source>
-        <translation>Deseguir</translation>
+        <translation>Dejar de seguir</translation>
     </message>
     <message>
         <source>Follow request sent!</source>
-        <translation>Seguir la solicitud enviada!</translation>
+        <translation>¡Solicitud de seguidor enviada!</translation>
     </message>
     <message>
         <source>Following</source>
@@ -153,19 +153,19 @@
     </message>
     <message>
         <source>Mute</source>
-        <translation>Mudo</translation>
+        <translation>Silenciar</translation>
     </message>
     <message>
         <source>Unmute</source>
-        <translation>Desmudar</translation>
+        <translation>Dejar de silenciar</translation>
     </message>
     <message>
         <source>Unblock</source>
-        <translation>Desbloquiar</translation>
+        <translation>Desbloquear</translation>
     </message>
     <message>
         <source>Block</source>
-        <translation>Bloquiar</translation>
+        <translation>Bloquear</translation>
     </message>
     <message>
         <source>Statuses</source>
@@ -196,77 +196,77 @@
     </message>
     <message>
         <source>Remove Account</source>
-        <translation>Remover cuenta</translation>
+        <translation>Eliminar cuenta</translation>
     </message>
     <message>
         <source>Add Account</source>
-        <translation>Agregar cuenta</translation>
+        <translation>Añadir cuenta</translation>
+    </message>
+    <message>
+        <source>Authorize this app to use your Mastodon account in your behalf</source>
+        <translation>Autoriza a esta aplicación a usar tu cuenta de Mastodon en tu nombre</translation>
     </message>
     <message>
         <source>Load images in toots</source>
         <translation>Cargar imágenes en toots</translation>
     </message>
     <message>
-        <source>Credits</source>
-        <translation>Creditos</translation>
+        <source>Deauthorize this app and remove your account</source>
+        <translation>Retira la autorización a esta aplicación y elimina tu cuenta</translation>
     </message>
     <message>
-        <source>UI/UX design and development</source>
-        <translation>Diseño y desarrollo de UI/UX</translation>
+        <source>Credits</source>
+        <translation>Créditos</translation>
     </message>
     <message>
         <source>Translate</source>
         <translation>Traducir</translation>
     </message>
     <message>
-        <source>Deauthorize this app and remove your account</source>
-        <translation>Desautorizar esta apl y remover su cuenta</translation>
-    </message>
-    <message>
-        <source>Authorize this app to use your Mastodon account in your behalf</source>
-        <translation>Autorizar esta apl para usar su cuenta de Mastodon a su favor</translation>
+        <source>Use Transifex to help with app translation to your language</source>
+        <translation>Usa Transifex para ayudar en la traducción a tu idioma de esta aplicación</translation>
     </message>
     <message>
         <source>Disable this option if you want to preserve your data connection</source>
-        <translation>Inhabilitar esta opción si usted quiere preservar su conexión de datos</translation>
+        <translation>Deshabilita esta opción si quieres ahorrar en tu conexión de datos</translation>
     </message>
     <message>
-        <source>Use Transifex to help with app translation to your language</source>
-        <translation>Usar transifex para traducir esta apl a su lenguaje</translation>
+        <source>UI/UX design and development</source>
+        <translation>Diseño UI/UX y desarrollo</translation>
     </message>
 </context>
 <context>
     <name>Toot</name>
     <message>
         <source>boosted</source>
-        <translation>aumentado</translation>
+        <translation>retooteó</translation>
     </message>
     <message>
         <source>favourited</source>
-        <translation>favorecido</translation>
+        <translation>marcó como favorito</translation>
     </message>
     <message>
         <source>followed you</source>
-        <translation>te siguió</translation>
+        <translation>te empezó a seguir</translation>
     </message>
 </context>
 <context>
     <name>VisualContainer</name>
     <message>
         <source>Unboost</source>
-        <translation>Desaumentar</translation>
+        <translation>Eliminar toot</translation>
     </message>
     <message>
         <source>Boost</source>
-        <translation>Aumentar</translation>
+        <translation>Tootear</translation>
     </message>
     <message>
         <source>Unfavorite</source>
-        <translation>Desfavorar</translation>
+        <translation>Eliminar favorito</translation>
     </message>
     <message>
         <source>Favorite</source>
-        <translation>Favorito</translation>
+        <translation>Marcar como favorito</translation>
     </message>
 </context>
 </TS>
