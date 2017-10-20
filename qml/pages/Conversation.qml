@@ -147,6 +147,7 @@ Page {
                 RemorseItem { id: remorse }
                 Image {
                     anchors.fill: parent
+                    fillMode: Image.PreserveAspectCrop
                     source: model.preview_url
                 }
 

@@ -58,6 +58,19 @@ SilicaListView {
 
     PullDownMenu {
         MenuItem {
+            text: "NOTIFIKACIJA"
+            onClicked: {
+                Logic.notifier({
+                                   type: "favourite",
+                                   urgency: "critical",
+                                   created_at: new Date(),
+                                   reblog_account_display_name: "@akakakak",
+                                   content: "blaaaaaa blaaaaaablaaaaaablaaaaaa"
+
+                               })
+            }
+        }
+        MenuItem {
             text: qsTr("Settings")
             onClicked: {
                 pageStack.push(Qt.resolvedUrl("../Settings.qml"), {})

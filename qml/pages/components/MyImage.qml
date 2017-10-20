@@ -10,7 +10,6 @@ Item {
         opacity: 0.2
         anchors.fill: parent
         color: Theme.highlightDimmerColor
-
     }
     Image {
         anchors.centerIn: parent

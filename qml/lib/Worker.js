@@ -207,6 +207,7 @@ function getDate(dateStr){
 function parseToot (data){
     //console.log(JSON.stringify(data))
     var item = {};
+
     item['type'] = "toot"
     item['highlight'] = false
     item['status_id'] = data["id"]

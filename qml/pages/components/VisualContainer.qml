@@ -9,6 +9,16 @@ BackgroundItem {
     signal navigateTo(string link)
     width: parent.width
     height: mnu.height +  miniHeader.height + (typeof attachments !== "undefined" && attachments.count ? media.height + Theme.paddingLarge + Theme.paddingMedium: Theme.paddingLarge) + lblContent.height + Theme.paddingLarge + (ministatus.visible ? ministatus.height : 0)
+    Rectangle {
+        x: 0;
+        y: 0;
+        visible: status_visibility == 'direct'
+        width: parent.width
+        height: parent.height
+        opacity: 0.3
+        color: Theme.highlightBackgroundColor;
+    }
+
     MiniStatus {
         id: ministatus
         anchors {
@@ -284,4 +294,5 @@ BackgroundItem {
     onDoubleClicked: {
         console.log("double click")
     }
+
 }

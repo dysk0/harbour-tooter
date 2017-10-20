@@ -116,7 +116,7 @@ var notificationGenerator = function(item){
     var notification;
     switch (item.urgency){
     case "normal":
-        notification = Qt.createQmlObject('import org.nemomobile.notifications 1.0; Notification { category: "x-nemo.example"; urgency: Notification.Normal; }', Qt.application, 'InternalQmlObject');
+        notification = Qt.createQmlObject('import org.nemomobile.notifications 1.0; Notification { category: "x-nemo.example"; urgency: Notification.Normal;  }', Qt.application, 'InternalQmlObject');
         break;
     case "critical":
         notification = Qt.createQmlObject('import org.nemomobile.notifications 1.0; Notification { category: "x-nemo.example"; urgency: Notification.Critical; }', Qt.application, 'InternalQmlObject');
@@ -124,6 +124,7 @@ var notificationGenerator = function(item){
     default:
         notification = Qt.createQmlObject('import org.nemomobile.notifications 1.0; Notification { category: "x-nemo.example"; urgency: Notification.Low; }', Qt.application, 'InternalQmlObject');
     }
+
     notification.timestamp = item.timestamp
     notification.summary = item.summary
     notification.body = item.body
@@ -176,7 +177,7 @@ var notifier = function(item){
         }
         break;
     default:
-        console.log(JSON.stringify(messageObject.data))
+        //console.log(JSON.stringify(messageObject.data))
         return;
     }
     notificationGenerator(msg)

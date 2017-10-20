@@ -12,6 +12,8 @@
 # The name of your application
 TARGET = harbour-tooter
 
+QT += network dbus sql
+
 CONFIG += sailfishapp
 
 SOURCES += src/harbour-tooter.cpp \
