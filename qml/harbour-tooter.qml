@@ -67,5 +67,20 @@ ApplicationWindow
     Component.onDestruction: {
         Logic.saveData()
     }
+    Connections
+        {
+            target: Dbus
+            onViewtoot:
+            {
+                console.log(key, "dbus show issue")
+
+            }
+            onActivateapp:
+            {
+                console.log ("dbus activate app")
+                pageStack.pop(pageStack.find( function(page){ return (page._depth === 0) }))
+                activate()
+            }
+        }
 }
 

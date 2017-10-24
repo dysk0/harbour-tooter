@@ -1,0 +1,10 @@
+<!DOCTYPE node PUBLIC "-//freedesktop//DTD D-BUS Object Introspection 1.0//EN" "http://www.freedesktop.org/standards/dbus/1.0/introspect.dtd">
+<node>
+    <interface name="ba.dysko.harbour.tooter">
+        <method name="showtoot">
+            <annotation name="org.freedesktop.DBus.Method.NoReply" value="true" />
+            <arg name="key" type="as" direction="in" />
+        </method>
+        <method name="openapp" />
+    </interface>
+</node>

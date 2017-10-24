@@ -1,0 +1,3 @@
+[D-BUS Service]
+Name=ba.dysko.harbour.tooter
+Exec=/usr/bin/invoker --type=silica-qt5 --desktop-file=harbour-tooter.desktop -s -n /usr/bin/harbour-tooter

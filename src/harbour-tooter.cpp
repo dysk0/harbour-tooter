@@ -8,7 +8,7 @@
 #include <QtQml>
 #include <QtGui/QGuiApplication>
 #include "imageuploader.h"
-
+#include "dbus.h"
 
 int main(int argc, char *argv[])
 {
@@ -20,6 +20,9 @@ int main(int argc, char *argv[])
 
     QQmlEngine* engine = view->engine();
     QObject::connect(engine, SIGNAL(quit()), app.data(), SLOT(quit()));
+
+    Dbus *dbus = new Dbus();
+        view->rootContext()->setContextProperty("Dbus", dbus);
 
     view->setSource(SailfishApp::pathTo("qml/harbour-tooter.qml"));
     view->show();

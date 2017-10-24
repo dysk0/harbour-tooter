@@ -13,13 +13,36 @@
 TARGET = harbour-tooter
 
 QT += network dbus sql
+CONFIG += sailfishapp link_pkgconfig
+PKGCONFIG += sailfishapp nemonotifications-qt5 Qt5SystemInfo
 
-CONFIG += sailfishapp
+DEFINES += "APPVERSION=\\\"$${SPECVERSION}\\\""
+DEFINES += "APPNAME=\\\"$${TARGET}\\\""
+
+!exists( src/dbusAdaptor.h ) {
+    system(qdbusxml2cpp config/ba.dysko.harbour.tooter.xml -i dbus.h -a src/dbusAdaptor)
+}
+
+config.path = /usr/share/$${TARGET}/config/
+config.files = config/icon-lock-harbour-maira.png
+
+notification_categories.path = /usr/share/lipstick/notificationcategories
+notification_categories.files = config/x-harbour.maira.activity.*
+
+dbus_services.path = /usr/share/dbus-1/services/
+dbus_services.files = config/ba.dysko.harbour.tooter.service
+
+interfaces.path = /usr/share/dbus-1/interfaces/
+interfaces.files = config/ba.dysko.harbour.tooter.xml
+
 
 SOURCES += src/harbour-tooter.cpp \
-    src/imageuploader.cpp
+    src/imageuploader.cpp \
+    src/dbusAdaptor.cpp \
+    src/dbus.cpp
 
 OTHER_FILES += qml/harbour-tooter.qml \
+    config/* \
     qml/cover/CoverPage.qml \
     qml/pages/MainPage.qml \
     qml/pages/LoginPage.qml \
@@ -73,7 +96,11 @@ DISTFILES += \
     qml/pages/Settings.qml \
     qml/pages/components/MediaBlock.qml \
     qml/pages/components/MyImage.qml \
-    qml/pages/components/ImageFullScreen.qml
+    qml/pages/components/ImageFullScreen.qml \
+    config/icon-lock-harbour-tooter.png \
+    config/x-harbour.tooter.activity.conf
 
 HEADERS += \
-    src/imageuploader.h
+    src/imageuploader.h \
+    src/dbusAdaptor.h \
+    src/dbus.h

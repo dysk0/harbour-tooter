@@ -3,6 +3,7 @@ import Sailfish.Silica 1.0
 import "../../lib/API.js" as Logic
 import "."
 
+import org.nemomobile.notifications 1.0;
 
 SilicaListView {
     id: myList
@@ -61,11 +62,27 @@ SilicaListView {
             text: "NOTIFIKACIJA"
             onClicked: {
                 Logic.notifier({
-                                   type: "favourite",
+                                   type: "follow",
                                    urgency: "critical",
                                    created_at: new Date(),
+                                   account_display_name: '@muo',
                                    reblog_account_display_name: "@akakakak",
                                    content: "blaaaaaa blaaaaaablaaaaaablaaaaaa"
+
+                               })
+            }
+        }
+        MenuItem {
+            text: "NOTIFIKACIJA2"
+            onClicked: {
+
+                Logic.notifier({
+                                   type: "reblog",
+                                   urgency: "critical",
+                                   created_at: new Date(),
+                                   account_display_name: '@muowww',
+                                   reblog_account_display_name: "@akakwwakak",
+                                   content: "blaaaaaa blaaaaawwwablaaaaaablaaaaaa"
 
                                })
             }
@@ -119,6 +136,34 @@ SilicaListView {
         console.log("CountChanged!")*/
 
     }
+    Button {
+        Notification {
+            id: notification
+            category: "x-harbour.tooter.activity"
+            appName: "Tooter"
+            appIcon: "/usr/share/harbour-tooter/config/icon-lock-harbour-tooter.png"
+            summary: "Notification summary"
+            body: "Notification body"
+            previewSummary: "Notification preview summary"
+            previewBody: "Notification preview body"
+            itemCount: 5
+            timestamp: "2013-02-20 18:21:00"
+            remoteActions: [ {
+                    "name": "default",
+                    "displayName": "Do something",
+                    "icon": "icon-s-certificates",
+                    "service": "ba.dysko.harbour.tooter",
+                    "path": "/",
+                    "iface": "ba.dysko.harbour.tooter",
+                    "method": "openapp",
+                    "arguments": [  ]
+                }]
+            onClicked: console.log("Clicked")
+            onClosed: console.log("Closed, reason: " + reason)
+        }
+        text: "Application notification" + (notification.replacesId ? " ID:" + notification.replacesId : "")
+        onClicked: notification.publish()
+    }
     footer: Item{
         width: parent.width
         height: Theme.itemSizeLarge
@@ -129,7 +174,7 @@ SilicaListView {
             visible: false
             onClicked: {
                 loadData("append")
-            }            
+            }
         }
         BusyIndicator {
             size: BusyIndicatorSize.Small

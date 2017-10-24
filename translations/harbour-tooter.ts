@@ -81,7 +81,7 @@
 <context>
     <name>ImageFullScreen</name>
     <message>
-        <source>Error loading image</source>
+        <source>Error loading</source>
         <translation type="unfinished"></translation>
     </message>
 </context>

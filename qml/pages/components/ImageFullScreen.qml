@@ -41,14 +41,30 @@ Page {
                 videoError.visible = true;
             }
             onStatusChanged: {
+                console.log(status)
                 switch (status){
-                    case MediaPlayer.Buffering:
-                        return;
-                    case MediaPlayer.Loading:
-                        playerIcon.visible = false;
-                        return;
-                    default:
-                        return;
+                case MediaPlayer.Loading:
+                    console.log("loading")
+                    return;
+                case MediaPlayer.EndOfMedia:
+                    console.log("EndOfMedia")
+                    return;
+
+                }
+            }
+
+            onPlaybackStateChanged: {
+                console.log(playbackState)
+                switch (playbackState){
+                case MediaPlayer.PlayingState:
+                    playerIcon.icon.source = "image://theme/icon-m-play"
+                    return;
+                case MediaPlayer.PausedState:
+                    playerIcon.icon.source = "image://theme/icon-m-pause"
+                    return;
+                case MediaPlayer.StoppedState:
+                    playerIcon.icon.source = "image://theme/icon-m-stop"
+                    return;
                 }
             }
 
@@ -70,34 +86,52 @@ Page {
                 //console.log(duration)
                 //console.log(bufferProgress)
                 //console.log(position)
-                progressRec.width = parent.width * position/duration
+                if (status !== MediaPlayer.Loading){
+                    playerProgress.indeterminate = false
+                    playerProgress.maximumValue = duration
+                    playerProgress.minimumValue = 0
+                    playerProgress.value = position
+                }
+
             }
             onStopped: function(){
                 play()
             }
             IconButton {
                 id: playerIcon
-                anchors.centerIn: parent
-                icon.source: "image://theme/icon-l-play"
+                anchors.left: parent.left
+                anchors.bottom: parent.bottom
+                anchors.leftMargin: Theme.paddingLarge
+                anchors.bottomMargin: Theme.paddingMedium
+                icon.source: "image://theme/icon-m-play"
                 onClicked: function() {
-                    visible = false;
-                    video.play()
+                    if (video.playbackState === MediaPlayer.PlayingState)
+                        video.pause()
+                    else
+                        video.play()
                 }
             }
+
+            ProgressBar {
+                indeterminate: true
+                id: playerProgress
+                anchors.left: playerIcon.right
+                anchors.right: parent.right
+
+                anchors.verticalCenter: playerIcon.verticalCenter
+                anchors.leftMargin: 0
+                anchors.bottomMargin: Theme.paddingMedium
+            }
+
             MouseArea {
                 anchors.fill: parent
                 onClicked: function() {
-                    playerIcon.visible = true;
-                    video.stop()
+                    if (video.playbackState === MediaPlayer.PlayingState)
+                        video.pause()
+                    else
+                        video.play()
                 }
             }
-        }
-        Rectangle {
-            id: progressRec
-            anchors.bottom: parent.bottom
-            width: 0
-            height: Theme.paddingSmall
-            color: Theme.highlightBackgroundColor
         }
     }
 

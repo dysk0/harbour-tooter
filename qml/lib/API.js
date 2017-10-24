@@ -116,14 +116,15 @@ var notificationGenerator = function(item){
     var notification;
     switch (item.urgency){
     case "normal":
-        notification = Qt.createQmlObject('import org.nemomobile.notifications 1.0; Notification { category: "x-nemo.example"; urgency: Notification.Normal;  }', Qt.application, 'InternalQmlObject');
+        notification = Qt.createQmlObject('import org.nemomobile.notifications 1.0; Notification { appName: "Tooter"; itemCount: 1; category: "x-harbour.tooter.activity"; urgency: Notification.Normal;  }', Qt.application, 'InternalQmlObject');
         break;
     case "critical":
-        notification = Qt.createQmlObject('import org.nemomobile.notifications 1.0; Notification { category: "x-nemo.example"; urgency: Notification.Critical; }', Qt.application, 'InternalQmlObject');
+        notification = Qt.createQmlObject('import org.nemomobile.notifications 1.0; Notification { appName: "Tooter"; itemCount: 1; category: "x-harbour.tooter.activity"; urgency: Notification.Critical;  remoteActions: [ { "name": "default", "displayName": "Do something", "icon": "icon-s-do-it", "service": "org.nemomobile.example", "path": "/example", "iface": "org.nemomobile.example", "method": "doSomething", "arguments": [ "argument", 1 ] },{ "name": "ignore", "displayName": "Ignore the problem", "icon": "icon-s-ignore", "service": "org.nemomobile.example", "path": "/example", "iface": "org.nemomobile.example", "method": "ignore", "arguments": [ "argument", 1 ] } ]; onClicked: console.log("Clicked"); onClosed: console.log("Closed, reason: " + reason); }', Qt.application, 'InternalQmlObject');
         break;
     default:
-        notification = Qt.createQmlObject('import org.nemomobile.notifications 1.0; Notification { category: "x-nemo.example"; urgency: Notification.Low; }', Qt.application, 'InternalQmlObject');
+        notification = Qt.createQmlObject('import org.nemomobile.notifications 1.0; Notification { appName: "Tooter"; itemCount: 1; category: "x-harbour.tooter.activity"; urgency: Notification.Low; }', Qt.application, 'InternalQmlObject');
     }
+    notification.remoteActions =  [ { "name": "app", "displayName": "Do something", "icon": "icon-s-do-it", "service": "ba.dysko.harbour.tooter", "path": "/", "iface": "ba.dysko.harbour.tooter", "method": "openapp", "arguments": [ ]}]
 
     notification.timestamp = item.timestamp
     notification.summary = item.summary
