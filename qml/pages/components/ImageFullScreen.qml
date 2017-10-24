@@ -37,14 +37,59 @@ Page {
         Video {
             id: video
             anchors.fill: parent
+            onErrorStringChanged: function(){
+                videoError.visible = true;
+            }
+            onStatusChanged: {
+                switch (status){
+                    case MediaPlayer.Buffering:
+                        return;
+                    case MediaPlayer.Loading:
+                        playerIcon.visible = false;
+                        return;
+                    default:
+                        return;
+                }
+            }
+
+            Text {
+                id: videoError
+                anchors.left: parent.left
+                anchors.right: parent.right
+                anchors.bottom: parent.bottom
+                anchors.margins: Theme.paddingMedium
+                visible: false;
+                font.pixelSize: Theme.fontSizeSmall;
+                text: video.errorString
+                color: Theme.highlightColor
+            }
+
+
+
             onPositionChanged: function(){
-                console.log(duration)
-                console.log(bufferProgress)
-                console.log(position)
+                //console.log(duration)
+                //console.log(bufferProgress)
+                //console.log(position)
                 progressRec.width = parent.width * position/duration
             }
             onStopped: function(){
                 play()
+            }
+            IconButton {
+                id: playerIcon
+                anchors.centerIn: parent
+                icon.source: "image://theme/icon-l-play"
+                onClicked: function() {
+                    visible = false;
+                    video.play()
+                }
+            }
+            MouseArea {
+                anchors.fill: parent
+                onClicked: function() {
+                    playerIcon.visible = true;
+                    video.stop()
+                }
             }
         }
         Rectangle {
@@ -178,16 +223,16 @@ Page {
             }
         }
 
-        Component {
-            id: failedLoading
-            Text {
-                font.pixelSize: Theme.fontSizeSmall;
-                text: qsTr("Error loading image")
-                color: Theme.highlightColor
-            }
+
+    }
+    Component {
+        id: failedLoading
+        Text {
+            font.pixelSize: Theme.fontSizeSmall;
+            text: qsTr("Error loading")
+            color: Theme.highlightColor
         }
     }
-
     VerticalScrollDecorator { flickable: imageFlickable }
     IconButton {
         visible: false
