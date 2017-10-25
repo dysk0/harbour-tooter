@@ -10,7 +10,7 @@ WorkerScript.onMessage = function(msg) {
     // order notifications in ASC order
     function orderNotifications(items){
         for (var i = items.length-1; i > 0; i--){
-            if (items[i].id > msg.conf.notificationLastID)
+            if (items[i].id > 0 ) //msg.conf.notificationLastID)
                 WorkerScript.sendMessage({ 'fireNotification': true, "data": items[i]})
         }
     }
@@ -251,7 +251,7 @@ function parseToot (data){
         item['content'] = item['content'].replaceAll('#'+tag, '<a href="#'+tag+'">'+tag+'</a>')
     }*/
     item['attachments'] = [];
-    console.log("Image "+loadImages)
+    //console.log("Image "+loadImages)
 
     for(var i = 0; i < data['media_attachments'].length ; i++){
         var attachments = data['media_attachments'][i];

@@ -61,30 +61,13 @@ SilicaListView {
         MenuItem {
             text: "NOTIFIKACIJA"
             onClicked: {
-                Logic.notifier({
-                                   type: "follow",
-                                   urgency: "critical",
-                                   created_at: new Date(),
-                                   account_display_name: '@muo',
-                                   reblog_account_display_name: "@akakakak",
-                                   content: "blaaaaaa blaaaaaablaaaaaablaaaaaa"
-
-                               })
+                Notifications.notify("Tooter", "serverinfo.serverTitle", " new activity", true, "", "aaa")
             }
         }
         MenuItem {
             text: "NOTIFIKACIJA2"
             onClicked: {
-
-                Logic.notifier({
-                                   type: "reblog",
-                                   urgency: "critical",
-                                   created_at: new Date(),
-                                   account_display_name: '@muowww',
-                                   reblog_account_display_name: "@akakwwakak",
-                                   content: "blaaaaaa blaaaaawwwablaaaaaablaaaaaa"
-
-                               })
+                Notifications.notify("Tooter", "serverinfo.serverTitle", " new activity", false, "2015-10-15 00:00:00", "aaa")
             }
         }
         MenuItem {
@@ -137,31 +120,6 @@ SilicaListView {
 
     }
     Button {
-        Notification {
-            id: notification
-            category: "x-harbour.tooter.activity"
-            appName: "Tooter"
-            appIcon: "/usr/share/harbour-tooter/config/icon-lock-harbour-tooter.png"
-            summary: "Notification summary"
-            body: "Notification body"
-            previewSummary: "Notification preview summary"
-            previewBody: "Notification preview body"
-            itemCount: 5
-            timestamp: "2013-02-20 18:21:00"
-            remoteActions: [ {
-                    "name": "default",
-                    "displayName": "Do something",
-                    "icon": "icon-s-certificates",
-                    "service": "ba.dysko.harbour.tooter",
-                    "path": "/",
-                    "iface": "ba.dysko.harbour.tooter",
-                    "method": "openapp",
-                    "arguments": [  ]
-                }]
-            onClicked: console.log("Clicked")
-            onClosed: console.log("Closed, reason: " + reason)
-        }
-        text: "Application notification" + (notification.replacesId ? " ID:" + notification.replacesId : "")
         onClicked: notification.publish()
     }
     footer: Item{
@@ -205,7 +163,10 @@ SilicaListView {
                 console.log(JSON.stringify(messageObject))
             }
             if (messageObject.fireNotification && notifier){
-                Logic.notifier(messageObject.data)
+                //Logic.notifier(messageObject.data)
+                console.log(JSON.stringify(messageObject.data))
+                notification.body = "a"
+                notification.publish()
             }
 
         }
@@ -241,4 +202,29 @@ SilicaListView {
         if (type !== "")
             worker.sendMessage(msg);
     }
+    Notification {
+        id: notification
+        category: "x-harbour.tooter.activity"
+        appName: "Tooter"
+        appIcon: "/usr/share/harbour-tooter/config/icon-lock-harbour-tooter.png"
+        summary: "Notification summary"
+        body: "Notification body"
+        previewSummary: "Notification preview summary"
+        previewBody: "Notification preview body"
+        itemCount: 5
+        timestamp: "2013-02-20 18:21:00"
+        remoteActions: [ {
+                "name": "default",
+                "displayName": "Do something",
+                "icon": "icon-s-certificates",
+                "service": "ba.dysko.harbour.tooter",
+                "path": "/",
+                "iface": "ba.dysko.harbour.tooter",
+                "method": "openapp",
+                "arguments": [  ]
+            }]
+        onClicked: console.log("Clicked")
+        onClosed: console.log("Closed, reason: " + reason)
+    }
+
 }

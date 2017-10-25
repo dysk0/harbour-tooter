@@ -79,6 +79,21 @@
     </message>
 </context>
 <context>
+    <name>CoverPage</name>
+    <message>
+        <source>favourited</source>
+        <translation type="unfinished">a ajouté à ses favoris</translation>
+    </message>
+    <message>
+        <source>followed you</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>boosted</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
     <name>ImageFullScreen</name>
     <message>
         <source>Error loading</source>

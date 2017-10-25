@@ -79,6 +79,21 @@
     </message>
 </context>
 <context>
+    <name>CoverPage</name>
+    <message>
+        <source>favourited</source>
+        <translation type="unfinished">στους σελιδοδείκτες</translation>
+    </message>
+    <message>
+        <source>followed you</source>
+        <translation type="unfinished">σας ακολουθούν</translation>
+    </message>
+    <message>
+        <source>boosted</source>
+        <translation type="unfinished">προωθημένο</translation>
+    </message>
+</context>
+<context>
     <name>ImageFullScreen</name>
     <message>
         <source>Error loading</source>

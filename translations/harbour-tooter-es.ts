@@ -79,6 +79,21 @@
     </message>
 </context>
 <context>
+    <name>CoverPage</name>
+    <message>
+        <source>favourited</source>
+        <translation type="unfinished">marcó como favorito</translation>
+    </message>
+    <message>
+        <source>followed you</source>
+        <translation type="unfinished">te empezó a seguir</translation>
+    </message>
+    <message>
+        <source>boosted</source>
+        <translation type="unfinished">retooteó</translation>
+    </message>
+</context>
+<context>
     <name>ImageFullScreen</name>
     <message>
         <source>Error loading</source>

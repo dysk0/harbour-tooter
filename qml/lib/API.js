@@ -116,7 +116,7 @@ var notificationGenerator = function(item){
     var notification;
     switch (item.urgency){
     case "normal":
-        notification = Qt.createQmlObject('import org.nemomobile.notifications 1.0; Notification { appName: "Tooter"; itemCount: 1; category: "x-harbour.tooter.activity"; urgency: Notification.Normal;  }', Qt.application, 'InternalQmlObject');
+        notification = Qt.createQmlObject('import org.nemomobile.notifications 1.0; Notification { category: "x-harbour.tooter.activity"; appName: "Tooter"; appIcon: "/usr/share/harbour-tooter/config/icon-lock-harbour-tooter.png"; summary: "Notification summary"; body: "Notification body"; previewSummary: "Notification preview summary"; previewBody: "Notification preview body"; itemCount: 1; remoteActions: [ { "name": "default", "displayName": "Do something", "icon": "icon-s-certificates", "service": "ba.dysko.harbour.tooter", "path": "/", "iface": "ba.dysko.harbour.tooter", "method": "openapp", "arguments": [  ] }]; urgency: Notification.Normal;  }', Qt.application, 'InternalQmlObject');
         break;
     case "critical":
         notification = Qt.createQmlObject('import org.nemomobile.notifications 1.0; Notification { appName: "Tooter"; itemCount: 1; category: "x-harbour.tooter.activity"; urgency: Notification.Critical;  remoteActions: [ { "name": "default", "displayName": "Do something", "icon": "icon-s-do-it", "service": "org.nemomobile.example", "path": "/example", "iface": "org.nemomobile.example", "method": "doSomething", "arguments": [ "argument", 1 ] },{ "name": "ignore", "displayName": "Ignore the problem", "icon": "icon-s-ignore", "service": "org.nemomobile.example", "path": "/example", "iface": "org.nemomobile.example", "method": "ignore", "arguments": [ "argument", 1 ] } ]; onClicked: console.log("Clicked"); onClosed: console.log("Closed, reason: " + reason); }', Qt.application, 'InternalQmlObject');
@@ -124,7 +124,8 @@ var notificationGenerator = function(item){
     default:
         notification = Qt.createQmlObject('import org.nemomobile.notifications 1.0; Notification { appName: "Tooter"; itemCount: 1; category: "x-harbour.tooter.activity"; urgency: Notification.Low; }', Qt.application, 'InternalQmlObject');
     }
-    notification.remoteActions =  [ { "name": "app", "displayName": "Do something", "icon": "icon-s-do-it", "service": "ba.dysko.harbour.tooter", "path": "/", "iface": "ba.dysko.harbour.tooter", "method": "openapp", "arguments": [ ]}]
+    //notification.remoteActions =  [ { "name": "app", "displayName": "Do something", "icon": "icon-s-do-it", "service": "ba.dysko.harbour.tooter", "path": "/", "iface": "ba.dysko.harbour.tooter", "method": "openapp", "arguments": [ ]}]
+    //Notifications.notify("Tooter", "serverinfo.serverTitle", " new activity", false, "2015-10-15 00:00:00", "aaa")
 
     notification.timestamp = item.timestamp
     notification.summary = item.summary

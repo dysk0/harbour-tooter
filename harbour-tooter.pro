@@ -14,7 +14,7 @@ TARGET = harbour-tooter
 
 QT += network dbus sql
 CONFIG += sailfishapp link_pkgconfig
-PKGCONFIG += sailfishapp nemonotifications-qt5 Qt5SystemInfo
+PKGCONFIG += sailfishapp nemonotifications-qt5
 
 DEFINES += "APPVERSION=\\\"$${SPECVERSION}\\\""
 DEFINES += "APPNAME=\\\"$${TARGET}\\\""
@@ -24,10 +24,10 @@ DEFINES += "APPNAME=\\\"$${TARGET}\\\""
 }
 
 config.path = /usr/share/$${TARGET}/config/
-config.files = config/icon-lock-harbour-maira.png
+config.files = config/icon-lock-harbour-tooter.png
 
 notification_categories.path = /usr/share/lipstick/notificationcategories
-notification_categories.files = config/x-harbour.maira.activity.*
+notification_categories.files = config/x-harbour.tooter.activity.*
 
 dbus_services.path = /usr/share/dbus-1/services/
 dbus_services.files = config/ba.dysko.harbour.tooter.service
@@ -37,7 +37,9 @@ interfaces.files = config/ba.dysko.harbour.tooter.xml
 
 
 SOURCES += src/harbour-tooter.cpp \
+    src/filedownloader.cpp \
     src/imageuploader.cpp \
+    src/notifications.cpp \
     src/dbusAdaptor.cpp \
     src/dbus.cpp
 
@@ -102,5 +104,7 @@ DISTFILES += \
 
 HEADERS += \
     src/imageuploader.h \
+    src/filedownloader.h \
+    src/notifications.h \
     src/dbusAdaptor.h \
     src/dbus.h

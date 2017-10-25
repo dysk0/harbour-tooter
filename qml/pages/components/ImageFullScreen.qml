@@ -68,19 +68,6 @@ Page {
                 }
             }
 
-            Text {
-                id: videoError
-                anchors.left: parent.left
-                anchors.right: parent.right
-                anchors.bottom: parent.bottom
-                anchors.margins: Theme.paddingMedium
-                visible: false;
-                font.pixelSize: Theme.fontSizeSmall;
-                text: video.errorString
-                color: Theme.highlightColor
-            }
-
-
 
             onPositionChanged: function(){
                 //console.log(duration)
@@ -122,6 +109,27 @@ Page {
                 anchors.leftMargin: 0
                 anchors.bottomMargin: Theme.paddingMedium
             }
+            Rectangle {
+                visible: videoError.text != ""
+                anchors.left: parent.left
+                anchors.right: parent.right
+                anchors.bottom: parent.bottom
+                color: Theme.highlightDimmerColor
+                height: videoError.height + 2*Theme.paddingMedium
+                width: parent.width
+                Label {
+                    anchors.centerIn: parent
+                    id: videoError
+                    width: parent.width - 2*Theme.paddingMedium
+                    wrapMode: Text.WordWrap
+                    height: contentHeight
+                    visible: false;
+                    font.pixelSize: Theme.fontSizeSmall;
+                    text: video.errorString
+                    color: Theme.highlightColor
+                }
+            }
+
 
             MouseArea {
                 anchors.fill: parent
