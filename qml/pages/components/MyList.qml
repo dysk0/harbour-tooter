@@ -3,8 +3,6 @@ import Sailfish.Silica 1.0
 import "../../lib/API.js" as Logic
 import "."
 
-import org.nemomobile.notifications 1.0;
-
 SilicaListView {
     id: myList
     property string type;
@@ -59,18 +57,6 @@ SilicaListView {
 
     PullDownMenu {
         MenuItem {
-            text: "NOTIFIKACIJA"
-            onClicked: {
-                Notifications.notify("Tooter", "serverinfo.serverTitle", " new activity", true, "", "aaa")
-            }
-        }
-        MenuItem {
-            text: "NOTIFIKACIJA2"
-            onClicked: {
-                Notifications.notify("Tooter", "serverinfo.serverTitle", " new activity", false, "2015-10-15 00:00:00", "aaa")
-            }
-        }
-        MenuItem {
             text: qsTr("Settings")
             onClicked: {
                 pageStack.push(Qt.resolvedUrl("../Settings.qml"), {})
@@ -119,9 +105,7 @@ SilicaListView {
         console.log("CountChanged!")*/
 
     }
-    Button {
-        onClicked: notification.publish()
-    }
+
     footer: Item{
         width: parent.width
         height: Theme.itemSizeLarge
@@ -163,10 +147,7 @@ SilicaListView {
                 console.log(JSON.stringify(messageObject))
             }
             if (messageObject.fireNotification && notifier){
-                //Logic.notifier(messageObject.data)
-                console.log(JSON.stringify(messageObject.data))
-                notification.body = "a"
-                notification.publish()
+                Logic.notifier(messageObject.data)
             }
 
         }
@@ -201,30 +182,6 @@ SilicaListView {
         };
         if (type !== "")
             worker.sendMessage(msg);
-    }
-    Notification {
-        id: notification
-        category: "x-harbour.tooter.activity"
-        appName: "Tooter"
-        appIcon: "/usr/share/harbour-tooter/config/icon-lock-harbour-tooter.png"
-        summary: "Notification summary"
-        body: "Notification body"
-        previewSummary: "Notification preview summary"
-        previewBody: "Notification preview body"
-        itemCount: 5
-        timestamp: "2013-02-20 18:21:00"
-        remoteActions: [ {
-                "name": "default",
-                "displayName": "Do something",
-                "icon": "icon-s-certificates",
-                "service": "ba.dysko.harbour.tooter",
-                "path": "/",
-                "iface": "ba.dysko.harbour.tooter",
-                "method": "openapp",
-                "arguments": [  ]
-            }]
-        onClicked: console.log("Clicked")
-        onClosed: console.log("Closed, reason: " + reason)
     }
 
 }
