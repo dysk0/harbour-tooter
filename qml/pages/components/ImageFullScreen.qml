@@ -103,11 +103,25 @@ Page {
                 indeterminate: true
                 id: playerProgress
                 anchors.left: playerIcon.right
-                anchors.right: parent.right
+                anchors.right: videoDlBtn.left
 
                 anchors.verticalCenter: playerIcon.verticalCenter
                 anchors.leftMargin: 0
                 anchors.bottomMargin: Theme.paddingMedium
+            }
+            IconButton {
+                id: videoDlBtn
+                visible: true
+                anchors.right: parent.right
+                anchors.bottom: parent.bottom
+                anchors.rightMargin: Theme.paddingLarge
+                anchors.bottomMargin: Theme.paddingMedium
+                //width: Theme.iconSizeMedium+Theme.paddingMedium*2
+                icon.source: "image://theme/icon-m-cloud-download"
+                onClicked: {
+                    var filename = mediaURL.split("/");
+                    FileDownloader.downloadFile(mediaURL, filename[filename.length-1]);
+                }
             }
             Rectangle {
                 visible: videoError.text != ""
@@ -150,6 +164,7 @@ Page {
         contentWidth: imageContainer.width; contentHeight: imageContainer.height
         clip: true
         onHeightChanged: if (imagePreview.status === Image.Ready) imagePreview.fitToScreen();
+
 
         Item {
             id: imageContainer
@@ -264,8 +279,6 @@ Page {
                 }
             }
         }
-
-
     }
     Component {
         id: failedLoading
@@ -275,7 +288,6 @@ Page {
             color: Theme.highlightColor
         }
     }
-    VerticalScrollDecorator { flickable: imageFlickable }
     IconButton {
         visible: true
         anchors.right: parent.right
@@ -289,4 +301,5 @@ Page {
             FileDownloader.downloadFile(mediaURL, filename[filename.length-1]);
         }
     }
+    VerticalScrollDecorator { flickable: imageFlickable }
 }
