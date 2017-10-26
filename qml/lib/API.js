@@ -112,19 +112,21 @@ var modelTLpublic = Qt.createQmlObject('import QtQuick 2.0; ListModel {   }', Qt
 var modelTLnotifications = Qt.createQmlObject('import QtQuick 2.0; ListModel {   }', Qt.application, 'InternalQmlObject');
 var modelTLsearch = Qt.createQmlObject('import QtQuick 2.0; ListModel {   }', Qt.application, 'InternalQmlObject');
 var notificationsList = []
+
 var notificationGenerator = function(item){
     var notification;
     switch (item.urgency){
     case "normal":
-        notification = Qt.createQmlObject('import org.nemomobile.notifications 1.0; Notification { category: "x-harbour.tooter.activity"; appName: "Tooter"; itemCount: 1; remoteActions: [ { "name": "default", "displayName": "Do something", "icon": "icon-s-certificates", "service": "ba.dysko.harbour.tooter", "path": "/", "iface": "ba.dysko.harbour.tooter", "method": "openapp", "arguments": [  ] }]; urgency: Notification.Normal;  }', Qt.application, 'InternalQmlObject');
+        notification = Qt.createQmlObject('import org.nemomobile.notifications 1.0; Notification { category: "x-harbour.tooter.activity"; appName: "Tooter"; itemCount: 1; remoteActions: [ { "name": "default", "displayName": "Do something", "icon": "icon-s-certificates", "service": "ba.dysko.harbour.tooter", "path": "/", "iface": "ba.dysko.harbour.tooter", "method": "openapp", "arguments": [ "'+item.service+'", "'+item.key+'" ] }]; urgency: Notification.Normal;  }', Qt.application, 'InternalQmlObject');
         break;
     case "critical":
-        notification = Qt.createQmlObject('import org.nemomobile.notifications 1.0; Notification { appName: "Tooter"; itemCount: 1; remoteActions: [ { "name": "default", "displayName": "Do something", "icon": "icon-s-certificates", "service": "ba.dysko.harbour.tooter", "path": "/", "iface": "ba.dysko.harbour.tooter", "method": "viewtoot", "arguments": [ "myTest", "blabla" ] }]; urgency: Notification.Critical;  }', Qt.application, 'InternalQmlObject');
+        notification = Qt.createQmlObject('import org.nemomobile.notifications 1.0; Notification { appName: "Tooter"; itemCount: 1; remoteActions: [ { "name": "default", "displayName": "Do something", "icon": "icon-s-certificates", "service": "ba.dysko.harbour.tooter", "path": "/", "iface": "ba.dysko.harbour.tooter", "method": "openapp", "arguments": [ "'+item.service+'", "'+item.key+'" ] }]; urgency: Notification.Critical;  }', Qt.application, 'InternalQmlObject');
         break;
     default:
-        notification = Qt.createQmlObject('import org.nemomobile.notifications 1.0; Notification { category: "x-harbour.tooter.activity"; appName: "Tooter"; itemCount: 1; remoteActions: [ { "name": "default", "displayName": "Do something", "icon": "icon-s-certificates", "service": "ba.dysko.harbour.tooter", "path": "/", "iface": "ba.dysko.harbour.tooter", "method": "viewtoot", "arguments": [ "a", "b" ] }]; urgency: Notification.Low;  }', Qt.application, 'InternalQmlObject');
+        notification = Qt.createQmlObject('import org.nemomobile.notifications 1.0; Notification { category: "x-harbour.tooter.activity"; appName: "Tooter"; itemCount: 1; remoteActions: [ { "name": "default", "displayName": "Do something", "icon": "icon-s-certificates", "service": "ba.dysko.harbour.tooter", "path": "/", "iface": "ba.dysko.harbour.tooter", "method": "openapp", "arguments": [ "'+item.service+'", "'+item.key+'" ] }]; urgency: Notification.Low;  }', Qt.application, 'InternalQmlObject');
     }
-    //notification.remoteActions =  [ { "name": "app", "displayName": "Do something", "icon": "icon-s-do-it", "service": "ba.dysko.harbour.tooter", "path": "/", "iface": "ba.dysko.harbour.tooter", "method": "openapp", "arguments": [ ]}]
+
+    console.log(JSON.stringify(notification.remoteActions[0].arguments))
     //Notifications.notify("Tooter", "serverinfo.serverTitle", " new activity", false, "2015-10-15 00:00:00", "aaa")
 
     notification.timestamp = item.timestamp
@@ -132,8 +134,12 @@ var notificationGenerator = function(item){
     notification.body = item.body
     if(item.previewBody)
         notification.previewBody = item.previewBody;
+    else
+        notification.previewBody = item.body;
     if(item.previewSummary)
         notification.previewSummary = item.previewSummary;
+    else
+        notification.previewSummary = item.summary
     if(notification.replacesId){ notification.replacesId = 0 }
     notification.publish()
 }
@@ -149,7 +155,9 @@ var notifier = function(item){
             urgency: "normal",
             timestamp: item.created_at,
             summary: (item.reblog_account_display_name !== "" ? item.reblog_account_display_name : '@'+item.reblog_account_username) + ' ' + qsTr("favourited"),
-            body: item.content
+            body: item.content,
+            service: 'toot',
+            key: item.id
         }
         break;
     case "follow":
@@ -157,7 +165,9 @@ var notifier = function(item){
             urgency: "critical",
             timestamp: item.created_at,
             summary: (item.account_display_name !== "" ? item.account_display_name : '@'+item.account_username),
-            body: qsTr("followed you")
+            body: qsTr("followed you"),
+            service: 'profile',
+            key: item.account_username
         }
         break;
 
@@ -166,7 +176,9 @@ var notifier = function(item){
             urgency: "low",
             timestamp: item.created_at,
             summary: (item.reblog_account_display_name !== "" ? item.reblog_account_display_name : '@'+item.reblog_account_username) + ' ' + qsTr("boosted"),
-            body: item.content
+            body: item.content,
+            service: 'toot',
+            key: item.id
         }
         break;
     case "mention":
@@ -175,7 +187,9 @@ var notifier = function(item){
             timestamp: item.created_at,
             summary: (item.account_display_name !== "" ? item.account_display_name : '@'+item.account_username) + ' ' + qsTr("said"),
             body: item.content,
-            previewBody: (item.account_display_name !== "" ? item.account_display_name : '@'+item.account_username) + ' ' + qsTr("said") + ': ' + item.content
+            previewBody: (item.account_display_name !== "" ? item.account_display_name : '@'+item.account_username) + ' ' + qsTr("said") + ': ' + item.content,
+            service: 'toot',
+            key: item.id
         }
         break;
     default:
@@ -184,6 +198,7 @@ var notifier = function(item){
     }
     notificationGenerator(msg)
 }
+
 
 var api;
 

@@ -65,6 +65,7 @@ ApplicationWindow
     }
 
     Component.onDestruction: {
+        //Logic.conf.notificationLastID = 0;
         Logic.saveData()
     }
     Connections
@@ -72,8 +73,7 @@ ApplicationWindow
             target: Dbus
             onViewtoot:
             {
-                console.log(key, "dbus show issue")
-
+                console.log(key, "dbus onViewtoot")
             }
             onActivateapp:
             {

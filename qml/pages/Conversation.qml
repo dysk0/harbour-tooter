@@ -19,6 +19,12 @@ Page {
             btnAddImage.enabled = mediaModel.count < 4
         }
     }
+    ListModel {
+        id: suggestedModel
+        onCountChanged: {
+            console.log("aaaa " + count)
+        }
+    }
 
 
     WorkerScript {
@@ -64,6 +70,57 @@ Page {
                 }
         }
 
+    }
+    Rectangle {
+        id: predictionList
+        visible: false;
+        anchors.bottom: panel.top
+        anchors.left: parent.left
+        anchors.right: panel.right
+        height: Theme.itemSizeMedium * 6
+        color: Theme.highlightDimmerColor
+
+        ListView {
+            anchors.fill: parent
+            model: suggestedModel
+            clip: true
+
+            delegate: BackgroundItem {
+                height: Theme.itemSizeMedium
+                width: parent.width
+
+                Image {
+                    id: avatar
+                    width: Theme.itemSizeSmall
+                    height: width
+                    source: model.account_avatar
+                    anchors.verticalCenter: parent.verticalCenter
+                    anchors.left: parent.left
+                    anchors.leftMargin: Theme.horizontalPageMargin
+                }
+                Column {
+                    anchors.left: avatar.right
+                    anchors.leftMargin: Theme.paddingLarge
+                    anchors.verticalCenter: parent.verticalCenter
+                    height: account_acct.height + display_name.height
+                    Label {
+                        id: display_name
+                        text: model.account_display_name+" "
+                        font.pixelSize: Theme.fontSizeMedium
+                    }
+                    Label {
+                        id: account_acct
+                        text: "@"+model.account_acct
+                        color: Theme.secondaryColor
+                        anchors.leftMargin: Theme.paddingMedium
+                        font.pixelSize: Theme.fontSizeExtraSmall
+                    }
+                }
+            }
+            onCountChanged: {
+                positionViewAtIndex(suggestedModel.count-1, ListView.End )
+            }
+        }
     }
 
     DockedPanel {
@@ -114,6 +171,44 @@ Page {
             EnterKey.onClicked: {
                 //tweet()
             }
+            onTextChanged: {
+                var pattern = /\B@[a-z0-9_-]+/gi;
+                var mentions = text.match(pattern);
+                if (mentions && mentions.length){
+                    var index = text.indexOf(cursorPosition);
+                    var preText = text.substring(0, cursorPosition);
+                    var current;
+                    if (preText.indexOf(" ") > 0) {
+                        var words = preText.split(" ");
+                        current = words[words.length - 1]; //return last word
+                    }
+                    else {
+                        current = preText;
+                    }
+                    if (current[0] === "@") {
+                        predictionList.visible = true;
+                        var matches = mentions.filter(function(value){
+                            if(value) {
+                                return (value.substring(0, current.length) === current);
+                            }
+                        });
+                        console.log(matches)
+                        var msg = {
+                            'action'    : 'accounts/search',
+                            'method'    : 'GET',
+                            'model'     :  suggestedModel,
+                            'mode'      : "append",
+                            'params'    : [ {name: "q", data: matches[0].substring(1)} ],
+
+                            'conf'      : Logic.conf
+                        };
+
+                        worker.sendMessage(msg);
+                    } else {
+                        predictionList.visible = false;
+                    }
+                }
+            }
         }
         IconButton {
             id: btnSmileys
@@ -128,8 +223,8 @@ Page {
                 rightMargin: Theme.paddingSmall
             }
             icon.source: "image://theme/icon-s-mms?" + (pressed
-                                                           ? Theme.highlightColor
-                                                           : (warningContent.visible ? Theme.secondaryHighlightColor : Theme.primaryColor))
+                                                        ? Theme.highlightColor
+                                                        : (warningContent.visible ? Theme.secondaryHighlightColor : Theme.primaryColor))
             onClicked: pageStack.push(firstWizardPage)
         }
         SilicaGridView {
@@ -208,31 +303,31 @@ Page {
             }
         }
         ImageUploader {
-                id: imageUploader
+            id: imageUploader
 
-                onProgressChanged: {
-                    console.log("progress "+progress)
-                    uploadProgress.width = parent.width*progress
-                }
+            onProgressChanged: {
+                console.log("progress "+progress)
+                uploadProgress.width = parent.width*progress
+            }
 
-                onSuccess: {
-                    uploadProgress.width =0
-                    console.log(replyData);
+            onSuccess: {
+                uploadProgress.width =0
+                console.log(replyData);
 
-                    mediaModel.append(JSON.parse(replyData))
+                mediaModel.append(JSON.parse(replyData))
 
-
-                }
-
-                onFailure: {
-                    uploadProgress.width =0
-                    btnAddImage.enabled = true;
-                    console.log(status)
-                    console.log(statusText)
-
-                }
 
             }
+
+            onFailure: {
+                uploadProgress.width =0
+                btnAddImage.enabled = true;
+                console.log(status)
+                console.log(statusText)
+
+            }
+
+        }
         ComboBox {
             id: privacy
             anchors {
@@ -309,19 +404,19 @@ Page {
         if (mdl.count > 0) {
             var setIndex = 0;
             switch (mdl.get(0).status_visibility){
-                case "unlisted":
-                    setIndex = 1;
-                    break;
-                case "private":
-                    setIndex = 2;
-                    break;
-                case "direct":
-                    privacy.enabled = false;
-                    setIndex = 3;
-                    break;
-                default:
-                    privacy.enabled = true;
-                    setIndex = 0;
+            case "unlisted":
+                setIndex = 1;
+                break;
+            case "private":
+                setIndex = 2;
+                break;
+            case "direct":
+                privacy.enabled = false;
+                setIndex = 3;
+                break;
+            default:
+                privacy.enabled = true;
+                setIndex = 0;
             }
             privacy.currentIndex = setIndex;
         }
@@ -347,7 +442,7 @@ Page {
             onAcceptPendingChanged: {
                 if (acceptPending) {
                     // Tell the destination page what the selected category is
-                   // acceptDestinationInstance.category = selector.value
+                    // acceptDestinationInstance.category = selector.value
                 }
             }
 

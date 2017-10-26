@@ -277,18 +277,16 @@ Page {
     }
     VerticalScrollDecorator { flickable: imageFlickable }
     IconButton {
-        visible: false
-        anchors{
-            right: imagePage.right;
-            rightMargin: Theme.paddingLarge;
-            bottom: imagePage.bottom;
-            bottomMargin: Theme.paddingLarge;
-        }
-        width: Theme.iconSizeMedium+Theme.paddingMedium*2
-
+        visible: true
+        anchors.right: parent.right
+        anchors.bottom: parent.bottom
+        anchors.rightMargin: Theme.paddingLarge
+        anchors.bottomMargin: Theme.paddingMedium
+        //width: Theme.iconSizeMedium+Theme.paddingMedium*2
         icon.source: "image://theme/icon-m-cloud-download"
         onClicked: {
-            //py.saveImg(MD5.hex_md5(strThumbnailUrl),strHpTitle+"."+Script.parseDate(currentDay));
+            var filename = mediaURL.split("/");
+            FileDownloader.downloadFile(mediaURL, filename[filename.length-1]);
         }
     }
 }

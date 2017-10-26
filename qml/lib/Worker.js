@@ -53,8 +53,10 @@ WorkerScript.onMessage = function(msg) {
             var item;
             if (data.hasOwnProperty(i)) {
                 if(msg.action === "accounts/search") {
-                    item = parseAccounts(data[i]);
+                    item = parseAccounts([], "", data[i]);
+                    console.log(JSON.stringify(data[i]))
                     items.push(item)
+                    console.log("aaaa")
 
                 } else if(msg.action === "notifications") {
                     // notification
@@ -256,13 +258,20 @@ function parseToot (data){
     for(var i = 0; i < data['media_attachments'].length ; i++){
         var attachments = data['media_attachments'][i];
         item['content'] = item['content'].replaceAll(attachments['text_url'], '')
-        item['attachments'].push({
-                                     id: attachments['id'],
-                                     id: attachments['id'],
-                                     type: attachments['type'],
-                                     url: attachments['remote_url'] !=="" ? attachments['remote_url'] : attachments['url'] ,
-                                                                            preview_url: loadImages ? attachments['preview_url'] : ''
-                                 })
+        var tmp = {
+            id: attachments['id'],
+            id: attachments['id'],
+            type: attachments['type'],
+            url: typeof attachments['remote_url'] == "string" ? attachments['remote_url'] : attachments['url'] ,
+                                                   preview_url: loadImages ? attachments['preview_url'] : ''
+        }
+        console.log("-----------------------------------")
+        console.log(JSON.stringify(attachments))
+        console.log(typeof attachments['remote_url'])
+
+        console.log(JSON.stringify(tmp))
+        console.log("-----------------------------------")
+        item['attachments'].push(tmp)
     }
     /*item['content'] = item['content'].split(" ")
     for(var i = 0; i < item['content'].length ; i++){
