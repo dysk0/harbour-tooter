@@ -10,22 +10,36 @@ Page {
     property alias title: header.title
     property alias description: header.description
     property alias avatar: header.image
+    property string suggestedUser: ""
+    property ListModel suggestedModel;
     property int toot_id
     property ListModel mdl;
     allowedOrientations: Orientation.All
+    onSuggestedUserChanged: {
+        console.log(suggestedUser)
+        suggestedModel = Qt.createQmlObject('import QtQuick 2.0; ListModel {   }', Qt.application, 'InternalQmlObject');
+        predictionList.visible = false;
+        if (suggestedUser.length > 0) {
+            var msg = {
+                'action'    : 'accounts/search',
+                'method'    : 'GET',
+                'model'     :  suggestedModel,
+                'mode'      : "append",
+                'params'    : [ {name: "q", data: suggestedUser} ],
+
+                'conf'      : Logic.conf
+            };
+            worker.sendMessage(msg);
+            predictionList.visible = true;
+        }
+    }
+
     ListModel {
         id: mediaModel
         onCountChanged: {
             btnAddImage.enabled = mediaModel.count < 4
         }
     }
-    ListModel {
-        id: suggestedModel
-        onCountChanged: {
-            console.log("aaaa " + count)
-        }
-    }
-
 
     WorkerScript {
         id: worker
@@ -77,44 +91,26 @@ Page {
         anchors.bottom: panel.top
         anchors.left: parent.left
         anchors.right: panel.right
-        height: Theme.itemSizeMedium * 6
+        height: suggestedModel.count > 6 ? Theme.itemSizeMedium * 6 : Theme.itemSizeMedium * suggestedModel.count
         color: Theme.highlightDimmerColor
 
-        ListView {
+        SilicaListView {
             anchors.fill: parent
             model: suggestedModel
             clip: true
 
-            delegate: BackgroundItem {
-                height: Theme.itemSizeMedium
-                width: parent.width
-
-                Image {
-                    id: avatar
-                    width: Theme.itemSizeSmall
-                    height: width
-                    source: model.account_avatar
-                    anchors.verticalCenter: parent.verticalCenter
-                    anchors.left: parent.left
-                    anchors.leftMargin: Theme.horizontalPageMargin
-                }
-                Column {
-                    anchors.left: avatar.right
-                    anchors.leftMargin: Theme.paddingLarge
-                    anchors.verticalCenter: parent.verticalCenter
-                    height: account_acct.height + display_name.height
-                    Label {
-                        id: display_name
-                        text: model.account_display_name+" "
-                        font.pixelSize: Theme.fontSizeMedium
+            delegate: ItemUser {
+                onClicked: {
+                    var start = toot.cursorPosition;
+                    while(toot.text[start] !== "@" && start > 0){
+                        start--;
                     }
-                    Label {
-                        id: account_acct
-                        text: "@"+model.account_acct
-                        color: Theme.secondaryColor
-                        anchors.leftMargin: Theme.paddingMedium
-                        font.pixelSize: Theme.fontSizeExtraSmall
-                    }
+                    textOperations.text = toot.text
+                    textOperations.cursorPosition = toot.cursorPosition
+                    textOperations.moveCursorSelection(start-1,TextInput.SelectWords)
+                    toot.text = textOperations.text.substring(0, textOperations.selectionStart) + ' @'+model.account_acct + ' ' + textOperations.text.substring(textOperations.selectionEnd).trim()
+                    textOperations.text = ""
+                    toot.cursorPosition = toot.text.indexOf('@'+model.account_acct)
                 }
             }
             onCountChanged: {
@@ -153,6 +149,11 @@ Page {
                 //tweet()
             }
         }
+        TextInput {
+            id: textOperations
+            visible: false
+        }
+
         TextArea {
             id: toot
             anchors {
@@ -164,7 +165,7 @@ Page {
             }
             autoScrollEnabled: true
             labelVisible: false
-            //            focus: true
+            //focus: true
             text: description !== "" && (description.charAt(0) == '@' || description.charAt(0) == '#') ? description+' '  : ''
             height: implicitHeight
             horizontalAlignment: Text.AlignLeft
@@ -172,41 +173,14 @@ Page {
                 //tweet()
             }
             onTextChanged: {
-                var pattern = /\B@[a-z0-9_-]+/gi;
-                var mentions = text.match(pattern);
-                if (mentions && mentions.length){
-                    var index = text.indexOf(cursorPosition);
-                    var preText = text.substring(0, cursorPosition);
-                    var current;
-                    if (preText.indexOf(" ") > 0) {
-                        var words = preText.split(" ");
-                        current = words[words.length - 1]; //return last word
-                    }
-                    else {
-                        current = preText;
-                    }
-                    if (current[0] === "@") {
-                        predictionList.visible = true;
-                        var matches = mentions.filter(function(value){
-                            if(value) {
-                                return (value.substring(0, current.length) === current);
-                            }
-                        });
-                        console.log(matches)
-                        var msg = {
-                            'action'    : 'accounts/search',
-                            'method'    : 'GET',
-                            'model'     :  suggestedModel,
-                            'mode'      : "append",
-                            'params'    : [ {name: "q", data: matches[0].substring(1)} ],
-
-                            'conf'      : Logic.conf
-                        };
-
-                        worker.sendMessage(msg);
-                    } else {
-                        predictionList.visible = false;
-                    }
+                textOperations.text = toot.text
+                textOperations.cursorPosition = toot.cursorPosition
+                textOperations.selectWord()
+                textOperations.select(textOperations.selectionStart ? textOperations.selectionStart-1 : 0, textOperations.selectionEnd)
+                console.log(textOperations.text.substr(textOperations.selectionStart, textOperations.selectionEnd))
+                suggestedUser = ""
+                if (textOperations.selectedText.charAt(0) === "@") {
+                    suggestedUser = textOperations.selectedText.trim().substring(1);
                 }
             }
         }
@@ -577,7 +551,9 @@ Page {
                         text: glyph
                     }
                     onClicked: {
-                        toot.text = toot.text + model.glyph
+                        var cursorPosition = toot.cursorPosition
+                        toot.text = toot.text.substring(0, cursorPosition) + model.glyph + toot.text.substring(cursorPosition)
+                        toot.cursorPosition = cursorPosition+model.glyph.length
                         emoticonsDialog.canAccept = true;
                         emoticonsDialog.accept()
 

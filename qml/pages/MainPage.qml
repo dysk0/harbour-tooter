@@ -96,6 +96,12 @@ Page {
                     tlSearch.type = "timelines/tag/"+search.substring(1)
                     loadData("append")
                 }
+                if (search[0] === "@") {
+                    tlSearch.type = "accounts/search"
+                    tlSearch.params = []
+                    tlSearch.params.push({name: 'q', data: search.substring(1)});
+                    loadData("append")
+                }
             }
             onTypeChanged: {
                 console.log("type changed")
@@ -119,9 +125,14 @@ Page {
                 }
             }
             ViewPlaceholder {
-                                enabled: tlSearch.mdl === 0
-                                text: "Only #hastag search works"
-                            }
+                enabled: tlSearch.mdl === 0
+                text: "Only #hastag search works"
+            }
+            delegate: Loader {
+                width: parent.width
+                source: tlSearch.search[0] === "@" ? "components/ItemUser.qml" : "components/VisualContainer.qml"
+
+            }
         }
 
     }

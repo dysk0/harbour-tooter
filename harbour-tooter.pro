@@ -62,6 +62,7 @@ OTHER_FILES += qml/harbour-tooter.qml \
     qml/pages/components/VisualContainer.qml \
     qml/pages/components/MiniStatus.qml \
     qml/pages/components/MiniHeader.qml \
+    qml/pages/components/ItemUser.qml \
     harbour-tooter.desktop
 
 SAILFISHAPP_ICONS = 86x86 108x108 128x128 256x256

@@ -44,3 +44,10 @@
 - Cover page fix for SailfishX
 - Added Copy URL option
 - Privacy option in the conversation is now inherited by toot in the thread
+
+* Fri October 27 2017 Dusko Angirevic <dysko@me.com> 0.2.3-0
+- Added User autocomplete options
+- Added video player options
+- Smileys are inserted on the cursor position
+- Pintch to zoom photos
+- Support for downloading media to the device

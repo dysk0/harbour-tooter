@@ -166,6 +166,10 @@ SilicaListView {
     }
     function loadData(mode){
         var p = [];
+        if (params.length)
+            for(var i = 0; i<params.length; i++)
+                p.push(params[i])
+
         if (mode === "append" && model.count){
             p.push({name: 'max_id', data: model.get(model.count-1).id});
         }

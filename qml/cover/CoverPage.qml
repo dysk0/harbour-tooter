@@ -99,20 +99,20 @@ CoverBackground {
         color: Theme.primaryColor
     }
 
-    /*CoverActionList {
+    CoverActionList {
         id: coverAction
 
         CoverAction {
             iconSource: "image://theme/icon-cover-next"
              onTriggered: {
-                 label.text = Logic.modelTLhome.count
+                 Logic.conf.notificationLastID = 0;
              }
         }
 
         CoverAction {
             iconSource: "image://theme/icon-cover-pause"
         }
-    }*/
+    }
     function checkNotifications(){
         console.log("checkNotifications")
         var notificationsNum = 0
