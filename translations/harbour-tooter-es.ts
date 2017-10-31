@@ -103,23 +103,27 @@
     <name>MainPage</name>
     <message>
         <source>Home</source>
-        <translation>Inicio</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Timeline</source>
-        <translation>Historia federada</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Notifications</source>
-        <translation>Notificaciones</translation>
-    </message>
-    <message>
-        <source>Search</source>
-        <translation>Buscar</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>New Toot</source>
-        <translation>Nuevo toot</translation>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Search</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>@user or #term</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -146,6 +150,14 @@
     <message>
         <source>Settings</source>
         <translation>Ajustes</translation>
+    </message>
+    <message>
+        <source>Loading</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Performing request, please wait or request something else</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>

@@ -103,23 +103,27 @@
     <name>MainPage</name>
     <message>
         <source>Home</source>
-        <translation>Acuèlh</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Timeline</source>
-        <translation>Flux</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Notifications</source>
-        <translation>Notificacions</translation>
-    </message>
-    <message>
-        <source>Search</source>
-        <translation>Cercar</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>New Toot</source>
-        <translation>Nòu tut</translation>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Search</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>@user or #term</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -146,6 +150,14 @@
     <message>
         <source>Settings</source>
         <translation>Parmètres</translation>
+    </message>
+    <message>
+        <source>Loading</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Performing request, please wait or request something else</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>

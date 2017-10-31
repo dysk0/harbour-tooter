@@ -7,10 +7,13 @@ SilicaListView {
     id: myList
     property string type;
     property string title
+    property string vwPlaceholderText: qsTr("Loading")
+    property string vwPlaceholderHint: qsTr("Performing request, please wait or request something else")
     property string description
     property ListModel mdl: []
     property variant params: []
     property var locale: Qt.locale()
+    property bool autoLoadMore : true;
     property bool loadStarted : false;
     property int scrollOffset;
     property string action: ""
@@ -51,8 +54,8 @@ SilicaListView {
     ViewPlaceholder {
         id: viewPlaceHolder
         enabled: model.count === 0
-        text: ""
-        hintText: ""
+        text: vwPlaceholderText
+        hintText: vwPlaceholderHint
     }
 
     PullDownMenu {
@@ -70,14 +73,6 @@ SilicaListView {
             }
         }
     }
-    /*PushUpMenu {
-        MenuItem {
-            text: qsTr("Load more")
-            onClicked: {
-                loadData("append")
-            }
-        }
-    }*/
     clip: true
     section {
         property: 'section'
@@ -107,6 +102,7 @@ SilicaListView {
     }
 
     footer: Item{
+        visible: autoLoadMore
         width: parent.width
         height: Theme.itemSizeLarge
         Button {
@@ -132,7 +128,7 @@ SilicaListView {
             scrollOffset = contentY
         }
 
-        if(contentY+height > footerItem.y && !loadStarted){
+        if(contentY+height > footerItem.y && !loadStarted && autoLoadMore){
             loadData("append")
             loadStarted = true;
         }

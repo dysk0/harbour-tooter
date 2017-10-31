@@ -103,23 +103,27 @@
     <name>MainPage</name>
     <message>
         <source>Home</source>
-        <translation>Почетна</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Timeline</source>
-        <translation>Временска линија</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Notifications</source>
-        <translation>Обавјештење</translation>
-    </message>
-    <message>
-        <source>Search</source>
-        <translation>Претрага</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>New Toot</source>
-        <translation>Нова</translation>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Search</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>@user or #term</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -146,6 +150,14 @@
     <message>
         <source>Settings</source>
         <translation>Подешавања</translation>
+    </message>
+    <message>
+        <source>Loading</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Performing request, please wait or request something else</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>

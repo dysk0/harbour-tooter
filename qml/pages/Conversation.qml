@@ -109,7 +109,7 @@ Page {
                     textOperations.cursorPosition = toot.cursorPosition
                     textOperations.moveCursorSelection(start-1,TextInput.SelectWords)
                     toot.text = textOperations.text.substring(0, textOperations.selectionStart) + ' @'+model.account_acct + ' ' + textOperations.text.substring(textOperations.selectionEnd).trim()
-                    textOperations.text = ""
+
                     toot.cursorPosition = toot.text.indexOf('@'+model.account_acct)
                 }
             }
@@ -177,7 +177,7 @@ Page {
                 textOperations.cursorPosition = toot.cursorPosition
                 textOperations.selectWord()
                 textOperations.select(textOperations.selectionStart ? textOperations.selectionStart-1 : 0, textOperations.selectionEnd)
-                console.log(textOperations.text.substr(textOperations.selectionStart, textOperations.selectionEnd))
+                //console.log(textOperations.text.substr(textOperations.selectionStart, textOperations.selectionEnd))
                 suggestedUser = ""
                 if (textOperations.selectedText.charAt(0) === "@") {
                     suggestedUser = textOperations.selectedText.trim().substring(1);

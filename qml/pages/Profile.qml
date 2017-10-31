@@ -38,7 +38,7 @@ Page {
                 user_id = messageObject.data.id
                 followers_count = messageObject.data.followers_count
                 following_count = messageObject.data.following_count
-                username = messageObject.data.username
+                username = messageObject.data.acct
                 displayname = messageObject.data.display_name
                 profileImage = messageObject.data.avatar_static
 
@@ -68,7 +68,7 @@ Page {
                 following_count = messageObject.data
                 break;
             case 'acct':
-                username = messageObject.data
+                //username = messageObject.data
                 break;
             case 'locked':
                 locked = messageObject.data
@@ -106,6 +106,7 @@ Page {
     allowedOrientations: Orientation.All
     Component.onCompleted: {
         var msg;
+
         if (user_id) {
             msg = {
                 'action'    : "accounts/relationships/",
@@ -119,8 +120,9 @@ Page {
             };
             worker.sendMessage(msg);
         } else {
+            var instance = Logic.conf['instance'].split("//")
             msg = {
-                'action'    : "accounts/search?limit=1&q="+username,
+                'action'    : "accounts/search?limit=1&q="+username.replace("@"+instance[1], ""),
                 'conf'      : Logic.conf
             };
             worker.sendMessage(msg);

@@ -136,7 +136,7 @@ BackgroundItem {
             } else if (test.length === 4 && test[3][0] === "@" ) {
                 pageStack.push(Qt.resolvedUrl("../Profile.qml"), {
                                    "name": "",
-                                   "username": test[3].substring(1),
+                                   "username": test[3].substring(1)+"@"+test[2],
                                    "profileImage": ""
                                })
             } else {
@@ -275,7 +275,8 @@ BackgroundItem {
 
     onClicked: {
         var m = Qt.createQmlObject('import QtQuick 2.0; ListModel {   }', Qt.application, 'InternalQmlObject');
-        m.append(mdl.get(index))
+        if (typeof mdl !== "undefined")
+            m.append(mdl.get(index))
         pageStack.push(Qt.resolvedUrl("../Conversation.qml"), {
                            toot_id: status_id,
                            title: account_display_name,
@@ -286,9 +287,7 @@ BackgroundItem {
                        })
     }
     onPressAndHold: {
-        console.log(model['status_sensitive'])
-        console.log(model['status_spoiler_text'])
-        console.log(model['type'])
+        console.log(content)
         mnu.show(delegate)
     }
     onDoubleClicked: {

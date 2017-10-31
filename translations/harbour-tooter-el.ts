@@ -103,23 +103,27 @@
     <name>MainPage</name>
     <message>
         <source>Home</source>
-        <translation>Οικοσελίδα</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Timeline</source>
-        <translation>Γραμμή χρονοδιαγράμματος</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Notifications</source>
-        <translation>Ειδοποιήσεις</translation>
-    </message>
-    <message>
-        <source>Search</source>
-        <translation>Αναζήτηση</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>New Toot</source>
-        <translation>Νέο Toot</translation>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Search</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>@user or #term</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -146,6 +150,14 @@
     <message>
         <source>Settings</source>
         <translation>Ρυθμίσεις</translation>
+    </message>
+    <message>
+        <source>Loading</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Performing request, please wait or request something else</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>

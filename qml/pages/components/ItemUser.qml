@@ -1,21 +1,35 @@
 import QtQuick 2.0
 import Sailfish.Silica 1.0
-import QtGraphicalEffects 1.0
+
 
 BackgroundItem {
     id: delegate
-    //property string text: "0"
+    signal openUser (string notice)
     height: Theme.itemSizeMedium
     width: parent.width
 
-    Image {
+    Rectangle {
         id: avatar
         width: Theme.itemSizeExtraSmall
         height: width
-        source: model.account_avatar
         anchors.verticalCenter: parent.verticalCenter
         anchors.left: parent.left
         anchors.leftMargin: Theme.horizontalPageMargin
+        color: Theme.highlightDimmerColor
+        Image {
+            id: img
+            opacity: status === Image.Ready ? 1.0 : 0.0
+            Behavior on opacity { FadeAnimator {} }
+            anchors.fill: parent
+            source: model.account_avatar
+        }
+        BusyIndicator {
+            size: BusyIndicatorSize.Small
+            opacity: img.status === Image.Ready ? 0.0 : 1.0
+            Behavior on opacity { FadeAnimator {} }
+            running: avatar.status !== Image.Ready;
+            anchors.centerIn: parent
+        }
         MouseArea {
             anchors.fill: parent
             onClicked: pageStack.push(Qt.resolvedUrl("./../Profile.qml"), {
@@ -45,4 +59,10 @@ BackgroundItem {
             font.pixelSize: Theme.fontSizeExtraSmall
         }
     }
+    onClicked: openUser({
+                            "displayname": model.account_username,
+                            "username": model.account_acct,
+                            "user_id": model.account_id,
+                            "profileImage": model.account_avatar
+                        })
 }

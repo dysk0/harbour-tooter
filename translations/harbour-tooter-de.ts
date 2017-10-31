@@ -114,11 +114,15 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
+        <source>New Toot</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <source>Search</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>New Toot</source>
+        <source>@user or #term</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -145,6 +149,14 @@
     </message>
     <message>
         <source>Settings</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Loading</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Performing request, please wait or request something else</source>
         <translation type="unfinished"></translation>
     </message>
 </context>

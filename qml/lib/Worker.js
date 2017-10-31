@@ -56,7 +56,6 @@ WorkerScript.onMessage = function(msg) {
                     item = parseAccounts([], "", data[i]);
                     console.log(JSON.stringify(data[i]))
                     items.push(item)
-                    console.log("aaaa")
 
                 } else if(msg.action === "notifications") {
                     // notification
@@ -229,9 +228,6 @@ function parseToot (data){
     item['status_visibility'] = data["visibility"]
 
 
-    //item.concat(parseAccounts("", data["account"]));
-    //item = collect(item, );
-
     if(item['status_reblog']){
         item['type'] = "reblog";
         item['typeIcon'] = "image://theme/icon-s-retweet"
@@ -241,19 +237,8 @@ function parseToot (data){
         item = parseAccounts(item, "", data["account"])
     }
     item['content'] = data['content'].replaceAll('</span><span class="invisible">', '').replaceAll('<span class="invisible">', '').replaceAll('</span><span class="ellipsis">', '');
-
-    //item['application_name'] = data["application"]["name"]
-    //item['application_website'] = data["application"]["website"]
-    // account
-
-    //item['content'] = data['content'].replace(/(<([^>]+)>)/ig,"");
-    /*for(var i = 0; i < data['tags'].length ; i++){
-        var tag = data['tags'][i]['name'];
-        console.log(tag)
-        item['content'] = item['content'].replaceAll('#'+tag, '<a href="#'+tag+'">'+tag+'</a>')
-    }*/
     item['attachments'] = [];
-    //console.log("Image "+loadImages)
+
 
     for(var i = 0; i < data['media_attachments'].length ; i++){
         var attachments = data['media_attachments'][i];
@@ -265,25 +250,12 @@ function parseToot (data){
             url: attachments['remote_url'] && typeof attachments['remote_url'] == "string" ? attachments['remote_url'] : attachments['url'] ,
                                                    preview_url: loadImages ? attachments['preview_url'] : ''
         }
-        console.log("-----------------------------------")
-        console.log(JSON.stringify(attachments))
-        console.log(typeof attachments['remote_url'])
-
-        console.log(JSON.stringify(tmp))
-        console.log("-----------------------------------")
+        //console.log("-----------------------------------")
+        //console.log(JSON.stringify(attachments))
+        //console.log(typeof attachments['remote_url'])
+        //console.log(JSON.stringify(tmp))
+        //console.log("-----------------------------------")
         item['attachments'].push(tmp)
     }
-    /*item['content'] = item['content'].split(" ")
-    for(var i = 0; i < item['content'].length ; i++){
-        if(item['content'][i][0] === "#"){
-            item['content'][i] = '<a href="'+item['content'][i]+'">'+item['content'][i]+'</a>';
-        }
-        if(item['content'][i][0] === "@"){
-            item['content'][i] = '<a href="'+item['content'][i]+'">'+item['content'][i]+'</a>';
-        }
-    }
-    item['content'] = item['content'].join(" ").autoLink()*/
-
-    //console.log(JSON.stringify(item))
     return item;
 }

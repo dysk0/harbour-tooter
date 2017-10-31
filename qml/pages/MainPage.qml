@@ -87,52 +87,112 @@ Page {
             height: parent.itemHeight
             onOpenDrawer:  infoPanel.open = setDrawer
         }
-        MyList{
+        Item {
             id: tlSearch;
-            property string search;
-            onSearchChanged: {
-                mdl = Qt.createQmlObject('import QtQuick 2.0; ListModel {   }', Qt.application, 'InternalQmlObject');
-                if (search[0] === "#") {
-                    tlSearch.type = "timelines/tag/"+search.substring(1)
-                    loadData("append")
-                }
-                if (search[0] === "@") {
-                    tlSearch.type = "accounts/search"
-                    tlSearch.params = []
-                    tlSearch.params.push({name: 'q', data: search.substring(1)});
-                    loadData("append")
-                }
-            }
-            onTypeChanged: {
-                console.log("type changed")
-            }
-            title: qsTr("Search")
-            type: ""
-            mdl: ListModel {}
             width: parent.itemWidth
             height: parent.itemHeight
-            onOpenDrawer:  infoPanel.open = setDrawer
-
-            header: SearchField {
-                width: parent.width
-                text: tlSearch.search
-                placeholderText: "Search"
-                labelVisible: false
-                EnterKey.iconSource: "image://theme/icon-m-enter-close"
-                EnterKey.onClicked: {
-                    tlSearch.search = text
-                    focus = false
+            property ListModel mdl: ListModel {}
+            property string search;
+            onSearchChanged: {
+                console.log(search)
+                loader.sourceComponent = loading
+                if (search !== ""){
+                    loader.sourceComponent = search.charAt(0) === "@" ? userListComponent : tagListComponent
                 }
             }
-            ViewPlaceholder {
-                enabled: tlSearch.mdl === 0
-                text: "Only #hastag search works"
-            }
-            delegate: Loader {
-                width: parent.width
-                source: tlSearch.search[0] === "@" ? "components/ItemUser.qml" : "components/VisualContainer.qml"
 
+            Loader {
+                id: loader
+                anchors.fill: parent
             }
+            Column {
+                id: headerContainer
+                width: tlSearch.width
+                PageHeader {
+                    title: qsTr("Search")
+                }
+                SearchField {
+                    id: searchField
+                    width: parent.width
+                    placeholderText: qsTr("@user or #term")
+                    text: tlSearch.search
+                    EnterKey.iconSource: "image://theme/icon-m-enter-close"
+                    EnterKey.onClicked: {
+                        tlSearch.search = text.toLowerCase().trim()
+                        focus = false
+                        console.log(text)
+                    }
+                }
+            }
+            Component {
+                id: loading
+                BusyIndicator {
+                    size: BusyIndicatorSize.Large
+                    anchors.centerIn: parent
+                    running: true
+                }
+            }
+            Component {
+                id: tagListComponent
+                MyList {
+                    id: view
+                    mdl: ListModel {}
+                    width: parent.width
+                    height: parent.height
+                    onOpenDrawer:  infoPanel.open = setDrawer
+                    anchors.fill: parent
+                    currentIndex: -1 // otherwise currentItem will steal focus
+                    header:  Item {
+                        id: header
+                        width: headerContainer.width
+                        height: headerContainer.height
+                        Component.onCompleted: headerContainer.parent = header
+                    }
+
+                    delegate: VisualContainer
+                    Component.onCompleted: {
+                        view.type = "timelines/tag/"+tlSearch.search.substring(1)
+                        view.loadData("append")
+                    }
+                }
+            }
+            Component {
+                id: userListComponent
+                MyList {
+                    id: view2
+                    mdl: ListModel {}
+                    autoLoadMore: false
+                    width: parent.width
+                    height: parent.height
+                    onOpenDrawer:  infoPanel.open = setDrawer
+                    anchors.fill: parent
+                    currentIndex: -1 // otherwise currentItem will steal focus
+                    header:  Item {
+                        id: header
+                        width: headerContainer.width
+                        height: headerContainer.height
+                        Component.onCompleted: headerContainer.parent = header
+                    }
+
+                    delegate: ItemUser {
+                        onClicked: {
+                            pageStack.push(Qt.resolvedUrl("Profile.qml"), {
+                                               "displayname": model.account_username,
+                                               "username": model.account_acct,
+                                               "user_id": model.account_id,
+                                               "profileImage": model.account_avatar
+                                           })
+                        }
+                    }
+                    Component.onCompleted: {
+                        view2.type = "accounts/search"
+                        view2.params = []
+                        view2.params.push({name: 'q', data: tlSearch.search.substring(1)});
+                        view2.loadData("append")
+                    }
+                }
+            }
+
         }
 
     }
