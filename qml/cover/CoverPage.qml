@@ -99,18 +99,22 @@ CoverBackground {
         color: Theme.primaryColor
     }
 
+    signal activateapp(string person, string notice)
     CoverActionList {
         id: coverAction
-
-        CoverAction {
+        /*CoverAction {
             iconSource: "image://theme/icon-cover-next"
              onTriggered: {
                  Logic.conf.notificationLastID = 0;
              }
-        }
+        }*/
 
         CoverAction {
-            iconSource: "image://theme/icon-cover-pause"
+            iconSource: "image://theme/icon-cover-new"
+            onTriggered: {
+                pageStack.push(Qt.resolvedUrl("./../pages/Conversation.qml"), {})
+                appWindow.activate();
+            }
         }
     }
     function checkNotifications(){

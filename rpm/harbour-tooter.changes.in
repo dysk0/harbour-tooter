@@ -18,7 +18,7 @@
 
 * Tue July 4 2017 Dusko Angirevic <dysko@me.com> 0.1.7-0
 - Added spoiler support for toots
-- Press and hold for boost and favorite option
+- Press and hold for boost and favourite option
 - Updated harbour-tooter-es.ts by Caballlero
 - Unable to connect to unixcorn.xyz [#12] [bugfix]
 
@@ -37,7 +37,7 @@
 - ES lang update by Caballlero
 
 * Thu October 10 2017 Dusko Angirevic <dysko@me.com> 0.2.1-0
-- Added bugs for later (merging branches and cotributions)
+- Added bugs for later (merging branches and contributions)
 
 * Thu October 19 2017 Dusko Angirevic <dysko@me.com> 0.2.2-0
 - Updated translations
@@ -49,5 +49,6 @@
 - Added User autocomplete options
 - Added video player options
 - Smileys are inserted on the cursor position
-- Pintch to zoom photos
+- Pinch to zoom photos
 - Support for downloading media to the device
+- Added cover action for new toot

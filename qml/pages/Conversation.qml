@@ -12,7 +12,7 @@ Page {
     property alias avatar: header.image
     property string suggestedUser: ""
     property ListModel suggestedModel;
-    property int toot_id
+    property string toot_id: ""
     property ListModel mdl;
     allowedOrientations: Orientation.All
     onSuggestedUserChanged: {
@@ -348,8 +348,8 @@ Page {
                     },
                     'conf'      : Logic.conf
                 };
-                if (toot_id > 0)
-                    msg.params['in_reply_to_id'] = toot_id
+                if (toot_id)
+                    msg.params['in_reply_to_id'] = (toot_id)+""
 
                 if (warningContent.visible && warningContent.text.length > 0){
                     msg.params['sensitive'] = 1

@@ -31,11 +31,11 @@
 import QtQuick 2.0
 import Sailfish.Silica 1.0
 import "pages"
-import org.nemomobile.notifications 1.0
 import "./lib/API.js" as Logic
 
 ApplicationWindow
 {
+    id: appWindow
     //initialPage: Component { FirstPage { } }
     cover: Qt.resolvedUrl("cover/CoverPage.qml")
     allowedOrientations: defaultAllowedOrientations
@@ -53,7 +53,14 @@ ApplicationWindow
             if (Logic.conf['login']) {
                 //Logic.conf['notificationLastID'] = 0
                 Logic.api.setConfig("api_user_token", Logic.conf['api_user_token'])
-                pageStack.push(Qt.resolvedUrl("./pages/MainPage.qml"), {})
+                //accounts/verify_credentials
+                Logic.api.get('instance', [], function(data) {
+                    console.log(JSON.stringify(data))
+                    pageStack.push(Qt.resolvedUrl("./pages/MainPage.qml"), {})
+                });
+
+                //
+                //
                 //pageStack.push(Qt.resolvedUrl("./pages/Conversation.qml"), {})
             } else {
                 pageStack.push(Qt.resolvedUrl("./pages/LoginPage.qml"), {})
