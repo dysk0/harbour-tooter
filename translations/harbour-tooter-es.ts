@@ -36,7 +36,7 @@
     </message>
     <message>
         <source>Copy URL</source>
-        <translation type="unfinished"></translation>
+        <translation>Copiar URL</translation>
     </message>
 </context>
 <context>
@@ -82,7 +82,7 @@
     <name>ImageFullScreen</name>
     <message>
         <source>Error loading</source>
-        <translation type="unfinished"></translation>
+        <translation>Error al cargar</translation>
     </message>
 </context>
 <context>
@@ -103,27 +103,27 @@
     <name>MainPage</name>
     <message>
         <source>Home</source>
-        <translation type="unfinished"></translation>
+        <translation>Inicio</translation>
     </message>
     <message>
         <source>Timeline</source>
-        <translation type="unfinished"></translation>
+        <translation>Historia federada</translation>
     </message>
     <message>
         <source>Notifications</source>
-        <translation type="unfinished"></translation>
+        <translation>Notificaciones</translation>
     </message>
     <message>
         <source>New Toot</source>
-        <translation type="unfinished"></translation>
+        <translation>Nuevo toot</translation>
     </message>
     <message>
         <source>Search</source>
-        <translation type="unfinished"></translation>
+        <translation>Buscar</translation>
     </message>
     <message>
         <source>@user or #term</source>
-        <translation type="unfinished"></translation>
+        <translation>@usuario o #término</translation>
     </message>
 </context>
 <context>
@@ -153,11 +153,11 @@
     </message>
     <message>
         <source>Loading</source>
-        <translation type="unfinished"></translation>
+        <translation>Cargando</translation>
     </message>
     <message>
         <source>Performing request, please wait or request something else</source>
-        <translation type="unfinished"></translation>
+        <translation>Ejecutando solicitud, por favor, espera o solicita otra cosa</translation>
     </message>
 </context>
 <context>

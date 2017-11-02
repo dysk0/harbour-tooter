@@ -36,7 +36,7 @@
     </message>
     <message>
         <source>Copy URL</source>
-        <translation type="unfinished"></translation>
+        <translation>Copier l&apos;URL</translation>
     </message>
 </context>
 <context>
@@ -82,7 +82,7 @@
     <name>ImageFullScreen</name>
     <message>
         <source>Error loading</source>
-        <translation type="unfinished"></translation>
+        <translation>Erreur de chargement</translation>
     </message>
 </context>
 <context>
@@ -103,27 +103,27 @@
     <name>MainPage</name>
     <message>
         <source>Home</source>
-        <translation type="unfinished"></translation>
+        <translation>Accueil</translation>
     </message>
     <message>
         <source>Timeline</source>
-        <translation type="unfinished"></translation>
+        <translation>Chronologie</translation>
     </message>
     <message>
         <source>Notifications</source>
-        <translation type="unfinished"></translation>
+        <translation>Notifications</translation>
     </message>
     <message>
         <source>New Toot</source>
-        <translation type="unfinished"></translation>
+        <translation>Nouveau pouet</translation>
     </message>
     <message>
         <source>Search</source>
-        <translation type="unfinished"></translation>
+        <translation>Recherche</translation>
     </message>
     <message>
         <source>@user or #term</source>
-        <translation type="unfinished"></translation>
+        <translation>@personne ou #terme</translation>
     </message>
 </context>
 <context>
@@ -153,11 +153,11 @@
     </message>
     <message>
         <source>Loading</source>
-        <translation type="unfinished"></translation>
+        <translation>Chargement</translation>
     </message>
     <message>
         <source>Performing request, please wait or request something else</source>
-        <translation type="unfinished"></translation>
+        <translation>Demande en cours, merci de patienter ou de demander quelque chose d&apos;autre</translation>
     </message>
 </context>
 <context>

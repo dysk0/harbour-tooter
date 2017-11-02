@@ -36,7 +36,7 @@
     </message>
     <message>
         <source>Copy URL</source>
-        <translation type="unfinished"></translation>
+        <translation>Kopiraj link</translation>
     </message>
 </context>
 <context>
@@ -82,7 +82,7 @@
     <name>ImageFullScreen</name>
     <message>
         <source>Error loading</source>
-        <translation type="unfinished"></translation>
+        <translation>Greška u učitavanju</translation>
     </message>
 </context>
 <context>
@@ -103,27 +103,27 @@
     <name>MainPage</name>
     <message>
         <source>Home</source>
-        <translation type="unfinished"></translation>
+        <translation>Почетна</translation>
     </message>
     <message>
         <source>Timeline</source>
-        <translation type="unfinished"></translation>
+        <translation>Временска линија</translation>
     </message>
     <message>
         <source>Notifications</source>
-        <translation type="unfinished"></translation>
+        <translation>Обавјештење</translation>
     </message>
     <message>
         <source>New Toot</source>
-        <translation type="unfinished"></translation>
+        <translation>Novi toot</translation>
     </message>
     <message>
         <source>Search</source>
-        <translation type="unfinished"></translation>
+        <translation>Претрага</translation>
     </message>
     <message>
         <source>@user or #term</source>
-        <translation type="unfinished"></translation>
+        <translation>@korisnik ili #pojam</translation>
     </message>
 </context>
 <context>
@@ -153,11 +153,11 @@
     </message>
     <message>
         <source>Loading</source>
-        <translation type="unfinished"></translation>
+        <translation>Učitavanje</translation>
     </message>
     <message>
         <source>Performing request, please wait or request something else</source>
-        <translation type="unfinished"></translation>
+        <translation>Učitavam, molim sačekajte...</translation>
     </message>
 </context>
 <context>

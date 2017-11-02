@@ -1,0 +1,49 @@
+* Thu Nov 02 2017 Dusko Angirevic <dysko@me.com> 0.2.4-0
+- Updated translations
+- Added Russian
+
+* Fri Oct 27 2017 Dusko Angirevic <dysko@me.com> 0.2.3-0
+- Added User autocomplete options
+- Added video player options
+- Smileys are inserted on the cursor position
+- Pinch to zoom photos
+- Support for downloading media to the device
+- Added cover action for new toot
+
+* Thu Oct 19 2017 Dusko Angirevic <dysko@me.com> 0.2.2-0
+- Updated translations
+- Cover page fix for SailfishX
+- Added Copy URL option
+- Privacy option in the conversation is now inherited by toot in the thread
+
+* Thu Oct 10 2017 Dusko Angirevic <dysko@me.com> 0.2.1-0
+- Added bugs for later (merging branches and contributions)
+
+* Thu Jul 20 2017 Dusko Angirevic <dysko@me.com> 0.2.0-0
+- Better tablet displaying
+- "boosted" notification bugfix
+- ES lang update by Caballlero
+
+* Thu Jul 7 2017 Dusko Angirevic <dysko@me.com> 0.1.9-0
+- Image Upload added [#9]
+- Emoji pannel added
+- ES lang update by Carlos Gonzales
+
+* Tue Jul 4 2017 Dusko Angirevic <dysko@me.com> 0.1.8-0
+- Added notifications
+- App Cover redesigned
+
+* Tue Jul 4 2017 Dusko Angirevic <dysko@me.com> 0.1.7-0
+- Added spoiler support for toots
+- Press and hold for boost and favourite option
+- Updated harbour-tooter-es.ts by Caballlero
+- Unable to connect to unixcorn.xyz [#12] [bugfix]
+
+* Tue Jun 20 2017 Dusko Angirevic <dysko@me.com> 0.1.6-1
+- Hashtag search added
+- Conversation with sections
+
+* Mon Jun 19 2017 Dusko Angirevic <dysko@me.com> 0.1.5-1
+- Autoload older tweets on the list end
+- Displaying images on the timeline
+- NSFW support for images

@@ -55,7 +55,6 @@ OTHER_FILES += qml/harbour-tooter.qml \
     qml/pages/Browser.qml \
     qml/pages/Profile.qml \
     qml/pages/components/ProfileHeader.qml \
-    rpm/harbour-tooter.changes.in \
     rpm/harbour-tooter.spec \
     rpm/harbour-tooter.yaml \
     translations/*.ts \
@@ -83,6 +82,7 @@ TRANSLATIONS += \
     translations/harbour-tooter-fr.ts \
     translations/harbour-tooter-nl.ts \
     translations/harbour-tooter-oc.ts \
+    translations/harbour-tooter-ru.ts \
     translations/harbour-tooter-sr.ts
 
 DISTFILES += \
@@ -101,7 +101,8 @@ DISTFILES += \
     qml/pages/components/MyImage.qml \
     qml/pages/components/ImageFullScreen.qml \
     config/icon-lock-harbour-tooter.png \
-    config/x-harbour.tooter.activity.conf
+    config/x-harbour.tooter.activity.conf \
+    rpm/harbour-tooter.changes
 
 HEADERS += \
     src/imageuploader.h \

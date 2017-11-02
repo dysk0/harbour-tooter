@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE TS>
-<TS version="2.1">
+<TS version="2.1" language="oc">
 <context>
     <name>API</name>
     <message>
@@ -36,7 +36,7 @@
     </message>
     <message>
         <source>Copy URL</source>
-        <translation type="unfinished"></translation>
+        <translation>Copiar l&apos;URL</translation>
     </message>
 </context>
 <context>
@@ -82,7 +82,7 @@
     <name>ImageFullScreen</name>
     <message>
         <source>Error loading</source>
-        <translation type="unfinished"></translation>
+        <translation>Error en cargar</translation>
     </message>
 </context>
 <context>
@@ -103,27 +103,27 @@
     <name>MainPage</name>
     <message>
         <source>Home</source>
-        <translation type="unfinished"></translation>
+        <translation>Acuèlh</translation>
     </message>
     <message>
         <source>Timeline</source>
-        <translation type="unfinished"></translation>
+        <translation>Flux d&apos;actualitat</translation>
     </message>
     <message>
         <source>Notifications</source>
-        <translation type="unfinished"></translation>
+        <translation>Notificacions</translation>
     </message>
     <message>
         <source>New Toot</source>
-        <translation type="unfinished"></translation>
+        <translation>Nòu Tut</translation>
     </message>
     <message>
         <source>Search</source>
-        <translation type="unfinished"></translation>
+        <translation>Cercar</translation>
     </message>
     <message>
         <source>@user or #term</source>
-        <translation type="unfinished"></translation>
+        <translation>@utilizaire o #tèrm</translation>
     </message>
 </context>
 <context>
@@ -153,11 +153,11 @@
     </message>
     <message>
         <source>Loading</source>
-        <translation type="unfinished"></translation>
+        <translation>Cargament</translation>
     </message>
     <message>
         <source>Performing request, please wait or request something else</source>
-        <translation type="unfinished"></translation>
+        <translation>Tractament de la demanda, mercés d&apos;esperar o cercar quicòm mai</translation>
     </message>
 </context>
 <context>
@@ -226,36 +226,36 @@
         <translation>Ajustar un compte</translation>
     </message>
     <message>
+        <source>Authorize this app to use your Mastodon account in your behalf</source>
+        <translation>Autorizar aquesta aplicacion a utilizar vòstre compte Mastodon per vos</translation>
+    </message>
+    <message>
         <source>Load images in toots</source>
         <translation>Cargar los imatges dels tuts</translation>
-    </message>
-    <message>
-        <source>Credits</source>
-        <translation>Crèdits</translation>
-    </message>
-    <message>
-        <source>UI/UX design and development</source>
-        <translation>UI/UX design e desvlopament</translation>
-    </message>
-    <message>
-        <source>Translate</source>
-        <translation>Traduire</translation>
     </message>
     <message>
         <source>Deauthorize this app and remove your account</source>
         <translation>Revocar l’aplicacion e levar vòstre compte</translation>
     </message>
     <message>
-        <source>Authorize this app to use your Mastodon account in your behalf</source>
-        <translation>Autorizar aquesta aplicacion a utilizar vòstre compte Mastodon per vos</translation>
+        <source>Credits</source>
+        <translation>Crèdits</translation>
+    </message>
+    <message>
+        <source>Translate</source>
+        <translation>Traduire</translation>
+    </message>
+    <message>
+        <source>Use Transifex to help with app translation to your language</source>
+        <translation>Utilizar Transifex per ajudar a traduire l’aplicacion dins vòstra lenga</translation>
     </message>
     <message>
         <source>Disable this option if you want to preserve your data connection</source>
         <translation>Desactivar aquesta opcion per estalviar vòstra connexion de donadas</translation>
     </message>
     <message>
-        <source>Use Transifex to help with app translation to your language</source>
-        <translation>Utilizar Transifex per ajudar a traduire l’aplicacion dins vòstra lenga</translation>
+        <source>UI/UX design and development</source>
+        <translation>UI/UX design e desvlopament</translation>
     </message>
 </context>
 <context>

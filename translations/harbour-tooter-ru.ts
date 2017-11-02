@@ -1,295 +1,295 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE TS>
-<TS version="2.1" language="el">
+<TS version="2.1" language="ru">
 <context>
     <name>API</name>
     <message>
         <source>favourited</source>
-        <translation>στους σελιδοδείκτες</translation>
+        <translation>избранное</translation>
     </message>
     <message>
         <source>followed you</source>
-        <translation>σας ακολουθούν</translation>
+        <translation>следую за тобой</translation>
     </message>
     <message>
         <source>boosted</source>
-        <translation>προωθημένο</translation>
+        <translation>росту</translation>
     </message>
     <message>
         <source>said</source>
-        <translation>είπε</translation>
+        <translation>сказал</translation>
     </message>
 </context>
 <context>
     <name>Browser</name>
     <message>
         <source>Open in Browser</source>
-        <translation>Άνοιγμα στον φυλλομετρητή</translation>
+        <translation>Открыть в браузере</translation>
     </message>
     <message>
         <source>Web mode</source>
-        <translation>Λειτουργία ιστού</translation>
+        <translation>Веб-режим</translation>
     </message>
     <message>
         <source>Reading mode</source>
-        <translation>Λειτουργία ανάγνωσης</translation>
+        <translation>Режим чтения</translation>
     </message>
     <message>
         <source>Copy URL</source>
-        <translation>Αντιγραφή διεύθυνσης URL</translation>
+        <translation>Копировать URL</translation>
     </message>
 </context>
 <context>
     <name>Conversation</name>
     <message>
         <source>Conversation</source>
-        <translation>Συνομιλία</translation>
+        <translation>Беседа</translation>
     </message>
     <message>
         <source>Content warning!</source>
-        <translation>Προειδοποίηση περιεχομένου!</translation>
+        <translation>Предупреждение о содержании!</translation>
     </message>
     <message>
         <source>public</source>
-        <translation>δημόσιο</translation>
+        <translation>публика</translation>
     </message>
     <message>
         <source>unlisted</source>
-        <translation>μη καταχωρημένο</translation>
+        <translation>не указан</translation>
     </message>
     <message>
         <source>followers only</source>
-        <translation>μόνο αυτοί που σας ακολουθούν</translation>
+        <translation>только последователи</translation>
     </message>
     <message>
         <source>direct</source>
-        <translation>απευθείας</translation>
+        <translation>непосредственный</translation>
     </message>
     <message>
         <source>Delete</source>
-        <translation>Διαγραφή</translation>
+        <translation>Удалить</translation>
     </message>
     <message>
         <source>Emojis</source>
-        <translation>Emoji</translation>
+        <translation>Cмайликов</translation>
     </message>
     <message>
         <source>Tap to insert</source>
-        <translation>Κτυπήστε για εισαγωγή</translation>
+        <translation>Нажмите, чтобы вставить</translation>
     </message>
 </context>
 <context>
     <name>ImageFullScreen</name>
     <message>
         <source>Error loading</source>
-        <translation>Σφάλμα φόρτωσης</translation>
+        <translation>Ошибка при загрузке</translation>
     </message>
 </context>
 <context>
     <name>ImageUploader</name>
     <message>
         <source>The file %1 does not exists</source>
-        <translation>Το αρχείο %1 δεν υπάρχει</translation>
+        <translation>Файл %1 не существует</translation>
     </message>
 </context>
 <context>
     <name>LoginPage</name>
     <message>
         <source>Login</source>
-        <translation>Σύνδεση</translation>
+        <translation>Авторизоваться</translation>
     </message>
 </context>
 <context>
     <name>MainPage</name>
     <message>
         <source>Home</source>
-        <translation>Οικοσελίδα</translation>
+        <translation>Главная</translation>
     </message>
     <message>
         <source>Timeline</source>
-        <translation>Γραμμή χρονοδιαγράμματος</translation>
+        <translation>Временная шкала</translation>
     </message>
     <message>
         <source>Notifications</source>
-        <translation>Ειδοποιήσεις</translation>
+        <translation>Уведомления</translation>
     </message>
     <message>
         <source>New Toot</source>
-        <translation>Νέος</translation>
+        <translation>Новый</translation>
     </message>
     <message>
         <source>Search</source>
-        <translation>Αναζήτηση</translation>
+        <translation>Поиск</translation>
     </message>
     <message>
         <source>@user or #term</source>
-        <translation>@χρήστη ή #όρος</translation>
+        <translation>@пользователь или #срок</translation>
     </message>
 </context>
 <context>
     <name>MiniStatus</name>
     <message>
         <source>boosted</source>
-        <translation>προωθημένο</translation>
+        <translation>росту</translation>
     </message>
     <message>
         <source>favourited</source>
-        <translation>στους σελιδοδείκτες</translation>
+        <translation>любимый</translation>
     </message>
     <message>
         <source>followed you</source>
-        <translation>σας ακολουθούν</translation>
+        <translation>следую за тобой</translation>
     </message>
 </context>
 <context>
     <name>MyList</name>
     <message>
         <source>Load more</source>
-        <translation>Φόρτωση περισσοτέρων</translation>
+        <translation>Загрузи больше</translation>
     </message>
     <message>
         <source>Settings</source>
-        <translation>Ρυθμίσεις</translation>
+        <translation>Настройки</translation>
     </message>
     <message>
         <source>Loading</source>
-        <translation>Φόρτωση</translation>
+        <translation>Загрузка</translation>
     </message>
     <message>
         <source>Performing request, please wait or request something else</source>
-        <translation>Πραγματοποιώντας αίτημα, παρακαλώ περιμένετε ή ζητήστε κάτι άλλο</translation>
+        <translation>Выполняя запрос, подождите</translation>
     </message>
 </context>
 <context>
     <name>Profile</name>
     <message>
         <source>Unfollow</source>
-        <translation>Αναίρεση παρακολούθησης</translation>
+        <translation>Отписаться</translation>
     </message>
     <message>
         <source>Follow request sent!</source>
-        <translation>Η αίτηση παρακολούθησης εστάλη!</translation>
+        <translation>Следуйте запрошенному запросу!</translation>
     </message>
     <message>
         <source>Following</source>
-        <translation>Σε παρακολούθηση</translation>
+        <translation>Следующий</translation>
     </message>
     <message>
         <source>Mute</source>
-        <translation>Σίγαση</translation>
+        <translation>Безгласный</translation>
     </message>
     <message>
         <source>Unmute</source>
-        <translation>Αναίρεση σίγασης</translation>
+        <translation>Нет безгласный</translation>
     </message>
     <message>
         <source>Unblock</source>
-        <translation>Αναίρεση φραγής</translation>
+        <translation>Открыть</translation>
     </message>
     <message>
         <source>Block</source>
-        <translation>Φραγή</translation>
+        <translation>Блокировать</translation>
     </message>
     <message>
         <source>Statuses</source>
-        <translation>Κατάσταση</translation>
+        <translation>Статусы</translation>
     </message>
     <message>
         <source>Favourites</source>
-        <translation>Σελιδοδείκτες</translation>
+        <translation>Избранные</translation>
     </message>
     <message>
         <source>Follow</source>
-        <translation>Παρακολούθηση</translation>
+        <translation>Следить</translation>
     </message>
     <message>
         <source>Summary</source>
-        <translation>Σύνοψη</translation>
+        <translation>Резюме</translation>
     </message>
     <message>
         <source>Followers</source>
-        <translation>Σας ακολουθούν</translation>
+        <translation>Читают</translation>
     </message>
 </context>
 <context>
     <name>Settings</name>
     <message>
         <source>Settings</source>
-        <translation>Ρυθμίσεις</translation>
+        <translation>Настройки</translation>
     </message>
     <message>
         <source>Remove Account</source>
-        <translation>Αφαίρεση λογαριασμού</translation>
+        <translation>Удалить учетную запись</translation>
     </message>
     <message>
         <source>Add Account</source>
-        <translation>Προσθήκη λογαριασμού</translation>
+        <translation>Добавить аккаунт</translation>
     </message>
     <message>
         <source>Authorize this app to use your Mastodon account in your behalf</source>
-        <translation>Να επιτρέπεται στην εφαρμογή να χρησιμοποιεί τον λογαριασμό σας στο Mastodon εκ μέρους σας</translation>
+        <translation>Уполномочить это приложение использовать свою учетную запись Mastodon от вашего имени</translation>
     </message>
     <message>
         <source>Load images in toots</source>
-        <translation>Φόρτωση των εικόνων στα toot</translation>
+        <translation>Загружать изображения</translation>
     </message>
     <message>
         <source>Deauthorize this app and remove your account</source>
-        <translation>Άρση της αδειοδότησης της εφαρμογής και αφαίρεση του λογαριασμού σας</translation>
+        <translation>удалить учетную запись с устройства</translation>
     </message>
     <message>
         <source>Credits</source>
-        <translation>Ευχαριστίες</translation>
+        <translation>Зачет</translation>
     </message>
     <message>
         <source>Translate</source>
-        <translation>Μετάφραση</translation>
+        <translation>Переведите</translation>
     </message>
     <message>
         <source>Use Transifex to help with app translation to your language</source>
-        <translation>Χρησιμοποιήστε το Transifex για να βοηθήσετε την μετάφραση της εφαρμογής στην γλώσσα σας</translation>
+        <translation>Используйте Transifex, чтобы помочь с переводом приложения на ваш язык</translation>
     </message>
     <message>
         <source>Disable this option if you want to preserve your data connection</source>
-        <translation>Απενεργοποιήστε αυτήν την επιλογή αν θέλετε να διατηρήσετε την σύνδεση των δεδομένων σας</translation>
+        <translation>Отключите эту опцию, если вы хотите сохранить подключение к данным</translation>
     </message>
     <message>
         <source>UI/UX design and development</source>
-        <translation>UI/UX σχεδιασμός και ανάπτυξη</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
     <name>Toot</name>
     <message>
         <source>boosted</source>
-        <translation>προωθημένο</translation>
+        <translation>росту</translation>
     </message>
     <message>
         <source>favourited</source>
-        <translation>στους σελιδοδείκτες</translation>
+        <translation>имеет любимый</translation>
     </message>
     <message>
         <source>followed you</source>
-        <translation>σας ακολουθούν</translation>
+        <translation>следую за тобой</translation>
     </message>
 </context>
 <context>
     <name>VisualContainer</name>
     <message>
         <source>Unboost</source>
-        <translation>Αναίρεση προώθησης</translation>
+        <translation>Нет росту</translation>
     </message>
     <message>
         <source>Boost</source>
-        <translation>Προώθηση</translation>
+        <translation>Росту</translation>
     </message>
     <message>
         <source>Unfavorite</source>
-        <translation>Αφαίρεση από τους σελιδοδείκτες</translation>
+        <translation>Избранные нет</translation>
     </message>
     <message>
         <source>Favorite</source>
-        <translation>Σελιδοδείκτης</translation>
+        <translation>Избранные</translation>
     </message>
 </context>
 </TS>
