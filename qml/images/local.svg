@@ -7,10 +7,10 @@
 	M28.7,7.5L8.3,24c-0.4,0.3-0.6,0.7-0.6,1.2v31.1c0,0.8,0.7,1.5,1.5,1.5h13.6c0.8,0,1.5-0.7,1.5-1.5V36.5c0-0.8,0.7-1.5,1.5-1.5h12.1
 	c0.8,0,1.5,0.7,1.5,1.5v19.7c0,0.8,0.7,1.5,1.5,1.5h13.6c0.8,0,1.5-0.7,1.5-1.5V25.1c0-0.5-0.2-0.9-0.6-1.2L35.3,7.5
 	C33.4,5.9,30.6,5.9,28.7,7.5z"/>
-<g id="Local" display="none">
+<g id="Local">
 	
-		<circle display="inline" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linejoin="round" stroke-miterlimit="10" cx="32" cy="27.6" r="7.6"/>
-	<path display="inline" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linejoin="round" stroke-miterlimit="10" d="M32,6.4
+		<circle fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linejoin="round" stroke-miterlimit="10" cx="32" cy="27.6" r="7.6"/>
+	<path fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linejoin="round" stroke-miterlimit="10" d="M32,6.4
 		c11.7,0,21.2,9.5,21.2,21.2c0,3.1-0.7,6-1.8,8.6c-1,2.2-2.3,4.2-3.9,5.9L32,57.6L16.5,42.1c-1.6-1.7-2.9-3.7-3.9-5.9
 		c-1.2-2.6-1.8-5.5-1.8-8.6C10.8,15.9,20.3,6.4,32,6.4z"/>
 </g>
@@ -27,10 +27,11 @@
 	
 		<line display="inline" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-miterlimit="10" x1="32" y1="6.3" x2="32" y2="57.7"/>
 </g>
-<g id="Search">
-	<circle fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linejoin="round" stroke-miterlimit="10" cx="29" cy="29" r="21.2"/>
+<g id="Search" display="none">
 	
-		<line fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linejoin="round" stroke-miterlimit="10" x1="56.2" y1="56.2" x2="44.1" y2="44.1"/>
+		<circle display="inline" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linejoin="round" stroke-miterlimit="10" cx="29" cy="29" r="21.2"/>
+	
+		<line display="inline" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linejoin="round" stroke-miterlimit="10" x1="56.2" y1="56.2" x2="44.1" y2="44.1"/>
 </g>
 <g id="Notification" display="none">
 	<path display="inline" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linejoin="round" stroke-miterlimit="10" d="

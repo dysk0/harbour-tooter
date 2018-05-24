@@ -106,10 +106,6 @@
         <translation>Главная</translation>
     </message>
     <message>
-        <source>Timeline</source>
-        <translation>Временная шкала</translation>
-    </message>
-    <message>
         <source>Notifications</source>
         <translation>Уведомления</translation>
     </message>
@@ -124,6 +120,14 @@
     <message>
         <source>@user or #term</source>
         <translation>@пользователь или #срок</translation>
+    </message>
+    <message>
+        <source>Local</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Federated</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>

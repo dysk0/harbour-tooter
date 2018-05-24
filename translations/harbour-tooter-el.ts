@@ -106,10 +106,6 @@
         <translation>Οικοσελίδα</translation>
     </message>
     <message>
-        <source>Timeline</source>
-        <translation>Γραμμή χρονοδιαγράμματος</translation>
-    </message>
-    <message>
         <source>Notifications</source>
         <translation>Ειδοποιήσεις</translation>
     </message>
@@ -124,6 +120,14 @@
     <message>
         <source>@user or #term</source>
         <translation>@χρήστη ή #όρος</translation>
+    </message>
+    <message>
+        <source>Local</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Federated</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>

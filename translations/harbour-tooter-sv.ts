@@ -1,125 +1,125 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE TS>
-<TS version="2.1" language="es">
+<TS version="2.1" language="sv">
 <context>
     <name>API</name>
     <message>
         <source>favourited</source>
-        <translation>marcó como favorito</translation>
+        <translation>favoriserad</translation>
     </message>
     <message>
         <source>followed you</source>
-        <translation>te empezó a seguir</translation>
+        <translation>följer dig</translation>
     </message>
     <message>
         <source>boosted</source>
-        <translation>retooteó</translation>
+        <translation>puffat</translation>
     </message>
     <message>
         <source>said</source>
-        <translation>dijo</translation>
+        <translation>sade</translation>
     </message>
 </context>
 <context>
     <name>Browser</name>
     <message>
         <source>Open in Browser</source>
-        <translation>Abrir en navegador</translation>
+        <translation>Öppna i webbläsare</translation>
     </message>
     <message>
         <source>Web mode</source>
-        <translation>Modo Web</translation>
+        <translation>Webbläge</translation>
     </message>
     <message>
         <source>Reading mode</source>
-        <translation>Modo lectura</translation>
+        <translation>Läsläge</translation>
     </message>
     <message>
         <source>Copy URL</source>
-        <translation>Copiar URL</translation>
+        <translation>Kopiera URL</translation>
     </message>
 </context>
 <context>
     <name>Conversation</name>
     <message>
         <source>Conversation</source>
-        <translation>Conversación</translation>
+        <translation>Konversation</translation>
     </message>
     <message>
         <source>Content warning!</source>
-        <translation>Advertencia de contenido</translation>
+        <translation>Innehållsvarning!</translation>
     </message>
     <message>
         <source>public</source>
-        <translation>público</translation>
+        <translation>publik</translation>
     </message>
     <message>
         <source>unlisted</source>
-        <translation>sin federar</translation>
+        <translation>olistad</translation>
     </message>
     <message>
         <source>followers only</source>
-        <translation>sólo seguidores</translation>
+        <translation>endast följare</translation>
     </message>
     <message>
         <source>direct</source>
-        <translation>directo</translation>
+        <translation>direkt</translation>
     </message>
     <message>
         <source>Delete</source>
-        <translation>Borrar</translation>
+        <translation>Radera</translation>
     </message>
     <message>
         <source>Emojis</source>
-        <translation>Emoticonos</translation>
+        <translation>Emojis</translation>
     </message>
     <message>
         <source>Tap to insert</source>
-        <translation>Toca para insertar</translation>
+        <translation>Tryck för att infoga</translation>
     </message>
 </context>
 <context>
     <name>ImageFullScreen</name>
     <message>
         <source>Error loading</source>
-        <translation>Error al cargar</translation>
+        <translation>Problem att ladda</translation>
     </message>
 </context>
 <context>
     <name>ImageUploader</name>
     <message>
         <source>The file %1 does not exists</source>
-        <translation>El archivo %1 no existe</translation>
+        <translation>Filen %1 går inte att hitta</translation>
     </message>
 </context>
 <context>
     <name>LoginPage</name>
     <message>
         <source>Login</source>
-        <translation>Acceso</translation>
+        <translation>Logga in</translation>
     </message>
 </context>
 <context>
     <name>MainPage</name>
     <message>
         <source>Home</source>
-        <translation>Inicio</translation>
+        <translation>Hem</translation>
     </message>
     <message>
         <source>Notifications</source>
-        <translation>Notificaciones</translation>
+        <translation>Notifieringar</translation>
     </message>
     <message>
         <source>New Toot</source>
-        <translation>Nuevo toot</translation>
+        <translation>Ny toot</translation>
     </message>
     <message>
         <source>Search</source>
-        <translation>Buscar</translation>
+        <translation>Sök</translation>
     </message>
     <message>
         <source>@user or #term</source>
-        <translation>@usuario o #término</translation>
+        <translation>@user eller #term</translation>
     </message>
     <message>
         <source>Local</source>
@@ -134,166 +134,166 @@
     <name>MiniStatus</name>
     <message>
         <source>boosted</source>
-        <translation>retooteó</translation>
+        <translation>puffade</translation>
     </message>
     <message>
         <source>favourited</source>
-        <translation>marcó como favorito</translation>
+        <translation>favoriserade</translation>
     </message>
     <message>
         <source>followed you</source>
-        <translation>te empezó a seguir</translation>
+        <translation>följer dig</translation>
     </message>
 </context>
 <context>
     <name>MyList</name>
     <message>
         <source>Load more</source>
-        <translation>Cargar más</translation>
+        <translation>Ladda mer</translation>
     </message>
     <message>
         <source>Settings</source>
-        <translation>Ajustes</translation>
+        <translation>Inställningar</translation>
     </message>
     <message>
         <source>Loading</source>
-        <translation>Cargando</translation>
+        <translation>Laddar</translation>
     </message>
     <message>
         <source>Performing request, please wait or request something else</source>
-        <translation>Ejecutando solicitud, por favor, espera o solicita otra cosa</translation>
+        <translation>Utför begäran, var god vänta eller be om något annat</translation>
     </message>
 </context>
 <context>
     <name>Profile</name>
     <message>
         <source>Unfollow</source>
-        <translation>Dejar de seguir</translation>
+        <translation>Sluta följa</translation>
     </message>
     <message>
         <source>Follow request sent!</source>
-        <translation>¡Solicitud de seguidor enviada!</translation>
+        <translation>Följarförfrågan har skickats!</translation>
     </message>
     <message>
         <source>Following</source>
-        <translation>Siguiendo</translation>
+        <translation>Följer</translation>
     </message>
     <message>
         <source>Mute</source>
-        <translation>Silenciar</translation>
+        <translation>Tysta</translation>
     </message>
     <message>
         <source>Unmute</source>
-        <translation>Dejar de silenciar</translation>
+        <translation>Avtysta</translation>
     </message>
     <message>
         <source>Unblock</source>
-        <translation>Desbloquear</translation>
+        <translation>Avblockera</translation>
     </message>
     <message>
         <source>Block</source>
-        <translation>Bloquear</translation>
+        <translation>Blockera</translation>
     </message>
     <message>
         <source>Statuses</source>
-        <translation>Estados</translation>
+        <translation>Statusar</translation>
     </message>
     <message>
         <source>Favourites</source>
-        <translation>Favoritos</translation>
+        <translation>Favoriter</translation>
     </message>
     <message>
         <source>Follow</source>
-        <translation>Seguir</translation>
+        <translation>Följ</translation>
     </message>
     <message>
         <source>Summary</source>
-        <translation>Resumen</translation>
+        <translation>Översikt</translation>
     </message>
     <message>
         <source>Followers</source>
-        <translation>Seguidores</translation>
+        <translation>Följare</translation>
     </message>
 </context>
 <context>
     <name>Settings</name>
     <message>
         <source>Settings</source>
-        <translation>Ajustes</translation>
+        <translation>Inställningar</translation>
     </message>
     <message>
         <source>Remove Account</source>
-        <translation>Eliminar cuenta</translation>
+        <translation>Radera konto</translation>
     </message>
     <message>
         <source>Add Account</source>
-        <translation>Añadir cuenta</translation>
+        <translation>Lägg till konto</translation>
     </message>
     <message>
         <source>Authorize this app to use your Mastodon account in your behalf</source>
-        <translation>Autoriza a esta aplicación a usar tu cuenta de Mastodon en tu nombre</translation>
+        <translation>Godkänn denna app att använda ditt Mastodon-konto på dina vägnar</translation>
     </message>
     <message>
         <source>Load images in toots</source>
-        <translation>Cargar imágenes en toots</translation>
+        <translation>Ladda bilder i toots</translation>
     </message>
     <message>
         <source>Deauthorize this app and remove your account</source>
-        <translation>Retira la autorización a esta aplicación y elimina tu cuenta</translation>
+        <translation>Avauktorisera  denna app och radera ditt konto</translation>
     </message>
     <message>
         <source>Credits</source>
-        <translation>Créditos</translation>
+        <translation>Erkännanden</translation>
     </message>
     <message>
         <source>Translate</source>
-        <translation>Traducir</translation>
+        <translation>Översätt</translation>
     </message>
     <message>
         <source>Use Transifex to help with app translation to your language</source>
-        <translation>Usa Transifex para ayudar en la traducción a tu idioma de esta aplicación</translation>
+        <translation>Använd Transifex för att hjälpa med app-översättningar till ditt språk</translation>
     </message>
     <message>
         <source>Disable this option if you want to preserve your data connection</source>
-        <translation>Deshabilita esta opción si quieres ahorrar en tu conexión de datos</translation>
+        <translation>Inaktivera det här alternativet om du vill behålla din dataanslutning </translation>
     </message>
     <message>
         <source>UI/UX design and development</source>
-        <translation>Diseño UI/UX y desarrollo</translation>
+        <translation>UI/UX design och utveckling</translation>
     </message>
 </context>
 <context>
     <name>Toot</name>
     <message>
         <source>boosted</source>
-        <translation>retooteó</translation>
+        <translation>puffade</translation>
     </message>
     <message>
         <source>favourited</source>
-        <translation>marcó como favorito</translation>
+        <translation>favoriserad</translation>
     </message>
     <message>
         <source>followed you</source>
-        <translation>te empezó a seguir</translation>
+        <translation>följer dig</translation>
     </message>
 </context>
 <context>
     <name>VisualContainer</name>
     <message>
         <source>Unboost</source>
-        <translation>Eliminar toot</translation>
+        <translation>Avpuffa</translation>
     </message>
     <message>
         <source>Boost</source>
-        <translation>Tootear</translation>
+        <translation>Puffa</translation>
     </message>
     <message>
         <source>Unfavorite</source>
-        <translation>Eliminar favorito</translation>
+        <translation>Avfavorisera</translation>
     </message>
     <message>
         <source>Favorite</source>
-        <translation>Marcar como favorito</translation>
+        <translation>Favorisera</translation>
     </message>
 </context>
 </TS>

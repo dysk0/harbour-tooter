@@ -250,11 +250,6 @@ function parseToot (data){
             url: attachments['remote_url'] && typeof attachments['remote_url'] == "string" ? attachments['remote_url'] : attachments['url'] ,
                                                    preview_url: loadImages ? attachments['preview_url'] : ''
         }
-        //console.log("-----------------------------------")
-        //console.log(JSON.stringify(attachments))
-        //console.log(typeof attachments['remote_url'])
-        //console.log(JSON.stringify(tmp))
-        //console.log("-----------------------------------")
         item['attachments'].push(tmp)
     }
     return item;

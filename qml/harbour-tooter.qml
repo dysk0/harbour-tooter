@@ -44,7 +44,7 @@ ApplicationWindow
         Logic.mediator.installTo(obj);
         obj.subscribe('confLoaded', function(){
             console.log('confLoaded');
-            console.log(JSON.stringify(Logic.conf))
+            //console.log(JSON.stringify(Logic.conf))
             if (!Logic.conf['notificationLastID'])
                 Logic.conf['notificationLastID'] = 0;
             if (Logic.conf['instance']) {

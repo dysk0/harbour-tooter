@@ -180,6 +180,7 @@ SilicaListView {
             'mode'      : mode,
             'conf'      : Logic.conf
         };
+        console.log(JSON.stringify(msg))
         if (type !== "")
             worker.sendMessage(msg);
     }

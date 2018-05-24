@@ -106,10 +106,6 @@
         <translation>Почетна</translation>
     </message>
     <message>
-        <source>Timeline</source>
-        <translation>Временска линија</translation>
-    </message>
-    <message>
         <source>Notifications</source>
         <translation>Обавјештење</translation>
     </message>
@@ -124,6 +120,14 @@
     <message>
         <source>@user or #term</source>
         <translation>@korisnik ili #pojam</translation>
+    </message>
+    <message>
+        <source>Local</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Federated</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>

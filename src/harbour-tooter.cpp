@@ -12,7 +12,7 @@
 #include <QQmlContext>
 #include <QCoreApplication>
 #include <QtNetwork>
-#include <QtSystemInfo/QDeviceInfo>
+//#include <QtSystemInfo/QDeviceInfo>
 #include "filedownloader.h"
 #include "imageuploader.h"
 #include "notifications.h"

@@ -70,9 +70,19 @@ Page {
         }
         MyList{
             id: tlPublic;
-            title: qsTr("Timeline")
+            title: qsTr("Federated")
             type: "timelines/public"
             mdl: Logic.modelTLpublic
+            width: parent.itemWidth
+            height: parent.itemHeight
+            onOpenDrawer:  infoPanel.open = setDrawer
+        }
+        MyList{
+            id: tlLocal;
+            title: qsTr("Local")
+            type: "timelines/public?local=true"
+            //params: ["local", true]
+            mdl: Logic.modelTLlocal
             width: parent.itemWidth
             height: parent.itemHeight
             onOpenDrawer:  infoPanel.open = setDrawer
@@ -255,6 +265,9 @@ Page {
         } else {
             pageStack.push(Qt.resolvedUrl("Browser.qml"), {"href" : href})
         }
+    }
+    Component.onCompleted: {
+        console.log("aaa")
     }
 }
 

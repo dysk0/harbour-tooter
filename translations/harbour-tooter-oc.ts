@@ -106,10 +106,6 @@
         <translation>Acuèlh</translation>
     </message>
     <message>
-        <source>Timeline</source>
-        <translation>Flux d&apos;actualitat</translation>
-    </message>
-    <message>
         <source>Notifications</source>
         <translation>Notificacions</translation>
     </message>
@@ -124,6 +120,14 @@
     <message>
         <source>@user or #term</source>
         <translation>@utilizaire o #tèrm</translation>
+    </message>
+    <message>
+        <source>Local</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Federated</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>

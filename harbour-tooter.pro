@@ -77,12 +77,12 @@ CONFIG += sailfishapp_i18n
 TRANSLATIONS += \
     translations/harbour-tooter-de.ts \
     translations/harbour-tooter-el.ts \
-    translations/harbour-tooter-en.ts \
     translations/harbour-tooter-es.ts \
     translations/harbour-tooter-fr.ts \
     translations/harbour-tooter-nl.ts \
     translations/harbour-tooter-oc.ts \
     translations/harbour-tooter-ru.ts \
+    translations/harbour-tooter-sv.ts \
     translations/harbour-tooter-sr.ts
 
 DISTFILES += \
@@ -92,6 +92,8 @@ DISTFILES += \
     qml/images/mesagess.svg \
     qml/images/search.svg \
     qml/images/verified.svg \
+    qml/images/local.svg \
+    qml/images/federated.svg \
     qml/images/tooter.svg \
     qml/lib/Mastodon.js \
     qml/lib/Worker.js \

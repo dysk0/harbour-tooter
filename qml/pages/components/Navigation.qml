@@ -1,5 +1,6 @@
 import QtQuick 2.0
 import Sailfish.Silica 1.0
+import QtGraphicalEffects 1.0
 
 SilicaGridView {
     signal slideshowShow(int vIndex);
@@ -13,27 +14,39 @@ SilicaGridView {
     ListModel {
         id: listModel
         ListElement {
-            icon: "image://theme/icon-m-home"
-            slug: "timeline"
-            name: "Timeline"
+            //icon: "image://theme/icon-m-home"
+            icon: "../../images/home.svg"
+            slug: "home"
+            name: "Home"
             active: true
             unread: false
         }
         ListElement {
-            icon: "image://theme/icon-m-region"
-            slug: "mentions"
-            name: "Mentions"
+            //icon: "image://theme/icon-m-region"
+            icon: "../../images/federated.svg"
+            slug: "federated"
+            name: "Federated"
             active: false
             unread: false
         }
         ListElement {
-            icon: "image://theme/icon-m-alarm"
-            slug: "msgs"
-            name: "Messagess"
+            //icon: "image://theme/icon-m-sailfish"
+            icon: "../../images/local.svg"
+            slug: "local"
+            name: "Local"
+            active: false
+            unread: false
+        }
+        ListElement {
+            //icon: "image://theme/icon-m-alarm"
+            icon: "../../images/notification.svg"
+            slug: "notifications"
+            name: "Notifications"
             active: false
         }
         ListElement {
-            icon: "image://theme/icon-m-search"
+            //icon: "image://theme/icon-m-search"
+            icon: "../../images/search.svg"
             slug: "search"
             name: "Search"
             active: false
@@ -94,19 +107,28 @@ SilicaGridView {
                                   : (model.active ? Theme.primaryColor : Theme.secondaryHighlightColor))
             anchors.centerIn: parent
         }*/
+        ColorOverlay {
+               anchors.fill: image
+               source: image
+               color: (highlighted ? Theme.highlightColor : (model.active ? Theme.primaryColor : Theme.secondaryHighlightColor))
+           }
         Image {
             id: image
-            source: model.icon +'?'+ (highlighted
-                                  ? Theme.highlightColor
-                                  : (model.active ? Theme.primaryColor : Theme.secondaryHighlightColor))
+            source: model.icon// +'?'+ (highlighted ? Theme.highlightColor : (model.active ? Theme.primaryColor : Theme.secondaryHighlightColor))
             anchors.centerIn: parent
+            visible: false
             smooth: true
         }
 
         Text {
-            anchors.centerIn: parent
+            anchors.bottom: parent.bottom
+            anchors.bottomMargin: Theme.paddingSmall
+            anchors.left: parent.left
+            anchors.right: parent.right
+            horizontalAlignment: Text.AlignHCenter
             visible: false
-            text: model.icon
+            text: model.name
+            font.pixelSize: Theme.fontSizeExtraSmall/2
             color: (highlighted
                     ? Theme.highlightColor
                     : (model.active ? Theme.primaryColor : Theme.secondaryHighlightColor))

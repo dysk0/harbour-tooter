@@ -1,128 +1,132 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE TS>
-<TS version="2.1">
+<TS version="2.1" language="de">
 <context>
     <name>API</name>
     <message>
         <source>favourited</source>
-        <translation type="unfinished"></translation>
+        <translation>favorisiert</translation>
     </message>
     <message>
         <source>followed you</source>
-        <translation type="unfinished"></translation>
+        <translation>sind dir gefolgt</translation>
     </message>
     <message>
         <source>boosted</source>
-        <translation type="unfinished"></translation>
+        <translation>verstärkt</translation>
     </message>
     <message>
         <source>said</source>
-        <translation type="unfinished"></translation>
+        <translation>hat gesagt</translation>
     </message>
 </context>
 <context>
     <name>Browser</name>
     <message>
         <source>Open in Browser</source>
-        <translation type="unfinished"></translation>
+        <translation>Öffne in Browser</translation>
     </message>
     <message>
         <source>Web mode</source>
-        <translation type="unfinished"></translation>
+        <translation>Web-Modus</translation>
     </message>
     <message>
         <source>Reading mode</source>
-        <translation type="unfinished"></translation>
+        <translation>Lese-Modus</translation>
     </message>
     <message>
         <source>Copy URL</source>
-        <translation type="unfinished"></translation>
+        <translation>Kopiere URL</translation>
     </message>
 </context>
 <context>
     <name>Conversation</name>
     <message>
+        <source>Conversation</source>
+        <translation>Konversation</translation>
+    </message>
+    <message>
         <source>Content warning!</source>
-        <translation type="unfinished"></translation>
+        <translation>Inhaltswarnung!</translation>
     </message>
     <message>
         <source>public</source>
-        <translation type="unfinished"></translation>
+        <translation>öffentlich</translation>
     </message>
     <message>
         <source>unlisted</source>
-        <translation type="unfinished"></translation>
+        <translation>nicht aufgeführt</translation>
     </message>
     <message>
         <source>followers only</source>
-        <translation type="unfinished"></translation>
+        <translation>nur Follower</translation>
     </message>
     <message>
         <source>direct</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Conversation</source>
-        <translation type="unfinished"></translation>
+        <translation>direkt</translation>
     </message>
     <message>
         <source>Delete</source>
-        <translation type="unfinished"></translation>
+        <translation>Löschen</translation>
     </message>
     <message>
         <source>Emojis</source>
-        <translation type="unfinished"></translation>
+        <translation>Emojis</translation>
     </message>
     <message>
         <source>Tap to insert</source>
-        <translation type="unfinished"></translation>
+        <translation>Tippen um einzufügen</translation>
     </message>
 </context>
 <context>
     <name>ImageFullScreen</name>
     <message>
         <source>Error loading</source>
-        <translation type="unfinished"></translation>
+        <translation>Fehler beim Laden</translation>
     </message>
 </context>
 <context>
     <name>ImageUploader</name>
     <message>
         <source>The file %1 does not exists</source>
-        <translation type="unfinished"></translation>
+        <translation>Die Datei %1 existiert nicht</translation>
     </message>
 </context>
 <context>
     <name>LoginPage</name>
     <message>
         <source>Login</source>
-        <translation type="unfinished"></translation>
+        <translation>Login</translation>
     </message>
 </context>
 <context>
     <name>MainPage</name>
     <message>
         <source>Home</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Timeline</source>
-        <translation type="unfinished"></translation>
+        <translation>Home</translation>
     </message>
     <message>
         <source>Notifications</source>
-        <translation type="unfinished"></translation>
+        <translation>Benachrichtigungen</translation>
     </message>
     <message>
         <source>New Toot</source>
-        <translation type="unfinished"></translation>
+        <translation>Neuer Toot</translation>
     </message>
     <message>
         <source>Search</source>
-        <translation type="unfinished"></translation>
+        <translation>Suche</translation>
     </message>
     <message>
         <source>@user or #term</source>
+        <translation>@User oder #Ausdruck</translation>
+    </message>
+    <message>
+        <source>Local</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Federated</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -130,166 +134,166 @@
     <name>MiniStatus</name>
     <message>
         <source>boosted</source>
-        <translation type="unfinished"></translation>
+        <translation>verstärkt</translation>
     </message>
     <message>
         <source>favourited</source>
-        <translation type="unfinished"></translation>
+        <translation>favorisiert</translation>
     </message>
     <message>
         <source>followed you</source>
-        <translation type="unfinished"></translation>
+        <translation>sind dir gefolgt</translation>
     </message>
 </context>
 <context>
     <name>MyList</name>
     <message>
         <source>Load more</source>
-        <translation type="unfinished"></translation>
+        <translation>Lade mehr</translation>
     </message>
     <message>
         <source>Settings</source>
-        <translation type="unfinished"></translation>
+        <translation>Einstellungen</translation>
     </message>
     <message>
         <source>Loading</source>
-        <translation type="unfinished"></translation>
+        <translation>Lädt...</translation>
     </message>
     <message>
         <source>Performing request, please wait or request something else</source>
-        <translation type="unfinished"></translation>
+        <translation>Anfrage wird bearbeitet, bitte warte oder versuche etwas anderes</translation>
     </message>
 </context>
 <context>
     <name>Profile</name>
     <message>
         <source>Unfollow</source>
-        <translation type="unfinished"></translation>
+        <translation>Nicht mehr folgen</translation>
     </message>
     <message>
         <source>Follow request sent!</source>
-        <translation type="unfinished"></translation>
+        <translation>Folge-Anfrage gesendet!</translation>
     </message>
     <message>
         <source>Following</source>
-        <translation type="unfinished"></translation>
+        <translation>Folgend</translation>
     </message>
     <message>
         <source>Mute</source>
-        <translation type="unfinished"></translation>
+        <translation>Stumm</translation>
     </message>
     <message>
         <source>Unmute</source>
-        <translation type="unfinished"></translation>
+        <translation>Nicht stumm</translation>
     </message>
     <message>
         <source>Unblock</source>
-        <translation type="unfinished"></translation>
+        <translation>Nicht blockieren</translation>
     </message>
     <message>
         <source>Block</source>
-        <translation type="unfinished"></translation>
+        <translation>Blockieren</translation>
     </message>
     <message>
         <source>Statuses</source>
-        <translation type="unfinished"></translation>
+        <translation>Status</translation>
     </message>
     <message>
         <source>Favourites</source>
-        <translation type="unfinished"></translation>
+        <translation>Favoriten</translation>
     </message>
     <message>
         <source>Follow</source>
-        <translation type="unfinished"></translation>
+        <translation>Folge</translation>
     </message>
     <message>
         <source>Summary</source>
-        <translation type="unfinished"></translation>
+        <translation>Zusammenfassung</translation>
     </message>
     <message>
         <source>Followers</source>
-        <translation type="unfinished"></translation>
+        <translation>Anhänger</translation>
     </message>
 </context>
 <context>
     <name>Settings</name>
     <message>
         <source>Settings</source>
-        <translation type="unfinished"></translation>
+        <translation>Einstellungen</translation>
     </message>
     <message>
         <source>Remove Account</source>
-        <translation type="unfinished"></translation>
+        <translation>Account löschen</translation>
     </message>
     <message>
         <source>Add Account</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Deauthorize this app and remove your account</source>
-        <translation type="unfinished"></translation>
+        <translation>Account hinzufügen</translation>
     </message>
     <message>
         <source>Authorize this app to use your Mastodon account in your behalf</source>
-        <translation type="unfinished"></translation>
+        <translation>Autorisiere diese App deinen Mastodon Account in deinem Namen zu nutzen</translation>
     </message>
     <message>
         <source>Load images in toots</source>
-        <translation type="unfinished"></translation>
+        <translation>Lade Bilder in den Toots</translation>
     </message>
     <message>
-        <source>Disable this option if you want to preserve your data connection</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Translate</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Use Transifex to help with app translation to your language</source>
-        <translation type="unfinished"></translation>
+        <source>Deauthorize this app and remove your account</source>
+        <translation>Der App Autorisierung entziehen und Account entfernen</translation>
     </message>
     <message>
         <source>Credits</source>
-        <translation type="unfinished"></translation>
+        <translation>Credits</translation>
+    </message>
+    <message>
+        <source>Translate</source>
+        <translation>Übersetzen</translation>
+    </message>
+    <message>
+        <source>Use Transifex to help with app translation to your language</source>
+        <translation>Nutze Transifex um bei der Übersetzung in deine Sprache zu helfen</translation>
+    </message>
+    <message>
+        <source>Disable this option if you want to preserve your data connection</source>
+        <translation>Deaktiviere diese Option um deinen Datenverbindung zu schonen</translation>
     </message>
     <message>
         <source>UI/UX design and development</source>
-        <translation type="unfinished"></translation>
+        <translation>UI/UX Design und Implementierung</translation>
     </message>
 </context>
 <context>
     <name>Toot</name>
     <message>
-        <source>followed you</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <source>boosted</source>
-        <translation type="unfinished"></translation>
+        <translation>verstärkt</translation>
     </message>
     <message>
         <source>favourited</source>
-        <translation type="unfinished"></translation>
+        <translation>favorisiert</translation>
+    </message>
+    <message>
+        <source>followed you</source>
+        <translation>folgt dir</translation>
     </message>
 </context>
 <context>
     <name>VisualContainer</name>
     <message>
         <source>Unboost</source>
-        <translation type="unfinished"></translation>
+        <translation>Schwäche</translation>
     </message>
     <message>
         <source>Boost</source>
-        <translation type="unfinished"></translation>
+        <translation>Verstärke</translation>
     </message>
     <message>
         <source>Unfavorite</source>
-        <translation type="unfinished"></translation>
+        <translation>Aus Favoriten entfernen</translation>
     </message>
     <message>
         <source>Favorite</source>
-        <translation type="unfinished"></translation>
+        <translation>Zu Favoriten</translation>
     </message>
 </context>
 </TS>
