@@ -98,6 +98,14 @@
         <source>Login</source>
         <translation>Login</translation>
     </message>
+    <message>
+        <source>Enter an Mastodon instance URL</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Mastodon is a free, open-source social network. A decentralized alternative to commercial platforms, it avoids the risks of a single company monopolizing your communication. Pick a server that you trust — whichever you choose, you can interact with everyone else. Anyone can run their own Mastodon instance and participate in the social network seamlessly.</source>
+        <translation></translation>
+    </message>
 </context>
 <context>
     <name>MainPage</name>
@@ -160,8 +168,8 @@
         <translation></translation>
     </message>
     <message>
-        <source>Performing request, please wait or request something else</source>
-        <translation type="unfinished"></translation>
+        <source>please wait...</source>
+        <translation></translation>
     </message>
 </context>
 <context>
