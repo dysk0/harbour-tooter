@@ -106,9 +106,7 @@ Page {
             onSearchChanged: {
                 console.log(search)
                 loader.sourceComponent = loading
-                if (search !== ""){
-                    loader.sourceComponent = search.charAt(0) === "@" ? userListComponent : tagListComponent
-                }
+                loader.sourceComponent = search.charAt(0) === "@" ? userListComponent : tagListComponent
             }
 
             Loader {
@@ -259,7 +257,7 @@ Page {
         console.log(JSON.stringify(test.length))
         if (test.length === 5 && (test[3] === "tags" || test[3] === "tag") ) {
             tlSearch.search = "#"+decodeURIComponent(test[4])
-            slideshow.positionViewAtIndex(3, ListView.SnapToItem)
+            slideshow.positionViewAtIndex(4, ListView.SnapToItem)
             navigation.navigateTo('search')
 
         } else {
