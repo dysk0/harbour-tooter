@@ -14,8 +14,8 @@ SilicaGridView {
     ListModel {
         id: listModel
         ListElement {
-            //icon: "image://theme/icon-m-home"
-            icon: "../../images/home.svg"
+            icon: "image://theme/icon-m-home"
+            //icon: "../../images/home.svg"
             slug: "home"
             name: "Home"
             active: true
@@ -38,15 +38,15 @@ SilicaGridView {
             unread: false
         }
         ListElement {
-            //icon: "image://theme/icon-m-alarm"
-            icon: "../../images/notification.svg"
+            icon: "image://theme/icon-m-alarm"
+            //icon: "../../images/notification.svg"
             slug: "notifications"
             name: "Notifications"
             active: false
         }
         ListElement {
-            //icon: "image://theme/icon-m-search"
-            icon: "../../images/search.svg"
+            icon: "image://theme/icon-m-search"
+            //icon: "../../images/search.svg"
             slug: "search"
             name: "Search"
             active: false
@@ -114,10 +114,12 @@ SilicaGridView {
            }
         Image {
             id: image
+            sourceSize.width: Theme.iconSizeMedium
+            sourceSize.height: Theme.iconSizeMedium
             source: model.icon// +'?'+ (highlighted ? Theme.highlightColor : (model.active ? Theme.primaryColor : Theme.secondaryHighlightColor))
             anchors.centerIn: parent
             visible: false
-            smooth: true
+           // smooth: true
         }
 
         Text {

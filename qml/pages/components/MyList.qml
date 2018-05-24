@@ -8,7 +8,7 @@ SilicaListView {
     property string type;
     property string title
     property string vwPlaceholderText: qsTr("Loading")
-    property string vwPlaceholderHint: qsTr("Performing request, please wait or request something else")
+    property string vwPlaceholderHint: qsTr("please wait...")
     property string description
     property ListModel mdl: []
     property variant params: []
