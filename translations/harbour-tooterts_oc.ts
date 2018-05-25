@@ -1,299 +1,307 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE TS>
-<TS version="2.1" language="sr">
+<TS version="2.1" language="oc">
 <context>
     <name>API</name>
     <message>
         <source>favourited</source>
-        <translation>омиљен</translation>
+        <translation>a mes en favorit</translation>
     </message>
     <message>
         <source>followed you</source>
-        <translation>вас прати</translation>
+        <translation>vos sèc</translation>
     </message>
     <message>
         <source>boosted</source>
-        <translation>разглашено</translation>
+        <translation>a partejat</translation>
     </message>
     <message>
         <source>said</source>
-        <translation>каже</translation>
+        <translation>a dich</translation>
     </message>
 </context>
 <context>
     <name>Browser</name>
     <message>
         <source>Open in Browser</source>
-        <translation>Отвори у прегледнику веба</translation>
+        <translation>Dobrir dins lo navigator</translation>
     </message>
     <message>
         <source>Web mode</source>
-        <translation>Прегледник веба</translation>
+        <translation>Mòde Web</translation>
     </message>
     <message>
         <source>Reading mode</source>
-        <translation>Мод за читање</translation>
+        <translation>Mòde lectura</translation>
     </message>
     <message>
         <source>Copy URL</source>
-        <translation>Kopiraj link</translation>
+        <translation>Copiar l&apos;URL</translation>
     </message>
 </context>
 <context>
     <name>Conversation</name>
     <message>
         <source>Conversation</source>
-        <translation>Разговор</translation>
+        <translation>Discutida</translation>
     </message>
     <message>
         <source>Content warning!</source>
-        <translation>Упозорење на садржај</translation>
+        <translation>Contengut sensible !</translation>
     </message>
     <message>
         <source>public</source>
-        <translation>јавно</translation>
+        <translation>public</translation>
     </message>
     <message>
         <source>unlisted</source>
-        <translation>не приказано</translation>
+        <translation>pas listat</translation>
     </message>
     <message>
         <source>followers only</source>
-        <translation>само за пратиоце</translation>
+        <translation>seguidors solament</translation>
     </message>
     <message>
         <source>direct</source>
-        <translation>директна порука</translation>
+        <translation>dirècte</translation>
     </message>
     <message>
         <source>Delete</source>
-        <translation>Обриши</translation>
+        <translation>Escafar</translation>
     </message>
     <message>
         <source>Emojis</source>
-        <translation>Емотикони</translation>
+        <translation>Emojis</translation>
     </message>
     <message>
         <source>Tap to insert</source>
-        <translation>Тапни за убацивање</translation>
+        <translation>Tustejar per inserir</translation>
     </message>
 </context>
 <context>
     <name>ImageFullScreen</name>
     <message>
         <source>Error loading</source>
-        <translation>Greška u učitavanju</translation>
+        <translation>Error en cargar</translation>
     </message>
 </context>
 <context>
     <name>ImageUploader</name>
     <message>
         <source>The file %1 does not exists</source>
-        <translation>Фајл %1 не постоји</translation>
+        <translation>Lo fichièr %1 existís pas</translation>
     </message>
 </context>
 <context>
     <name>LoginPage</name>
     <message>
         <source>Login</source>
-        <translation>Пријава</translation>
+        <translation>Connexion</translation>
+    </message>
+    <message>
+        <source>Enter an Mastodon instance URL</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Mastodon is a free, open-source social network. A decentralized alternative to commercial platforms, it avoids the risks of a single company monopolizing your communication. Pick a server that you trust — whichever you choose, you can interact with everyone else. Anyone can run their own Mastodon instance and participate in the social network seamlessly.</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
     <name>MainPage</name>
     <message>
         <source>Home</source>
-        <translation>Почетна</translation>
+        <translation>Acuèlh</translation>
     </message>
     <message>
         <source>Notifications</source>
-        <translation>Обавјештење</translation>
+        <translation>Notificacions</translation>
     </message>
     <message>
         <source>New Toot</source>
-        <translation>Novi toot</translation>
+        <translation>Nòu Tut</translation>
     </message>
     <message>
         <source>Search</source>
-        <translation>Претрага</translation>
+        <translation>Cercar</translation>
     </message>
     <message>
         <source>@user or #term</source>
-        <translation>@korisnik ili #pojam</translation>
+        <translation>@utilizaire o #tèrm</translation>
     </message>
     <message>
         <source>Local</source>
-        <translation type="unfinished"></translation>
+        <translation>Local</translation>
     </message>
     <message>
         <source>Federated</source>
-        <translation type="unfinished"></translation>
+        <translation>Federat</translation>
     </message>
 </context>
 <context>
     <name>MiniStatus</name>
     <message>
         <source>boosted</source>
-        <translation>разглашено</translation>
+        <translation>a tornat partejar</translation>
     </message>
     <message>
         <source>favourited</source>
-        <translation>омиљено</translation>
+        <translation>a mes en favorit</translation>
     </message>
     <message>
         <source>followed you</source>
-        <translation>вас прати</translation>
+        <translation>vos sèc</translation>
     </message>
 </context>
 <context>
     <name>MyList</name>
     <message>
         <source>Load more</source>
-        <translation>учитај још</translation>
+        <translation>Cargar mai</translation>
     </message>
     <message>
         <source>Settings</source>
-        <translation>Подешавања</translation>
+        <translation>Parmètres</translation>
     </message>
     <message>
         <source>Loading</source>
-        <translation>Učitavanje</translation>
+        <translation>Cargament</translation>
     </message>
     <message>
-        <source>Performing request, please wait or request something else</source>
-        <translation>Učitavam, molim sačekajte...</translation>
+        <source>please wait...</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
     <name>Profile</name>
     <message>
         <source>Unfollow</source>
-        <translation>Одпрати</translation>
+        <translation>Quitar de seguir</translation>
     </message>
     <message>
         <source>Follow request sent!</source>
-        <translation>Захтјев за праћењем поднесен!</translation>
+        <translation>Demanda de seguir enviada !</translation>
     </message>
     <message>
         <source>Following</source>
-        <translation>Пратите</translation>
+        <translation>Abonaments</translation>
     </message>
     <message>
         <source>Mute</source>
-        <translation>Утишај</translation>
+        <translation>Amagar</translation>
     </message>
     <message>
         <source>Unmute</source>
-        <translation>Укини утишање</translation>
+        <translation>Mostrar</translation>
     </message>
     <message>
         <source>Unblock</source>
-        <translation>Одблокирати</translation>
+        <translation>Desblocar</translation>
     </message>
     <message>
         <source>Block</source>
-        <translation>Блокирати</translation>
+        <translation>Blocar</translation>
     </message>
     <message>
         <source>Statuses</source>
-        <translation>Статуси</translation>
+        <translation>Estatuts</translation>
     </message>
     <message>
         <source>Favourites</source>
-        <translation>Омиљени</translation>
+        <translation>Favorits</translation>
     </message>
     <message>
         <source>Follow</source>
-        <translation>Прати</translation>
+        <translation>Seguir</translation>
     </message>
     <message>
         <source>Summary</source>
-        <translation>Детаљи</translation>
+        <translation>Resumit</translation>
     </message>
     <message>
         <source>Followers</source>
-        <translation>Пратиоци</translation>
+        <translation>Seguidors</translation>
     </message>
 </context>
 <context>
     <name>Settings</name>
     <message>
         <source>Settings</source>
-        <translation>Подешавања</translation>
+        <translation>Paramètres</translation>
     </message>
     <message>
         <source>Remove Account</source>
-        <translation>Уклони налог</translation>
+        <translation>Levar un compte</translation>
     </message>
     <message>
         <source>Add Account</source>
-        <translation>Додај налог</translation>
+        <translation>Ajustar un compte</translation>
     </message>
     <message>
         <source>Authorize this app to use your Mastodon account in your behalf</source>
-        <translation>Дозволите овој апликацији да користи ваш Mastodon налог</translation>
+        <translation>Autorizar aquesta aplicacion a utilizar vòstre compte Mastodon per vos</translation>
     </message>
     <message>
         <source>Load images in toots</source>
-        <translation>Прикажи слике у објавама</translation>
+        <translation>Cargar los imatges dels tuts</translation>
     </message>
     <message>
         <source>Deauthorize this app and remove your account</source>
-        <translation>Укините дозволе за кориштење и уклоните налог с телефона</translation>
+        <translation>Revocar l’aplicacion e levar vòstre compte</translation>
     </message>
     <message>
         <source>Credits</source>
-        <translation>Спомен плоча</translation>
+        <translation>Crèdits</translation>
     </message>
     <message>
         <source>Translate</source>
-        <translation>Преведи</translation>
+        <translation>Traduire</translation>
     </message>
     <message>
         <source>Use Transifex to help with app translation to your language</source>
-        <translation>Користите Transifex и помозите у преводу апликације на други језик</translation>
+        <translation>Utilizar Transifex per ajudar a traduire l’aplicacion dins vòstra lenga</translation>
     </message>
     <message>
         <source>Disable this option if you want to preserve your data connection</source>
-        <translation>Искључите ову опцију уколико желите да уштедите на преносу података</translation>
+        <translation>Desactivar aquesta opcion per estalviar vòstra connexion de donadas</translation>
     </message>
     <message>
         <source>UI/UX design and development</source>
-        <translation>интерфејс дизајн и развој</translation>
+        <translation>UI/UX design e desvlopament</translation>
     </message>
 </context>
 <context>
     <name>Toot</name>
     <message>
         <source>boosted</source>
-        <translation>разглашено</translation>
+        <translation>a tornat partejar</translation>
     </message>
     <message>
         <source>favourited</source>
-        <translation>омиљено</translation>
+        <translation>a mes en favorit</translation>
     </message>
     <message>
         <source>followed you</source>
-        <translation>вас прати</translation>
+        <translation>vos sèc</translation>
     </message>
 </context>
 <context>
     <name>VisualContainer</name>
     <message>
         <source>Unboost</source>
-        <translation>Уклони разглас</translation>
+        <translation>Partejar pas mai</translation>
     </message>
     <message>
         <source>Boost</source>
-        <translation>Разгласи</translation>
+        <translation>Partejar</translation>
     </message>
     <message>
         <source>Unfavorite</source>
-        <translation>Уклони из омиљених</translation>
+        <translation>Levar dels favorits</translation>
     </message>
     <message>
         <source>Favorite</source>
-        <translation>Омиљено</translation>
+        <translation>Ajustar als favorits</translation>
     </message>
 </context>
 </TS>

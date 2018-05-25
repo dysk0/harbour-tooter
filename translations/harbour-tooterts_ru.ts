@@ -98,6 +98,14 @@
         <source>Login</source>
         <translation>Авторизоваться</translation>
     </message>
+    <message>
+        <source>Enter an Mastodon instance URL</source>
+        <translation>Введите URL-адрес экземпляра Mastodon</translation>
+    </message>
+    <message>
+        <source>Mastodon is a free, open-source social network. A decentralized alternative to commercial platforms, it avoids the risks of a single company monopolizing your communication. Pick a server that you trust — whichever you choose, you can interact with everyone else. Anyone can run their own Mastodon instance and participate in the social network seamlessly.</source>
+        <translation>Mastodon - бесплатная социальная сеть с открытым исходным кодом. Децентрализованная альтернатива коммерческим платформам позволяет избежать рисков, связанных с тем, что одна компания монополизирует ваше общение. Выберите сервер, которому вы доверяете - в зависимости от того, что вы выберете, вы можете взаимодействовать со всеми остальными. Любой может запустить свой собственный экземпляр Mastodon и беспрепятственно участвовать в социальной сети.</translation>
+    </message>
 </context>
 <context>
     <name>MainPage</name>
@@ -123,11 +131,11 @@
     </message>
     <message>
         <source>Local</source>
-        <translation type="unfinished"></translation>
+        <translation>Локальный</translation>
     </message>
     <message>
         <source>Federated</source>
-        <translation type="unfinished"></translation>
+        <translation>Федеративные</translation>
     </message>
 </context>
 <context>
@@ -160,8 +168,8 @@
         <translation>Загрузка</translation>
     </message>
     <message>
-        <source>Performing request, please wait or request something else</source>
-        <translation>Выполняя запрос, подождите</translation>
+        <source>please wait...</source>
+        <translation>Пожалуйста, подождите...</translation>
     </message>
 </context>
 <context>
@@ -259,7 +267,7 @@
     </message>
     <message>
         <source>UI/UX design and development</source>
-        <translation type="unfinished"></translation>
+        <translation>Дизайн и разработка UI / UX</translation>
     </message>
 </context>
 <context>

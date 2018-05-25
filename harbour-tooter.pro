@@ -75,15 +75,18 @@ CONFIG += sailfishapp_i18n
 # following TRANSLATIONS line. And also do not forget to
 # modify the localized app name in the the .desktop file.
 TRANSLATIONS += \
-    translations/harbour-tooter-de.ts \
-    translations/harbour-tooter-el.ts \
-    translations/harbour-tooter-es.ts \
-    translations/harbour-tooter-fr.ts \
-    translations/harbour-tooter-nl.ts \
-    translations/harbour-tooter-oc.ts \
-    translations/harbour-tooter-ru.ts \
-    translations/harbour-tooter-sv.ts \
-    translations/harbour-tooter-sr.ts
+    translations/harbour-tooter.ts \
+    translations/harbour-tooterts_de.ts \
+    translations/harbour-tooterts_el.ts \
+    translations/harbour-tooterts_en.ts \
+    translations/harbour-tooterts_es.ts \
+    translations/harbour-tooterts_fr.ts \
+    translations/harbour-tooterts_nl.ts \
+    translations/harbour-tooterts_nl_BE.ts \
+    translations/harbour-tooterts_oc.ts \
+    translations/harbour-tooterts_ru.ts \
+    translations/harbour-tooterts_sr.ts \
+    translations/harbour-tooterts_sv.ts
 
 DISTFILES += \
     qml/lib/API.js \

@@ -98,6 +98,14 @@
         <source>Login</source>
         <translation>Inloggen</translation>
     </message>
+    <message>
+        <source>Enter an Mastodon instance URL</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Mastodon is a free, open-source social network. A decentralized alternative to commercial platforms, it avoids the risks of a single company monopolizing your communication. Pick a server that you trust — whichever you choose, you can interact with everyone else. Anyone can run their own Mastodon instance and participate in the social network seamlessly.</source>
+        <translation type="unfinished"></translation>
+    </message>
 </context>
 <context>
     <name>MainPage</name>
@@ -123,11 +131,11 @@
     </message>
     <message>
         <source>Local</source>
-        <translation type="unfinished"></translation>
+        <translation>Lokaal</translation>
     </message>
     <message>
         <source>Federated</source>
-        <translation type="unfinished"></translation>
+        <translation>Gefedereerd</translation>
     </message>
 </context>
 <context>
@@ -160,8 +168,8 @@
         <translation>Laden</translation>
     </message>
     <message>
-        <source>Performing request, please wait or request something else</source>
-        <translation>Uitvoeren aanvraag, even geduld, of vraag iets anders</translation>
+        <source>please wait...</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
