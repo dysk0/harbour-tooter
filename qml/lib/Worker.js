@@ -252,5 +252,18 @@ function parseToot (data){
         }
         item['attachments'].push(tmp)
     }
+    if(item['status_reblog']){
+        for(var i = 0; i < data['reblog']['media_attachments'].length ; i++){
+            var attachments = data['reblog']['media_attachments'][i];
+            item['content'] = item['content'].replaceAll(attachments['text_url'], '')
+            var tmp = {
+                id: attachments['id'],
+                type: attachments['type'],
+                url: attachments['remote_url'] && typeof attachments['remote_url'] == "string" ? attachments['remote_url'] : attachments['url'],
+                preview_url: loadImages ? attachments['preview_url'] : ''
+            }
+            item['attachments'].push(tmp)
+        }
+    }
     return item;
 }
