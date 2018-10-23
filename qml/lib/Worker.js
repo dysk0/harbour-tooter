@@ -206,7 +206,6 @@ function getDate(dateStr){
     return new Date(ts.getFullYear(), ts.getMonth(), ts.getDate(), 0, 0, 0)
 }
 function parseToot (data){
-    //console.log(JSON.stringify(data))
     var item = {};
 
     item['type'] = "toot"
@@ -231,6 +230,7 @@ function parseToot (data){
     if(item['status_reblog']){
         item['type'] = "reblog";
         item['typeIcon'] = "image://theme/icon-s-retweet"
+        item['status_id'] = data["reblog"]["id"];
         item = parseAccounts(item, "", data['reblog']["account"])
         item = parseAccounts(item, "reblog_", data["account"])
     } else {

@@ -1,307 +1,307 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE TS>
-<TS version="2.1" language="sv">
+<TS version="2.1" language="nl_BE">
 <context>
     <name>API</name>
     <message>
         <source>favourited</source>
-        <translation>favoriserad</translation>
+        <translation>heeft geduimd voor</translation>
     </message>
     <message>
         <source>followed you</source>
-        <translation>följer dig</translation>
+        <translation>volgt u nu</translation>
     </message>
     <message>
         <source>boosted</source>
-        <translation>puffat</translation>
+        <translation>heeft geboost</translation>
     </message>
     <message>
         <source>said</source>
-        <translation>sade</translation>
+        <translation>zei</translation>
     </message>
 </context>
 <context>
     <name>Browser</name>
     <message>
         <source>Open in Browser</source>
-        <translation>Öppna i webbläsare</translation>
+        <translation>Openen in browser</translation>
     </message>
     <message>
         <source>Web mode</source>
-        <translation>Webbläge</translation>
+        <translation>Webmodus</translation>
     </message>
     <message>
         <source>Reading mode</source>
-        <translation>Läsläge</translation>
+        <translation>Leesmodus</translation>
     </message>
     <message>
         <source>Copy URL</source>
-        <translation>Kopiera URL</translation>
+        <translation>URL kopiëren</translation>
     </message>
 </context>
 <context>
     <name>Conversation</name>
     <message>
         <source>Conversation</source>
-        <translation>Konversation</translation>
+        <translation>Gesprek</translation>
     </message>
     <message>
         <source>Content warning!</source>
-        <translation>Innehållsvarning!</translation>
+        <translation>Gevoeligen inhoud!</translation>
     </message>
     <message>
         <source>public</source>
-        <translation>publik</translation>
+        <translation>openbaar</translation>
     </message>
     <message>
         <source>unlisted</source>
-        <translation>olistad</translation>
+        <translation>niet op lijst</translation>
     </message>
     <message>
         <source>followers only</source>
-        <translation>endast följare</translation>
+        <translation>alleen volgers</translation>
     </message>
     <message>
         <source>direct</source>
-        <translation>direkt</translation>
+        <translation>direct</translation>
     </message>
     <message>
         <source>Delete</source>
-        <translation>Radera</translation>
+        <translation>Verwijderen</translation>
     </message>
     <message>
         <source>Emojis</source>
-        <translation>Emojis</translation>
+        <translation>Emoji’s</translation>
     </message>
     <message>
         <source>Tap to insert</source>
-        <translation>Tryck för att infoga</translation>
+        <translation>Tikt voor in te voegen</translation>
     </message>
 </context>
 <context>
     <name>ImageFullScreen</name>
     <message>
         <source>Error loading</source>
-        <translation>Problem att ladda</translation>
+        <translation>Fout bij laden</translation>
     </message>
 </context>
 <context>
     <name>ImageUploader</name>
     <message>
         <source>The file %1 does not exists</source>
-        <translation>Filen %1 går inte att hitta</translation>
+        <translation>Het bestand %1 bestaat niet</translation>
     </message>
 </context>
 <context>
     <name>LoginPage</name>
     <message>
         <source>Login</source>
-        <translation>Logga in</translation>
+        <translation>Inloggen</translation>
     </message>
     <message>
         <source>Enter an Mastodon instance URL</source>
-        <translation type="unfinished"></translation>
+        <translation>Voert den URL van een Mastodon-instantie in</translation>
     </message>
     <message>
         <source>Mastodon is a free, open-source social network. A decentralized alternative to commercial platforms, it avoids the risks of a single company monopolizing your communication. Pick a server that you trust — whichever you choose, you can interact with everyone else. Anyone can run their own Mastodon instance and participate in the social network seamlessly.</source>
-        <translation type="unfinished"></translation>
+        <translation>Mastodon is e vrij sociaal netwerk. Als gedecentraliseerd alternatief voor commerciële platformen, vermijdt het de risico’s van één enkel bedrijf dat uw communicatie monopoliseert. Kiest ne server die ge vertrouwt — dewelken dat ge ook kiest, ge kunt met iedereen communiceren. Iedereen kan zelf een Mastodon-instantie hebben en naadloos deelnemen aan het sociaal netwerk.</translation>
     </message>
 </context>
 <context>
     <name>MainPage</name>
     <message>
         <source>Home</source>
-        <translation>Hem</translation>
+        <translation>Thuis</translation>
     </message>
     <message>
         <source>Notifications</source>
-        <translation>Notifieringar</translation>
+        <translation>Meldingen</translation>
     </message>
     <message>
         <source>New Toot</source>
-        <translation>Ny toot</translation>
+        <translation>Nieuwen toot</translation>
     </message>
     <message>
         <source>Search</source>
-        <translation>Sök</translation>
+        <translation>Zoeken</translation>
     </message>
     <message>
         <source>@user or #term</source>
-        <translation>@user eller #term</translation>
+        <translation>@gebruiker of #term</translation>
     </message>
     <message>
         <source>Local</source>
-        <translation type="unfinished"></translation>
+        <translation>Lokaal</translation>
     </message>
     <message>
         <source>Federated</source>
-        <translation type="unfinished"></translation>
+        <translation>Gefedereerd</translation>
     </message>
 </context>
 <context>
     <name>MiniStatus</name>
     <message>
         <source>boosted</source>
-        <translation>puffade</translation>
+        <translation>heeft geboost</translation>
     </message>
     <message>
         <source>favourited</source>
-        <translation>favoriserade</translation>
+        <translation>heeft geduimd voor</translation>
     </message>
     <message>
         <source>followed you</source>
-        <translation>följer dig</translation>
+        <translation>volgt u nu</translation>
     </message>
 </context>
 <context>
     <name>MyList</name>
     <message>
         <source>Load more</source>
-        <translation>Ladda mer</translation>
+        <translation>Meer laden</translation>
     </message>
     <message>
         <source>Settings</source>
-        <translation>Inställningar</translation>
+        <translation>Instellingen</translation>
     </message>
     <message>
         <source>Loading</source>
-        <translation>Laddar</translation>
+        <translation>Laden</translation>
     </message>
     <message>
         <source>please wait...</source>
-        <translation type="unfinished"></translation>
+        <translation>efkens geduld…</translation>
     </message>
 </context>
 <context>
     <name>Profile</name>
     <message>
         <source>Unfollow</source>
-        <translation>Sluta följa</translation>
+        <translation>Ontvolgen</translation>
     </message>
     <message>
         <source>Follow request sent!</source>
-        <translation>Följarförfrågan har skickats!</translation>
+        <translation>Volgverzoek verzonden!</translation>
     </message>
     <message>
         <source>Following</source>
-        <translation>Följer</translation>
+        <translation>Volgend</translation>
     </message>
     <message>
         <source>Mute</source>
-        <translation>Tysta</translation>
+        <translation>Dempen</translation>
     </message>
     <message>
         <source>Unmute</source>
-        <translation>Avtysta</translation>
+        <translation>Ontdempen</translation>
     </message>
     <message>
         <source>Unblock</source>
-        <translation>Avblockera</translation>
+        <translation>Deblokkeren</translation>
     </message>
     <message>
         <source>Block</source>
-        <translation>Blockera</translation>
+        <translation>Blokkeren</translation>
     </message>
     <message>
         <source>Statuses</source>
-        <translation>Statusar</translation>
+        <translation>Statussen</translation>
     </message>
     <message>
         <source>Favourites</source>
-        <translation>Favoriter</translation>
+        <translation>Duimen</translation>
     </message>
     <message>
         <source>Follow</source>
-        <translation>Följ</translation>
+        <translation>Volgen</translation>
     </message>
     <message>
         <source>Summary</source>
-        <translation>Översikt</translation>
+        <translation>Samenvatting</translation>
     </message>
     <message>
         <source>Followers</source>
-        <translation>Följare</translation>
+        <translation>Volgers</translation>
     </message>
 </context>
 <context>
     <name>Settings</name>
     <message>
         <source>Settings</source>
-        <translation>Inställningar</translation>
+        <translation>Instellingen</translation>
     </message>
     <message>
         <source>Remove Account</source>
-        <translation>Radera konto</translation>
+        <translation>Account verwijderen</translation>
     </message>
     <message>
         <source>Add Account</source>
-        <translation>Lägg till konto</translation>
+        <translation>Account toevoegen</translation>
     </message>
     <message>
         <source>Authorize this app to use your Mastodon account in your behalf</source>
-        <translation>Godkänn denna app att använda ditt Mastodon-konto på dina vägnar</translation>
+        <translation>Autoriseert dezen app voor uwe Mastodon-account namens u te gebruiken</translation>
     </message>
     <message>
         <source>Load images in toots</source>
-        <translation>Ladda bilder i toots</translation>
+        <translation>Afbeeldingen in toots laden</translation>
     </message>
     <message>
         <source>Deauthorize this app and remove your account</source>
-        <translation>Avauktorisera  denna app och radera ditt konto</translation>
+        <translation>Trekt autorisaties van dezen app in en verwijdert uwen account</translation>
     </message>
     <message>
         <source>Credits</source>
-        <translation>Erkännanden</translation>
+        <translation>Credits</translation>
     </message>
     <message>
         <source>Translate</source>
-        <translation>Översätt</translation>
+        <translation>Vertalen</translation>
     </message>
     <message>
         <source>Use Transifex to help with app translation to your language</source>
-        <translation>Använd Transifex för att hjälpa med app-översättningar till ditt språk</translation>
+        <translation>Gebruikt Transifex voor te helpen met dezen app in uw taal te vertalen</translation>
     </message>
     <message>
         <source>Disable this option if you want to preserve your data connection</source>
-        <translation>Inaktivera det här alternativet om du vill behålla din dataanslutning </translation>
+        <translation>Schakelt dees optie uit als ge uw verbinding wilt behouden</translation>
     </message>
     <message>
         <source>UI/UX design and development</source>
-        <translation>UI/UX design och utveckling</translation>
+        <translation>UI/UX-ontwerp en -ontwikkeling</translation>
     </message>
 </context>
 <context>
     <name>Toot</name>
     <message>
         <source>boosted</source>
-        <translation>puffade</translation>
+        <translation>heeft geboost</translation>
     </message>
     <message>
         <source>favourited</source>
-        <translation>favoriserad</translation>
+        <translation>heeft geduimd voor</translation>
     </message>
     <message>
         <source>followed you</source>
-        <translation>följer dig</translation>
+        <translation>volgt u nu</translation>
     </message>
 </context>
 <context>
     <name>VisualContainer</name>
     <message>
         <source>Unboost</source>
-        <translation>Avpuffa</translation>
+        <translation>Ontboosten</translation>
     </message>
     <message>
         <source>Boost</source>
-        <translation>Puffa</translation>
+        <translation>Boosten</translation>
     </message>
     <message>
         <source>Unfavorite</source>
-        <translation>Avfavorisera</translation>
+        <translation>Duim verwijderen</translation>
     </message>
     <message>
         <source>Favorite</source>
-        <translation>Favorisera</translation>
+        <translation>Duim toevoegen</translation>
     </message>
 </context>
 </TS>

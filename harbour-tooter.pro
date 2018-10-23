@@ -68,25 +68,14 @@ SAILFISHAPP_ICONS = 86x86 108x108 128x128 256x256
 
 # to disable building translations every time, comment out the
 # following CONFIG line
-CONFIG += sailfishapp_i18n
+# CONFIG += sailfishapp_i18n
 
 # German translation is enabled as an example. If you aren't
 # planning to localize your app, remember to comment out the
 # following TRANSLATIONS line. And also do not forget to
 # modify the localized app name in the the .desktop file.
 TRANSLATIONS += \
-    translations/harbour-tooter.ts \
-    translations/harbour-tooterts_de.ts \
-    translations/harbour-tooterts_el.ts \
-    translations/harbour-tooterts_en.ts \
-    translations/harbour-tooterts_es.ts \
-    translations/harbour-tooterts_fr.ts \
-    translations/harbour-tooterts_nl.ts \
-    translations/harbour-tooterts_nl_BE.ts \
-    translations/harbour-tooterts_oc.ts \
-    translations/harbour-tooterts_ru.ts \
-    translations/harbour-tooterts_sr.ts \
-    translations/harbour-tooterts_sv.ts
+    translations/harbour-tooter.ts
 
 DISTFILES += \
     qml/lib/API.js \
