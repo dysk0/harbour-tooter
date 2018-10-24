@@ -1,5 +1,6 @@
 * Tue Oct 23 2018 Dusko Angirevic <dysko@me.com> 0.2.7-0
-- Minor bugfix
+- Added emoji custom support
+- Bugfix: missing media on boosted toots
 
 * Thu May 24 2018 Dusko Angirevic <dysko@me.com> 0.2.6-0
 - Minor bugfix
@@ -25,7 +26,7 @@
 - Added Copy URL option
 - Privacy option in the conversation is now inherited by toot in the thread
 
-* Thu Oct 10 2017 Dusko Angirevic <dysko@me.com> 0.2.1-0
+* Tue Oct 10 2017 Dusko Angirevic <dysko@me.com> 0.2.1-0
 - Added bugs for later (merging branches and contributions)
 
 * Thu Jul 20 2017 Dusko Angirevic <dysko@me.com> 0.2.0-0

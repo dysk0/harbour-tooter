@@ -107,7 +107,7 @@ BackgroundItem {
             right: parent.right
         }
     }
-    Label {
+    Text  {
         id: lblContent
         anchors {
             left: miniHeader.left
@@ -144,9 +144,9 @@ BackgroundItem {
             }
         }
         text: content.replace(new RegExp("<a ", 'g'), '<a style="text-decoration: none; color:'+(pressed ?  Theme.secondaryColor : Theme.highlightColor)+'" ')
-        textFormat: Text.RichText
         linkColor : Theme.highlightColor
-        wrapMode: Text.Wrap
+        wrapMode: Text.WordWrap
+            textFormat: Text.StyledText
         font.pixelSize: Theme.fontSizeSmall
         color: (pressed ? Theme.highlightColor : (!highlight ? Theme.primaryColor : Theme.secondaryColor))
         Rectangle {
@@ -287,7 +287,7 @@ BackgroundItem {
                        })
     }
     onPressAndHold: {
-        console.log(content)
+        console.log(JSON.stringify(mdl.get(index)))
         mnu.show(delegate)
     }
     onDoubleClicked: {

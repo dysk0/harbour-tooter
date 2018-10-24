@@ -206,6 +206,7 @@ function getDate(dateStr){
     return new Date(ts.getFullYear(), ts.getMonth(), ts.getDate(), 0, 0, 0)
 }
 function parseToot (data){
+    var i = 0;
     var item = {};
 
     item['type'] = "toot"
@@ -226,11 +227,13 @@ function parseToot (data){
     item['status_spoiler_text'] = data["spoiler_text"]
     item['status_visibility'] = data["visibility"]
 
-
     if(item['status_reblog']){
         item['type'] = "reblog";
         item['typeIcon'] = "image://theme/icon-s-retweet"
         item['status_id'] = data["reblog"]["id"];
+        item['status_spoiler_text'] = data["reblog"]["spoiler_text"]
+        item['status_sensitive'] = data["reblog"]["sensitive"]
+        item['emojis'] = data["reblog"]["emojis"];
         item = parseAccounts(item, "", data['reblog']["account"])
         item = parseAccounts(item, "reblog_", data["account"])
     } else {
@@ -240,7 +243,9 @@ function parseToot (data){
     item['attachments'] = [];
 
 
-    for(var i = 0; i < data['media_attachments'].length ; i++){
+
+
+    for(i = 0; i < data['media_attachments'].length ; i++){
         var attachments = data['media_attachments'][i];
         item['content'] = item['content'].replaceAll(attachments['text_url'], '')
         var tmp = {
@@ -253,7 +258,7 @@ function parseToot (data){
         item['attachments'].push(tmp)
     }
     if(item['status_reblog']){
-        for(var i = 0; i < data['reblog']['media_attachments'].length ; i++){
+        for(i = 0; i < data['reblog']['media_attachments'].length ; i++){
             var attachments = data['reblog']['media_attachments'][i];
             item['content'] = item['content'].replaceAll(attachments['text_url'], '')
             var tmp = {
@@ -265,5 +270,21 @@ function parseToot (data){
             item['attachments'].push(tmp)
         }
     }
+    return addEmojis(item, data);
+}
+
+function addEmojis(item, data){
+    var emoji, i;
+    for (i = 0; i < data["emojis"].length; i++){
+        emoji = data["emojis"][i];
+        item['content'] = item['content'].replaceAll(":"+emoji.shortcode+":", "<img src=\"" + emoji.static_url+"\" align=\"middle\" width=\"24\" height=\"24\">")
+        //console.log(JSON.stringify(data["emojis"][i]))
+    }
+    if (data["reblog"])
+        for (i = 0; i < data["reblog"]["emojis"].length; i++){
+            emoji = data["reblog"]["emojis"][i];
+            item['content'] = item['content'].replaceAll(":"+emoji.shortcode+":", "<img src=\"" + emoji.static_url+"\" align=\"middle\" width=\"24\" height=\"24\">")
+        }
+
     return item;
 }

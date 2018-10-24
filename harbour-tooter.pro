@@ -11,10 +11,14 @@
 
 # The name of your application
 TARGET = harbour-tooter
+CONFIG += sailfishapp
 
 QT += network dbus sql
-CONFIG += sailfishapp link_pkgconfig
-PKGCONFIG += sailfishapp nemonotifications-qt5
+
+#CONFIG += sailfishapp_qml
+CONFIG += link_pkgconfig
+PKGCONFIG += sailfishapp
+PKGCONFIG += nemonotifications-qt5
 
 DEFINES += "APPVERSION=\\\"$${SPECVERSION}\\\""
 DEFINES += "APPNAME=\\\"$${TARGET}\\\""
@@ -66,16 +70,6 @@ OTHER_FILES += qml/harbour-tooter.qml \
 
 SAILFISHAPP_ICONS = 86x86 108x108 128x128 256x256
 
-# to disable building translations every time, comment out the
-# following CONFIG line
-# CONFIG += sailfishapp_i18n
-
-# German translation is enabled as an example. If you aren't
-# planning to localize your app, remember to comment out the
-# following TRANSLATIONS line. And also do not forget to
-# modify the localized app name in the the .desktop file.
-TRANSLATIONS += \
-    translations/harbour-tooter.ts
 
 DISTFILES += \
     qml/lib/API.js \
@@ -96,7 +90,11 @@ DISTFILES += \
     qml/pages/components/ImageFullScreen.qml \
     config/icon-lock-harbour-tooter.png \
     config/x-harbour.tooter.activity.conf \
-    rpm/harbour-tooter.changes
+    rpm/harbour-tooter.changes \
+    rpm/harbour-tooter.spec \
+    rpm/harbour-tooter.yaml \
+    translations/*.ts
+
 
 HEADERS += \
     src/imageuploader.h \
@@ -104,3 +102,24 @@ HEADERS += \
     src/notifications.h \
     src/dbusAdaptor.h \
     src/dbus.h
+# to disable building translations every time, comment out the
+# following CONFIG line
+CONFIG += sailfishapp_i18n
+CONFIG += sailfishapp_i18n_idbased
+
+# German translation is enabled as an example. If you aren't
+# planning to localize your app, remember to comment out the
+# following TRANSLATIONS line. And also do not forget to
+# modify the localized app name in the the .desktop file.
+TRANSLATIONS += translations/harbour-tooter-de.ts
+TRANSLATIONS += translations/harbour-tooter-el.ts
+TRANSLATIONS += translations/harbour-tooter-es.ts
+TRANSLATIONS += translations/harbour-tooter-fi.ts
+TRANSLATIONS += translations/harbour-tooter-fr.ts
+TRANSLATIONS += translations/harbour-tooter-nl.ts
+TRANSLATIONS += translations/harbour-tooter-nl_BE.ts
+TRANSLATIONS += translations/harbour-tooter-oc.ts
+TRANSLATIONS += translations/harbour-tooter-pl.ts
+TRANSLATIONS += translations/harbour-tooter-ru.ts
+TRANSLATIONS += translations/harbour-tooter-sr.ts
+TRANSLATIONS += translations/harbour-tooter-sv.ts
