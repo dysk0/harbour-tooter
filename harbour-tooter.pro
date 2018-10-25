@@ -11,11 +11,10 @@
 
 # The name of your application
 TARGET = harbour-tooter
+
 CONFIG += sailfishapp
 
 QT += network dbus sql
-
-#CONFIG += sailfishapp_qml
 CONFIG += link_pkgconfig
 PKGCONFIG += sailfishapp
 PKGCONFIG += nemonotifications-qt5
@@ -39,39 +38,38 @@ dbus_services.files = config/ba.dysko.harbour.tooter.service
 interfaces.path = /usr/share/dbus-1/interfaces/
 interfaces.files = config/ba.dysko.harbour.tooter.xml
 
+SOURCES += src/harbour-tooter.cpp
+SOURCES += src/imageuploader.cpp
+SOURCES += src/filedownloader.cpp
+SOURCES += src/notifications.cpp
+SOURCES += src/dbusAdaptor.cpp
+SOURCES += src/dbus.cpp
 
-SOURCES += src/harbour-tooter.cpp \
-    src/filedownloader.cpp \
-    src/imageuploader.cpp \
-    src/notifications.cpp \
-    src/dbusAdaptor.cpp \
-    src/dbus.cpp
+HEADERS += src/imageuploader.h
+HEADERS += src/filedownloader.h
+HEADERS += src/notifications.h
+HEADERS += src/dbusAdaptor.h
+HEADERS += src/dbus.h
 
-OTHER_FILES += qml/harbour-tooter.qml \
-    config/* \
-    qml/cover/CoverPage.qml \
-    qml/pages/MainPage.qml \
-    qml/pages/LoginPage.qml \
-    qml/pages/components/MyList.qml \
-    qml/pages/components/Navigation.qml \
-    qml/pages/Conversation.qml \
-    qml/pages/components/Toot.qml \
-    qml/pages/Browser.qml \
-    qml/pages/Profile.qml \
-    qml/pages/components/ProfileHeader.qml \
-    rpm/harbour-tooter.spec \
-    rpm/harbour-tooter.yaml \
-    translations/*.ts \
+DISTFILES += qml/harbour-tooter.qml \
     qml/pages/components/VisualContainer.qml \
     qml/pages/components/MiniStatus.qml \
     qml/pages/components/MiniHeader.qml \
     qml/pages/components/ItemUser.qml \
-    harbour-tooter.desktop
-
-SAILFISHAPP_ICONS = 86x86 108x108 128x128 256x256
-
-
-DISTFILES += \
+    qml/pages/components/MyList.qml \
+    qml/pages/components/Navigation.qml \
+    qml/pages/components/ProfileHeader.qml \
+    qml/pages/components/MediaBlock.qml \
+    qml/pages/components/MyImage.qml \
+    qml/pages/components/ImageFullScreen.qml \
+    qml/cover/CoverPage.qml \
+    qml/pages/MainPage.qml \
+    qml/pages/LoginPage.qml \
+    qml/pages/Conversation.qml \
+    qml/pages/components/Toot.qml \
+    qml/pages/Browser.qml \
+    qml/pages/Profile.qml \
+    qml/pages/Settings.qml \
     qml/lib/API.js \
     qml/images/notification.svg \
     qml/images/home.svg \
@@ -84,28 +82,20 @@ DISTFILES += \
     qml/lib/Mastodon.js \
     qml/lib/Worker.js \
     qml/images/boosted.svg \
-    qml/pages/Settings.qml \
-    qml/pages/components/MediaBlock.qml \
-    qml/pages/components/MyImage.qml \
-    qml/pages/components/ImageFullScreen.qml \
     config/icon-lock-harbour-tooter.png \
     config/x-harbour.tooter.activity.conf \
     rpm/harbour-tooter.changes \
+    rpm/harbour-tooter.changes.run.in \
     rpm/harbour-tooter.spec \
     rpm/harbour-tooter.yaml \
-    translations/*.ts
+    translations/*.ts \
+    harbour-tooter.desktop
 
+SAILFISHAPP_ICONS = 86x86 108x108 128x128 172x172
 
-HEADERS += \
-    src/imageuploader.h \
-    src/filedownloader.h \
-    src/notifications.h \
-    src/dbusAdaptor.h \
-    src/dbus.h
 # to disable building translations every time, comment out the
 # following CONFIG line
 CONFIG += sailfishapp_i18n
-CONFIG += sailfishapp_i18n_idbased
 
 # German translation is enabled as an example. If you aren't
 # planning to localize your app, remember to comment out the
