@@ -13,6 +13,7 @@ Page {
     property string suggestedUser: ""
     property ListModel suggestedModel;
     property string toot_id: ""
+    property int tootMaxChar: 500;
     property ListModel mdl;
     allowedOrientations: Orientation.All
     onSuggestedUserChanged: {
@@ -129,8 +130,32 @@ Page {
         }
 
         width: parent.width
-        height: toot.height + (mediaModel.count ? uploadedImages.height : 0) + btnContentWarning.height + Theme.paddingMedium + (warningContent.visible ? warningContent.height : 0)
+        height: progressBar.height + toot.height + (mediaModel.count ? uploadedImages.height : 0) + btnContentWarning.height + Theme.paddingMedium + (warningContent.visible ? warningContent.height : 0)
         dock: Dock.Bottom
+        Rectangle {
+            width: parent.width
+            height: progressBar.height
+            color: Theme.highlightBackgroundColor
+            opacity: 0.2
+            anchors {
+                left: parent.left
+                right: parent.right
+                top: parent.top
+            }
+        }
+        Rectangle {
+            id: progressBar
+            width: toot.text.length ? panel.width*(toot.text.length/tootMaxChar) : 0;
+
+            height: Theme.itemSizeSmall * 0.05
+            color: Theme.highlightBackgroundColor
+            opacity: 0.7
+            anchors {
+                left: parent.left
+                top: parent.top
+            }
+        }
+
         TextField {
             id: warningContent
             visible: false
@@ -178,6 +203,7 @@ Page {
                 textOperations.selectWord()
                 textOperations.select(textOperations.selectionStart ? textOperations.selectionStart-1 : 0, textOperations.selectionEnd)
                 //console.log(textOperations.text.substr(textOperations.selectionStart, textOperations.selectionEnd))
+                console.log(toot.text.length)
                 suggestedUser = ""
                 if (textOperations.selectedText.charAt(0) === "@") {
                     suggestedUser = textOperations.selectedText.trim().substring(1);
@@ -327,7 +353,7 @@ Page {
                 right: parent.right
                 rightMargin: Theme.paddingLarge
             }
-            enabled: toot.text !== ""
+            enabled: toot.text !== "" && toot.text.length < tootMaxChar
             onClicked: {
                 var visibility = [ "public", "unlisted", "private", "direct"];
                 var media_ids = [];
@@ -398,7 +424,9 @@ Page {
         console.log(JSON.stringify())
 
         worker.sendMessage({
-                               'action'    : 'statuses/'+mdl.get(0).status_id+'/context',
+                               //'action'    : 'statuses/'+mdl.get(0).status_id+'/context',
+                               'action'    : 'statuses/100950096657457234/context',
+
                                'method'    : 'GET',
                                'model'     : mdl,
                                'params'    : { },
