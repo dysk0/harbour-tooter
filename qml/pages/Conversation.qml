@@ -424,9 +424,7 @@ Page {
         console.log(JSON.stringify())
 
         worker.sendMessage({
-                               //'action'    : 'statuses/'+mdl.get(0).status_id+'/context',
-                               'action'    : 'statuses/100950096657457234/context',
-
+                               'action'    : 'statuses/'+mdl.get(0).status_id+'/context',
                                'method'    : 'GET',
                                'model'     : mdl,
                                'params'    : { },

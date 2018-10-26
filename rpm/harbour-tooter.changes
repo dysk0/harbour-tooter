@@ -1,3 +1,6 @@
+* Fri Oct 26 2018 Dusko Angirevic <dysko@me.com> 0.2.8-0
+- Fixed conversation bug
+
 * Thu Oct 25 2018 Dusko Angirevic <dysko@me.com> 0.2.8-0
 - Fixed localisation issue
 - Added character counter
