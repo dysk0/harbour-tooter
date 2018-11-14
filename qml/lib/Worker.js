@@ -239,7 +239,11 @@ function parseToot (data){
     } else {
         item = parseAccounts(item, "", data["account"])
     }
-    item['content'] = data['content'].replaceAll('</span><span class="invisible">', '').replaceAll('<span class="invisible">', '').replaceAll('</span><span class="ellipsis">', '');
+    item['content'] = data['content']
+        .replaceAll('</span><span class="invisible">', '')
+        .replaceAll('<span class="invisible">', '')
+        .replaceAll('</span><span class="ellipsis">', '')
+        .replaceAll('class=""', '');
     item['attachments'] = [];
 
 
