@@ -56,7 +56,7 @@ Page {
             PageHeader { title: qsTr("Login") }
 
             SectionHeader {
-                text: "Instance"
+                text: qsTr("Instance")
             }
 
             TextField {
@@ -182,7 +182,7 @@ Page {
         FadeAnimation on opacity {}
         PullDownMenu {
             MenuItem {
-                text: "Reload"
+                text: qsTr("Reload")
                 onClicked: webView.reload()
             }
         }
