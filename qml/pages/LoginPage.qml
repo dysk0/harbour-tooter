@@ -63,9 +63,10 @@ Page {
                 id: instance
                 focus: true
                 label: qsTr("Enter an Mastodon instance URL")
-                placeholderText: label
-                text: "https://mastodon.social"
+                placeholderText: "https://mastodon.social"
                 width: parent.width
+                validator: RegExpValidator { regExp: /^(ftp|http|https):\/\/[^ "]+$/ }
+                EnterKey.enabled: instance.acceptableInput;
                 EnterKey.iconSource: "image://theme/icon-m-enter-next"
                 EnterKey.onClicked: {
                     Logic.api = new Logic.MastodonAPI({ instance: instance.text, api_user_token: "" });
