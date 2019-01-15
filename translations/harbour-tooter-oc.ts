@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE TS>
-<TS version="2.1">
+<TS version="2.1" language="oc">
 <context>
     <name>API</name>
     <message>
@@ -100,10 +100,18 @@
     </message>
     <message>
         <source>Enter an Mastodon instance URL</source>
-        <translation type="unfinished"></translation>
+        <translation>Picatz l’URL d’una instància Mastodon</translation>
     </message>
     <message>
         <source>Mastodon is a free, open-source social network. A decentralized alternative to commercial platforms, it avoids the risks of a single company monopolizing your communication. Pick a server that you trust — whichever you choose, you can interact with everyone else. Anyone can run their own Mastodon instance and participate in the social network seamlessly.</source>
+        <translation>Mastodon es un malhum liure e open source. Es una alternativa descentralizada a las plataformas comercialas, per empachar qu&apos;una sola entrepresa monopolize vòstras comunicacions. Causissètz un servidor que vos fisatz - qualque siá vòstre causida poiretz interagir amb los autres. Tot lo monde pòt montar sa pròpria instància Mastodon e atal participar a construire un malhum mai solid.</translation>
+    </message>
+    <message>
+        <source>Instance</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Reload</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -169,7 +177,7 @@
     </message>
     <message>
         <source>please wait...</source>
-        <translation type="unfinished"></translation>
+        <translation>esperatz....</translation>
     </message>
 </context>
 <context>

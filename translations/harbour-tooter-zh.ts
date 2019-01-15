@@ -1,110 +1,110 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE TS>
-<TS version="2.1" language="sv">
+<TS version="2.1" language="zh">
 <context>
     <name>API</name>
     <message>
         <source>favourited</source>
-        <translation>favoriserad</translation>
+        <translation>收藏</translation>
     </message>
     <message>
         <source>followed you</source>
-        <translation>följer dig</translation>
+        <translation>关注你的</translation>
     </message>
     <message>
         <source>boosted</source>
-        <translation>puffat</translation>
+        <translation>推出的</translation>
     </message>
     <message>
         <source>said</source>
-        <translation>sade</translation>
+        <translation>说的</translation>
     </message>
 </context>
 <context>
     <name>Browser</name>
     <message>
         <source>Open in Browser</source>
-        <translation>Öppna i webbläsare</translation>
+        <translation>在浏览器打开</translation>
     </message>
     <message>
         <source>Web mode</source>
-        <translation>Webbläge</translation>
+        <translation>网页模式</translation>
     </message>
     <message>
         <source>Reading mode</source>
-        <translation>Läsläge</translation>
+        <translation>阅读模式</translation>
     </message>
     <message>
         <source>Copy URL</source>
-        <translation>Kopiera URL</translation>
+        <translation>复制链接</translation>
     </message>
 </context>
 <context>
     <name>Conversation</name>
     <message>
         <source>Conversation</source>
-        <translation>Konversation</translation>
+        <translation>对话</translation>
     </message>
     <message>
         <source>Content warning!</source>
-        <translation>Innehållsvarning!</translation>
+        <translation>内容警告</translation>
     </message>
     <message>
         <source>public</source>
-        <translation>publik</translation>
+        <translation>公共区域</translation>
     </message>
     <message>
         <source>unlisted</source>
-        <translation>olistad</translation>
+        <translation>未列的</translation>
     </message>
     <message>
         <source>followers only</source>
-        <translation>endast följare</translation>
+        <translation>仅关注者</translation>
     </message>
     <message>
         <source>direct</source>
-        <translation>direkt</translation>
+        <translation>直接</translation>
     </message>
     <message>
         <source>Delete</source>
-        <translation>Radera</translation>
+        <translation>删除</translation>
     </message>
     <message>
         <source>Emojis</source>
-        <translation>Emojis</translation>
+        <translation>表情</translation>
     </message>
     <message>
         <source>Tap to insert</source>
-        <translation>Tryck för att infoga</translation>
+        <translation>点击插入</translation>
     </message>
 </context>
 <context>
     <name>ImageFullScreen</name>
     <message>
         <source>Error loading</source>
-        <translation>Problem att ladda</translation>
+        <translation>加载错误</translation>
     </message>
 </context>
 <context>
     <name>ImageUploader</name>
     <message>
         <source>The file %1 does not exists</source>
-        <translation>Filen %1 går inte att hitta</translation>
+        <translation>文件%1 不存在</translation>
     </message>
 </context>
 <context>
     <name>LoginPage</name>
     <message>
         <source>Login</source>
-        <translation>Logga in</translation>
+        <translation>登录</translation>
     </message>
     <message>
         <source>Enter an Mastodon instance URL</source>
-        <translation>Fyll i URL till Mastodoninstans</translation>
+        <translation>输入一个Mastodon链接实例</translation>
     </message>
     <message>
         <source>Mastodon is a free, open-source social network. A decentralized alternative to commercial platforms, it avoids the risks of a single company monopolizing your communication. Pick a server that you trust — whichever you choose, you can interact with everyone else. Anyone can run their own Mastodon instance and participate in the social network seamlessly.</source>
-        <translation>Mastodon är ett fritt och öppet socialt nätverk byggt på öppen källkod. Ett decentraliserat alternativ till kommersiella plattformar, vilket undviker att ett ensamt företag monopoliserar din kommunikation. Välj en server du litar på --- beroende på vilken du väljer, kan du interagera med alla andra. Vem som helst kan köra deras egen Mastodoninstans och delta i nätverket. Även du!</translation>
+        <translation>Mastodon 是一个免费且开源的社交网络。一个去中心化的商业平台的替代品，帮助你避免某个公司垄断你的通讯方式的风险。选取一个你信任的服务器，无论你选择什么，你都可以和其它任何人互动。任何人都能运行他们的Mastodon 实例并且无缝加入此社交网络。</translation>
     </message>
     <message>
         <source>Instance</source>
@@ -119,197 +119,197 @@
     <name>MainPage</name>
     <message>
         <source>Home</source>
-        <translation>Hem</translation>
+        <translation>主页</translation>
     </message>
     <message>
         <source>Notifications</source>
-        <translation>Notifieringar</translation>
+        <translation>通知</translation>
     </message>
     <message>
         <source>New Toot</source>
-        <translation>Ny toot</translation>
+        <translation>新嘟嘟</translation>
     </message>
     <message>
         <source>Search</source>
-        <translation>Sök</translation>
+        <translation>搜索</translation>
     </message>
     <message>
         <source>@user or #term</source>
-        <translation>@user eller #term</translation>
+        <translation>@用户或#项目</translation>
     </message>
     <message>
         <source>Local</source>
-        <translation>Lokalt</translation>
+        <translation>本地</translation>
     </message>
     <message>
         <source>Federated</source>
-        <translation>Förenade</translation>
+        <translation>联合的</translation>
     </message>
 </context>
 <context>
     <name>MiniStatus</name>
     <message>
         <source>boosted</source>
-        <translation>puffade</translation>
+        <translation>推出的</translation>
     </message>
     <message>
         <source>favourited</source>
-        <translation>favoriserade</translation>
+        <translation>收藏</translation>
     </message>
     <message>
         <source>followed you</source>
-        <translation>följer dig</translation>
+        <translation>关注你的</translation>
     </message>
 </context>
 <context>
     <name>MyList</name>
     <message>
         <source>Load more</source>
-        <translation>Ladda mer</translation>
+        <translation>加载更多</translation>
     </message>
     <message>
         <source>Settings</source>
-        <translation>Inställningar</translation>
+        <translation>设置</translation>
     </message>
     <message>
         <source>Loading</source>
-        <translation>Laddar</translation>
+        <translation>加载中</translation>
     </message>
     <message>
         <source>please wait...</source>
-        <translation>Vänligen vänta...</translation>
+        <translation>请等候......</translation>
     </message>
 </context>
 <context>
     <name>Profile</name>
     <message>
         <source>Unfollow</source>
-        <translation>Sluta följa</translation>
+        <translation>未关注</translation>
     </message>
     <message>
         <source>Follow request sent!</source>
-        <translation>Följarförfrågan har skickats!</translation>
+        <translation>关注请求已寄出</translation>
     </message>
     <message>
         <source>Following</source>
-        <translation>Följer</translation>
+        <translation>关注中</translation>
     </message>
     <message>
         <source>Mute</source>
-        <translation>Tysta</translation>
+        <translation>静音</translation>
     </message>
     <message>
         <source>Unmute</source>
-        <translation>Avtysta</translation>
+        <translation>未静音</translation>
     </message>
     <message>
         <source>Unblock</source>
-        <translation>Avblockera</translation>
+        <translation>解除封锁</translation>
     </message>
     <message>
         <source>Block</source>
-        <translation>Blockera</translation>
+        <translation>封锁</translation>
     </message>
     <message>
         <source>Statuses</source>
-        <translation>Statusar</translation>
+        <translation>状态</translation>
     </message>
     <message>
         <source>Favourites</source>
-        <translation>Favoriter</translation>
+        <translation>收藏</translation>
     </message>
     <message>
         <source>Follow</source>
-        <translation>Följ</translation>
+        <translation>关注</translation>
     </message>
     <message>
         <source>Summary</source>
-        <translation>Översikt</translation>
+        <translation>摘要</translation>
     </message>
     <message>
         <source>Followers</source>
-        <translation>Följare</translation>
+        <translation>关注者</translation>
     </message>
 </context>
 <context>
     <name>Settings</name>
     <message>
         <source>Settings</source>
-        <translation>Inställningar</translation>
+        <translation>设置</translation>
     </message>
     <message>
         <source>Remove Account</source>
-        <translation>Radera konto</translation>
+        <translation>删除账户</translation>
     </message>
     <message>
         <source>Add Account</source>
-        <translation>Lägg till konto</translation>
+        <translation>添加账户</translation>
     </message>
     <message>
         <source>Authorize this app to use your Mastodon account in your behalf</source>
-        <translation>Godkänn denna app att använda ditt Mastodon-konto på dina vägnar</translation>
+        <translation>授权应用使用你信任的Mastodon账户</translation>
     </message>
     <message>
         <source>Load images in toots</source>
-        <translation>Ladda bilder i toots</translation>
+        <translation>加载嘟嘟的图片</translation>
     </message>
     <message>
         <source>Deauthorize this app and remove your account</source>
-        <translation>Avauktorisera  denna app och radera ditt konto</translation>
+        <translation>取消授权此应用并且移除你的账户</translation>
     </message>
     <message>
         <source>Credits</source>
-        <translation>Erkännanden</translation>
+        <translation>信用</translation>
     </message>
     <message>
         <source>Translate</source>
-        <translation>Översätt</translation>
+        <translation>翻译</translation>
     </message>
     <message>
         <source>Use Transifex to help with app translation to your language</source>
-        <translation>Använd Transifex för att hjälpa med app-översättningar till ditt språk</translation>
+        <translation>使用Transifex 以帮助翻译成你使用的语言</translation>
     </message>
     <message>
         <source>Disable this option if you want to preserve your data connection</source>
-        <translation>Inaktivera det här alternativet om du vill behålla din dataanslutning </translation>
+        <translation>如果想要保护你的数据连接，取消此操作</translation>
     </message>
     <message>
         <source>UI/UX design and development</source>
-        <translation>UI/UX design och utveckling</translation>
+        <translation>UI/UX 设计和开发</translation>
     </message>
 </context>
 <context>
     <name>Toot</name>
     <message>
         <source>boosted</source>
-        <translation>puffade</translation>
+        <translation>推出的</translation>
     </message>
     <message>
         <source>favourited</source>
-        <translation>favoriserad</translation>
+        <translation>收藏</translation>
     </message>
     <message>
         <source>followed you</source>
-        <translation>följer dig</translation>
+        <translation>关注你的</translation>
     </message>
 </context>
 <context>
     <name>VisualContainer</name>
     <message>
         <source>Unboost</source>
-        <translation>Avpuffa</translation>
+        <translation>取消推出</translation>
     </message>
     <message>
         <source>Boost</source>
-        <translation>Puffa</translation>
+        <translation>推出</translation>
     </message>
     <message>
         <source>Unfavorite</source>
-        <translation>Avfavorisera</translation>
+        <translation>取消收藏</translation>
     </message>
     <message>
         <source>Favorite</source>
-        <translation>Favorisera</translation>
+        <translation>收藏</translation>
     </message>
 </context>
 </TS>

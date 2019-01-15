@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE TS>
-<TS version="2.1">
+<TS version="2.1" language="de">
 <context>
     <name>API</name>
     <message>
@@ -105,6 +105,14 @@
     <message>
         <source>Mastodon is a free, open-source social network. A decentralized alternative to commercial platforms, it avoids the risks of a single company monopolizing your communication. Pick a server that you trust — whichever you choose, you can interact with everyone else. Anyone can run their own Mastodon instance and participate in the social network seamlessly.</source>
         <translation>Mastodon ist ein freies, auf OpenSource begründetes Soziales Netzwerk. Es bietet eine dezentralisierte Alternative zu den kommerziellen Plattformen, vermeidet aber das Risiko, dass ein einzelnes Unternehmen das Monopol auf deine gesamte Kommunikation erhält. Wähle selbst einen Server (Instanz) der du vertraust - egal welche du wählst, du kannst mit allen kommunizieren. Oder du betreibst deine eigene Mastodon Instanz und verbindest dich nahtlos mit dem Mastodon Netzwerk.</translation>
+    </message>
+    <message>
+        <source>Instance</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Reload</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>

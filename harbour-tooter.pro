@@ -17,7 +17,8 @@ CONFIG += sailfishapp
 QT += network dbus sql
 CONFIG += link_pkgconfig
 PKGCONFIG += sailfishapp
-PKGCONFIG += nemonotifications-qt5
+PKGCONFIG += \
+    nemonotifications-qt5
 
 DEFINES += "APPVERSION=\\\"$${SPECVERSION}\\\""
 DEFINES += "APPNAME=\\\"$${TARGET}\\\""
@@ -113,3 +114,4 @@ TRANSLATIONS += translations/harbour-tooter-pl.ts
 TRANSLATIONS += translations/harbour-tooter-ru.ts
 TRANSLATIONS += translations/harbour-tooter-sr.ts
 TRANSLATIONS += translations/harbour-tooter-sv.ts
+TRANSLATIONS += translations/harbour-tooter-zh.ts
