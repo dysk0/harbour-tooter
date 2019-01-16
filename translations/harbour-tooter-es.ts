@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE TS>
-<TS version="2.1" language="es">
+<TS version="2.1" language="es_GT">
 <context>
     <name>API</name>
     <message>
@@ -24,7 +24,7 @@
     <name>Browser</name>
     <message>
         <source>Open in Browser</source>
-        <translation>Abrir en navegador</translation>
+        <translation>Modo navegador</translation>
     </message>
     <message>
         <source>Web mode</source>
@@ -36,7 +36,7 @@
     </message>
     <message>
         <source>Copy URL</source>
-        <translation>Copiar URL</translation>
+        <translation>Copiar LUR</translation>
     </message>
 </context>
 <context>
@@ -75,7 +75,7 @@
     </message>
     <message>
         <source>Tap to insert</source>
-        <translation>Toca para insertar</translation>
+        <translation>Tocar para insertar</translation>
     </message>
 </context>
 <context>
@@ -100,19 +100,19 @@
     </message>
     <message>
         <source>Enter an Mastodon instance URL</source>
-        <translation>Introduce URL de una instancia de Mastodon</translation>
+        <translation>Entrar LUR de una instancia de Mastodon</translation>
     </message>
     <message>
         <source>Mastodon is a free, open-source social network. A decentralized alternative to commercial platforms, it avoids the risks of a single company monopolizing your communication. Pick a server that you trust — whichever you choose, you can interact with everyone else. Anyone can run their own Mastodon instance and participate in the social network seamlessly.</source>
-        <translation>Mastodon es una red social gratuita y de código abierto. Una alternativa descentralizada a las plataformas comerciales, evita los riesgos de una única compañía que monopolice tu comunicación. Elije un servidor en el que confíes — cualquiera que elijas, puede interactuar con todos los demás. Cualquiera puede ejecutar su propia instancia de Mastodon y participar en la red social sin problemas.</translation>
+        <translation>Mastodon es una red social libre y de código abierto. Una alternativa descentralizada a las plataformas comerciales, evita los riesgos de una única compañía que monopolice la comunicación. Elegir un servidor al cualquier confiar, cualquiera sea, puede interactuar con todos los demás. Cualquiera puede ejecutar su propia instancia de Mastodon y participar en la red social sin problemas.</translation>
     </message>
     <message>
         <source>Instance</source>
-        <translation type="unfinished"></translation>
+        <translation>Instancia</translation>
     </message>
     <message>
         <source>Reload</source>
-        <translation type="unfinished"></translation>
+        <translation>Recargar</translation>
     </message>
 </context>
 <context>
@@ -243,19 +243,19 @@
     </message>
     <message>
         <source>Add Account</source>
-        <translation>Añadir cuenta</translation>
+        <translation>Agregar cuenta</translation>
     </message>
     <message>
         <source>Authorize this app to use your Mastodon account in your behalf</source>
-        <translation>Autoriza a esta aplicación a usar tu cuenta de Mastodon en tu nombre</translation>
+        <translation>Autoriza a esta aplicación usar la cuenta de Mastodon del propietario</translation>
     </message>
     <message>
         <source>Load images in toots</source>
-        <translation>Cargar imágenes en toots</translation>
+        <translation>Cargar imágenes</translation>
     </message>
     <message>
         <source>Deauthorize this app and remove your account</source>
-        <translation>Retira la autorización a esta aplicación y elimina tu cuenta</translation>
+        <translation>Retira la autorización a esta aplicación y elimina la cuenta</translation>
     </message>
     <message>
         <source>Credits</source>
@@ -263,15 +263,15 @@
     </message>
     <message>
         <source>Translate</source>
-        <translation>Traducir</translation>
+        <translation>Cargar Transifex</translation>
     </message>
     <message>
         <source>Use Transifex to help with app translation to your language</source>
-        <translation>Usa Transifex para ayudar en la traducción a tu idioma de esta aplicación</translation>
+        <translation>Redirecciona a la página digital para ayudar a traducir esta aplicación</translation>
     </message>
     <message>
         <source>Disable this option if you want to preserve your data connection</source>
-        <translation>Deshabilita esta opción si quieres ahorrar en tu conexión de datos</translation>
+        <translation>Deshabilita esta opción si quieres ahorrar en conexión de datos</translation>
     </message>
     <message>
         <source>UI/UX design and development</source>
