@@ -105,7 +105,7 @@ Page {
                             mail: "https://twitter.com/meneer"
                         }
                         ListElement {
-                            name: "Carlos Gonzalez / Caballlero"
+                            name: "carlosgonz"
                             desc: "Español translation"
                             mastodon: ""
                             mail: "carlosgonz@protonmail.com"
