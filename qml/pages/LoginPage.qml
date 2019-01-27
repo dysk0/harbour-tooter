@@ -144,7 +144,12 @@ Page {
                     (url+"").substr(0, 38) === 'https://localhost/harbour-tooter?code='
              ) {
                 visible = false;
-                var authCode = (url+"").substr(-64)
+
+                var vars = {};
+                (url+"").replace(/[?&]+([^=&]+)=([^&]*)/gi, function(m,key,value) { vars[key] = value;}); /* found on https://html-online.com/articles/get-url-parameters-javascript/ */
+
+                var authCode = vars["code"];
+
                 console.log(authCode)
 
                 Logic.api.getAccessTokenFromAuthCode(
