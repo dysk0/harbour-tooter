@@ -63,6 +63,7 @@ Page {
                 id: instance
                 focus: true
                 label: qsTr("Enter an Mastodon instance URL")
+                text: "https://"
                 placeholderText: "https://mastodon.social"
                 width: parent.width
                 validator: RegExpValidator { regExp: /^(ftp|http|https):\/\/[^ "]+$/ }

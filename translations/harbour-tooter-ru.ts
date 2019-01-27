@@ -96,18 +96,18 @@
     <name>LoginPage</name>
     <message>
         <source>Login</source>
-        <translation>Авторизоваться</translation>
-    </message>
-    <message>
-        <source>Enter an Mastodon instance URL</source>
-        <translation>Введите URL-адрес экземпляра Mastodon</translation>
-    </message>
-    <message>
-        <source>Mastodon is a free, open-source social network. A decentralized alternative to commercial platforms, it avoids the risks of a single company monopolizing your communication. Pick a server that you trust — whichever you choose, you can interact with everyone else. Anyone can run their own Mastodon instance and participate in the social network seamlessly.</source>
-        <translation>Mastodon - бесплатная социальная сеть с открытым исходным кодом. Децентрализованная альтернатива коммерческим платформам позволяет избежать рисков, связанных с тем, что одна компания монополизирует ваше общение. Выберите сервер, которому вы доверяете - в зависимости от того, что вы выберете, вы можете взаимодействовать со всеми остальными. Любой может запустить свой собственный экземпляр Mastodon и беспрепятственно участвовать в социальной сети.</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Instance</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Enter an Mastodon instance URL</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Mastodon is a free, open-source social network. A decentralized alternative to commercial platforms, it avoids the risks of a single company monopolizing your communication. Pick a server that you trust — whichever you choose, you can interact with everyone else. Anyone can run their own Mastodon instance and participate in the social network seamlessly.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -235,47 +235,47 @@
     <name>Settings</name>
     <message>
         <source>Settings</source>
-        <translation>Настройки</translation>
+        <translation type="unfinished">Настройки</translation>
     </message>
     <message>
         <source>Remove Account</source>
-        <translation>Удалить учетную запись</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Add Account</source>
-        <translation>Добавить аккаунт</translation>
-    </message>
-    <message>
-        <source>Authorize this app to use your Mastodon account in your behalf</source>
-        <translation>Уполномочить это приложение использовать свою учетную запись Mastodon от вашего имени</translation>
-    </message>
-    <message>
-        <source>Load images in toots</source>
-        <translation>Загружать изображения</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Deauthorize this app and remove your account</source>
-        <translation>удалить учетную запись с устройства</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>Credits</source>
-        <translation>Зачет</translation>
+        <source>Authorize this app to use your Mastodon account in your behalf</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>Translate</source>
-        <translation>Переведите</translation>
-    </message>
-    <message>
-        <source>Use Transifex to help with app translation to your language</source>
-        <translation>Используйте Transifex, чтобы помочь с переводом приложения на ваш язык</translation>
+        <source>Load images in toots</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Disable this option if you want to preserve your data connection</source>
-        <translation>Отключите эту опцию, если вы хотите сохранить подключение к данным</translation>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Translate</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Use Transifex to help with app translation to your language</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Credits</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>UI/UX design and development</source>
-        <translation>Дизайн и разработка UI / UX</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>

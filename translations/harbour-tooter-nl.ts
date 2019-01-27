@@ -96,18 +96,18 @@
     <name>LoginPage</name>
     <message>
         <source>Login</source>
-        <translation>Inloggen</translation>
-    </message>
-    <message>
-        <source>Enter an Mastodon instance URL</source>
-        <translation>Voer de URL van een Mastodon-instantie in</translation>
-    </message>
-    <message>
-        <source>Mastodon is a free, open-source social network. A decentralized alternative to commercial platforms, it avoids the risks of a single company monopolizing your communication. Pick a server that you trust — whichever you choose, you can interact with everyone else. Anyone can run their own Mastodon instance and participate in the social network seamlessly.</source>
-        <translation>Mastodon is een vrij sociaal netwerk. Als gedecentraliseerd alternatief voor commerciële platformen, vermijdt het de risico’s van een enkel bedrijf dat je communicatie monopoliseert. Kies een server die je vertrouwt — welke je ook kiest, je kunt met iedereen communiceren. Iedereen kan zelf een Mastodon-instantie hebben en naadloos deelnemen aan het sociale netwerk.</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Instance</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Enter an Mastodon instance URL</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Mastodon is a free, open-source social network. A decentralized alternative to commercial platforms, it avoids the risks of a single company monopolizing your communication. Pick a server that you trust — whichever you choose, you can interact with everyone else. Anyone can run their own Mastodon instance and participate in the social network seamlessly.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -235,47 +235,47 @@
     <name>Settings</name>
     <message>
         <source>Settings</source>
-        <translation>Instellingen</translation>
+        <translation type="unfinished">Instellingen</translation>
     </message>
     <message>
         <source>Remove Account</source>
-        <translation>Verwijderen account</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Add Account</source>
-        <translation>Toevoegen account</translation>
-    </message>
-    <message>
-        <source>Authorize this app to use your Mastodon account in your behalf</source>
-        <translation>Autoriseer deze app om je Mastodon namens jou te gebruiken</translation>
-    </message>
-    <message>
-        <source>Load images in toots</source>
-        <translation>Laden afbeeldingen in toots</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Deauthorize this app and remove your account</source>
-        <translation>Trek autorisaties van deze app in en verwijder je account</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>Credits</source>
-        <translation>Credits</translation>
+        <source>Authorize this app to use your Mastodon account in your behalf</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>Translate</source>
-        <translation>Vertalen</translation>
-    </message>
-    <message>
-        <source>Use Transifex to help with app translation to your language</source>
-        <translation>Gebruik Transifex om deze app te helpen vertalen in jouw taal</translation>
+        <source>Load images in toots</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Disable this option if you want to preserve your data connection</source>
-        <translation>Schakel deze optie uit als je je dataverbinding wilt behouden</translation>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Translate</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Use Transifex to help with app translation to your language</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Credits</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>UI/UX design and development</source>
-        <translation>UI/UX ontwerp en ontwikkeling</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>

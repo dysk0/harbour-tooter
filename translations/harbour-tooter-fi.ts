@@ -99,15 +99,15 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
+        <source>Instance</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <source>Enter an Mastodon instance URL</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Mastodon is a free, open-source social network. A decentralized alternative to commercial platforms, it avoids the risks of a single company monopolizing your communication. Pick a server that you trust — whichever you choose, you can interact with everyone else. Anyone can run their own Mastodon instance and participate in the social network seamlessly.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Instance</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -246,6 +246,10 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
+        <source>Deauthorize this app and remove your account</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <source>Authorize this app to use your Mastodon account in your behalf</source>
         <translation type="unfinished"></translation>
     </message>
@@ -254,11 +258,7 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>Deauthorize this app and remove your account</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Credits</source>
+        <source>Disable this option if you want to preserve your data connection</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -270,7 +270,7 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>Disable this option if you want to preserve your data connection</source>
+        <source>Credits</source>
         <translation type="unfinished"></translation>
     </message>
     <message>

@@ -96,7 +96,11 @@
     <name>LoginPage</name>
     <message>
         <source>Login</source>
-        <translation>Σύνδεση</translation>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Instance</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Enter an Mastodon instance URL</source>
@@ -104,10 +108,6 @@
     </message>
     <message>
         <source>Mastodon is a free, open-source social network. A decentralized alternative to commercial platforms, it avoids the risks of a single company monopolizing your communication. Pick a server that you trust — whichever you choose, you can interact with everyone else. Anyone can run their own Mastodon instance and participate in the social network seamlessly.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Instance</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -235,47 +235,47 @@
     <name>Settings</name>
     <message>
         <source>Settings</source>
-        <translation>Ρυθμίσεις</translation>
+        <translation type="unfinished">Ρυθμίσεις</translation>
     </message>
     <message>
         <source>Remove Account</source>
-        <translation>Αφαίρεση λογαριασμού</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Add Account</source>
-        <translation>Προσθήκη λογαριασμού</translation>
-    </message>
-    <message>
-        <source>Authorize this app to use your Mastodon account in your behalf</source>
-        <translation>Να επιτρέπεται στην εφαρμογή να χρησιμοποιεί τον λογαριασμό σας στο Mastodon εκ μέρους σας</translation>
-    </message>
-    <message>
-        <source>Load images in toots</source>
-        <translation>Φόρτωση των εικόνων στα toot</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Deauthorize this app and remove your account</source>
-        <translation>Άρση της αδειοδότησης της εφαρμογής και αφαίρεση του λογαριασμού σας</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>Credits</source>
-        <translation>Ευχαριστίες</translation>
+        <source>Authorize this app to use your Mastodon account in your behalf</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>Translate</source>
-        <translation>Μετάφραση</translation>
-    </message>
-    <message>
-        <source>Use Transifex to help with app translation to your language</source>
-        <translation>Χρησιμοποιήστε το Transifex για να βοηθήσετε την μετάφραση της εφαρμογής στην γλώσσα σας</translation>
+        <source>Load images in toots</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Disable this option if you want to preserve your data connection</source>
-        <translation>Απενεργοποιήστε αυτήν την επιλογή αν θέλετε να διατηρήσετε την σύνδεση των δεδομένων σας</translation>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Translate</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Use Transifex to help with app translation to your language</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Credits</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>UI/UX design and development</source>
-        <translation>UI/UX σχεδιασμός και ανάπτυξη</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>

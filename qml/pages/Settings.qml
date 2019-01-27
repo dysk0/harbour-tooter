@@ -1,5 +1,6 @@
 import QtQuick 2.0
 import Sailfish.Silica 1.0
+
 import "../lib/API.js" as Logic
 
 Page {
@@ -7,6 +8,8 @@ Page {
         anchors.fill: parent
         contentHeight: column.height + Theme.paddingLarge
         contentWidth: parent.width
+        RemorsePopup { id: remorsePopup }
+
 
         VerticalScrollDecorator {}
         Column {
@@ -20,20 +23,31 @@ Page {
                 // No spacing in this column
                 width: parent.width
                 IconTextSwitch {
-                    text: Logic.conf['login'] ? qsTr("Remove Account"): qsTr("Add Account")
+                    id: removeAccount
+                    text: Logic.conf['login'] ? qsTr("Remove Account") : qsTr("Add Account")
                     description: Logic.conf['login'] ? qsTr("Deauthorize this app and remove your account") : qsTr("Authorize this app to use your Mastodon account in your behalf")
                     icon.source: Logic.conf['login'] ? "image://theme/icon-m-people" : "image://theme/icon-m-add"
+
+
                     onCheckedChanged: {
-                        busy = true;
+                        remorsePopup.execute(removeAccount.text, function() {
+                            busy = true;
+                            checked = false;
+                            timer1.start();
+                            if (Logic.conf['login']) {
+                                Logic.conf['login'] = false
+                                Logic.conf['instance'] = null;
+                                Logic.conf['api_user_token'] = null;
+                            }
+                            pageStack.push(Qt.resolvedUrl("LoginPage.qml"))
+                        })
+                    }
+
+                    /*    busy = true;
                         checked = false;
                         timer1.start()
-                        if (Logic.conf['login']) {
-                            Logic.conf['login'] = false
-                            Logic.conf['instance'] = null;
-                            Logic.conf['api_user_token'] = null;
-                        }
-                        pageStack.push(Qt.resolvedUrl("LoginPage.qml"))
-                    }
+
+                    }*/
                     Timer {
                         id: timer1
                         interval: 4700

@@ -96,18 +96,18 @@
     <name>LoginPage</name>
     <message>
         <source>Login</source>
-        <translation>Login</translation>
-    </message>
-    <message>
-        <source>Enter an Mastodon instance URL</source>
-        <translation>Gib eine Mastadon Instance URL ein</translation>
-    </message>
-    <message>
-        <source>Mastodon is a free, open-source social network. A decentralized alternative to commercial platforms, it avoids the risks of a single company monopolizing your communication. Pick a server that you trust — whichever you choose, you can interact with everyone else. Anyone can run their own Mastodon instance and participate in the social network seamlessly.</source>
-        <translation>Mastodon ist ein freies, auf OpenSource begründetes Soziales Netzwerk. Es bietet eine dezentralisierte Alternative zu den kommerziellen Plattformen, vermeidet aber das Risiko, dass ein einzelnes Unternehmen das Monopol auf deine gesamte Kommunikation erhält. Wähle selbst einen Server (Instanz) der du vertraust - egal welche du wählst, du kannst mit allen kommunizieren. Oder du betreibst deine eigene Mastodon Instanz und verbindest dich nahtlos mit dem Mastodon Netzwerk.</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Instance</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Enter an Mastodon instance URL</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Mastodon is a free, open-source social network. A decentralized alternative to commercial platforms, it avoids the risks of a single company monopolizing your communication. Pick a server that you trust — whichever you choose, you can interact with everyone else. Anyone can run their own Mastodon instance and participate in the social network seamlessly.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -235,47 +235,47 @@
     <name>Settings</name>
     <message>
         <source>Settings</source>
-        <translation>Einstellungen</translation>
+        <translation type="unfinished">Einstellungen</translation>
     </message>
     <message>
         <source>Remove Account</source>
-        <translation>Account löschen</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Add Account</source>
-        <translation>Account hinzufügen</translation>
-    </message>
-    <message>
-        <source>Authorize this app to use your Mastodon account in your behalf</source>
-        <translation>Autorisiere diese App deinen Mastodon Account in deinem Namen zu nutzen</translation>
-    </message>
-    <message>
-        <source>Load images in toots</source>
-        <translation>Lade Bilder in den Toots</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Deauthorize this app and remove your account</source>
-        <translation>Der App Autorisierung entziehen und Account entfernen</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>Credits</source>
-        <translation>Credits</translation>
+        <source>Authorize this app to use your Mastodon account in your behalf</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>Translate</source>
-        <translation>Übersetzen</translation>
-    </message>
-    <message>
-        <source>Use Transifex to help with app translation to your language</source>
-        <translation>Nutze Transifex um bei der Übersetzung in deine Sprache zu helfen</translation>
+        <source>Load images in toots</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Disable this option if you want to preserve your data connection</source>
-        <translation>Deaktiviere diese Option um deinen Datenverbindung zu schonen</translation>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Translate</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Use Transifex to help with app translation to your language</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Credits</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>UI/UX design and development</source>
-        <translation>UI/UX Design und Implementierung</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
