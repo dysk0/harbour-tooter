@@ -60,6 +60,7 @@ WorkerScript.onMessage = function(msg) {
                 } else if(msg.action === "notifications") {
                     // notification
                     //console.log("Is notification... parsing...")
+                    console.log(JSON.stringify(data[i]))
                     item = parseNotification(data[i]);
                     items.push(item)
 
@@ -148,12 +149,20 @@ function parseNotification(data){
     };
     switch (item['type']){
     case "mention":
+        if (!data.status) {
+            break;
+        }
+
         item = parseToot(data.status)
         item['typeIcon'] = "image://theme/icon-s-retweet"
         item['typeIcon'] = "image://theme/icon-s-alarm"
         item['type'] = "mention";
         break;
     case "reblog":
+        if (!data.status) {
+            break;
+        }
+
         item = parseToot(data.status)
         item = parseAccounts(item, "reblog_", data["account"])
         item = parseAccounts(item, "", data["status"]["account"])
@@ -162,6 +171,10 @@ function parseNotification(data){
         item['typeIcon'] = "image://theme/icon-s-retweet"
         break;
     case "favourite":
+        if (!data.status) {
+            break;
+        }
+
         item = parseToot(data.status)
         item = parseAccounts(item, "reblog_", data["account"])
         item = parseAccounts(item, "", data["status"]["account"])
