@@ -82,6 +82,25 @@ Page {
                 }
             }
             SectionHeader {
+                text:  qsTr("Info")
+                
+                   Column {
+                width: parent.width
+                anchors {
+                    left: parent.left
+                    right: parent.right
+                    rightMargin: Theme.horizontalPageMargin
+                }
+                Repeater {
+                    model: ListModel {
+                        ListElement {
+                            name: ""
+                            desc: qsTr("This is a fork of Tooter.")
+                            mastodon: ""
+                            mail: ""
+                        }
+            }
+            SectionHeader {
                 text:  qsTr("Credits")
             }
 
