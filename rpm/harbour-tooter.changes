@@ -1,6 +1,6 @@
 * Sat Dec 28 2019 molan <mol_an@sunrise.ch> 1.0.3-1 [fork of Tooter 1.0.3]
 - Fixed broken Mastodon login (app built with Sailfish SDK 2.4)
-- Fixed crash on certaib notifications
+- Fixed crash on certain notifications
 
 * Sun Jan 27 2019 Dusko Angirevic <dysko@me.com> 1.0.3-0
 - Remorse popup added for account removal
