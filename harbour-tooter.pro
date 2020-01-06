@@ -114,4 +114,4 @@ TRANSLATIONS += translations/harbour-tooter-pl.ts
 TRANSLATIONS += translations/harbour-tooter-ru.ts
 TRANSLATIONS += translations/harbour-tooter-sr.ts
 TRANSLATIONS += translations/harbour-tooter-sv.ts
-TRANSLATIONS += translations/harbour-tooter-zh.ts
+TRANSLATIONS += translations/harbour-tooter-zh_CN.ts
