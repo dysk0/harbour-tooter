@@ -177,7 +177,7 @@
     </message>
     <message>
         <source>please wait...</source>
-        <translation>请等候......</translation>
+        <translation>稍等片刻......</translation>
     </message>
 </context>
 <context>
@@ -188,7 +188,7 @@
     </message>
     <message>
         <source>Follow request sent!</source>
-        <translation>关注请求已寄出！</translation>
+        <translation>已寄出关注请求！</translation>
     </message>
     <message>
         <source>Following</source>
