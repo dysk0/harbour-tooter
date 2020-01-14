@@ -96,23 +96,23 @@
     <name>LoginPage</name>
     <message>
         <source>Login</source>
-        <translation type="unfinished"></translation>
+        <translation>Login</translation>
     </message>
     <message>
         <source>Instance</source>
-        <translation type="unfinished"></translation>
+        <translation>Instanz</translation>
     </message>
     <message>
         <source>Enter an Mastodon instance URL</source>
-        <translation type="unfinished"></translation>
+        <translation>Gewünschte Mastodon-Instanz URL eingeben</translation>
     </message>
     <message>
         <source>Mastodon is a free, open-source social network. A decentralized alternative to commercial platforms, it avoids the risks of a single company monopolizing your communication. Pick a server that you trust — whichever you choose, you can interact with everyone else. Anyone can run their own Mastodon instance and participate in the social network seamlessly.</source>
-        <translation type="unfinished"></translation>
+        <translation>Mastodon ist ein freies, quelloffenes soziales Netzwerk. Im Gegensatz zu kommerziellen Plattformen, ist Mastodon als dezentrales Netzwerk konzipiert. Somit wird das Risiko vermieden, dass ein einziges Unternehmen die volle Kontrolle über die Kommunikation der Benutzer hat. Benutzer können einer beliebigen Instanz beitreten oder selbst eine eigene betreiben.</translation>
     </message>
     <message>
         <source>Reload</source>
-        <translation type="unfinished"></translation>
+        <translation>Neu laden</translation>
     </message>
 </context>
 <context>
@@ -143,7 +143,7 @@
     </message>
     <message>
         <source>Federated</source>
-        <translation>Vereinigt</translation>
+        <translation>Föderiert</translation>
     </message>
 </context>
 <context>
@@ -235,47 +235,47 @@
     <name>Settings</name>
     <message>
         <source>Settings</source>
-        <translation type="unfinished">Einstellungen</translation>
+        <translation>Einstellungen</translation>
     </message>
     <message>
         <source>Remove Account</source>
-        <translation type="unfinished"></translation>
+        <translation>Konto entfernen</translation>
     </message>
     <message>
         <source>Add Account</source>
-        <translation type="unfinished"></translation>
+        <translation>Konto hinzufügen</translation>
     </message>
     <message>
         <source>Deauthorize this app and remove your account</source>
-        <translation type="unfinished"></translation>
+        <translation>Konto entfernen und für diese Anwendung deaktivieren</translation>
     </message>
     <message>
         <source>Authorize this app to use your Mastodon account in your behalf</source>
-        <translation type="unfinished"></translation>
+        <translation>Zugriff durch diese Anwendung auf eigenes Mastodon-Konto erlauben</translation>
     </message>
     <message>
         <source>Load images in toots</source>
-        <translation type="unfinished"></translation>
+        <translation>Bilder in Toots laden</translation>
     </message>
     <message>
         <source>Disable this option if you want to preserve your data connection</source>
-        <translation type="unfinished"></translation>
+        <translation>Diese Option deaktivieren um Datenvolumen zu sparen</translation>
     </message>
     <message>
         <source>Translate</source>
-        <translation type="unfinished"></translation>
+        <translation>Übersetzen</translation>
     </message>
     <message>
         <source>Use Transifex to help with app translation to your language</source>
-        <translation type="unfinished"></translation>
+        <translation>Transifex benutzen um bei der Übersetzung der Anwendung zu helfen</translation>
     </message>
     <message>
         <source>Credits</source>
-        <translation type="unfinished"></translation>
+        <translation>Dank an</translation>
     </message>
     <message>
         <source>UI/UX design and development</source>
-        <translation type="unfinished"></translation>
+        <translation>UI/UX-Gestaltung und Entwicklung</translation>
     </message>
 </context>
 <context>
