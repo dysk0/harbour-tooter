@@ -55,7 +55,7 @@ BackgroundItem {
             anchors.fill: parent
             onClicked: {
                 pageStack.push(Qt.resolvedUrl("../Profile.qml"), {
-                                   "displayname": model.account_username,
+                                   "display_name": model.account_display_name,
                                    "username": model.account_acct,
                                    "user_id": model.account_id,
                                    "profileImage": model.account_avatar
@@ -140,7 +140,7 @@ BackgroundItem {
                                    "profileImage": ""
                                })
             } else {
-                pageStack.push(Qt.resolvedUrl("../Browser.qml"), {"href" : link})
+                Qt.openUrlExternally(link);
             }
         }
         text: content.replace(new RegExp("<a ", 'g'), '<a style="text-decoration: none; color:'+(pressed ?  Theme.secondaryColor : Theme.highlightColor)+'" ')
