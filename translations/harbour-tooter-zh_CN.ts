@@ -235,47 +235,55 @@
     <name>Settings</name>
     <message>
         <source>Settings</source>
-        <translation>设置</translation>
+        <translation type="unfinished">设置</translation>
     </message>
     <message>
         <source>Remove Account</source>
-        <translation>移除账户</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Add Account</source>
-        <translation>添加账户</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Deauthorize this app and remove your account</source>
-        <translation>取消对此软件的授权并移除你的账户</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Authorize this app to use your Mastodon account in your behalf</source>
-        <translation>授权此软件使用你的 Mastodon 账户</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Load images in toots</source>
-        <translation>在嘟嘟加载图片</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Disable this option if you want to preserve your data connection</source>
-        <translation>如果你想保护你的数据连接 请禁用此操作</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Translate</source>
-        <translation>翻译</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Use Transifex to help with app translation to your language</source>
-        <translation>使用 Transifex 帮助翻译此软件到你所使用的语言。</translation>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>About</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Credits</source>
-        <translation>信誉</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>UI/UX design and development</source>
-        <translation>UI/UX 设计及开发</translation>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>This application is a forked version of the Mastodon client Tooter, originally developed by Duško Angirević, which fixes various bugs. Source code on &lt;a href=&apos;https://github.com/molan-git/harbour-tooter&apos;&gt;GitHub&lt;/a&gt;.</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -297,19 +305,19 @@
     <name>VisualContainer</name>
     <message>
         <source>Unboost</source>
-        <translation>取消推起</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Boost</source>
-        <translation>推起</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Unfavorite</source>
-        <translation>取消收藏</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Favorite</source>
-        <translation>收藏</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 </TS>

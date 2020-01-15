@@ -235,47 +235,55 @@
     <name>Settings</name>
     <message>
         <source>Settings</source>
-        <translation>Einstellungen</translation>
+        <translation type="unfinished">Einstellungen</translation>
     </message>
     <message>
         <source>Remove Account</source>
-        <translation>Konto entfernen</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Add Account</source>
-        <translation>Konto hinzufügen</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Deauthorize this app and remove your account</source>
-        <translation>Konto entfernen und für diese Anwendung deaktivieren</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Authorize this app to use your Mastodon account in your behalf</source>
-        <translation>Zugriff durch diese Anwendung auf eigenes Mastodon-Konto erlauben</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Load images in toots</source>
-        <translation>Bilder in Toots laden</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Disable this option if you want to preserve your data connection</source>
-        <translation>Diese Option deaktivieren um Datenvolumen zu sparen</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Translate</source>
-        <translation>Übersetzen</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Use Transifex to help with app translation to your language</source>
-        <translation>Transifex benutzen um bei der Übersetzung der Anwendung zu helfen</translation>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>About</source>
+        <translation>Über</translation>
     </message>
     <message>
         <source>Credits</source>
-        <translation>Dank an</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>UI/UX design and development</source>
-        <translation>UI/UX-Gestaltung und Entwicklung</translation>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>This application is a forked version of the Mastodon client Tooter, originally developed by Duško Angirević, which fixes various bugs. Source code on &lt;a href=&apos;https://github.com/molan-git/harbour-tooter&apos;&gt;GitHub&lt;/a&gt;.</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -297,19 +305,19 @@
     <name>VisualContainer</name>
     <message>
         <source>Unboost</source>
-        <translation>Schwäche</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Boost</source>
-        <translation>Verstärke</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Unfavorite</source>
-        <translation>Aus Favoriten entfernen</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Favorite</source>
-        <translation>Zu Favoriten</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 </TS>

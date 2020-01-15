@@ -104,11 +104,11 @@
     </message>
     <message>
         <source>Enter an Mastodon instance URL</source>
-        <translation>Entrer l'URL d'une instance de Mastodon</translation>
+        <translation>Entrer l&apos;URL d&apos;une instance de Mastodon</translation>
     </message>
     <message>
         <source>Mastodon is a free, open-source social network. A decentralized alternative to commercial platforms, it avoids the risks of a single company monopolizing your communication. Pick a server that you trust — whichever you choose, you can interact with everyone else. Anyone can run their own Mastodon instance and participate in the social network seamlessly.</source>
-        <translation>Mastodon est un réseau social et logiciel à source ouverte de microblog auto-hébergé, libre, distribué et acentré. Il permet de partager des messages, images et autres contenus. Mastodon peut être fédéré à un réseau d'instances capables de communiquer entre elles.</translation>
+        <translation>Mastodon est un réseau social et logiciel à source ouverte de microblog auto-hébergé, libre, distribué et acentré. Il permet de partager des messages, images et autres contenus. Mastodon peut être fédéré à un réseau d&apos;instances capables de communiquer entre elles.</translation>
     </message>
     <message>
         <source>Reload</source>
@@ -235,47 +235,55 @@
     <name>Settings</name>
     <message>
         <source>Settings</source>
-        <translation>Paramètres</translation>
+        <translation type="unfinished">Paramètres</translation>
     </message>
     <message>
         <source>Remove Account</source>
-        <translation>Enlever compte</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Add Account</source>
-        <translation>Ajouter compte</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Deauthorize this app and remove your account</source>
-        <translation>Désautoriser cette application et enlever votre compte</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Authorize this app to use your Mastodon account in your behalf</source>
-        <translation>Autoriser cette application d'utiliser votre compte</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Load images in toots</source>
-        <translation>Charger des images dans les pouets</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Disable this option if you want to preserve your data connection</source>
-        <translation>Désactiver cette option pour économiser des données mobiles</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Translate</source>
-        <translation>Traduction</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Use Transifex to help with app translation to your language</source>
-        <translation>Utiliser Transifex pour aider avec la traduction de l'application</translation>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>About</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Credits</source>
-        <translation>Développement</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>UI/UX design and development</source>
-        <translation>Design UI/UX et développement</translation>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>This application is a forked version of the Mastodon client Tooter, originally developed by Duško Angirević, which fixes various bugs. Source code on &lt;a href=&apos;https://github.com/molan-git/harbour-tooter&apos;&gt;GitHub&lt;/a&gt;.</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -297,19 +305,19 @@
     <name>VisualContainer</name>
     <message>
         <source>Unboost</source>
-        <translation>ne plus partager</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Boost</source>
-        <translation>partager</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Unfavorite</source>
-        <translation>supprimer de ses favoris </translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Favorite</source>
-        <translation>ajouter aux favoris</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 </TS>
