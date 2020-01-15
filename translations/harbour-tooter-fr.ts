@@ -283,7 +283,7 @@
     </message>
     <message>
         <source>This application is a forked version of the Mastodon client Tooter, originally developed by Duško Angirević, which fixes various bugs. Source code on &lt;a href=&apos;https://github.com/molan-git/harbour-tooter&apos;&gt;GitHub&lt;/a&gt;.</source>
-        <translation type="unfinished"></translation>
+        <translation>Cette application est un fork de Tooter (développée par Duško Angirević). Cette version continue le développement et corrige plusieurs bugs trouvés.</translation>
     </message>
 </context>
 <context>
