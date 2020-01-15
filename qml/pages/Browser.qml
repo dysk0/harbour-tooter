@@ -36,6 +36,8 @@ import QtQuick 2.0
 import QtWebKit 3.0
 import Sailfish.Silica 1.0
 
+// not in use since release 1.0.3-4
+
 Page {
     id: browser
     property string href;
