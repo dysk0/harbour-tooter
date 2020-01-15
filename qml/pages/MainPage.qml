@@ -185,7 +185,7 @@ Page {
                     delegate: ItemUser {
                         onClicked: {
                             pageStack.push(Qt.resolvedUrl("Profile.qml"), {
-                                               "displayname": model.account_username,
+                                               "display_name": model.account_display_name,
                                                "username": model.account_acct,
                                                "user_id": model.account_id,
                                                "profileImage": model.account_avatar
@@ -261,7 +261,7 @@ Page {
             navigation.navigateTo('search')
 
         } else {
-            pageStack.push(Qt.resolvedUrl("Browser.qml"), {"href" : href})
+            Qt.openUrlExternally(href);
         }
     }
     Component.onCompleted: {
