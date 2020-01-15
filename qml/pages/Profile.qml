@@ -6,7 +6,7 @@ import QtGraphicalEffects 1.0
 
 Page {
     property ListModel tweets;
-    property string displayname : "";
+    property string display_name : "";
     property string username : "";
     property string profileImage : "";
     property int user_id;
@@ -39,7 +39,7 @@ Page {
                 followers_count = messageObject.data.followers_count
                 following_count = messageObject.data.following_count
                 username = messageObject.data.acct
-                displayname = messageObject.data.display_name
+                display_name = messageObject.data.display_name
                 profileImage = messageObject.data.avatar_static
 
                 var msg = {
@@ -135,7 +135,7 @@ Page {
         id: list
         header: ProfileHeader {
             id: header
-            title: displayname
+            title: display_name
             description: '@'+username
             image: profileImage
         }
