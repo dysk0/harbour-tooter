@@ -222,7 +222,7 @@ Page {
                 right: parent.right
                 rightMargin: Theme.paddingSmall
             }
-            icon.source: "image://theme/icon-s-mms?" + (pressed
+            icon.source: "image://theme/icon-s-edit?" + (pressed
                                                         ? Theme.highlightColor
                                                         : (warningContent.visible ? Theme.secondaryHighlightColor : Theme.primaryColor))
             onClicked: pageStack.push(firstWizardPage)
@@ -272,7 +272,7 @@ Page {
                 left: parent.left
                 leftMargin: Theme.paddingMedium
             }
-            icon.source: "image://theme/icon-s-high-importance?" + (pressed
+            icon.source: "image://theme/icon-s-warning?" + (pressed
                                                                     ? Theme.highlightColor
                                                                     : (warningContent.visible ? Theme.secondaryHighlightColor : Theme.primaryColor))
             onClicked: warningContent.visible = !warningContent.visible
@@ -345,7 +345,7 @@ Page {
         }
         IconButton {
             id: btnSend
-            icon.source: "image://theme/icon-m-enter?" + (pressed
+            icon.source: "image://theme/icon-m-send?" + (pressed
                                                           ? Theme.highlightColor
                                                           : Theme.primaryColor)
             anchors {
