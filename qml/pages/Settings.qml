@@ -81,6 +81,24 @@ Page {
                     }
                 }
             }
+
+            SectionHeader {
+                text:  qsTr("About")
+            }
+
+            Text {
+                            x: Theme.horizontalPageMargin
+                            width: parent.width  - ( 2 * Theme.horizontalPageMargin )
+                            text: qsTr("This application is a forked version of the Mastodon client Tooter, originally developed by Duško Angirević, which fixes various bugs. Source code on <a href=\'https://github.com/molan-git/harbour-tooter'>GitHub</a>.")
+                            font.pixelSize: Theme.fontSizeExtraSmall
+                            linkColor: Theme.highlightColor
+                            color: Theme.primaryColor
+                            wrapMode: Text.Wrap
+                            anchors {
+                                horizontalCenter: parent.horizontalCenter
+                            }
+                            onLinkActivated: Qt.openUrlExternally(link)
+                        }
             
             SectionHeader {
                 text:  qsTr("Credits")
@@ -106,6 +124,12 @@ Page {
                             desc: "visual identity"
                             mastodon: ""
                             mail: "micotakis@gmail.com"
+                        }
+                        ListElement {
+                            name: "Molan"
+                            desc: "Maintainer of this forked version"
+                            mastodon: ""
+                            mail: "mol_an@sunrise.ch"
                         }
                         ListElement {
                             name: "Quentin PAGÈS / Quenti ♏"
