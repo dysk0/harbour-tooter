@@ -63,7 +63,7 @@ BackgroundItem {
             anchors.fill: parent
             onClicked: {
                 pageStack.push(Qt.resolvedUrl("../Profile.qml"), {
-                                   "displayname": account_display_name,
+                                   "display_name": account_display_name,
                                    "username": account_username,
                                    "profileImage": account_avatar
                                })
@@ -164,7 +164,7 @@ BackgroundItem {
 
                 send(link)
             } else {
-                pageStack.push(Qt.resolvedUrl("../Browser.qml"), {"href" : link})
+                Qt.openUrlExternally(link);
             }
 
 
