@@ -91,8 +91,8 @@ Page {
                             width: parent.width  - ( 2 * Theme.horizontalPageMargin )
                             text: qsTr("This application is a forked version of the Mastodon client Tooter, originally developed by Duško Angirević, which fixes various bugs. Source code on <a href=\'https://github.com/molan-git/harbour-tooter'>GitHub</a>.")
                             font.pixelSize: Theme.fontSizeExtraSmall
-                            linkColor: Theme.highlightColor
-                            color: Theme.primaryColor
+                            color: Theme.secondaryColor
+                            linkColor: Theme.secondaryHighlightColor
                             wrapMode: Text.Wrap
                             anchors {
                                 horizontalCenter: parent.horizontalCenter
