@@ -135,9 +135,10 @@ BackgroundItem {
                 send(link)
             } else if (test.length === 4 && test[3][0] === "@" ) {
                 pageStack.push(Qt.resolvedUrl("../Profile.qml"), {
-                                   "name": "",
-                                   "username": test[3].substring(1)+"@"+test[2],
-                                   "profileImage": ""
+                                   "display_name": account_display_name,
+                                   "username": account_username,
+                                   "user_id": model.account_id,
+                                   "profileImage": account_avatar
                                })
             } else {
                 Qt.openUrlExternally(link);

@@ -142,16 +142,17 @@ BackgroundItem {
             right: parent.right
             top: lblScreenName.bottom
             topMargin: Theme.paddingSmall
-            rightMargin: Theme.paddingLarge
+            rightMargin: Theme.paddingLarge          
         }
         height: content.length ? paintedHeight : 0
         onLinkActivated: {
             console.log(link)
             if (link[0] === "@") {
                 pageStack.push(Qt.resolvedUrl("../Profile.qml"), {
-                                   "name": "",
-                                   "username": link.substring(1),
-                                   "profileImage": ""
+                                   "display_name": account_display_name,
+                                   "username": account_username,
+                                   "user_id": model.account_id,
+                                   "profileImage": account_avatar
                                })
             } else if (link[0] === "#") {
 
