@@ -15,23 +15,20 @@ SilicaGridView {
         id: listModel
         ListElement {
             icon: "image://theme/icon-m-home"
-            //icon: "../../images/home.svg"
             slug: "home"
             name: "Home"
             active: true
             unread: false
         }
         ListElement {
-            //icon: "image://theme/icon-m-region"
-            icon: "../../images/federated.svg"
+            icon: "image://theme/icon-m-website"
             slug: "federated"
             name: "Federated"
             active: false
             unread: false
         }
         ListElement {
-            //icon: "image://theme/icon-m-sailfish"
-            icon: "../../images/local.svg"
+            icon: "image://theme/icon-m-whereami"
             slug: "local"
             name: "Local"
             active: false
@@ -39,14 +36,12 @@ SilicaGridView {
         }
         ListElement {
             icon: "image://theme/icon-m-alarm"
-            //icon: "../../images/notification.svg"
             slug: "notifications"
             name: "Notifications"
             active: false
         }
         ListElement {
             icon: "image://theme/icon-m-search"
-            //icon: "../../images/search.svg"
             slug: "search"
             name: "Search"
             active: false
