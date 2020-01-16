@@ -1,3 +1,8 @@
+* Thu Jan 16 2020 molan <mol_an@sunrise.ch> 1.0.3-5 [fork of Tooter 1.0.3]
+- Fix for broken profile pages when clicking on usernames in toots
+- Fixed navigation icons for inverted ambiences
+- Updated Chinese translation (thanks to dashinfantry)
+
 * Wed Jan 15 2020 molan <mol_an@sunrise.ch> 1.0.3-4 [fork of Tooter 1.0.3]
 - Website links in toots now open directly in browser since the web scraper service which was used before is discontinued
 - Profile page now shows full display name in title instead of user name
