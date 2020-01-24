@@ -4,7 +4,6 @@ import QtGraphicalEffects 1.0
 
 BackgroundItem {
     signal send (string notice)
-
     id: delegate
     //property string text: "0"
     width: parent.width
@@ -149,10 +148,9 @@ BackgroundItem {
             console.log(link)
             if (link[0] === "@") {
                 pageStack.push(Qt.resolvedUrl("../Profile.qml"), {
-                                   "display_name": account_display_name,
-                                   "username": account_username,
-                                   "user_id": model.account_id,
-                                   "profileImage": account_avatar
+                                   "name": "",
+                                   "username": link.substring(1),
+                                   "profileImage": ""
                                })
             } else if (link[0] === "#") {
 
