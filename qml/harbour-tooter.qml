@@ -36,7 +36,6 @@ import "./lib/API.js" as Logic
 ApplicationWindow
 {
     id: appWindow
-    //initialPage: Component { FirstPage { } }
     cover: Qt.resolvedUrl("cover/CoverPage.qml")
     allowedOrientations: defaultAllowedOrientations
     Component.onCompleted: {
@@ -59,9 +58,6 @@ ApplicationWindow
                     pageStack.push(Qt.resolvedUrl("./pages/MainPage.qml"), {})
                 });
 
-                //
-                //
-                //pageStack.push(Qt.resolvedUrl("./pages/Conversation.qml"), {})
             } else {
                 pageStack.push(Qt.resolvedUrl("./pages/LoginPage.qml"), {})
             }
