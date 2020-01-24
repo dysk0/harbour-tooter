@@ -27,7 +27,6 @@ Page {
                 'model'     :  suggestedModel,
                 'mode'      : "append",
                 'params'    : [ {name: "q", data: suggestedUser} ],
-
                 'conf'      : Logic.conf
             };
             worker.sendMessage(msg);
@@ -146,8 +145,7 @@ Page {
         Rectangle {
             id: progressBar
             width: toot.text.length ? panel.width*(toot.text.length/tootMaxChar) : 0;
-
-            height: Theme.itemSizeSmall * 0.05
+            height: Theme.itemSizeSmall * 0.10
             color: Theme.highlightBackgroundColor
             opacity: 0.7
             anchors {
@@ -168,10 +166,11 @@ Page {
             }
             autoScrollEnabled: true
             labelVisible: false
-            placeholderText: qsTr("Content warning!")
+            placeholderText: qsTr("Write your warning here")
+            placeholderColor: palette.highlightColor
+            color: palette.highlightColor
             horizontalAlignment: Text.AlignLeft
             EnterKey.onClicked: {
-                //tweet()
             }
         }
         TextInput {
@@ -183,7 +182,7 @@ Page {
             id: toot
             anchors {
                 top: warningContent.bottom
-                topMargin: Theme.paddingMedium
+                topMargin: Theme.paddingMediummas
                 left: parent.left
                 right: parent.right
                 rightMargin: Theme.paddingMedium
@@ -192,10 +191,10 @@ Page {
             labelVisible: false
             //focus: true
             text: description !== "" && (description.charAt(0) == '@' || description.charAt(0) == '#') ? description+' '  : ''
-            height: implicitHeight
+            height: 300
             horizontalAlignment: Text.AlignLeft
+            placeholderText: "What's on your mind?"
             EnterKey.onClicked: {
-                //tweet()
             }
             onTextChanged: {
                 textOperations.text = toot.text
@@ -218,13 +217,12 @@ Page {
             }
 
             anchors {
+                top: warningContent.bottom
                 bottom: bottom.top
                 right: parent.right
                 rightMargin: Theme.paddingSmall
             }
-            icon.source: "image://theme/icon-s-edit?" + (pressed
-                                                        ? Theme.highlightColor
-                                                        : (warningContent.visible ? Theme.secondaryHighlightColor : Theme.primaryColor))
+            icon.source: "../../qml/images/emojiselect.svg"
             onClicked: pageStack.push(firstWizardPage)
         }
         SilicaGridView {
@@ -273,8 +271,8 @@ Page {
                 leftMargin: Theme.paddingMedium
             }
             icon.source: "image://theme/icon-s-warning?" + (pressed
-                                                                    ? Theme.highlightColor
-                                                                    : (warningContent.visible ? Theme.secondaryHighlightColor : Theme.primaryColor))
+                                                            ? Theme.highlightColor
+                                                            : (warningContent.visible ? Theme.secondaryHighlightColor : Theme.primaryColor))
             onClicked: warningContent.visible = !warningContent.visible
         }
         IconButton {
@@ -304,27 +302,20 @@ Page {
         }
         ImageUploader {
             id: imageUploader
-
             onProgressChanged: {
                 console.log("progress "+progress)
                 uploadProgress.width = parent.width*progress
             }
-
             onSuccess: {
                 uploadProgress.width =0
                 console.log(replyData);
-
                 mediaModel.append(JSON.parse(replyData))
-
-
             }
-
             onFailure: {
                 uploadProgress.width =0
                 btnAddImage.enabled = true;
                 console.log(status)
                 console.log(statusText)
-
             }
 
         }
@@ -332,22 +323,24 @@ Page {
             id: privacy
             anchors {
                 top: toot.bottom
-                topMargin: -Theme.paddingSmall*2
+                bottom: parent
+                //topMargin: -Theme.paddingSmall*2
                 left: btnAddImage.right
                 right: btnSend.left
             }
+            currentIndex: 0
             menu: ContextMenu {
-                MenuItem { text: qsTr("public") }
-                MenuItem { text: qsTr("unlisted") }
-                MenuItem { text: qsTr("followers only") }
-                MenuItem { text: qsTr("direct") }
+                MenuItem { text: qsTr("Public") }
+                MenuItem { text: qsTr("Unlisted") }
+                MenuItem { text: qsTr("Followers-only") }
+                MenuItem { text: qsTr("Direct") }
             }
         }
         IconButton {
             id: btnSend
             icon.source: "image://theme/icon-m-send?" + (pressed
-                                                          ? Theme.highlightColor
-                                                          : Theme.primaryColor)
+                                                         ? Theme.highlightColor
+                                                         : Theme.primaryColor)
             anchors {
                 top: toot.bottom
                 right: parent.right
@@ -366,7 +359,7 @@ Page {
                     'action'    : 'statuses',
                     'method'    : 'POST',
                     'model'     : mdl,
-                    'mode'     : "append",
+                    'mode'      : "append",
                     'params'    : {
                         "status": toot.text,
                         "visibility": visibility[privacy.currentIndex],
@@ -438,7 +431,6 @@ Page {
             id: emoticonsDialog
             canAccept: false; //selector.currentIndex >= 0
             //acceptDestination: conversationPage
-
             onAcceptPendingChanged: {
                 if (acceptPending) {
                     // Tell the destination page what the selected category is
@@ -515,7 +507,6 @@ Page {
                     ListElement { section: "smileys"; glyph: "🙎" }
                     ListElement { section: "smileys"; glyph: "🙏" }
 
-
                     ListElement { section: "Transport and map"; glyph: "🚀" }
                     ListElement { section: "Transport and map"; glyph: "🚃" }
                     ListElement { section: "Transport and map"; glyph: "🚀" }
@@ -561,10 +552,6 @@ Page {
                     ListElement { section: "Horoscope Signs"; glyph: "♑" }
                     ListElement { section: "Horoscope Signs"; glyph: "♒" }
                     ListElement { section: "Horoscope Signs"; glyph: "♓" }
-
-
-
-
 
                 }
                 delegate: BackgroundItem {
