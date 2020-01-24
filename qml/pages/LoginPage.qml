@@ -37,7 +37,6 @@ import "../lib/API.js" as Logic
 
 Page {
     id: loginPage
-
     // The effective value will be restricted by ApplicationWindow.allowedOrientations
     allowedOrientations: Orientation.All
 
