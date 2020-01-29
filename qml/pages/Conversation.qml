@@ -182,7 +182,6 @@ Page {
             id: toot
             anchors {
                 top: warningContent.bottom
-                topMargin: Theme.paddingMediummas
                 left: parent.left
                 right: parent.right
                 rightMargin: Theme.paddingMedium
@@ -222,7 +221,9 @@ Page {
                 right: parent.right
                 rightMargin: Theme.paddingSmall
             }
-            icon.source: "../../qml/images/emojiselect.svg"
+            icon.source: "../../qml/images/emojiselect.svg"  + (pressed
+                                                                ? Theme.secondaryHighlightColor
+                                                                : Theme.secondaryColor)
             onClicked: pageStack.push(firstWizardPage)
         }
         SilicaGridView {
@@ -263,7 +264,6 @@ Page {
             }
         }
         IconButton {
-
             id: btnContentWarning
             anchors {
                 verticalCenter: privacy.verticalCenter
@@ -323,7 +323,6 @@ Page {
             id: privacy
             anchors {
                 top: toot.bottom
-                bottom: parent
                 //topMargin: -Theme.paddingSmall*2
                 left: btnAddImage.right
                 right: btnSend.left
@@ -348,7 +347,7 @@ Page {
             }
             enabled: toot.text !== "" && toot.text.length < tootMaxChar
             onClicked: {
-                var visibility = [ "public", "unlisted", "private", "direct"];
+                var visibility = [ "Public", "Unlisted", "Private", "Direct"];
                 var media_ids = [];
                 for(var k = 0; k < mediaModel.count; k++){
                     console.log(mediaModel.get(k).id)
