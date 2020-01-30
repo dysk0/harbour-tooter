@@ -115,7 +115,7 @@ Page {
                     model: ListModel {
                         ListElement {
                             name: "molan"
-                            desc: qsTrId("Maintainer of this release")
+                            desc: qsTr("Maintainer of this release")
                             mastodon: ""
                             mail: "mol_an@sunrise.ch"
                         }
@@ -127,31 +127,31 @@ Page {
                         }
                         ListElement {
                             name: "Miodrag Nikolić"
-                            desc: qsTrId("Visual identity")
+                            desc: qsTr("Visual identity")
                             mastodon: ""
                             mail: "micotakis@gmail.com"
                         }
                         ListElement {
                             name: "Quentin PAGÈS / Quenti ♏"
-                            desc: qsTrId("Occitan & French translation")
+                            desc: qsTr("Occitan & French translation")
                             mastodon: "Quenti@framapiaf.org"
                             mail: ""
                         }
                         ListElement {
                             name: "André Koot"
-                            desc: qsTrId("Dutch translation")
+                            desc: qsTr("Dutch translation")
                             mastodon: "meneer@mastodon.social"
                             mail: "https://twitter.com/meneer"
                         }
                         ListElement {
                             name: "Carlos Gonzalez / Caballlero"
-                            desc: qsTrId("Spanish translation")
+                            desc: qsTr("Spanish translation")
                             mastodon: ""
                             mail: "carlosgonz@protonmail.com"
                         }
                         ListElement {
                             name: "Mohamed-Touhami MAHDI"
-                            desc: qsTrId("Added README file")
+                            desc: qsTr("Added README file")
                             mastodon: "dragnucs@touha.me"
                             mail: "touhami@touha.me"
                         }
