@@ -207,10 +207,10 @@ Page {
 			text: description !== "" && (description.charAt(0) == '@'
 																	 || description.charAt(
 																		 0) == '#') ? description + ' ' : ''
-            height: Math.max(250, Math.min(900, implicitHeight))
+            height: Math.max(300, Math.min(900, implicitHeight))
             //height: implicitHeight
 			horizontalAlignment: Text.AlignLeft
-            placeholderText: qsTrId("What's on your mind?")
+            placeholderText: qsTr("What's on your mind?")
 			EnterKey.onClicked: {
 				//tweet()
 			}
@@ -362,10 +362,10 @@ Page {
 		ComboBox {
 			id: privacy
 			anchors {
+                top: toot.bottom
 				topMargin: -Theme.paddingSmall * 2
 				left: btnAddImage.right
 				right: btnSend.left
-				bottom: parent.bottom
 			}
 			menu: ContextMenu {
 				MenuItem {
