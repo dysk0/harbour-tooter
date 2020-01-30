@@ -36,31 +36,31 @@
     </message>
     <message>
         <source>Tap to insert</source>
-        <translation>点击插入</translation>
+        <translation>点击以插入</translation>
     </message>
     <message>
         <source>Write your warning here</source>
-        <translation type="unfinished"></translation>
+        <translation>在此编写你的警告信息</translation>
     </message>
     <message>
         <source>Public</source>
-        <translation type="unfinished"></translation>
+        <translation>公共区域</translation>
     </message>
     <message>
         <source>Unlisted</source>
-        <translation type="unfinished"></translation>
+        <translation>不公开</translation>
     </message>
     <message>
         <source>Followers-only</source>
-        <translation type="unfinished"></translation>
+        <translation>仅关注者</translation>
     </message>
     <message>
         <source>Direct</source>
-        <translation type="unfinished"></translation>
+        <translation>私信</translation>
     </message>
     <message>
         <source>What&apos;s on your mind?</source>
-        <translation type="unfinished"></translation>
+        <translation>有何想法?</translation>
     </message>
 </context>
 <context>
@@ -97,7 +97,7 @@
     </message>
     <message>
         <source>Enter a valid Mastodon instance URL</source>
-        <translation type="unfinished"></translation>
+        <translation>输入一个有效的 Mastodon 实例 URL</translation>
     </message>
 </context>
 <context>
@@ -217,11 +217,11 @@
     </message>
     <message>
         <source>Bio</source>
-        <translation type="unfinished"></translation>
+        <translation>Bio</translation>
     </message>
     <message>
         <source>Open Profile in Browser</source>
-        <translation type="unfinished"></translation>
+        <translation>在浏览器打开个人简介</translation>
     </message>
 </context>
 <context>
@@ -268,31 +268,31 @@
     </message>
     <message>
         <source>Load Images in Toots</source>
-        <translation type="unfinished"></translation>
+        <translation在嘟嘟加载图片></translation>
     </message>
     <message>
         <source>Maintainer of this release</source>
-        <translation type="unfinished"></translation>
+        <translation>该发布的维护者</translation>
     </message>
     <message>
         <source>Visual identity</source>
-        <translation type="unfinished"></translation>
+        <translation>视觉识别</translation>
     </message>
     <message>
         <source>Occitan &amp; French translation</source>
-        <translation type="unfinished"></translation>
+        <translation>奥克西坦语及法语翻译</translation>
     </message>
     <message>
         <source>Dutch translation</source>
-        <translation type="unfinished"></translation>
+        <translation>尼德兰语翻译</translation>
     </message>
     <message>
         <source>Spanish translation</source>
-        <translation type="unfinished"></translation>
+        <translation>西班牙语翻译</translation>
     </message>
     <message>
         <source>Added README file</source>
-        <translation type="unfinished"></translation>
+        <translation>已添加 README 文件</translation>
     </message>
 </context>
 <context>
