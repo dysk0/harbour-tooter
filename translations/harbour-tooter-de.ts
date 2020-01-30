@@ -40,27 +40,27 @@
     </message>
     <message>
         <source>Write your warning here</source>
-        <translation type="unfinished"></translation>
+        <translation>Füge eine Inhaltswarnung hinzu</translation>
     </message>
     <message>
         <source>Public</source>
-        <translation type="unfinished"></translation>
+        <translation>Öffentlich</translation>
     </message>
     <message>
         <source>Unlisted</source>
-        <translation type="unfinished"></translation>
+        <translation>Nicht gelistet</translation>
     </message>
     <message>
         <source>Followers-only</source>
-        <translation type="unfinished"></translation>
+        <translation>Nur Follower</translation>
     </message>
     <message>
         <source>Direct</source>
-        <translation type="unfinished"></translation>
+        <translation>Direkt</translation>
     </message>
     <message>
         <source>What&apos;s on your mind?</source>
-        <translation type="unfinished"></translation>
+        <translation>Was möchtest du mitteilen?</translation>
     </message>
 </context>
 <context>
@@ -97,7 +97,7 @@
     </message>
     <message>
         <source>Enter a valid Mastodon instance URL</source>
-        <translation type="unfinished"></translation>
+        <translation>Eine gültige Mastodon-Instanz URL eingeben</translation>
     </message>
 </context>
 <context>
@@ -217,11 +217,11 @@
     </message>
     <message>
         <source>Bio</source>
-        <translation type="unfinished"></translation>
+        <translation>Bio</translation>
     </message>
     <message>
         <source>Open Profile in Browser</source>
-        <translation type="unfinished"></translation>
+        <translation>Profil in Browser öffnen</translation>
     </message>
 </context>
 <context>
@@ -268,31 +268,31 @@
     </message>
     <message>
         <source>Load Images in Toots</source>
-        <translation type="unfinished"></translation>
+        <translation>Bilder in Toots laden</translation>
     </message>
     <message>
         <source>Maintainer of this release</source>
-        <translation type="unfinished"></translation>
+        <translation>Entwicklung dieser Version</translation>
     </message>
     <message>
         <source>Visual identity</source>
-        <translation type="unfinished"></translation>
+        <translation">Visuelle Identität</translation>
     </message>
     <message>
         <source>Occitan &amp; French translation</source>
-        <translation type="unfinished"></translation>
+        <translation>Franzözische Übersetzung</translation>
     </message>
     <message>
         <source>Dutch translation</source>
-        <translation type="unfinished"></translation>
+        <translation>Niederländische Übersetzung</translation>
     </message>
     <message>
         <source>Spanish translation</source>
-        <translation type="unfinished"></translation>
+        <translation>Spanische Übersetzung</translation>
     </message>
     <message>
         <source>Added README file</source>
-        <translation type="unfinished"></translation>
+        <translation>README-Datei erstellt</translation>
     </message>
 </context>
 <context>
