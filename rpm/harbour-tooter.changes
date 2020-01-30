@@ -1,3 +1,11 @@
+* Thu Jan 30 2020 molan <mol_an@sunrise.ch> 1.0.3-6
+- Workaround for opening user profiles in toots
+- Show profile descriptions (Bio) with option to open them in Browser
+- Updated and improved UI for Conversation page
+- Indication for sending toot (move back to previous page)
+- New arrangement of main pages (like used in Mastodon websites and other apps)
+- Small UI and text/label changes
+
 * Thu Jan 16 2020 molan <mol_an@sunrise.ch> 1.0.3-5 [fork of Tooter 1.0.3]
 - Fix for broken profile pages when clicking on usernames in toots
 - Fixed navigation icons for inverted ambiences
