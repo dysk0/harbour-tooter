@@ -37,7 +37,6 @@ import "../lib/API.js" as Logic
 
 Page {
     id: loginPage
-
     // The effective value will be restricted by ApplicationWindow.allowedOrientations
     allowedOrientations: Orientation.All
 
@@ -62,7 +61,7 @@ Page {
             TextField {
                 id: instance
                 focus: true
-                label: qsTr("Enter an Mastodon instance URL")
+                label: qsTr("Enter a valid Mastodon instance URL")
                 text: "https://"
                 placeholderText: "https://mastodon.social"
                 width: parent.width

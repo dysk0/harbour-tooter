@@ -82,7 +82,7 @@ WorkerScript.onMessage = function(msg) {
                     console.log("descendants")
                     for (var j = 0; j < data[i].length; j ++) {
                         item = parseToot(data[i][j]);
-                        item['id'] = item['status_id']
+                        item['id'] = item['status_id'];
                         if (typeof item['attachments'] === "undefined")
                             item['attachments'] = [];
                         items.push(item)

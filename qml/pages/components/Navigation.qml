@@ -21,11 +21,10 @@ SilicaGridView {
             unread: false
         }
         ListElement {
-            icon: "image://theme/icon-m-website"
-            slug: "federated"
-            name: "Federated"
+            icon: "image://theme/icon-m-alarm"
+            slug: "notifications"
+            name: "Notifications"
             active: false
-            unread: false
         }
         ListElement {
             icon: "image://theme/icon-m-whereami"
@@ -35,10 +34,11 @@ SilicaGridView {
             unread: false
         }
         ListElement {
-            icon: "image://theme/icon-m-alarm"
-            slug: "notifications"
-            name: "Notifications"
+            icon: "image://theme/icon-m-website"
+            slug: "federated"
+            name: "Federated"
             active: false
+            unread: false
         }
         ListElement {
             icon: "image://theme/icon-m-search"
