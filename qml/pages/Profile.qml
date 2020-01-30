@@ -290,7 +290,7 @@ Page {
                     anchors.horizontalCenter:     parent.horizontalCenter
                     Button {
                         id: btnUrl
-                        text: ("Open profile in browser")
+                        text: qsTr("Open Profile in Browser")
                         onClicked: {
                             Qt.openUrlExternally(url);
                             }
