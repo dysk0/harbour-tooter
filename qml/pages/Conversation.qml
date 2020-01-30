@@ -210,7 +210,7 @@ Page {
             height: Math.max(250, Math.min(900, implicitHeight))
             //height: implicitHeight
 			horizontalAlignment: Text.AlignLeft
-            placeholderText: "What's on your mind?"
+            placeholderText: qsTrId("What's on your mind?")
 			EnterKey.onClicked: {
 				//tweet()
 			}
