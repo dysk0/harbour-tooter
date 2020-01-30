@@ -21,49 +21,10 @@
     </message>
 </context>
 <context>
-    <name>Browser</name>
-    <message>
-        <source>Open in Browser</source>
-        <translation>Öffne in Browser</translation>
-    </message>
-    <message>
-        <source>Web mode</source>
-        <translation>Web-Modus</translation>
-    </message>
-    <message>
-        <source>Reading mode</source>
-        <translation>Lese-Modus</translation>
-    </message>
-    <message>
-        <source>Copy URL</source>
-        <translation>Kopiere URL</translation>
-    </message>
-</context>
-<context>
     <name>Conversation</name>
     <message>
         <source>Conversation</source>
         <translation>Konversation</translation>
-    </message>
-    <message>
-        <source>Content warning!</source>
-        <translation>Inhaltswarnung!</translation>
-    </message>
-    <message>
-        <source>public</source>
-        <translation>öffentlich</translation>
-    </message>
-    <message>
-        <source>unlisted</source>
-        <translation>nicht aufgeführt</translation>
-    </message>
-    <message>
-        <source>followers only</source>
-        <translation>nur Follower</translation>
-    </message>
-    <message>
-        <source>direct</source>
-        <translation>direkt</translation>
     </message>
     <message>
         <source>Delete</source>
@@ -76,6 +37,30 @@
     <message>
         <source>Tap to insert</source>
         <translation>Tippen um einzufügen</translation>
+    </message>
+    <message>
+        <source>Write your warning here</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Public</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Unlisted</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Followers-only</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Direct</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>What&apos;s on your mind?</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -103,16 +88,16 @@
         <translation>Instanz</translation>
     </message>
     <message>
-        <source>Enter an Mastodon instance URL</source>
-        <translation>Gewünschte Mastodon-Instanz URL eingeben</translation>
-    </message>
-    <message>
         <source>Mastodon is a free, open-source social network. A decentralized alternative to commercial platforms, it avoids the risks of a single company monopolizing your communication. Pick a server that you trust — whichever you choose, you can interact with everyone else. Anyone can run their own Mastodon instance and participate in the social network seamlessly.</source>
         <translation>Mastodon ist ein freies, quelloffenes soziales Netzwerk. Im Gegensatz zu kommerziellen Plattformen, ist Mastodon als dezentrales Netzwerk konzipiert. Somit wird das Risiko vermieden, dass ein einziges Unternehmen die volle Kontrolle über die Kommunikation der Benutzer hat. Benutzer können einer beliebigen Instanz beitreten oder selbst eine eigene betreiben.</translation>
     </message>
     <message>
         <source>Reload</source>
         <translation>Neu laden</translation>
+    </message>
+    <message>
+        <source>Enter a valid Mastodon instance URL</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -230,6 +215,14 @@
         <source>Followers</source>
         <translation>Anhänger</translation>
     </message>
+    <message>
+        <source>Bio</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Open Profile in Browser</source>
+        <translation type="unfinished"></translation>
+    </message>
 </context>
 <context>
     <name>Settings</name>
@@ -254,20 +247,8 @@
         <translation>Zugriff durch diese Anwendung auf eigenes Mastodon-Konto erlauben</translation>
     </message>
     <message>
-        <source>Load images in toots</source>
-        <translation>Bilder in Toots laden</translation>
-    </message>
-    <message>
         <source>Disable this option if you want to preserve your data connection</source>
         <translation>Diese Option deaktivieren um Datenvolumen zu sparen</translation>
-    </message>
-    <message>
-        <source>Translate</source>
-        <translation>Übersetzen</translation>
-    </message>
-    <message>
-        <source>Use Transifex to help with app translation to your language</source>
-        <translation>Transifex benutzen um bei der Übersetzung der Anwendung zu helfen</translation>
     </message>
     <message>
         <source>About</source>
@@ -284,6 +265,34 @@
     <message>
         <source>This application is a forked version of the Mastodon client Tooter, originally developed by Duško Angirević, which fixes various bugs. Source code on &lt;a href=&apos;https://github.com/molan-git/harbour-tooter&apos;&gt;GitHub&lt;/a&gt;.</source>
         <translation>Dies ist ein Fork und Weiterentwicklung der Mastodon-Anwendung Tooter, welche urpsrünglich von Duško Angirević entwickelt wurde. Quellcode auf &lt;a href=&apos;https://github.com/molan-git/harbour-tooter&apos;&gt;GitHub&lt;/a&gt;.</translation>
+    </message>
+    <message>
+        <source>Load Images in Toots</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Maintainer of this release</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Visual identity</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Occitan &amp; French translation</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Dutch translation</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Spanish translation</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Added README file</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>

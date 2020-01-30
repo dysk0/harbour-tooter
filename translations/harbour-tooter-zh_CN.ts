@@ -21,49 +21,10 @@
     </message>
 </context>
 <context>
-    <name>Browser</name>
-    <message>
-        <source>Open in Browser</source>
-        <translation>在浏览器打开</translation>
-    </message>
-    <message>
-        <source>Web mode</source>
-        <translation>网页模式</translation>
-    </message>
-    <message>
-        <source>Reading mode</source>
-        <translation>阅读模式</translation>
-    </message>
-    <message>
-        <source>Copy URL</source>
-        <translation>复制链接</translation>
-    </message>
-</context>
-<context>
     <name>Conversation</name>
     <message>
         <source>Conversation</source>
         <translation>对话</translation>
-    </message>
-    <message>
-        <source>Content warning!</source>
-        <translation>内容警告!</translation>
-    </message>
-    <message>
-        <source>public</source>
-        <translation>公共区域</translation>
-    </message>
-    <message>
-        <source>unlisted</source>
-        <translation>未列的</translation>
-    </message>
-    <message>
-        <source>followers only</source>
-        <translation>仅关注者</translation>
-    </message>
-    <message>
-        <source>direct</source>
-        <translation>直接</translation>
     </message>
     <message>
         <source>Delete</source>
@@ -76,6 +37,30 @@
     <message>
         <source>Tap to insert</source>
         <translation>点击插入</translation>
+    </message>
+    <message>
+        <source>Write your warning here</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Public</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Unlisted</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Followers-only</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Direct</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>What&apos;s on your mind?</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -103,16 +88,16 @@
         <translation>实例</translation>
     </message>
     <message>
-        <source>Enter an Mastodon instance URL</source>
-        <translation>输入一个 Mastodon 实例链接</translation>
-    </message>
-    <message>
         <source>Mastodon is a free, open-source social network. A decentralized alternative to commercial platforms, it avoids the risks of a single company monopolizing your communication. Pick a server that you trust — whichever you choose, you can interact with everyone else. Anyone can run their own Mastodon instance and participate in the social network seamlessly.</source>
         <translation>​Mastodon 是一个自由且开源的社交网络。一个去中心的商业平台的替代品。它能够避免某个公司垄断你的通讯方式的风险。选择一个你所信任的服务器——无论你选择什么，你都可以和其他人进行互动。任何人都能运行他们自己的 Mastodon 实例，然后无缝加入社交网站。</translation>
     </message>
     <message>
         <source>Reload</source>
         <translation>重新加载</translation>
+    </message>
+    <message>
+        <source>Enter a valid Mastodon instance URL</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -230,6 +215,14 @@
         <source>Followers</source>
         <translation>关注者</translation>
     </message>
+    <message>
+        <source>Bio</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Open Profile in Browser</source>
+        <translation type="unfinished"></translation>
+    </message>
 </context>
 <context>
     <name>Settings</name>
@@ -254,20 +247,8 @@
         <translation>授权此软件使用你的 Mastodon 账号</translation>
     </message>
     <message>
-        <source>Load images in toots</source>
-        <translation>在嘟嘟加载图片</translation>
-    </message>
-    <message>
         <source>Disable this option if you want to preserve your data connection</source>
         <translation>如果你想保护你的数据连接，请禁用此选项</translation>
-    </message>
-    <message>
-        <source>Translate</source>
-        <translation>翻译</translation>
-    </message>
-    <message>
-        <source>Use Transifex to help with app translation to your language</source>
-        <translation>使用 Transifex 以帮助此软件翻译为你的语言</translation>
     </message>
     <message>
         <source>About</source>
@@ -284,6 +265,34 @@
     <message>
         <source>This application is a forked version of the Mastodon client Tooter, originally developed by Duško Angirević, which fixes various bugs. Source code on &lt;a href=&apos;https://github.com/molan-git/harbour-tooter&apos;&gt;GitHub&lt;/a&gt;.</source>
         <translation>此软件是一个 Mastodon 客户端 Tooter，原作者为 Duško Angirević。该分支修复了大量缺陷，你可以在此处找到源代码 &lt;a href=&apos;https://github.com/molan-git/harbour-tooter&apos;&gt;GitHub&lt;/a&gt; 。</translation>
+    </message>
+    <message>
+        <source>Load Images in Toots</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Maintainer of this release</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Visual identity</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Occitan &amp; French translation</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Dutch translation</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Spanish translation</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Added README file</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
