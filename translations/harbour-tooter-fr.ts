@@ -40,27 +40,27 @@
     </message>
     <message>
         <source>Write your warning here</source>
-        <translation type="unfinished"></translation>
+        <translation>Avertissement du contenu</translation>
     </message>
     <message>
         <source>Public</source>
-        <translation type="unfinished"></translation>
+        <translation>Public</translation>
     </message>
     <message>
         <source>Unlisted</source>
-        <translation type="unfinished"></translation>
+        <translation>Non coté</translation>
     </message>
     <message>
         <source>Followers-only</source>
-        <translation type="unfinished"></translation>
+        <translation>Que Followers</translation>
     </message>
     <message>
         <source>Direct</source>
-        <translation type="unfinished"></translation>
+        <translation>Direct</translation>
     </message>
     <message>
         <source>What&apos;s on your mind?</source>
-        <translation type="unfinished"></translation>
+        <translation>A quoi penses-tu?</translation>
     </message>
 </context>
 <context>
@@ -97,7 +97,7 @@
     </message>
     <message>
         <source>Enter a valid Mastodon instance URL</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Entrer l&apos;URL d&apos;une instance de Mastodon</translation>
     </message>
 </context>
 <context>
@@ -221,7 +221,7 @@
     </message>
     <message>
         <source>Open Profile in Browser</source>
-        <translation type="unfinished"></translation>
+        <translation>Ouvrir dans le navigateur</translation>
     </message>
 </context>
 <context>
