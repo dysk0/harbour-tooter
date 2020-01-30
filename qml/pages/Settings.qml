@@ -57,29 +57,29 @@ Page {
                 IconTextSwitch {
                     //enabled: false
                     checked: typeof Logic.conf['loadImages'] !== "undefined" && Logic.conf['loadImages']
-                    text: qsTr("Load images in toots")
+                    text: qsTr("Load Images in Toots")
                     description: qsTr("Disable this option if you want to preserve your data connection")
                     icon.source: "image://theme/icon-m-mobile-network"
                     onClicked: {
                         Logic.conf['loadImages'] = checked
                     }
                 }
-                IconTextSwitch {
-                    text: qsTr("Translate")
-                    description: qsTr("Use Transifex to help with app translation to your language")
-                    icon.source: "image://theme/icon-m-presence"
-                    onCheckedChanged: {
-                        busy = true;
-                        checked = false;
-                        Qt.openUrlExternally("https://www.transifex.com/dysko/tooter/");
-                        timer2.start()
-                    }
-                    Timer {
-                        id: timer2
-                        interval: 4700
-                        onTriggered: parent.busy = false
-                    }
-                }
+//                IconTextSwitch {
+//                    text: qsTr("Translate")
+//                    description: qsTr("Use Transifex to help with app translation to your language")
+//                    icon.source: "image://theme/icon-m-presence"
+//                    onCheckedChanged: {
+//                        busy = true;
+//                        checked = false;
+//                        Qt.openUrlExternally("https://www.transifex.com/dysko/tooter/");
+//                        timer2.start()
+//                    }
+//                    Timer {
+//                        id: timer2
+//                        interval: 4700
+//                        onTriggered: parent.busy = false
+//                    }
+//                }
             }
 
             SectionHeader {
@@ -114,6 +114,12 @@ Page {
                 Repeater {
                     model: ListModel {
                         ListElement {
+                            name: "molan"
+                            desc: qsTrId("Maintainer of this release")
+                            mastodon: ""
+                            mail: "mol_an@sunrise.ch"
+                        }
+                        ListElement {
                             name: "Duško Angirević"
                             desc: qsTr("UI/UX design and development")
                             mastodon: "dysko@mastodon.social"
@@ -121,38 +127,31 @@ Page {
                         }
                         ListElement {
                             name: "Miodrag Nikolić"
-                            desc: "visual identity"
+                            desc: qsTrId("Visual identity")
                             mastodon: ""
                             mail: "micotakis@gmail.com"
                         }
                         ListElement {
-                            name: "Molan"
-                            desc: "Maintainer of this forked version"
-                            mastodon: ""
-                            mail: "mol_an@sunrise.ch"
-                        }
-                        ListElement {
                             name: "Quentin PAGÈS / Quenti ♏"
-                            desc: "Occitan & French translation"
+                            desc: qsTrId("Occitan & French translation")
                             mastodon: "Quenti@framapiaf.org"
                             mail: ""
                         }
                         ListElement {
                             name: "André Koot"
-                            desc: "Dutch translation"
+                            desc: qsTrId("Dutch translation")
                             mastodon: "meneer@mastodon.social"
                             mail: "https://twitter.com/meneer"
                         }
                         ListElement {
                             name: "Carlos Gonzalez / Caballlero"
-                            desc: "Español translation"
+                            desc: qsTrId("Spanish translation")
                             mastodon: ""
                             mail: "carlosgonz@protonmail.com"
                         }
-
                         ListElement {
                             name: "Mohamed-Touhami MAHDI"
-                            desc: "Added README file"
+                            desc: qsTrId("Added README file")
                             mastodon: "dragnucs@touha.me"
                             mail: "touhami@touha.me"
                         }
