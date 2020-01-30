@@ -251,7 +251,7 @@ Page {
                     x: Theme.horizontalPageMargin
                     width: parent.width  - ( 2 * Theme.horizontalPageMargin )
                     id: txtnote
-                    text: qsTr(note)
+                    text: note
                     font.pixelSize: Theme.fontSizeExtraSmall
                     color: Theme.secondaryColor
                     linkColor: Theme.secondaryHighlightColor
