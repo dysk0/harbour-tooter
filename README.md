@@ -9,7 +9,7 @@ This is a fork of dysk0/harbour-tooter. The app can by downloaded here: https://
 Clone / download this repository and import it in your SailfishOS IDE using the harbour-tooter.pro project file. No additional configuration needed. 
 
 ## Screenshots
-<img width="200" title="Page Home" src="https://telegra.ph/file/710bba46d9f818e0f88ab.png"> <img width="200" title="Page Profile" src="https://telegra.ph/file/94b49dddeb175c3f838c1.png"> <img width="200" title="Page Conversation" src="https://telegra.ph/file/a903149d8bf67627f26e6.png"> 
+<img width="200" title="Page Home" src="https://telegra.ph/file/710bba46d9f818e0f88ab.png"> <img width="200" title="Page Profile" src="https://telegra.ph/file/c5b504f637c874861eeee.png"> <img width="200" title="Page Conversation" src="https://telegra.ph/file/c9584f8d68c89827c53e5.png"> 
 
 ## License
 Licensed under GNU GPLv3
