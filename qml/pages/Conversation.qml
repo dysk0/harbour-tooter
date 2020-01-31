@@ -237,7 +237,7 @@ Page {
 			}
 
 			anchors {
-                top: warningContent.bottom + 4
+                top: warningContent.bottom
 				bottom: bottom.top
 				right: parent.right
 				rightMargin: Theme.paddingSmall
