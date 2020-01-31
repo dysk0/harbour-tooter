@@ -268,31 +268,31 @@
     </message>
     <message>
         <source>Load Images in Toots</source>
-        <translation type="unfinished"></translation>
+        <translation>Charger images dans pouets</translation>
     </message>
     <message>
         <source>Maintainer of this release</source>
-        <translation type="unfinished"></translation>
+        <translation>Développement de cette version</translation>
     </message>
     <message>
         <source>Visual identity</source>
-        <translation type="unfinished"></translation>
+        <translation type>Identité visuelle</translation>
     </message>
     <message>
         <source>Occitan &amp; French translation</source>
-        <translation type="unfinished"></translation>
+        <translation>Traduction français</translation>
     </message>
     <message>
         <source>Dutch translation</source>
-        <translation type="unfinished"></translation>
+        <translation>Traduction néerlandaise</translation>
     </message>
     <message>
         <source>Spanish translation</source>
-        <translation type="unfinished"></translation>
+        <translation>Traduction espagnole</translation>
     </message>
     <message>
-        <source>Added README file</source>
-        <translation type="unfinished"></translation>
+        <source>Chinese translation</source>
+        <translation>Traduction chinoise</translation>
     </message>
 </context>
 <context>
