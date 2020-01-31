@@ -138,6 +138,12 @@ Page {
                             mail: ""
                         }
                         ListElement {
+                            name: "Luchy Kon / dashinfantry"
+                            desc: qsTr("Chinese translation")
+                            mastodon: ""
+                            mail: "dashinfantry@gmail.com"
+                        }
+                        ListElement {
                             name: "André Koot"
                             desc: qsTr("Dutch translation")
                             mastodon: "meneer@mastodon.social"
@@ -148,6 +154,12 @@ Page {
                             desc: qsTr("Spanish translation")
                             mastodon: ""
                             mail: "carlosgonz@protonmail.com"
+                        }
+                        ListElement {
+                            name: "Mohamed-Touhami MAHDI"
+                            desc: qsTr("Added README file")
+                            mastodon: "dragnucs@touha.me"
+                            mail: "touhami@touha.me"
                         }
                     }
 
