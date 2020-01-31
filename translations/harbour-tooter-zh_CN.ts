@@ -294,7 +294,7 @@
         <source>Added README file</source>
         <translation>已添加 README 文件</translation>
     </message>
-	    <message>
+    <message>
         <source>Chinese translation</source>
         <translation>汉语翻译</translation>
     </message>
