@@ -149,12 +149,6 @@ Page {
                             mastodon: ""
                             mail: "carlosgonz@protonmail.com"
                         }
-                        ListElement {
-                            name: "Mohamed-Touhami MAHDI"
-                            desc: qsTr("Added README file")
-                            mastodon: "dragnucs@touha.me"
-                            mail: "touhami@touha.me"
-                        }
                     }
 
                     Item {
