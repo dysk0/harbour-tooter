@@ -207,7 +207,7 @@ Page {
 			text: description !== "" && (description.charAt(0) == '@'
 																	 || description.charAt(
 																		 0) == '#') ? description + ' ' : ''
-            height: Math.max(300, Math.min(900, implicitHeight))
+            height: Math.max(270, Math.min(900, implicitHeight))
             //height: implicitHeight
 			horizontalAlignment: Text.AlignLeft
             placeholderText: qsTr("What's on your mind?")

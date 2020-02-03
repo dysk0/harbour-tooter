@@ -294,6 +294,10 @@
         <source>Added README file</source>
         <translation type="unfinished"></translation>
     </message>
+    <message>
+        <source>Chinese translation</source>
+        <translation type="unfinished"></translation>
+    </message>
 </context>
 <context>
     <name>Toot</name>

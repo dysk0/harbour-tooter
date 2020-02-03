@@ -1,3 +1,6 @@
+* Thu Feb 03 2020 molan <mol_an@sunrise.ch> 1.0.3-7
+- Updated translations for new language strings
+
 * Thu Jan 30 2020 molan <mol_an@sunrise.ch> 1.0.3-6
 - Workaround for opening user profiles in toots
 - Show profile descriptions (Bio) with option to open them in Browser

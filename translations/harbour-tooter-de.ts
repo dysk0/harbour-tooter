@@ -13,7 +13,7 @@
     </message>
     <message>
         <source>boosted</source>
-        <translation>verstärkt</translation>
+        <translation>geboostet</translation>
     </message>
     <message>
         <source>said</source>
@@ -135,7 +135,7 @@
     <name>MiniStatus</name>
     <message>
         <source>boosted</source>
-        <translation>verstärkt</translation>
+        <translation>geboostet</translation>
     </message>
     <message>
         <source>favourited</source>
@@ -294,12 +294,16 @@
         <source>Added README file</source>
         <translation>README-Datei erstellt</translation>
     </message>
+    <message>
+        <source>Chinese translation</source>
+        <translation>Chinesische Übersetzung</translation>
+    </message>
 </context>
 <context>
     <name>Toot</name>
     <message>
         <source>boosted</source>
-        <translation>verstärkt</translation>
+        <translation>geboostet</translation>
     </message>
     <message>
         <source>favourited</source>
@@ -314,11 +318,11 @@
     <name>VisualContainer</name>
     <message>
         <source>Unboost</source>
-        <translation type="unfinished"></translation>
+        <translation>Nicht boosten</translation>
     </message>
     <message>
         <source>Boost</source>
-        <translation type="unfinished"></translation>
+        <translation>Boosten</translation>
     </message>
     <message>
         <source>Unfavorite</source>
