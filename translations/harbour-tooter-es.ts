@@ -264,7 +264,7 @@
     </message>
     <message>
         <source>This application is a forked version of the Mastodon client Tooter, originally developed by Duško Angirević, which fixes various bugs. Source code on &lt;a href=&apos;https://github.com/molan-git/harbour-tooter&apos;&gt;GitHub&lt;/a&gt;.</source>
-        <translation>Esta apicación es una versión bifurcada del cliente de Mastodon Tooter, desarrollada originalmente por Duško Angirević, que corrige varios errores. Código fuente en &lt;a href=&apos;https://github.com/molan-git/harbour-tooter&apos;&gt;GitHub&lt;/a&gt;.</translation>
+        <translation>Esta aplicación es una versión bifurcada del cliente de Mastodon Tooter, desarrollada originalmente por Duško Angirević, que corrige varios errores. Código fuente en &lt;a href=&apos;https://github.com/molan-git/harbour-tooter&apos;&gt;GitHub&lt;/a&gt;.</translation>
     </message>
     <message>
         <source>Load Images in Toots</source>
