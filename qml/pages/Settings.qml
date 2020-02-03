@@ -150,10 +150,10 @@ Page {
                             mail: "https://twitter.com/meneer"
                         }
                         ListElement {
-                            name: "Carlos Gonzalez / Caballlero"
+                            name: "CarmenFdez"
                             desc: qsTr("Spanish translation")
                             mastodon: ""
-                            mail: "carlosgonz@protonmail.com"
+                            mail: ""
                         }
                         ListElement {
                             name: "Mohamed-Touhami MAHDI"
