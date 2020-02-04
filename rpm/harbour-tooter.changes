@@ -1,4 +1,8 @@
-* Thu Feb 03 2020 molan <mol_an@sunrise.ch> 1.0.3-7
+* Tue Feb 04 2020 molan <mol_an@sunrise.ch> 1.0.3-8
+- Fix for broken translations
+- Updated Spanish translation
+
+* Mon Feb 03 2020 molan <mol_an@sunrise.ch> 1.0.3-7
 - Updated translations for new language strings
 
 * Thu Jan 30 2020 molan <mol_an@sunrise.ch> 1.0.3-6
