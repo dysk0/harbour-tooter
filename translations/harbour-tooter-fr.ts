@@ -276,7 +276,7 @@
     </message>
     <message>
         <source>Visual identity</source>
-        <translation type>Identité visuelle</translation>
+        <translation>Identité visuelle</translation>
     </message>
     <message>
         <source>Occitan &amp; French translation</source>
@@ -293,6 +293,10 @@
     <message>
         <source>Chinese translation</source>
         <translation>Traduction chinoise</translation>
+    </message>
+    <message>
+        <source>Added README file</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -322,11 +326,11 @@
     </message>
     <message>
         <source>Unfavorite</source>
-        <translation type="unfinished"></translation>
+        <translation>Defavoriser</translation>
     </message>
     <message>
         <source>Favorite</source>
-        <translation type="unfinished"></translation>
+        <translation>Favoriser</translation>
     </message>
 </context>
 </TS>

@@ -268,7 +268,7 @@
     </message>
     <message>
         <source>Load Images in Toots</source>
-        <translation在嘟嘟加载图片></translation>
+        <translation>在嘟嘟加载图片</translation>
     </message>
     <message>
         <source>Maintainer of this release</source>

@@ -276,7 +276,7 @@
     </message>
     <message>
         <source>Visual identity</source>
-        <translation">Visuelle Identität</translation>
+        <translation>Visuelle Identität</translation>
     </message>
     <message>
         <source>Occitan &amp; French translation</source>
