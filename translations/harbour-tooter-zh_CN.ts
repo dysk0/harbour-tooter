@@ -89,7 +89,7 @@
     </message>
     <message>
         <source>Mastodon is a free, open-source social network. A decentralized alternative to commercial platforms, it avoids the risks of a single company monopolizing your communication. Pick a server that you trust — whichever you choose, you can interact with everyone else. Anyone can run their own Mastodon instance and participate in the social network seamlessly.</source>
-        <translation>​Mastodon 是一个自由且开源的社交网络。一个去中心的商业平台的替代品。它能够避免某个公司垄断你的通讯方式的风险。选择一个你所信任的服务器——无论你选择什么，你都可以和其他人进行互动。任何人都能运行他们自己的 Mastodon 实例，然后无缝加入社交网站。</translation>
+        <translation>​Mastodon 是一个自由且开源的社交网络。一个去中心化的商业平台的替代品。它能够避免某个公司垄断你的通讯方式的风险。选择一个你所信任的服务器——无论你选择什么，你都可以和其他人进行互动。任何人都能运行他们自己的 Mastodon 实例，然后无缝加入社交网站。</translation>
     </message>
     <message>
         <source>Reload</source>
@@ -169,7 +169,7 @@
     <name>Profile</name>
     <message>
         <source>Unfollow</source>
-        <translation>未关注</translation>
+        <translation>取消关注</translation>
     </message>
     <message>
         <source>Follow request sent!</source>
@@ -217,7 +217,7 @@
     </message>
     <message>
         <source>Bio</source>
-        <translation>Bio</translation>
+        <translation>简介</translation>
     </message>
     <message>
         <source>Open Profile in Browser</source>
@@ -292,7 +292,7 @@
     </message>
     <message>
         <source>Added README file</source>
-        <translation>已添加 README 文件</translation>
+        <translation>添加 README 文件</translation>
     </message>
     <message>
         <source>Chinese translation</source>
