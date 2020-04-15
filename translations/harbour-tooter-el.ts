@@ -21,49 +21,10 @@
     </message>
 </context>
 <context>
-    <name>Browser</name>
-    <message>
-        <source>Open in Browser</source>
-        <translation>Άνοιγμα στον φυλλομετρητή</translation>
-    </message>
-    <message>
-        <source>Web mode</source>
-        <translation>Λειτουργία ιστού</translation>
-    </message>
-    <message>
-        <source>Reading mode</source>
-        <translation>Λειτουργία ανάγνωσης</translation>
-    </message>
-    <message>
-        <source>Copy URL</source>
-        <translation>Αντιγραφή διεύθυνσης URL</translation>
-    </message>
-</context>
-<context>
     <name>Conversation</name>
     <message>
         <source>Conversation</source>
         <translation>Συνομιλία</translation>
-    </message>
-    <message>
-        <source>Content warning!</source>
-        <translation>Προειδοποίηση περιεχομένου!</translation>
-    </message>
-    <message>
-        <source>public</source>
-        <translation>δημόσιο</translation>
-    </message>
-    <message>
-        <source>unlisted</source>
-        <translation>μη καταχωρημένο</translation>
-    </message>
-    <message>
-        <source>followers only</source>
-        <translation>μόνο αυτοί που σας ακολουθούν</translation>
-    </message>
-    <message>
-        <source>direct</source>
-        <translation>απευθείας</translation>
     </message>
     <message>
         <source>Delete</source>
@@ -76,6 +37,30 @@
     <message>
         <source>Tap to insert</source>
         <translation>Κτυπήστε για εισαγωγή</translation>
+    </message>
+    <message>
+        <source>Write your warning here</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>What&apos;s on your mind?</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Public</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Unlisted</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Followers-only</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Direct</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -96,7 +81,7 @@
     <name>LoginPage</name>
     <message>
         <source>Login</source>
-        <translation type="unfinished"></translation>
+        <translation>Σύνδεση</translation>
     </message>
     <message>
         <source>Instance</source>
@@ -230,51 +215,83 @@
         <source>Followers</source>
         <translation>Σας ακολουθούν</translation>
     </message>
+    <message>
+        <source>Bio</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Open Profile in Browser</source>
+        <translation type="unfinished"></translation>
+    </message>
 </context>
 <context>
     <name>Settings</name>
     <message>
         <source>Settings</source>
-        <translation type="unfinished">Ρυθμίσεις</translation>
+        <translation>Ρυθμίσεις</translation>
     </message>
     <message>
         <source>Remove Account</source>
-        <translation type="unfinished"></translation>
+        <translation>Αφαίρεση λογαριασμού</translation>
     </message>
     <message>
         <source>Add Account</source>
-        <translation type="unfinished"></translation>
+        <translation>Προσθήκη λογαριασμού</translation>
     </message>
     <message>
         <source>Deauthorize this app and remove your account</source>
-        <translation type="unfinished"></translation>
+        <translation>Άρση της αδειοδότησης της εφαρμογής και αφαίρεση του λογαριασμού σας</translation>
     </message>
     <message>
         <source>Authorize this app to use your Mastodon account in your behalf</source>
-        <translation type="unfinished"></translation>
+        <translation>Να επιτρέπεται στην εφαρμογή να χρησιμοποιεί τον λογαριασμό σας στο Mastodon εκ μέρους σας</translation>
     </message>
     <message>
         <source>Load images in toots</source>
-        <translation type="unfinished"></translation>
+        <translation>Φόρτωση των εικόνων στα toot</translation>
     </message>
     <message>
         <source>Disable this option if you want to preserve your data connection</source>
-        <translation type="unfinished"></translation>
+        <translation>Απενεργοποιήστε αυτήν την επιλογή αν θέλετε να διατηρήσετε την σύνδεση των δεδομένων σας</translation>
     </message>
     <message>
         <source>Translate</source>
-        <translation type="unfinished"></translation>
+        <translation>Μετάφραση</translation>
     </message>
     <message>
         <source>Use Transifex to help with app translation to your language</source>
-        <translation type="unfinished"></translation>
+        <translation>Χρησιμοποιήστε το Transifex για να βοηθήσετε την μετάφραση της εφαρμογής στην γλώσσα σας</translation>
     </message>
     <message>
         <source>Credits</source>
-        <translation type="unfinished"></translation>
+        <translation>Ευχαριστίες</translation>
     </message>
     <message>
         <source>UI/UX design and development</source>
+        <translation>UI/UX σχεδιασμός και ανάπτυξη</translation>
+    </message>
+    <message>
+        <source>Visual identity</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Occitan &amp; French translation</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Dutch translation</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Spanish translation</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Added README file</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Development and maintenence</source>
         <translation type="unfinished"></translation>
     </message>
 </context>

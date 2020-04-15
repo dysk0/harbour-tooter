@@ -19,7 +19,7 @@ Item {
     }*/
     Rectangle {
         anchors.fill: parent
-        opacity: 0.1
+        opacity: 0.2
         gradient: Gradient {
             GradientStop { position: 0.0; color: Theme.highlightBackgroundColor }
             GradientStop { position: 1.0; color: Theme.highlightBackgroundColor  }
@@ -51,7 +51,7 @@ Item {
             id: ttl
             text: title
             height: contentHeight
-            color: Theme.highlightColor
+            color: Theme.primaryColor
             font.pixelSize: Theme.fontSizeLarge
             font.family: Theme.fontFamilyHeading
             horizontalAlignment: Text.AlignRight
@@ -61,7 +61,7 @@ Item {
         Label {
             height: description === "" ? 0 : contentHeight
             text: description
-            color: Theme.secondaryHighlightColor
+            color: Theme.primaryColor
             font.pixelSize: Theme.fontSizeSmall
             font.family: Theme.fontFamilyHeading
             horizontalAlignment: Text.AlignRight

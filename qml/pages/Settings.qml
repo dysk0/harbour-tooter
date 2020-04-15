@@ -102,32 +102,38 @@ Page {
                         }
                         ListElement {
                             name: "Miodrag Nikolić"
-                            desc: "visual identity"
+                            desc: qsTr("Visual identity")
                             mastodon: ""
                             mail: "micotakis@gmail.com"
                         }
                         ListElement {
+                            name: "molan"
+                            desc: qsTr("Development and maintenence")
+                            mastodon: ""
+                            mail: "mol_an@sunrise.ch"
+                        }
+                        ListElement {
                             name: "Quentin PAGÈS / Quenti ♏"
-                            desc: "Occitan & French translation"
+                            desc: qsTr("Occitan & French translation")
                             mastodon: "Quenti@framapiaf.org"
                             mail: ""
                         }
                         ListElement {
                             name: "André Koot"
-                            desc: "Dutch translation"
+                            desc: qsTr("Dutch translation")
                             mastodon: "meneer@mastodon.social"
                             mail: "https://twitter.com/meneer"
                         }
                         ListElement {
-                            name: "Carlos Gonzalez / Caballlero"
-                            desc: "Español translation"
+                            name: "CarmenFdez"
+                            desc: qsTr("Spanish translation")
                             mastodon: ""
-                            mail: "carlosgonz@protonmail.com"
+                            mail: ""
                         }
 
                         ListElement {
                             name: "Mohamed-Touhami MAHDI"
-                            desc: "Added README file"
+                            desc: qsTr("Added README file")
                             mastodon: "dragnucs@touha.me"
                             mail: "touhami@touha.me"
                         }

@@ -21,49 +21,10 @@
     </message>
 </context>
 <context>
-    <name>Browser</name>
-    <message>
-        <source>Open in Browser</source>
-        <translation>Отвори у прегледнику веба</translation>
-    </message>
-    <message>
-        <source>Web mode</source>
-        <translation>Прегледник веба</translation>
-    </message>
-    <message>
-        <source>Reading mode</source>
-        <translation>Мод за читање</translation>
-    </message>
-    <message>
-        <source>Copy URL</source>
-        <translation>Kopiraj link</translation>
-    </message>
-</context>
-<context>
     <name>Conversation</name>
     <message>
         <source>Conversation</source>
         <translation>Разговор</translation>
-    </message>
-    <message>
-        <source>Content warning!</source>
-        <translation>Упозорење на садржај</translation>
-    </message>
-    <message>
-        <source>public</source>
-        <translation>јавно</translation>
-    </message>
-    <message>
-        <source>unlisted</source>
-        <translation>не приказано</translation>
-    </message>
-    <message>
-        <source>followers only</source>
-        <translation>само за пратиоце</translation>
-    </message>
-    <message>
-        <source>direct</source>
-        <translation>директна порука</translation>
     </message>
     <message>
         <source>Delete</source>
@@ -76,6 +37,30 @@
     <message>
         <source>Tap to insert</source>
         <translation>Тапни за убацивање</translation>
+    </message>
+    <message>
+        <source>Write your warning here</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>What&apos;s on your mind?</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Public</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Unlisted</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Followers-only</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Direct</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -96,23 +81,23 @@
     <name>LoginPage</name>
     <message>
         <source>Login</source>
-        <translation type="unfinished"></translation>
+        <translation>Пријава</translation>
     </message>
     <message>
         <source>Instance</source>
-        <translation type="unfinished"></translation>
+        <translation>Инстанца</translation>
     </message>
     <message>
         <source>Enter an Mastodon instance URL</source>
-        <translation type="unfinished"></translation>
+        <translation>Унесите URL ваше Мастодон инстанце</translation>
     </message>
     <message>
         <source>Mastodon is a free, open-source social network. A decentralized alternative to commercial platforms, it avoids the risks of a single company monopolizing your communication. Pick a server that you trust — whichever you choose, you can interact with everyone else. Anyone can run their own Mastodon instance and participate in the social network seamlessly.</source>
-        <translation type="unfinished"></translation>
+        <translation>Mastodon је бесплатна, open-source друштвена мрежа. Децентрализована алтернатива комерцијалним платформама која избегава ризике једне компаније која монополизује вашу комуникацију. Одаберите сервер у који имате поверења и без обзира на ваш избор - комуницирајте с осталим корисницима других мрежа. Свако може водити сопствену инстанцу Mastodon мреже и учестовати у комуникацији с другим инстанцама.</translation>
     </message>
     <message>
         <source>Reload</source>
-        <translation type="unfinished"></translation>
+        <translation>освежи</translation>
     </message>
 </context>
 <context>
@@ -230,51 +215,83 @@
         <source>Followers</source>
         <translation>Пратиоци</translation>
     </message>
+    <message>
+        <source>Bio</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Open Profile in Browser</source>
+        <translation type="unfinished"></translation>
+    </message>
 </context>
 <context>
     <name>Settings</name>
     <message>
         <source>Settings</source>
-        <translation type="unfinished">Подешавања</translation>
+        <translation>Подешавања</translation>
     </message>
     <message>
         <source>Remove Account</source>
-        <translation type="unfinished"></translation>
+        <translation>Уклони налог</translation>
     </message>
     <message>
         <source>Add Account</source>
-        <translation type="unfinished"></translation>
+        <translation>Додај налог</translation>
     </message>
     <message>
         <source>Deauthorize this app and remove your account</source>
-        <translation type="unfinished"></translation>
+        <translation>Укините дозволе за кориштење и уклоните налог с телефона</translation>
     </message>
     <message>
         <source>Authorize this app to use your Mastodon account in your behalf</source>
-        <translation type="unfinished"></translation>
+        <translation>Дозволите овој апликацији да користи ваш Mastodon налог</translation>
     </message>
     <message>
         <source>Load images in toots</source>
-        <translation type="unfinished"></translation>
+        <translation>Прикажи слике у објавама</translation>
     </message>
     <message>
         <source>Disable this option if you want to preserve your data connection</source>
-        <translation type="unfinished"></translation>
+        <translation>Искључите ову опцију уколико желите да уштедите на преносу података</translation>
     </message>
     <message>
         <source>Translate</source>
-        <translation type="unfinished"></translation>
+        <translation>Преведи</translation>
     </message>
     <message>
         <source>Use Transifex to help with app translation to your language</source>
-        <translation type="unfinished"></translation>
+        <translation>Користите Transifex и помозите у преводу апликације на други језик</translation>
     </message>
     <message>
         <source>Credits</source>
-        <translation type="unfinished"></translation>
+        <translation>Спомен плоча</translation>
     </message>
     <message>
         <source>UI/UX design and development</source>
+        <translation>интерфејс дизајн и развој</translation>
+    </message>
+    <message>
+        <source>Visual identity</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Occitan &amp; French translation</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Dutch translation</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Spanish translation</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Added README file</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Development and maintenence</source>
         <translation type="unfinished"></translation>
     </message>
 </context>

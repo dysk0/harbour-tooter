@@ -1,95 +1,80 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE TS>
-<TS version="2.1">
+<TS version="2.1" language="pl_PL">
 <context>
     <name>API</name>
     <message>
         <source>favourited</source>
-        <translation type="unfinished">dodał(a) do ulubionych</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>followed you</source>
-        <translation>zaczął(-ęła) Cię śledzić</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>boosted</source>
-        <translation>podbił(a)</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>said</source>
-        <translation>napisał(a)</translation>
-    </message>
-</context>
-<context>
-    <name>Browser</name>
-    <message>
-        <source>Open in Browser</source>
-        <translation>Otwórz w przeglądarce</translation>
-    </message>
-    <message>
-        <source>Web mode</source>
-        <translation>Tryb sieci</translation>
-    </message>
-    <message>
-        <source>Reading mode</source>
-        <translation>Tryb czytania</translation>
-    </message>
-    <message>
-        <source>Copy URL</source>
-        <translation>Kopiuj URL</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
     <name>Conversation</name>
     <message>
         <source>Conversation</source>
-        <translation>Konwersacja</translation>
-    </message>
-    <message>
-        <source>Content warning!</source>
-        <translation>Ostrzeżenie o zawartości!</translation>
-    </message>
-    <message>
-        <source>public</source>
-        <translation>publiczny</translation>
-    </message>
-    <message>
-        <source>unlisted</source>
-        <translation>niewidoczny</translation>
-    </message>
-    <message>
-        <source>followers only</source>
-        <translation>tylko dla śledzących</translation>
-    </message>
-    <message>
-        <source>direct</source>
-        <translation>bezpośredni</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Delete</source>
-        <translation>Usuń</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Emojis</source>
-        <translation>Emoji</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Tap to insert</source>
-        <translation>Dotknij aby wstawić</translation>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Write your warning here</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>What&apos;s on your mind?</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Public</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Unlisted</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Followers-only</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Direct</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
     <name>ImageFullScreen</name>
     <message>
         <source>Error loading</source>
-        <translation>Błąd ładowania</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
     <name>ImageUploader</name>
     <message>
         <source>The file %1 does not exists</source>
-        <translation>Plik %1 nie istnieje</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -119,123 +104,131 @@
     <name>MainPage</name>
     <message>
         <source>Home</source>
-        <translation>Strona główna</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Notifications</source>
-        <translation>Powiadomienia</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>New Toot</source>
-        <translation>Nowy wpis</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Search</source>
-        <translation>Szukaj</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>@user or #term</source>
-        <translation>@użytkownik lub #tag</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Local</source>
-        <translation>Lokalne</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Federated</source>
-        <translation>Globalne</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
     <name>MiniStatus</name>
     <message>
         <source>boosted</source>
-        <translation>podbił(a)</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>favourited</source>
-        <translation>dodał(a) do ulubionych</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>followed you</source>
-        <translation>zaczął(-ęła) Cię śledzić</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
     <name>MyList</name>
     <message>
         <source>Load more</source>
-        <translation>Załaduj więcej</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Settings</source>
-        <translation>Ustawienia</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Loading</source>
-        <translation>Ładowanie</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>please wait...</source>
-        <translation>proszę czekać…</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
     <name>Profile</name>
     <message>
         <source>Unfollow</source>
-        <translation>Przestań śledzić</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Follow request sent!</source>
-        <translation>Wysłano prośbę o możliwość śledzenia!</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Following</source>
-        <translation>Śledzisz</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Mute</source>
-        <translation>Wycisz</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Unmute</source>
-        <translation>Unmute</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Unblock</source>
-        <translation>Unblock</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Block</source>
-        <translation>Block</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Statuses</source>
-        <translation>Statuses</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Favourites</source>
-        <translation>Favourites</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Follow</source>
-        <translation>Follow</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Summary</source>
-        <translation>Summary</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Followers</source>
-        <translation>Followers</translation>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Bio</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Open Profile in Browser</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
     <name>Settings</name>
     <message>
         <source>Settings</source>
-        <translation type="unfinished">Ustawienia</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Remove Account</source>
@@ -277,39 +270,63 @@
         <source>UI/UX design and development</source>
         <translation type="unfinished"></translation>
     </message>
+    <message>
+        <source>Visual identity</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Occitan &amp; French translation</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Dutch translation</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Spanish translation</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Added README file</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Development and maintenence</source>
+        <translation type="unfinished"></translation>
+    </message>
 </context>
 <context>
     <name>Toot</name>
     <message>
         <source>boosted</source>
-        <translation>podbił(a)</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>favourited</source>
-        <translation>dodał(a) do ulubionych</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>followed you</source>
-        <translation>zaczął(-ęła Cię śledzić)</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
     <name>VisualContainer</name>
     <message>
         <source>Unboost</source>
-        <translation>Cofnij podbicie</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Boost</source>
-        <translation>Podbij</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Unfavorite</source>
-        <translation>Usuń z ulubionych</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Favorite</source>
-        <translation>Dodaj do ulubionych</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 </TS>
