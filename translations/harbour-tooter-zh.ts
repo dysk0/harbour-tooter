@@ -96,7 +96,7 @@
     <name>LoginPage</name>
     <message>
         <source>Login</source>
-        <translation type="unfinished"></translation>
+        <translation>登录</translation>
     </message>
     <message>
         <source>Instance</source>
@@ -104,11 +104,11 @@
     </message>
     <message>
         <source>Enter an Mastodon instance URL</source>
-        <translation type="unfinished"></translation>
+        <translation>输入一个Mastodon链接实例</translation>
     </message>
     <message>
         <source>Mastodon is a free, open-source social network. A decentralized alternative to commercial platforms, it avoids the risks of a single company monopolizing your communication. Pick a server that you trust — whichever you choose, you can interact with everyone else. Anyone can run their own Mastodon instance and participate in the social network seamlessly.</source>
-        <translation type="unfinished"></translation>
+        <translation>Mastodon 是一个免费且开源的社交网络。一个去中心化的商业平台的替代品，帮助你避免某个公司垄断你的通讯方式的风险。选取一个你信任的服务器，无论你选择什么，你都可以和其它任何人互动。任何人都能运行他们的Mastodon 实例并且无缝加入此社交网络。</translation>
     </message>
     <message>
         <source>Reload</source>
@@ -235,47 +235,47 @@
     <name>Settings</name>
     <message>
         <source>Settings</source>
-        <translation type="unfinished">设置</translation>
+        <translation>设置</translation>
     </message>
     <message>
         <source>Remove Account</source>
-        <translation type="unfinished"></translation>
+        <translation>删除账户</translation>
     </message>
     <message>
         <source>Add Account</source>
-        <translation type="unfinished"></translation>
+        <translation>添加账户</translation>
     </message>
     <message>
         <source>Deauthorize this app and remove your account</source>
-        <translation type="unfinished"></translation>
+        <translation>取消授权此应用并且移除你的账户</translation>
     </message>
     <message>
         <source>Authorize this app to use your Mastodon account in your behalf</source>
-        <translation type="unfinished"></translation>
+        <translation>授权应用使用你信任的Mastodon账户</translation>
     </message>
     <message>
         <source>Load images in toots</source>
-        <translation type="unfinished"></translation>
+        <translation>加载嘟嘟的图片</translation>
     </message>
     <message>
         <source>Disable this option if you want to preserve your data connection</source>
-        <translation type="unfinished"></translation>
+        <translation>如果想要保护你的数据连接，取消此操作</translation>
     </message>
     <message>
         <source>Translate</source>
-        <translation type="unfinished"></translation>
+        <translation>翻译</translation>
     </message>
     <message>
         <source>Use Transifex to help with app translation to your language</source>
-        <translation type="unfinished"></translation>
+        <translation>使用Transifex 以帮助翻译成你使用的语言</translation>
     </message>
     <message>
         <source>Credits</source>
-        <translation type="unfinished"></translation>
+        <translation>信用</translation>
     </message>
     <message>
         <source>UI/UX design and development</source>
-        <translation type="unfinished"></translation>
+        <translation>UI/UX 设计和开发</translation>
     </message>
 </context>
 <context>

@@ -96,7 +96,7 @@
     <name>LoginPage</name>
     <message>
         <source>Login</source>
-        <translation type="unfinished"></translation>
+        <translation>Connexion</translation>
     </message>
     <message>
         <source>Instance</source>
@@ -104,11 +104,11 @@
     </message>
     <message>
         <source>Enter an Mastodon instance URL</source>
-        <translation type="unfinished"></translation>
+        <translation>Picatz l’URL d’una instància Mastodon</translation>
     </message>
     <message>
         <source>Mastodon is a free, open-source social network. A decentralized alternative to commercial platforms, it avoids the risks of a single company monopolizing your communication. Pick a server that you trust — whichever you choose, you can interact with everyone else. Anyone can run their own Mastodon instance and participate in the social network seamlessly.</source>
-        <translation type="unfinished"></translation>
+        <translation>Mastodon es un malhum liure e open source. Es una alternativa descentralizada a las plataformas comercialas, per empachar qu&apos;una sola entrepresa monopolize vòstras comunicacions. Causissètz un servidor que vos fisatz - qualque siá vòstre causida poiretz interagir amb los autres. Tot lo monde pòt montar sa pròpria instància Mastodon e atal participar a construire un malhum mai solid.</translation>
     </message>
     <message>
         <source>Reload</source>
@@ -235,47 +235,47 @@
     <name>Settings</name>
     <message>
         <source>Settings</source>
-        <translation type="unfinished">Parmètres</translation>
+        <translation>Paramètres</translation>
     </message>
     <message>
         <source>Remove Account</source>
-        <translation type="unfinished"></translation>
+        <translation>Levar un compte</translation>
     </message>
     <message>
         <source>Add Account</source>
-        <translation type="unfinished"></translation>
+        <translation>Ajustar un compte</translation>
     </message>
     <message>
         <source>Deauthorize this app and remove your account</source>
-        <translation type="unfinished"></translation>
+        <translation>Revocar l’aplicacion e levar vòstre compte</translation>
     </message>
     <message>
         <source>Authorize this app to use your Mastodon account in your behalf</source>
-        <translation type="unfinished"></translation>
+        <translation>Autorizar aquesta aplicacion a utilizar vòstre compte Mastodon per vos</translation>
     </message>
     <message>
         <source>Load images in toots</source>
-        <translation type="unfinished"></translation>
+        <translation>Cargar los imatges dels tuts</translation>
     </message>
     <message>
         <source>Disable this option if you want to preserve your data connection</source>
-        <translation type="unfinished"></translation>
+        <translation>Desactivar aquesta opcion per estalviar vòstra connexion de donadas</translation>
     </message>
     <message>
         <source>Translate</source>
-        <translation type="unfinished"></translation>
+        <translation>Traduire</translation>
     </message>
     <message>
         <source>Use Transifex to help with app translation to your language</source>
-        <translation type="unfinished"></translation>
+        <translation>Utilizar Transifex per ajudar a traduire l’aplicacion dins vòstra lenga</translation>
     </message>
     <message>
         <source>Credits</source>
-        <translation type="unfinished"></translation>
+        <translation>Crèdits</translation>
     </message>
     <message>
         <source>UI/UX design and development</source>
-        <translation type="unfinished"></translation>
+        <translation>UI/UX design e desvlopament</translation>
     </message>
 </context>
 <context>
