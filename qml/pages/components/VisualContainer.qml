@@ -55,7 +55,7 @@ BackgroundItem {
             anchors.fill: parent
             onClicked: {
                 pageStack.push(Qt.resolvedUrl("../Profile.qml"), {
-                                   "displayname": model.account_username,
+                                   "display_name": model.account_display_name,
                                    "username": model.account_acct,
                                    "user_id": model.account_id,
                                    "profileImage": model.account_avatar
@@ -134,13 +134,12 @@ BackgroundItem {
                 }));
                 send(link)
             } else if (test.length === 4 && test[3][0] === "@" ) {
-                pageStack.push(Qt.resolvedUrl("../Profile.qml"), {
-                                   "name": "",
-                                   "username": test[3].substring(1)+"@"+test[2],
-                                   "profileImage": ""
-                               })
+                tlSearch.search = decodeURIComponent("@"+test[3].substring(1)+"@"+test[2])
+                slideshow.positionViewAtIndex(4, ListView.SnapToItem)
+                navigation.navigateTo('search')
+
             } else {
-                pageStack.push(Qt.resolvedUrl("../Browser.qml"), {"href" : link})
+                Qt.openUrlExternally(link);
             }
         }
         text: content.replace(new RegExp("<a ", 'g'), '<a style="text-decoration: none; color:'+(pressed ?  Theme.secondaryColor : Theme.highlightColor)+'" ')

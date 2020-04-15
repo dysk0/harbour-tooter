@@ -69,10 +69,11 @@ Page {
             onOpenDrawer:  infoPanel.open = setDrawer
         }
         MyList{
-            id: tlPublic;
-            title: qsTr("Federated")
-            type: "timelines/public"
-            mdl: Logic.modelTLpublic
+            id: tlNotifications;
+            title: qsTr("Notifications")
+            type: "notifications"
+            notifier: true
+            mdl: Logic.modelTLnotifications
             width: parent.itemWidth
             height: parent.itemHeight
             onOpenDrawer:  infoPanel.open = setDrawer
@@ -88,11 +89,10 @@ Page {
             onOpenDrawer:  infoPanel.open = setDrawer
         }
         MyList{
-            id: tlNotifications;
-            title: qsTr("Notifications")
-            type: "notifications"
-            notifier: true
-            mdl: Logic.modelTLnotifications
+            id: tlPublic;
+            title: qsTr("Federated")
+            type: "timelines/public"
+            mdl: Logic.modelTLpublic
             width: parent.itemWidth
             height: parent.itemHeight
             onOpenDrawer:  infoPanel.open = setDrawer
@@ -185,7 +185,7 @@ Page {
                     delegate: ItemUser {
                         onClicked: {
                             pageStack.push(Qt.resolvedUrl("Profile.qml"), {
-                                               "displayname": model.account_username,
+                                               "display_name": model.account_display_name,
                                                "username": model.account_acct,
                                                "user_id": model.account_id,
                                                "profileImage": model.account_avatar
@@ -260,8 +260,13 @@ Page {
             slideshow.positionViewAtIndex(4, ListView.SnapToItem)
             navigation.navigateTo('search')
 
+        } else if (test.length === 4 && test[3][0] === "@" ) {
+            tlSearch.search = decodeURIComponent("@"+test[3].substring(1)+"@"+test[2])
+            slideshow.positionViewAtIndex(4, ListView.SnapToItem)
+            navigation.navigateTo('search')
+
         } else {
-            pageStack.push(Qt.resolvedUrl("Browser.qml"), {"href" : href})
+            Qt.openUrlExternally(href);
         }
     }
     Component.onCompleted: {

@@ -109,10 +109,15 @@
     <message>
         <source>Mastodon is a free, open-source social network. A decentralized alternative to commercial platforms, it avoids the risks of a single company monopolizing your communication. Pick a server that you trust — whichever you choose, you can interact with everyone else. Anyone can run their own Mastodon instance and participate in the social network seamlessly.</source>
         <translation>​Mastodon 是一个自由且开源的社交网络。一个去中心的商业平台的替代品。它能够避免某个公司垄断你的通讯方式的风险。选择一个你所信任的服务器——无论你选择什么，你都可以和其他人进行互动。任何人都能运行他们自己的 Mastodon 实例，然后无缝加入社交网站。</translation>
+
     </message>
     <message>
         <source>Reload</source>
         <translation>重新加载</translation>
+    </message>
+    <message>
+        <source>Enter an Mastodon instance URL</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -184,6 +189,7 @@
     <name>Profile</name>
     <message>
         <source>Unfollow</source>
+
         <translation>未关注</translation>
     </message>
     <message>
@@ -229,6 +235,14 @@
     <message>
         <source>Followers</source>
         <translation>关注者</translation>
+    </message>
+    <message>
+        <source>Bio</source>
+        <translation>简介</translation>
+    </message>
+    <message>
+        <source>Open Profile in Browser</source>
+        <translation>在浏览器打开个人简介</translation>
     </message>
 </context>
 <context>
@@ -305,6 +319,7 @@
     </message>
     <message>
         <source>Unfavorite</source>
+
         <translation>取消收藏</translation>
     </message>
     <message>

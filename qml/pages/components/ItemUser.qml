@@ -33,7 +33,7 @@ BackgroundItem {
         MouseArea {
             anchors.fill: parent
             onClicked: pageStack.push(Qt.resolvedUrl("./../Profile.qml"), {
-                                          "displayname": model.account_username,
+                                          "display_name": model.account_display_name,
                                           "username": model.account_acct,
                                           "user_id": model.account_id,
                                           "profileImage": model.account_avatar
@@ -60,7 +60,7 @@ BackgroundItem {
         }
     }
     onClicked: openUser({
-                            "displayname": model.account_username,
+                            "display_name": model.account_display_name,
                             "username": model.account_acct,
                             "user_id": model.account_id,
                             "profileImage": model.account_avatar

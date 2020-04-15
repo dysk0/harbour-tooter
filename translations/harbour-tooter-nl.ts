@@ -21,49 +21,10 @@
     </message>
 </context>
 <context>
-    <name>Browser</name>
-    <message>
-        <source>Open in Browser</source>
-        <translation>Openen in browser</translation>
-    </message>
-    <message>
-        <source>Web mode</source>
-        <translation>Webmodus</translation>
-    </message>
-    <message>
-        <source>Reading mode</source>
-        <translation>Leesmodus</translation>
-    </message>
-    <message>
-        <source>Copy URL</source>
-        <translation>Kopieer URL</translation>
-    </message>
-</context>
-<context>
     <name>Conversation</name>
     <message>
         <source>Conversation</source>
         <translation>Gesprek</translation>
-    </message>
-    <message>
-        <source>Content warning!</source>
-        <translation>Gevoelige inhoud!</translation>
-    </message>
-    <message>
-        <source>public</source>
-        <translation>openbaar</translation>
-    </message>
-    <message>
-        <source>unlisted</source>
-        <translation>niet op lijst</translation>
-    </message>
-    <message>
-        <source>followers only</source>
-        <translation>alleen volgers</translation>
-    </message>
-    <message>
-        <source>direct</source>
-        <translation>direct</translation>
     </message>
     <message>
         <source>Delete</source>
@@ -76,6 +37,30 @@
     <message>
         <source>Tap to insert</source>
         <translation>Tikken om in te voegen</translation>
+    </message>
+    <message>
+        <source>Write your warning here</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>What&apos;s on your mind?</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Public</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Unlisted</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Followers-only</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Direct</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -96,23 +81,23 @@
     <name>LoginPage</name>
     <message>
         <source>Login</source>
-        <translation type="unfinished"></translation>
+        <translation>Inloggen</translation>
     </message>
     <message>
         <source>Instance</source>
-        <translation type="unfinished"></translation>
+        <translation>Instantie</translation>
     </message>
     <message>
         <source>Enter an Mastodon instance URL</source>
-        <translation type="unfinished"></translation>
+        <translation>Voer de URL van een Mastodon-instantie in</translation>
     </message>
     <message>
         <source>Mastodon is a free, open-source social network. A decentralized alternative to commercial platforms, it avoids the risks of a single company monopolizing your communication. Pick a server that you trust — whichever you choose, you can interact with everyone else. Anyone can run their own Mastodon instance and participate in the social network seamlessly.</source>
-        <translation type="unfinished"></translation>
+        <translation>Mastodon is een vrij sociaal netwerk. Als gedecentraliseerd alternatief voor commerciële platformen, vermijdt het de risico’s van een enkel bedrijf dat je communicatie monopoliseert. Kies een server die je vertrouwt — welke je ook kiest, je kunt met iedereen communiceren. Iedereen kan zelf een Mastodon-instantie hebben en naadloos deelnemen aan het sociale netwerk.</translation>
     </message>
     <message>
         <source>Reload</source>
-        <translation type="unfinished"></translation>
+        <translation>Herladen</translation>
     </message>
 </context>
 <context>
@@ -230,51 +215,83 @@
         <source>Followers</source>
         <translation>Volgers</translation>
     </message>
+    <message>
+        <source>Bio</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Open Profile in Browser</source>
+        <translation type="unfinished"></translation>
+    </message>
 </context>
 <context>
     <name>Settings</name>
     <message>
         <source>Settings</source>
-        <translation type="unfinished">Instellingen</translation>
+        <translation>Instellingen</translation>
     </message>
     <message>
         <source>Remove Account</source>
-        <translation type="unfinished"></translation>
+        <translation>Verwijderen account</translation>
     </message>
     <message>
         <source>Add Account</source>
-        <translation type="unfinished"></translation>
+        <translation>Toevoegen account</translation>
     </message>
     <message>
         <source>Deauthorize this app and remove your account</source>
-        <translation type="unfinished"></translation>
+        <translation>Trek autorisaties van deze app in en verwijder je account</translation>
     </message>
     <message>
         <source>Authorize this app to use your Mastodon account in your behalf</source>
-        <translation type="unfinished"></translation>
+        <translation>Autoriseer deze app om je Mastodon namens jou te gebruiken</translation>
     </message>
     <message>
         <source>Load images in toots</source>
-        <translation type="unfinished"></translation>
+        <translation>Laden afbeeldingen in toots</translation>
     </message>
     <message>
         <source>Disable this option if you want to preserve your data connection</source>
-        <translation type="unfinished"></translation>
+        <translation>Schakel deze optie uit als je je dataverbinding wilt behouden</translation>
     </message>
     <message>
         <source>Translate</source>
-        <translation type="unfinished"></translation>
+        <translation>Vertalen</translation>
     </message>
     <message>
         <source>Use Transifex to help with app translation to your language</source>
-        <translation type="unfinished"></translation>
+        <translation>Gebruik Transifex om deze app te helpen vertalen in jouw taal</translation>
     </message>
     <message>
         <source>Credits</source>
-        <translation type="unfinished"></translation>
+        <translation>Credits</translation>
     </message>
     <message>
         <source>UI/UX design and development</source>
+        <translation>UI/UX ontwerp en ontwikkeling</translation>
+    </message>
+    <message>
+        <source>Visual identity</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Occitan &amp; French translation</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Dutch translation</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Spanish translation</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Added README file</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Development and maintenence</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
