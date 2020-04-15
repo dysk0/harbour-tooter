@@ -6,7 +6,7 @@ import QtGraphicalEffects 1.0
 
 Page {
     property ListModel tweets;
-    property string displayname : "";
+    property string display_name : "";
     property string username : "";
     property string profileImage : "";
     property int user_id;
@@ -16,8 +16,9 @@ Page {
     property int favourites_count;
     property int reblogs_count;
     property int count_moments;
-    property string profile_background : "";
+    property string profile_background: "";
     property string note: "";
+    property string url: "";
 
     property bool locked : false;
     property date created_at;
@@ -39,7 +40,7 @@ Page {
                 followers_count = messageObject.data.followers_count
                 following_count = messageObject.data.following_count
                 username = messageObject.data.acct
-                displayname = messageObject.data.display_name
+                display_name = messageObject.data.display_name
                 profileImage = messageObject.data.avatar_static
 
                 var msg = {
@@ -68,9 +69,10 @@ Page {
                 following_count = messageObject.data
                 break;
             case 'acct':
-                //username = messageObject.data
+                // line below was commented out, reason unknown
+                // username = messageObject.data
                 break;
-            case 'locked':
+            case 'locked':m
                 locked = messageObject.data
                 break;
             case 'created_at':
@@ -81,6 +83,9 @@ Page {
                 break;
             case 'note':
                 note = messageObject.data
+                break;
+            case 'url':
+                url = messageObject.data
                 break;
             case 'following':
                 following = messageObject.data
@@ -135,7 +140,7 @@ Page {
         id: list
         header: ProfileHeader {
             id: header
-            title: displayname
+            title: display_name
             description: '@'+username
             image: profileImage
         }
@@ -238,10 +243,65 @@ Page {
             }
 
         }
-        /*ExpandingSection {
-            title: "Tweets"
+        ExpandingSection {
+            title: qsTr("Bio")
+            content.sourceComponent: Column {
+                spacing: Theme.paddingMedium
+                anchors.bottomMargin: Theme.paddingLarge
+                Text {
+                    x: Theme.horizontalPageMargin
+                    width: parent.width  - ( 2 * Theme.horizontalPageMargin )
+                    id: txtnote
+                    text: note
+                    font.pixelSize: Theme.fontSizeExtraSmall
+                    color: Theme.secondaryColor
+                    linkColor: Theme.secondaryHighlightColor
+                    wrapMode: Text.Wrap
+                    anchors {
+                        horizontalCenter: parent.horizontalCenter
+                    }
+                    onLinkActivated: {
+                        var test = link.split("/")
+                        console.log(link)
+                        console.log(JSON.stringify(test))
+                        console.log(JSON.stringify(test.length))
 
-        }*/
+                        if (test.length === 5 && (test[3] === "tags" || test[3] === "tag") ) {
+                            pageStack.pop(pageStack.find(function(page) {
+                                var check = page.isFirstPage === true;
+                                if (check)
+                                    page.onLinkActivated(link)
+                                return check;
+                            }));
+                            send(link)
+
+                        } else if (test.length === 4 && test[3][0] === "@" ) {
+                            tlSearch.search = decodeURIComponent("@"+test[3].substring(1)+"@"+test[2])
+                            slideshow.positionViewAtIndex(4, ListView.SnapToItem)
+                            navigation.navigateTo('search')
+
+                        } else {
+                            Qt.openUrlExternally(link);
+                        }
+                    }
+
+                }
+                Column {
+                    spacing: Theme.paddingMedium
+                    anchors.horizontalCenter:     parent.horizontalCenter
+                    Button {
+                        id: btnUrl
+                        text: qsTr("Open Profile in Browser")
+                        onClicked: {
+                            Qt.openUrlExternally(url);
+                            }
+                        }
+                    }
+                Label {
+                    text: " "
+                }
+               }
+        }
     }
 
 

@@ -21,49 +21,10 @@
     </message>
 </context>
 <context>
-    <name>Browser</name>
-    <message>
-        <source>Open in Browser</source>
-        <translation>Dobrir dins lo navigator</translation>
-    </message>
-    <message>
-        <source>Web mode</source>
-        <translation>Mòde Web</translation>
-    </message>
-    <message>
-        <source>Reading mode</source>
-        <translation>Mòde lectura</translation>
-    </message>
-    <message>
-        <source>Copy URL</source>
-        <translation>Copiar l&apos;URL</translation>
-    </message>
-</context>
-<context>
     <name>Conversation</name>
     <message>
         <source>Conversation</source>
         <translation>Discutida</translation>
-    </message>
-    <message>
-        <source>Content warning!</source>
-        <translation>Contengut sensible !</translation>
-    </message>
-    <message>
-        <source>public</source>
-        <translation>public</translation>
-    </message>
-    <message>
-        <source>unlisted</source>
-        <translation>pas listat</translation>
-    </message>
-    <message>
-        <source>followers only</source>
-        <translation>seguidors solament</translation>
-    </message>
-    <message>
-        <source>direct</source>
-        <translation>dirècte</translation>
     </message>
     <message>
         <source>Delete</source>
@@ -76,6 +37,30 @@
     <message>
         <source>Tap to insert</source>
         <translation>Tustejar per inserir</translation>
+    </message>
+    <message>
+        <source>Write your warning here</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>What&apos;s on your mind?</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Public</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Unlisted</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Followers-only</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Direct</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -230,6 +215,14 @@
         <source>Followers</source>
         <translation>Seguidors</translation>
     </message>
+    <message>
+        <source>Bio</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Open Profile in Browser</source>
+        <translation type="unfinished"></translation>
+    </message>
 </context>
 <context>
     <name>Settings</name>
@@ -276,6 +269,30 @@
     <message>
         <source>UI/UX design and development</source>
         <translation>UI/UX design e desvlopament</translation>
+    </message>
+    <message>
+        <source>Visual identity</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Occitan &amp; French translation</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Dutch translation</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Spanish translation</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Added README file</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Development and maintenence</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
