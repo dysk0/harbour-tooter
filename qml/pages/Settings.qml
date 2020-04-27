@@ -119,6 +119,12 @@ Page {
                             mail: ""
                         }
                         ListElement {
+                            name: "Luchy Kon / dashinfantry"
+                            desc: qsTr("Chinese translation")
+                            mastodon: ""
+                            mail: "dashinfantry@gmail.com"
+                        }
+                        ListElement {
                             name: "André Koot"
                             desc: qsTr("Dutch translation")
                             mastodon: "meneer@mastodon.social"
@@ -130,7 +136,6 @@ Page {
                             mastodon: ""
                             mail: ""
                         }
-
                         ListElement {
                             name: "Mohamed-Touhami MAHDI"
                             desc: qsTr("Added README file")
