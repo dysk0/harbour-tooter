@@ -39,8 +39,13 @@
         <translation>点击以插入</translation>
     </message>
     <message>
+<<<<<<< HEAD:translations/harbour-tooter-zh_CN.ts
         <source>Write your warning here</source>
         <translation>在此编写你的警告信息</translation>
+=======
+        <source>Content warning!</source>
+        <translation>内容警告!</translation>
+>>>>>>> 33d54bdda818c7a41c3a8cc8c5f09cb682584d8e:translations/harbour-tooter-zh.ts
     </message>
     <message>
         <source>Public</source>
@@ -86,18 +91,35 @@
     <message>
         <source>Instance</source>
         <translation>实例</translation>
+<<<<<<< HEAD:translations/harbour-tooter-zh_CN.ts
     </message>
     <message>
         <source>Mastodon is a free, open-source social network. A decentralized alternative to commercial platforms, it avoids the risks of a single company monopolizing your communication. Pick a server that you trust — whichever you choose, you can interact with everyone else. Anyone can run their own Mastodon instance and participate in the social network seamlessly.</source>
         <translation>​Mastodon 是一个自由且开源的社交网络。一个去中心化的商业平台的替代品。它能够避免某个公司垄断你的通讯方式的风险。选择一个你所信任的服务器——无论你选择什么，你都可以和其他人进行互动。任何人都能运行他们自己的 Mastodon 实例，然后无缝加入社交网站。</translation>
+=======
+    </message>
+    <message>
+        <source>Enter an Mastodon instance URL</source>
+        <translation>输入一个 Mastodon 实例链接</translation>
+    </message>
+    <message>
+        <source>Mastodon is a free, open-source social network. A decentralized alternative to commercial platforms, it avoids the risks of a single company monopolizing your communication. Pick a server that you trust — whichever you choose, you can interact with everyone else. Anyone can run their own Mastodon instance and participate in the social network seamlessly.</source>
+        <translation>​Mastodon 是一个自由且开源的社交网络。一个去中心的商业平台的替代品。它能够避免某个公司垄断你的通讯方式的风险。选择一个你所信任的服务器——无论你选择什么，你都可以和其他人进行互动。任何人都能运行他们自己的 Mastodon 实例，然后无缝加入社交网站。</translation>
+
+>>>>>>> 33d54bdda818c7a41c3a8cc8c5f09cb682584d8e:translations/harbour-tooter-zh.ts
     </message>
     <message>
         <source>Reload</source>
         <translation>重新加载</translation>
     </message>
     <message>
+<<<<<<< HEAD:translations/harbour-tooter-zh_CN.ts
         <source>Enter a valid Mastodon instance URL</source>
         <translation>输入一个有效的 Mastodon 实例 URL</translation>
+=======
+        <source>Enter an Mastodon instance URL</source>
+        <translation type="unfinished"></translation>
+>>>>>>> 33d54bdda818c7a41c3a8cc8c5f09cb682584d8e:translations/harbour-tooter-zh.ts
     </message>
 </context>
 <context>
@@ -169,11 +191,20 @@
     <name>Profile</name>
     <message>
         <source>Unfollow</source>
+<<<<<<< HEAD:translations/harbour-tooter-zh_CN.ts
         <translation>取消关注</translation>
     </message>
     <message>
         <source>Follow request sent!</source>
         <translation>已寄出关注请求！</translation>
+=======
+
+        <translation>未关注</translation>
+    </message>
+    <message>
+        <source>Follow request sent!</source>
+        <translation>关注请求已寄出！</translation>
+>>>>>>> 33d54bdda818c7a41c3a8cc8c5f09cb682584d8e:translations/harbour-tooter-zh.ts
     </message>
     <message>
         <source>Following</source>
@@ -232,6 +263,7 @@
     </message>
     <message>
         <source>Remove Account</source>
+<<<<<<< HEAD:translations/harbour-tooter-zh_CN.ts
         <translation>移除账号</translation>
     </message>
     <message>
@@ -297,6 +329,45 @@
     <message>
         <source>Chinese translation</source>
         <translation>汉语翻译</translation>
+=======
+        <translation>移除账户</translation>
+    </message>
+    <message>
+        <source>Add Account</source>
+        <translation>添加账户</translation>
+    </message>
+    <message>
+        <source>Deauthorize this app and remove your account</source>
+        <translation>取消对此软件的授权并移除你的账户</translation>
+    </message>
+    <message>
+        <source>Authorize this app to use your Mastodon account in your behalf</source>
+        <translation>授权此软件使用你的 Mastodon 账户</translation>
+    </message>
+    <message>
+        <source>Load images in toots</source>
+        <translation>在嘟嘟加载图片</translation>
+    </message>
+    <message>
+        <source>Disable this option if you want to preserve your data connection</source>
+        <translation>如果你想保护你的数据连接 请禁用此操作</translation>
+    </message>
+    <message>
+        <source>Translate</source>
+        <translation>翻译</translation>
+    </message>
+    <message>
+        <source>Use Transifex to help with app translation to your language</source>
+        <translation>使用 Transifex 帮助翻译此软件到你所使用的语言。</translation>
+    </message>
+    <message>
+        <source>Credits</source>
+        <translation>信誉</translation>
+    </message>
+    <message>
+        <source>UI/UX design and development</source>
+        <translation>UI/UX 设计及开发</translation>
+>>>>>>> 33d54bdda818c7a41c3a8cc8c5f09cb682584d8e:translations/harbour-tooter-zh.ts
     </message>
 </context>
 <context>
@@ -326,7 +397,12 @@
     </message>
     <message>
         <source>Unfavorite</source>
+<<<<<<< HEAD:translations/harbour-tooter-zh_CN.ts
         <translation>取消关注</translation>
+=======
+
+        <translation>取消收藏</translation>
+>>>>>>> 33d54bdda818c7a41c3a8cc8c5f09cb682584d8e:translations/harbour-tooter-zh.ts
     </message>
     <message>
         <source>Favorite</source>

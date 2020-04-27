@@ -264,6 +264,7 @@ Page {
                         console.log(link)
                         console.log(JSON.stringify(test))
                         console.log(JSON.stringify(test.length))
+<<<<<<< HEAD
 
                         if (test.length === 5 && (test[3] === "tags" || test[3] === "tag") ) {
                             pageStack.pop(pageStack.find(function(page) {
@@ -284,6 +285,28 @@ Page {
                         }
                     }
 
+=======
+
+                        if (test.length === 5 && (test[3] === "tags" || test[3] === "tag") ) {
+                            pageStack.pop(pageStack.find(function(page) {
+                                var check = page.isFirstPage === true;
+                                if (check)
+                                    page.onLinkActivated(link)
+                                return check;
+                            }));
+                            send(link)
+
+                        } else if (test.length === 4 && test[3][0] === "@" ) {
+                            tlSearch.search = decodeURIComponent("@"+test[3].substring(1)+"@"+test[2])
+                            slideshow.positionViewAtIndex(4, ListView.SnapToItem)
+                            navigation.navigateTo('search')
+
+                        } else {
+                            Qt.openUrlExternally(link);
+                        }
+                    }
+
+>>>>>>> 33d54bdda818c7a41c3a8cc8c5f09cb682584d8e
                 }
                 Column {
                     spacing: Theme.paddingMedium

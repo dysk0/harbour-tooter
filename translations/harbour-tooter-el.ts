@@ -29,12 +29,21 @@
     <message>
         <source>Delete</source>
         <translation>Διαγραφή</translation>
+<<<<<<< HEAD
     </message>
     <message>
         <source>Emojis</source>
         <translation>Emoji</translation>
     </message>
     <message>
+=======
+    </message>
+    <message>
+        <source>Emojis</source>
+        <translation>Emoji</translation>
+    </message>
+    <message>
+>>>>>>> 33d54bdda818c7a41c3a8cc8c5f09cb682584d8e
         <source>Tap to insert</source>
         <translation>Κτυπήστε για εισαγωγή</translation>
     </message>
@@ -43,6 +52,7 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>Public</source>
         <translation type="unfinished"></translation>
     </message>
@@ -60,6 +70,25 @@
     </message>
     <message>
         <source>What&apos;s on your mind?</source>
+=======
+        <source>What&apos;s on your mind?</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Public</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Unlisted</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Followers-only</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Direct</source>
+>>>>>>> 33d54bdda818c7a41c3a8cc8c5f09cb682584d8e
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -81,7 +110,7 @@
     <name>LoginPage</name>
     <message>
         <source>Login</source>
-        <translation type="unfinished"></translation>
+        <translation>Σύνδεση</translation>
     </message>
     <message>
         <source>Instance</source>
@@ -228,25 +257,26 @@
     <name>Settings</name>
     <message>
         <source>Settings</source>
-        <translation type="unfinished">Ρυθμίσεις</translation>
+        <translation>Ρυθμίσεις</translation>
     </message>
     <message>
         <source>Remove Account</source>
-        <translation type="unfinished"></translation>
+        <translation>Αφαίρεση λογαριασμού</translation>
     </message>
     <message>
         <source>Add Account</source>
-        <translation type="unfinished"></translation>
+        <translation>Προσθήκη λογαριασμού</translation>
     </message>
     <message>
         <source>Deauthorize this app and remove your account</source>
-        <translation type="unfinished"></translation>
+        <translation>Άρση της αδειοδότησης της εφαρμογής και αφαίρεση του λογαριασμού σας</translation>
     </message>
     <message>
         <source>Authorize this app to use your Mastodon account in your behalf</source>
-        <translation type="unfinished"></translation>
+        <translation>Να επιτρέπεται στην εφαρμογή να χρησιμοποιεί τον λογαριασμό σας στο Mastodon εκ μέρους σας</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>Disable this option if you want to preserve your data connection</source>
         <translation type="unfinished"></translation>
     </message>
@@ -273,6 +303,30 @@
     <message>
         <source>Maintainer of this release</source>
         <translation type="unfinished"></translation>
+=======
+        <source>Load images in toots</source>
+        <translation>Φόρτωση των εικόνων στα toot</translation>
+    </message>
+    <message>
+        <source>Disable this option if you want to preserve your data connection</source>
+        <translation>Απενεργοποιήστε αυτήν την επιλογή αν θέλετε να διατηρήσετε την σύνδεση των δεδομένων σας</translation>
+    </message>
+    <message>
+        <source>Translate</source>
+        <translation>Μετάφραση</translation>
+    </message>
+    <message>
+        <source>Use Transifex to help with app translation to your language</source>
+        <translation>Χρησιμοποιήστε το Transifex για να βοηθήσετε την μετάφραση της εφαρμογής στην γλώσσα σας</translation>
+    </message>
+    <message>
+        <source>Credits</source>
+        <translation>Ευχαριστίες</translation>
+    </message>
+    <message>
+        <source>UI/UX design and development</source>
+        <translation>UI/UX σχεδιασμός και ανάπτυξη</translation>
+>>>>>>> 33d54bdda818c7a41c3a8cc8c5f09cb682584d8e
     </message>
     <message>
         <source>Visual identity</source>
@@ -295,7 +349,11 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>Chinese translation</source>
+=======
+        <source>Development and maintenence</source>
+>>>>>>> 33d54bdda818c7a41c3a8cc8c5f09cb682584d8e
         <translation type="unfinished"></translation>
     </message>
 </context>

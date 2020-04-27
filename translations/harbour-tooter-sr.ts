@@ -29,12 +29,21 @@
     <message>
         <source>Delete</source>
         <translation>Обриши</translation>
+<<<<<<< HEAD
     </message>
     <message>
         <source>Emojis</source>
         <translation>Емотикони</translation>
     </message>
     <message>
+=======
+    </message>
+    <message>
+        <source>Emojis</source>
+        <translation>Емотикони</translation>
+    </message>
+    <message>
+>>>>>>> 33d54bdda818c7a41c3a8cc8c5f09cb682584d8e
         <source>Tap to insert</source>
         <translation>Тапни за убацивање</translation>
     </message>
@@ -43,6 +52,7 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>Public</source>
         <translation type="unfinished"></translation>
     </message>
@@ -60,6 +70,25 @@
     </message>
     <message>
         <source>What&apos;s on your mind?</source>
+=======
+        <source>What&apos;s on your mind?</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Public</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Unlisted</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Followers-only</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Direct</source>
+>>>>>>> 33d54bdda818c7a41c3a8cc8c5f09cb682584d8e
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -81,13 +110,14 @@
     <name>LoginPage</name>
     <message>
         <source>Login</source>
-        <translation type="unfinished"></translation>
+        <translation>Пријава</translation>
     </message>
     <message>
         <source>Instance</source>
-        <translation type="unfinished"></translation>
+        <translation>Инстанца</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>Mastodon is a free, open-source social network. A decentralized alternative to commercial platforms, it avoids the risks of a single company monopolizing your communication. Pick a server that you trust — whichever you choose, you can interact with everyone else. Anyone can run their own Mastodon instance and participate in the social network seamlessly.</source>
         <translation type="unfinished"></translation>
     </message>
@@ -98,6 +128,18 @@
     <message>
         <source>Enter a valid Mastodon instance URL</source>
         <translation type="unfinished"></translation>
+=======
+        <source>Enter an Mastodon instance URL</source>
+        <translation>Унесите URL ваше Мастодон инстанце</translation>
+    </message>
+    <message>
+        <source>Mastodon is a free, open-source social network. A decentralized alternative to commercial platforms, it avoids the risks of a single company monopolizing your communication. Pick a server that you trust — whichever you choose, you can interact with everyone else. Anyone can run their own Mastodon instance and participate in the social network seamlessly.</source>
+        <translation>Mastodon је бесплатна, open-source друштвена мрежа. Децентрализована алтернатива комерцијалним платформама која избегава ризике једне компаније која монополизује вашу комуникацију. Одаберите сервер у који имате поверења и без обзира на ваш избор - комуницирајте с осталим корисницима других мрежа. Свако може водити сопствену инстанцу Mastodon мреже и учестовати у комуникацији с другим инстанцама.</translation>
+    </message>
+    <message>
+        <source>Reload</source>
+        <translation>освежи</translation>
+>>>>>>> 33d54bdda818c7a41c3a8cc8c5f09cb682584d8e
     </message>
 </context>
 <context>
@@ -228,25 +270,26 @@
     <name>Settings</name>
     <message>
         <source>Settings</source>
-        <translation type="unfinished">Подешавања</translation>
+        <translation>Подешавања</translation>
     </message>
     <message>
         <source>Remove Account</source>
-        <translation type="unfinished"></translation>
+        <translation>Уклони налог</translation>
     </message>
     <message>
         <source>Add Account</source>
-        <translation type="unfinished"></translation>
+        <translation>Додај налог</translation>
     </message>
     <message>
         <source>Deauthorize this app and remove your account</source>
-        <translation type="unfinished"></translation>
+        <translation>Укините дозволе за кориштење и уклоните налог с телефона</translation>
     </message>
     <message>
         <source>Authorize this app to use your Mastodon account in your behalf</source>
-        <translation type="unfinished"></translation>
+        <translation>Дозволите овој апликацији да користи ваш Mastodon налог</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>Disable this option if you want to preserve your data connection</source>
         <translation type="unfinished"></translation>
     </message>
@@ -273,6 +316,30 @@
     <message>
         <source>Maintainer of this release</source>
         <translation type="unfinished"></translation>
+=======
+        <source>Load images in toots</source>
+        <translation>Прикажи слике у објавама</translation>
+    </message>
+    <message>
+        <source>Disable this option if you want to preserve your data connection</source>
+        <translation>Искључите ову опцију уколико желите да уштедите на преносу података</translation>
+    </message>
+    <message>
+        <source>Translate</source>
+        <translation>Преведи</translation>
+    </message>
+    <message>
+        <source>Use Transifex to help with app translation to your language</source>
+        <translation>Користите Transifex и помозите у преводу апликације на други језик</translation>
+    </message>
+    <message>
+        <source>Credits</source>
+        <translation>Спомен плоча</translation>
+    </message>
+    <message>
+        <source>UI/UX design and development</source>
+        <translation>интерфејс дизајн и развој</translation>
+>>>>>>> 33d54bdda818c7a41c3a8cc8c5f09cb682584d8e
     </message>
     <message>
         <source>Visual identity</source>
@@ -295,7 +362,11 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>Chinese translation</source>
+=======
+        <source>Development and maintenence</source>
+>>>>>>> 33d54bdda818c7a41c3a8cc8c5f09cb682584d8e
         <translation type="unfinished"></translation>
     </message>
 </context>

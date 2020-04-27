@@ -29,6 +29,7 @@
     <message>
         <source>Delete</source>
         <translation>Borrar</translation>
+<<<<<<< HEAD
     </message>
     <message>
         <source>Emojis</source>
@@ -61,6 +62,40 @@
     <message>
         <source>What&apos;s on your mind?</source>
         <translation>¿Qué tienes en mente?</translation>
+=======
+    </message>
+    <message>
+        <source>Emojis</source>
+        <translation>Emoticonos</translation>
+    </message>
+    <message>
+        <source>Tap to insert</source>
+        <translation>Toca para insertar</translation>
+    </message>
+    <message>
+        <source>Write your warning here</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>What&apos;s on your mind?</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Public</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Unlisted</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Followers-only</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Direct</source>
+        <translation type="unfinished"></translation>
+>>>>>>> 33d54bdda818c7a41c3a8cc8c5f09cb682584d8e
     </message>
 </context>
 <context>
@@ -86,18 +121,32 @@
     <message>
         <source>Instance</source>
         <translation>Instancia</translation>
+<<<<<<< HEAD
     </message>
     <message>
         <source>Mastodon is a free, open-source social network. A decentralized alternative to commercial platforms, it avoids the risks of a single company monopolizing your communication. Pick a server that you trust — whichever you choose, you can interact with everyone else. Anyone can run their own Mastodon instance and participate in the social network seamlessly.</source>
         <translation>Mastodon es una red social libre y de código abierto. Una alternativa descentralizada a las plataformas comerciales, evita los riesgos de una única compañía que monopolice tu comunicación. Elije un servidor en el que confíes — cualquiera que elijas, puede interactuar con todos los demás. Cualquiera puede ejecutar su propia instancia de Mastodon y participar en la red social sin problemas.</translation>
+=======
+    </message>
+    <message>
+        <source>Enter an Mastodon instance URL</source>
+        <translation>Introduce URL de una instancia de Mastodon</translation>
+    </message>
+    <message>
+        <source>Mastodon is a free, open-source social network. A decentralized alternative to commercial platforms, it avoids the risks of a single company monopolizing your communication. Pick a server that you trust — whichever you choose, you can interact with everyone else. Anyone can run their own Mastodon instance and participate in the social network seamlessly.</source>
+        <translation>Mastodon es una red social gratuita y de código abierto. Una alternativa descentralizada a las plataformas comerciales, evita los riesgos de una única compañía que monopolice tu comunicación. Elije un servidor en el que confíes — cualquiera que elijas, puede interactuar con todos los demás. Cualquiera puede ejecutar su propia instancia de Mastodon y participar en la red social sin problemas.</translation>
+>>>>>>> 33d54bdda818c7a41c3a8cc8c5f09cb682584d8e
     </message>
     <message>
         <source>Reload</source>
         <translation>Volver a cargar</translation>
+<<<<<<< HEAD
     </message>
     <message>
         <source>Enter a valid Mastodon instance URL</source>
         <translation>Introduce una URL de instancia de Mastodon válida</translation>
+=======
+>>>>>>> 33d54bdda818c7a41c3a8cc8c5f09cb682584d8e
     </message>
 </context>
 <context>
@@ -217,11 +266,19 @@
     </message>
     <message>
         <source>Bio</source>
+<<<<<<< HEAD
         <translation>Bio</translation>
     </message>
     <message>
         <source>Open Profile in Browser</source>
         <translation>Abrir perfil en navegador</translation>
+=======
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Open Profile in Browser</source>
+        <translation type="unfinished"></translation>
+>>>>>>> 33d54bdda818c7a41c3a8cc8c5f09cb682584d8e
     </message>
 </context>
 <context>
@@ -244,6 +301,7 @@
     </message>
     <message>
         <source>Authorize this app to use your Mastodon account in your behalf</source>
+<<<<<<< HEAD
         <translation>Autoriza a esta aplicación para usar tu cuenta de Mastodon en tu nombre</translation>
     </message>
     <message>
@@ -297,6 +355,57 @@
     <message>
         <source>Chinese translation</source>
         <translation>Traducción al chino</translation>
+=======
+        <translation>Autoriza a esta aplicación a usar tu cuenta de Mastodon en tu nombre</translation>
+    </message>
+    <message>
+        <source>Load images in toots</source>
+        <translation>Cargar imágenes en toots</translation>
+    </message>
+    <message>
+        <source>Disable this option if you want to preserve your data connection</source>
+        <translation>Deshabilita esta opción si quieres ahorrar en tu conexión de datos</translation>
+    </message>
+    <message>
+        <source>Translate</source>
+        <translation>Traducir</translation>
+    </message>
+    <message>
+        <source>Use Transifex to help with app translation to your language</source>
+        <translation>Usa Transifex para ayudar en la traducción a tu idioma de esta aplicación</translation>
+    </message>
+    <message>
+        <source>Credits</source>
+        <translation>Créditos</translation>
+    </message>
+    <message>
+        <source>UI/UX design and development</source>
+        <translation>Diseño UI/UX y desarrollo</translation>
+    </message>
+    <message>
+        <source>Visual identity</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Occitan &amp; French translation</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Dutch translation</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Spanish translation</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Added README file</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Development and maintenence</source>
+        <translation type="unfinished"></translation>
+>>>>>>> 33d54bdda818c7a41c3a8cc8c5f09cb682584d8e
     </message>
 </context>
 <context>

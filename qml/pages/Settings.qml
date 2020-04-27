@@ -132,6 +132,12 @@ Page {
                             mail: "micotakis@gmail.com"
                         }
                         ListElement {
+                            name: "molan"
+                            desc: qsTr("Development and maintenence")
+                            mastodon: ""
+                            mail: "mol_an@sunrise.ch"
+                        }
+                        ListElement {
                             name: "Quentin PAGÈS / Quenti ♏"
                             desc: qsTr("Occitan & French translation")
                             mastodon: "Quenti@framapiaf.org"

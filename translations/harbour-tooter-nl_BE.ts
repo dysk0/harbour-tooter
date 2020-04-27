@@ -29,12 +29,21 @@
     <message>
         <source>Delete</source>
         <translation>Verwijderen</translation>
+<<<<<<< HEAD
     </message>
     <message>
         <source>Emojis</source>
         <translation>Emoji’s</translation>
     </message>
     <message>
+=======
+    </message>
+    <message>
+        <source>Emojis</source>
+        <translation>Emoji’s</translation>
+    </message>
+    <message>
+>>>>>>> 33d54bdda818c7a41c3a8cc8c5f09cb682584d8e
         <source>Tap to insert</source>
         <translation>Tikt voor in te voegen</translation>
     </message>
@@ -43,6 +52,7 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>Public</source>
         <translation type="unfinished"></translation>
     </message>
@@ -60,6 +70,25 @@
     </message>
     <message>
         <source>What&apos;s on your mind?</source>
+=======
+        <source>What&apos;s on your mind?</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Public</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Unlisted</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Followers-only</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Direct</source>
+>>>>>>> 33d54bdda818c7a41c3a8cc8c5f09cb682584d8e
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -81,13 +110,14 @@
     <name>LoginPage</name>
     <message>
         <source>Login</source>
-        <translation type="unfinished"></translation>
+        <translation>Inloggen</translation>
     </message>
     <message>
         <source>Instance</source>
-        <translation type="unfinished"></translation>
+        <translation>Instantie</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>Mastodon is a free, open-source social network. A decentralized alternative to commercial platforms, it avoids the risks of a single company monopolizing your communication. Pick a server that you trust — whichever you choose, you can interact with everyone else. Anyone can run their own Mastodon instance and participate in the social network seamlessly.</source>
         <translation type="unfinished"></translation>
     </message>
@@ -98,6 +128,18 @@
     <message>
         <source>Enter a valid Mastodon instance URL</source>
         <translation type="unfinished"></translation>
+=======
+        <source>Enter an Mastodon instance URL</source>
+        <translation>Voert den URL van een Mastodon-instantie in</translation>
+    </message>
+    <message>
+        <source>Mastodon is a free, open-source social network. A decentralized alternative to commercial platforms, it avoids the risks of a single company monopolizing your communication. Pick a server that you trust — whichever you choose, you can interact with everyone else. Anyone can run their own Mastodon instance and participate in the social network seamlessly.</source>
+        <translation>Mastodon is e vrij sociaal netwerk. Als gedecentraliseerd alternatief voor commerciële platformen, vermijdt het de risico’s van één enkel bedrijf dat uw communicatie monopoliseert. Kiest ne server die ge vertrouwt — dewelken dat ge ook kiest, ge kunt met iedereen communiceren. Iedereen kan zelf een Mastodon-instantie hebben en naadloos deelnemen aan het sociaal netwerk.</translation>
+    </message>
+    <message>
+        <source>Reload</source>
+        <translation>Herladen</translation>
+>>>>>>> 33d54bdda818c7a41c3a8cc8c5f09cb682584d8e
     </message>
 </context>
 <context>
@@ -228,25 +270,26 @@
     <name>Settings</name>
     <message>
         <source>Settings</source>
-        <translation type="unfinished">Instellingen</translation>
+        <translation>Instellingen</translation>
     </message>
     <message>
         <source>Remove Account</source>
-        <translation type="unfinished"></translation>
+        <translation>Account verwijderen</translation>
     </message>
     <message>
         <source>Add Account</source>
-        <translation type="unfinished"></translation>
+        <translation>Account toevoegen</translation>
     </message>
     <message>
         <source>Deauthorize this app and remove your account</source>
-        <translation type="unfinished"></translation>
+        <translation>Trekt autorisaties van dezen app in en verwijdert uwen account</translation>
     </message>
     <message>
         <source>Authorize this app to use your Mastodon account in your behalf</source>
-        <translation type="unfinished"></translation>
+        <translation>Autoriseert dezen app voor uwe Mastodon-account namens u te gebruiken</translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>Disable this option if you want to preserve your data connection</source>
         <translation type="unfinished"></translation>
     </message>
@@ -273,6 +316,30 @@
     <message>
         <source>Maintainer of this release</source>
         <translation type="unfinished"></translation>
+=======
+        <source>Load images in toots</source>
+        <translation>Afbeeldingen in toots laden</translation>
+    </message>
+    <message>
+        <source>Disable this option if you want to preserve your data connection</source>
+        <translation>Schakelt dees optie uit als ge uw verbinding wilt behouden</translation>
+    </message>
+    <message>
+        <source>Translate</source>
+        <translation>Vertalen</translation>
+    </message>
+    <message>
+        <source>Use Transifex to help with app translation to your language</source>
+        <translation>Gebruikt Transifex voor te helpen met dezen app in uw taal te vertalen</translation>
+    </message>
+    <message>
+        <source>Credits</source>
+        <translation>Credits</translation>
+    </message>
+    <message>
+        <source>UI/UX design and development</source>
+        <translation>UI/UX-ontwerp en -ontwikkeling</translation>
+>>>>>>> 33d54bdda818c7a41c3a8cc8c5f09cb682584d8e
     </message>
     <message>
         <source>Visual identity</source>
@@ -295,7 +362,11 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
+<<<<<<< HEAD
         <source>Chinese translation</source>
+=======
+        <source>Development and maintenence</source>
+>>>>>>> 33d54bdda818c7a41c3a8cc8c5f09cb682584d8e
         <translation type="unfinished"></translation>
     </message>
 </context>
