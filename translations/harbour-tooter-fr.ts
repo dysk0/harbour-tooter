@@ -29,40 +29,6 @@
     <message>
         <source>Delete</source>
         <translation>Supprimer</translation>
-<<<<<<< HEAD
-    </message>
-    <message>
-        <source>Emojis</source>
-        <translation>Emojis</translation>
-    </message>
-    <message>
-        <source>Tap to insert</source>
-        <translation>Appuyez pour insérer</translation>
-    </message>
-    <message>
-        <source>Write your warning here</source>
-        <translation>Avertissement du contenu</translation>
-    </message>
-    <message>
-        <source>Public</source>
-        <translation>Public</translation>
-    </message>
-    <message>
-        <source>Unlisted</source>
-        <translation>Non coté</translation>
-    </message>
-    <message>
-        <source>Followers-only</source>
-        <translation>Que Followers</translation>
-    </message>
-    <message>
-        <source>Direct</source>
-        <translation>Direct</translation>
-    </message>
-    <message>
-        <source>What&apos;s on your mind?</source>
-        <translation>A quoi penses-tu?</translation>
-=======
     </message>
     <message>
         <source>Emojis</source>
@@ -95,7 +61,6 @@
     <message>
         <source>Direct</source>
         <translation type="unfinished"></translation>
->>>>>>> 33d54bdda818c7a41c3a8cc8c5f09cb682584d8e
     </message>
 </context>
 <context>
@@ -121,12 +86,6 @@
     <message>
         <source>Instance</source>
         <translation>Instance</translation>
-<<<<<<< HEAD
-    </message>
-    <message>
-        <source>Mastodon is a free, open-source social network. A decentralized alternative to commercial platforms, it avoids the risks of a single company monopolizing your communication. Pick a server that you trust — whichever you choose, you can interact with everyone else. Anyone can run their own Mastodon instance and participate in the social network seamlessly.</source>
-        <translation>Mastodon est un réseau social et logiciel à source ouverte de microblog auto-hébergé, libre, distribué et acentré. Il permet de partager des messages, images et autres contenus. Mastodon peut être fédéré à un réseau d&apos;instances capables de communiquer entre elles.</translation>
-=======
     </message>
     <message>
         <source>Enter an Mastodon instance URL</source>
@@ -135,18 +94,10 @@
     <message>
         <source>Mastodon is a free, open-source social network. A decentralized alternative to commercial platforms, it avoids the risks of a single company monopolizing your communication. Pick a server that you trust — whichever you choose, you can interact with everyone else. Anyone can run their own Mastodon instance and participate in the social network seamlessly.</source>
         <translation>Mastodon est un réseau libre et open source. Il s’agit d&apos;une alternative aux plateformes commerciales, pour éviter qu&apos;une seule entreprise monopolise vos communications. Choisissez un serveur dans lequel vous avez confiance - quelque que soit votre choix vous pourrez interagir avec d’autres personnes. Tout le monde peut monter sa propre instance Mastodon et participer rendre le réseau plus robuste.</translation>
->>>>>>> 33d54bdda818c7a41c3a8cc8c5f09cb682584d8e
     </message>
     <message>
         <source>Reload</source>
         <translation>Recharger</translation>
-<<<<<<< HEAD
-    </message>
-    <message>
-        <source>Enter a valid Mastodon instance URL</source>
-        <translation type="unfinished">Entrer l&apos;URL d&apos;une instance de Mastodon</translation>
-=======
->>>>>>> 33d54bdda818c7a41c3a8cc8c5f09cb682584d8e
     </message>
 </context>
 <context>
@@ -270,87 +221,13 @@
     </message>
     <message>
         <source>Open Profile in Browser</source>
-<<<<<<< HEAD
-        <translation>Ouvrir dans le navigateur</translation>
-=======
         <translation type="unfinished"></translation>
->>>>>>> 33d54bdda818c7a41c3a8cc8c5f09cb682584d8e
     </message>
 </context>
 <context>
     <name>Settings</name>
     <message>
         <source>Settings</source>
-<<<<<<< HEAD
-        <translation>Paramètres</translation>
-    </message>
-    <message>
-        <source>Remove Account</source>
-        <translation>Enlever compte</translation>
-    </message>
-    <message>
-        <source>Add Account</source>
-        <translation>Ajouter compte</translation>
-    </message>
-    <message>
-        <source>Deauthorize this app and remove your account</source>
-        <translation>Désautoriser cette application et enlever votre compte</translation>
-    </message>
-    <message>
-        <source>Authorize this app to use your Mastodon account in your behalf</source>
-        <translation>Autoriser cette application d&apos;utiliser votre compte</translation>
-    </message>
-    <message>
-        <source>Disable this option if you want to preserve your data connection</source>
-        <translation>Désactiver cette option pour économiser des données mobiles</translation>
-    </message>
-    <message>
-        <source>About</source>
-        <translation>À propos</translation>
-    </message>
-    <message>
-        <source>Credits</source>
-        <translation>Développement</translation>
-    </message>
-    <message>
-        <source>UI/UX design and development</source>
-        <translation>Design UI/UX et développement</translation>
-    </message>
-    <message>
-        <source>This application is a forked version of the Mastodon client Tooter, originally developed by Duško Angirević, which fixes various bugs. Source code on &lt;a href=&apos;https://github.com/molan-git/harbour-tooter&apos;&gt;GitHub&lt;/a&gt;.</source>
-        <translation>Cette application est un fork de Tooter (développée par Duško Angirević). Cette version continue le développement et corrige plusieurs bugs trouvés.</translation>
-    </message>
-    <message>
-        <source>Load Images in Toots</source>
-        <translation>Charger images dans pouets</translation>
-    </message>
-    <message>
-        <source>Maintainer of this release</source>
-        <translation>Développement de cette version</translation>
-    </message>
-    <message>
-        <source>Visual identity</source>
-        <translation>Identité visuelle</translation>
-    </message>
-    <message>
-        <source>Occitan &amp; French translation</source>
-        <translation>Traduction français</translation>
-    </message>
-    <message>
-        <source>Dutch translation</source>
-        <translation>Traduction néerlandaise</translation>
-    </message>
-    <message>
-        <source>Spanish translation</source>
-        <translation>Traduction espagnole</translation>
-    </message>
-    <message>
-        <source>Chinese translation</source>
-        <translation>Traduction chinoise</translation>
-    </message>
-    <message>
-        <source>Added README file</source>
-=======
         <translation>Préférences</translation>
     </message>
     <message>
@@ -415,7 +292,6 @@
     </message>
     <message>
         <source>Development and maintenence</source>
->>>>>>> 33d54bdda818c7a41c3a8cc8c5f09cb682584d8e
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -438,19 +314,19 @@
     <name>VisualContainer</name>
     <message>
         <source>Unboost</source>
-        <translation type="unfinished"></translation>
+        <translation>ne plus partager</translation>
     </message>
     <message>
         <source>Boost</source>
-        <translation type="unfinished"></translation>
+        <translation>partager</translation>
     </message>
     <message>
         <source>Unfavorite</source>
-        <translation>Defavoriser</translation>
+        <translation>supprimer de ses favoris </translation>
     </message>
     <message>
         <source>Favorite</source>
-        <translation>Favoriser</translation>
+        <translation>ajouter aux favoris</translation>
     </message>
 </context>
 </TS>

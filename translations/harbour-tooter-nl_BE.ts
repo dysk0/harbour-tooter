@@ -29,21 +29,12 @@
     <message>
         <source>Delete</source>
         <translation>Verwijderen</translation>
-<<<<<<< HEAD
     </message>
     <message>
         <source>Emojis</source>
         <translation>Emoji’s</translation>
     </message>
     <message>
-=======
-    </message>
-    <message>
-        <source>Emojis</source>
-        <translation>Emoji’s</translation>
-    </message>
-    <message>
->>>>>>> 33d54bdda818c7a41c3a8cc8c5f09cb682584d8e
         <source>Tap to insert</source>
         <translation>Tikt voor in te voegen</translation>
     </message>
@@ -52,25 +43,6 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-<<<<<<< HEAD
-        <source>Public</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Unlisted</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Followers-only</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Direct</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>What&apos;s on your mind?</source>
-=======
         <source>What&apos;s on your mind?</source>
         <translation type="unfinished"></translation>
     </message>
@@ -88,7 +60,6 @@
     </message>
     <message>
         <source>Direct</source>
->>>>>>> 33d54bdda818c7a41c3a8cc8c5f09cb682584d8e
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -117,18 +88,6 @@
         <translation>Instantie</translation>
     </message>
     <message>
-<<<<<<< HEAD
-        <source>Mastodon is a free, open-source social network. A decentralized alternative to commercial platforms, it avoids the risks of a single company monopolizing your communication. Pick a server that you trust — whichever you choose, you can interact with everyone else. Anyone can run their own Mastodon instance and participate in the social network seamlessly.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Reload</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Enter a valid Mastodon instance URL</source>
-        <translation type="unfinished"></translation>
-=======
         <source>Enter an Mastodon instance URL</source>
         <translation>Voert den URL van een Mastodon-instantie in</translation>
     </message>
@@ -139,7 +98,6 @@
     <message>
         <source>Reload</source>
         <translation>Herladen</translation>
->>>>>>> 33d54bdda818c7a41c3a8cc8c5f09cb682584d8e
     </message>
 </context>
 <context>
@@ -289,34 +247,6 @@
         <translation>Autoriseert dezen app voor uwe Mastodon-account namens u te gebruiken</translation>
     </message>
     <message>
-<<<<<<< HEAD
-        <source>Disable this option if you want to preserve your data connection</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>About</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Credits</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>UI/UX design and development</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>This application is a forked version of the Mastodon client Tooter, originally developed by Duško Angirević, which fixes various bugs. Source code on &lt;a href=&apos;https://github.com/molan-git/harbour-tooter&apos;&gt;GitHub&lt;/a&gt;.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Load Images in Toots</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Maintainer of this release</source>
-        <translation type="unfinished"></translation>
-=======
         <source>Load images in toots</source>
         <translation>Afbeeldingen in toots laden</translation>
     </message>
@@ -339,7 +269,6 @@
     <message>
         <source>UI/UX design and development</source>
         <translation>UI/UX-ontwerp en -ontwikkeling</translation>
->>>>>>> 33d54bdda818c7a41c3a8cc8c5f09cb682584d8e
     </message>
     <message>
         <source>Visual identity</source>
@@ -362,11 +291,7 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-<<<<<<< HEAD
-        <source>Chinese translation</source>
-=======
         <source>Development and maintenence</source>
->>>>>>> 33d54bdda818c7a41c3a8cc8c5f09cb682584d8e
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -389,19 +314,19 @@
     <name>VisualContainer</name>
     <message>
         <source>Unboost</source>
-        <translation type="unfinished"></translation>
+        <translation>Ontboosten</translation>
     </message>
     <message>
         <source>Boost</source>
-        <translation type="unfinished"></translation>
+        <translation>Boosten</translation>
     </message>
     <message>
         <source>Unfavorite</source>
-        <translation type="unfinished"></translation>
+        <translation>Duim verwijderen</translation>
     </message>
     <message>
         <source>Favorite</source>
-        <translation type="unfinished"></translation>
+        <translation>Duim toevoegen</translation>
     </message>
 </context>
 </TS>

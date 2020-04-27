@@ -163,7 +163,6 @@ function parseNotification(data){
             break;
         }
 
-
         item = parseToot(data.status)
         item = parseAccounts(item, "reblog_", data["account"])
         item = parseAccounts(item, "", data["status"]["account"])

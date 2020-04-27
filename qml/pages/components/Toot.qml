@@ -4,6 +4,7 @@ import QtGraphicalEffects 1.0
 
 BackgroundItem {
     signal send (string notice)
+
     id: delegate
     //property string text: "0"
     width: parent.width

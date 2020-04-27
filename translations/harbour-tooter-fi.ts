@@ -22,19 +22,11 @@
 </context>
 <context>
     <name>Conversation</name>
-<<<<<<< HEAD
     <message>
         <source>Conversation</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-=======
-    <message>
-        <source>Conversation</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
->>>>>>> 33d54bdda818c7a41c3a8cc8c5f09cb682584d8e
         <source>Delete</source>
         <translation type="unfinished"></translation>
     </message>
@@ -51,25 +43,6 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-<<<<<<< HEAD
-        <source>Public</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Unlisted</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Followers-only</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Direct</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>What&apos;s on your mind?</source>
-=======
         <source>What&apos;s on your mind?</source>
         <translation type="unfinished"></translation>
     </message>
@@ -87,7 +60,6 @@
     </message>
     <message>
         <source>Direct</source>
->>>>>>> 33d54bdda818c7a41c3a8cc8c5f09cb682584d8e
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -116,15 +88,15 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
+        <source>Enter an Mastodon instance URL</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <source>Mastodon is a free, open-source social network. A decentralized alternative to commercial platforms, it avoids the risks of a single company monopolizing your communication. Pick a server that you trust — whichever you choose, you can interact with everyone else. Anyone can run their own Mastodon instance and participate in the social network seamlessly.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Reload</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Enter a valid Mastodon instance URL</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -275,11 +247,19 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
+        <source>Load images in toots</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <source>Disable this option if you want to preserve your data connection</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>About</source>
+        <source>Translate</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Use Transifex to help with app translation to your language</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -288,42 +268,6 @@
     </message>
     <message>
         <source>UI/UX design and development</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>This application is a forked version of the Mastodon client Tooter, originally developed by Duško Angirević, which fixes various bugs. Source code on &lt;a href=&apos;https://github.com/molan-git/harbour-tooter&apos;&gt;GitHub&lt;/a&gt;.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Load Images in Toots</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Maintainer of this release</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Visual identity</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Occitan &amp; French translation</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Dutch translation</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Spanish translation</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Added README file</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Chinese translation</source>
         <translation type="unfinished"></translation>
     </message>
     <message>

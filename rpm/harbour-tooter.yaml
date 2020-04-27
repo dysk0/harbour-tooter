@@ -1,12 +1,7 @@
 Name: harbour-tooter
 Summary: Tooter
-<<<<<<< HEAD
-Version: 1.0.3
-Release: 8
-=======
 Version: 1.0.4
 Release: 1
->>>>>>> 33d54bdda818c7a41c3a8cc8c5f09cb682584d8e
 # The contents of the Group field should be one of the groups listed here:
 # https://github.com/mer-tools/spectacle/blob/master/data/GROUPS
 Group: Qt/Qt

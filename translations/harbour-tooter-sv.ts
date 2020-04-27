@@ -33,35 +33,6 @@
     <message>
         <source>Emojis</source>
         <translation>Emojis</translation>
-<<<<<<< HEAD
-    </message>
-    <message>
-        <source>Tap to insert</source>
-        <translation>Tryck för att infoga</translation>
-    </message>
-    <message>
-        <source>Write your warning here</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Public</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Unlisted</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Followers-only</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Direct</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>What&apos;s on your mind?</source>
-=======
     </message>
     <message>
         <source>Tap to insert</source>
@@ -89,7 +60,6 @@
     </message>
     <message>
         <source>Direct</source>
->>>>>>> 33d54bdda818c7a41c3a8cc8c5f09cb682584d8e
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -118,24 +88,15 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-<<<<<<< HEAD
-        <source>Mastodon is a free, open-source social network. A decentralized alternative to commercial platforms, it avoids the risks of a single company monopolizing your communication. Pick a server that you trust — whichever you choose, you can interact with everyone else. Anyone can run their own Mastodon instance and participate in the social network seamlessly.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Reload</source>
-        <translation type="unfinished"></translation>
-=======
         <source>Enter an Mastodon instance URL</source>
         <translation>Fyll i URL till Mastodoninstans</translation>
     </message>
     <message>
         <source>Mastodon is a free, open-source social network. A decentralized alternative to commercial platforms, it avoids the risks of a single company monopolizing your communication. Pick a server that you trust — whichever you choose, you can interact with everyone else. Anyone can run their own Mastodon instance and participate in the social network seamlessly.</source>
         <translation>Mastodon är ett fritt och öppet socialt nätverk byggt på öppen källkod. Ett decentraliserat alternativ till kommersiella plattformar, vilket undviker att ett ensamt företag monopoliserar din kommunikation. Välj en server du litar på --- beroende på vilken du väljer, kan du interagera med alla andra. Vem som helst kan köra deras egen Mastodoninstans och delta i nätverket. Även du!</translation>
->>>>>>> 33d54bdda818c7a41c3a8cc8c5f09cb682584d8e
     </message>
     <message>
-        <source>Enter a valid Mastodon instance URL</source>
+        <source>Reload</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -286,34 +247,6 @@
         <translation>Godkänn denna app att använda ditt Mastodon-konto på dina vägnar</translation>
     </message>
     <message>
-<<<<<<< HEAD
-        <source>Disable this option if you want to preserve your data connection</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>About</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Credits</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>UI/UX design and development</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>This application is a forked version of the Mastodon client Tooter, originally developed by Duško Angirević, which fixes various bugs. Source code on &lt;a href=&apos;https://github.com/molan-git/harbour-tooter&apos;&gt;GitHub&lt;/a&gt;.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Load Images in Toots</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Maintainer of this release</source>
-        <translation type="unfinished"></translation>
-=======
         <source>Load images in toots</source>
         <translation>Ladda bilder i toots</translation>
     </message>
@@ -336,7 +269,6 @@
     <message>
         <source>UI/UX design and development</source>
         <translation>UI/UX design och utveckling</translation>
->>>>>>> 33d54bdda818c7a41c3a8cc8c5f09cb682584d8e
     </message>
     <message>
         <source>Visual identity</source>
@@ -359,11 +291,7 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-<<<<<<< HEAD
-        <source>Chinese translation</source>
-=======
         <source>Development and maintenence</source>
->>>>>>> 33d54bdda818c7a41c3a8cc8c5f09cb682584d8e
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -386,19 +314,19 @@
     <name>VisualContainer</name>
     <message>
         <source>Unboost</source>
-        <translation type="unfinished"></translation>
+        <translation>Avpuffa</translation>
     </message>
     <message>
         <source>Boost</source>
-        <translation type="unfinished"></translation>
+        <translation>Puffa</translation>
     </message>
     <message>
         <source>Unfavorite</source>
-        <translation type="unfinished"></translation>
+        <translation>Avfavorisera</translation>
     </message>
     <message>
         <source>Favorite</source>
-        <translation type="unfinished"></translation>
+        <translation>Favorisera</translation>
     </message>
 </context>
 </TS>

@@ -57,49 +57,30 @@ Page {
                 IconTextSwitch {
                     //enabled: false
                     checked: typeof Logic.conf['loadImages'] !== "undefined" && Logic.conf['loadImages']
-                    text: qsTr("Load Images in Toots")
+                    text: qsTr("Load images in toots")
                     description: qsTr("Disable this option if you want to preserve your data connection")
                     icon.source: "image://theme/icon-m-mobile-network"
                     onClicked: {
                         Logic.conf['loadImages'] = checked
                     }
                 }
-//                IconTextSwitch {
-//                    text: qsTr("Translate")
-//                    description: qsTr("Use Transifex to help with app translation to your language")
-//                    icon.source: "image://theme/icon-m-presence"
-//                    onCheckedChanged: {
-//                        busy = true;
-//                        checked = false;
-//                        Qt.openUrlExternally("https://www.transifex.com/dysko/tooter/");
-//                        timer2.start()
-//                    }
-//                    Timer {
-//                        id: timer2
-//                        interval: 4700
-//                        onTriggered: parent.busy = false
-//                    }
-//                }
+                IconTextSwitch {
+                    text: qsTr("Translate")
+                    description: qsTr("Use Transifex to help with app translation to your language")
+                    icon.source: "image://theme/icon-m-presence"
+                    onCheckedChanged: {
+                        busy = true;
+                        checked = false;
+                        Qt.openUrlExternally("https://www.transifex.com/dysko/tooter/");
+                        timer2.start()
+                    }
+                    Timer {
+                        id: timer2
+                        interval: 4700
+                        onTriggered: parent.busy = false
+                    }
+                }
             }
-
-            SectionHeader {
-                text:  qsTr("About")
-            }
-
-            Text {
-                            x: Theme.horizontalPageMargin
-                            width: parent.width  - ( 2 * Theme.horizontalPageMargin )
-                            text: qsTr("This application is a forked version of the Mastodon client Tooter, originally developed by Duško Angirević, which fixes various bugs. Source code on <a href=\'https://github.com/molan-git/harbour-tooter'>GitHub</a>.")
-                            font.pixelSize: Theme.fontSizeExtraSmall
-                            color: Theme.secondaryColor
-                            linkColor: Theme.secondaryHighlightColor
-                            wrapMode: Text.Wrap
-                            anchors {
-                                horizontalCenter: parent.horizontalCenter
-                            }
-                            onLinkActivated: Qt.openUrlExternally(link)
-                        }
-            
             SectionHeader {
                 text:  qsTr("Credits")
             }
@@ -113,12 +94,6 @@ Page {
                 }
                 Repeater {
                     model: ListModel {
-                        ListElement {
-                            name: "molan"
-                            desc: qsTr("Maintainer of this release")
-                            mastodon: ""
-                            mail: "mol_an@sunrise.ch"
-                        }
                         ListElement {
                             name: "Duško Angirević"
                             desc: qsTr("UI/UX design and development")
@@ -144,12 +119,6 @@ Page {
                             mail: ""
                         }
                         ListElement {
-                            name: "Luchy Kon / dashinfantry"
-                            desc: qsTr("Chinese translation")
-                            mastodon: ""
-                            mail: "dashinfantry@gmail.com"
-                        }
-                        ListElement {
                             name: "André Koot"
                             desc: qsTr("Dutch translation")
                             mastodon: "meneer@mastodon.social"
@@ -161,6 +130,7 @@ Page {
                             mastodon: ""
                             mail: ""
                         }
+
                         ListElement {
                             name: "Mohamed-Touhami MAHDI"
                             desc: qsTr("Added README file")
