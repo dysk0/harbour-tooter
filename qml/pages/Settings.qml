@@ -12,7 +12,7 @@ Page {
 
 
         VerticalScrollDecorator {}
-        Column {
+        Column {a
             id: column
             spacing: Theme.paddingSmall
             width: parent.width
