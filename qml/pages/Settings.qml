@@ -114,12 +114,6 @@ Page {
                 Repeater {
                     model: ListModel {
                         ListElement {
-                            name: "molan"
-                            desc: qsTr("Maintainer of this release")
-                            mastodon: ""
-                            mail: "mol_an@sunrise.ch"
-                        }
-                        ListElement {
                             name: "Duško Angirević"
                             desc: qsTr("UI/UX design and development")
                             mastodon: "dysko@mastodon.social"
@@ -132,8 +126,8 @@ Page {
                             mail: "micotakis@gmail.com"
                         }
                         ListElement {
-                            name: "molan"
-                            desc: qsTr("Development and maintenence")
+                            name: "Molan"
+                            desc: qsTr("Development and maintenance")
                             mastodon: ""
                             mail: "mol_an@sunrise.ch"
                         }
