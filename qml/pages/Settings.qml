@@ -29,7 +29,7 @@ Page {
                     icon.source: Logic.conf['login'] ? "image://theme/icon-m-people" : "image://theme/icon-m-add"
 
 
-                    onCheckedChanged: {
+                    onCheckedChanged: { 
                         remorsePopup.execute(removeAccount.text, function() {
                             busy = true;
                             checked = false;
