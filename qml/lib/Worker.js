@@ -150,8 +150,8 @@ function parseNotification(data){
     switch (item['type']){
     case "mention":
         if (!data.status) {
-                   break;
-               }
+          break;
+        }
 
         item = parseToot(data.status)
         item['typeIcon'] = "image://theme/icon-s-retweet"
@@ -160,8 +160,8 @@ function parseNotification(data){
         break;
     case "reblog":
         if (!data.status) {
-                    break;
-                }
+            break;
+        }
 
         item = parseToot(data.status)
         item = parseAccounts(item, "reblog_", data["account"])
