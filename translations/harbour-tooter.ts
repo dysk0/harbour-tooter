@@ -43,10 +43,6 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>What&apos;s on your mind?</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <source>Public</source>
         <translation type="unfinished"></translation>
     </message>
@@ -60,6 +56,10 @@
     </message>
     <message>
         <source>Direct</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>What&apos;s on your mind?</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -88,15 +88,15 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>Enter an Mastodon instance URL</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <source>Mastodon is a free, open-source social network. A decentralized alternative to commercial platforms, it avoids the risks of a single company monopolizing your communication. Pick a server that you trust — whichever you choose, you can interact with everyone else. Anyone can run their own Mastodon instance and participate in the social network seamlessly.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Reload</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Enter a valid Mastodon instance URL</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -247,19 +247,11 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>Load images in toots</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <source>Disable this option if you want to preserve your data connection</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>Translate</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Use Transifex to help with app translation to your language</source>
+        <source>About</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -268,6 +260,18 @@
     </message>
     <message>
         <source>UI/UX design and development</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>This application is a forked version of the Mastodon client Tooter, originally developed by Duško Angirević, which fixes various bugs. Source code on &lt;a href=&apos;https://github.com/molan-git/harbour-tooter&apos;&gt;GitHub&lt;/a&gt;.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Load Images in Toots</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Maintainer of this release</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -291,7 +295,7 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>Development and maintenence</source>
+        <source>Chinese translation</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -314,19 +318,19 @@
     <name>VisualContainer</name>
     <message>
         <source>Unboost</source>
-        <translation>Unboost</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Boost</source>
-        <translation>Boost</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Unfavorite</source>
-        <translation>Unfavorite</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Favorite</source>
-        <translation>Favorite</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 </TS>

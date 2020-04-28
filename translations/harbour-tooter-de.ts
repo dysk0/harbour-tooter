@@ -13,7 +13,7 @@
     </message>
     <message>
         <source>boosted</source>
-        <translation>verstärkt</translation>
+        <translation>geboostet</translation>
     </message>
     <message>
         <source>said</source>
@@ -40,27 +40,27 @@
     </message>
     <message>
         <source>Write your warning here</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>What&apos;s on your mind?</source>
-        <translation type="unfinished"></translation>
+        <translation>Füge eine Inhaltswarnung hinzu</translation>
     </message>
     <message>
         <source>Public</source>
-        <translation type="unfinished"></translation>
+        <translation>Öffentlich</translation>
     </message>
     <message>
         <source>Unlisted</source>
-        <translation type="unfinished"></translation>
+        <translation>Nicht gelistet</translation>
     </message>
     <message>
         <source>Followers-only</source>
-        <translation type="unfinished"></translation>
+        <translation>Nur Follower</translation>
     </message>
     <message>
         <source>Direct</source>
-        <translation type="unfinished"></translation>
+        <translation>Direkt</translation>
+    </message>
+    <message>
+        <source>What&apos;s on your mind?</source>
+        <translation>Was möchtest du mitteilen?</translation>
     </message>
 </context>
 <context>
@@ -85,19 +85,19 @@
     </message>
     <message>
         <source>Instance</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Enter an Mastodon instance URL</source>
-        <translation>Gib eine Mastadon Instance URL ein</translation>
+        <translation>Instanz</translation>
     </message>
     <message>
         <source>Mastodon is a free, open-source social network. A decentralized alternative to commercial platforms, it avoids the risks of a single company monopolizing your communication. Pick a server that you trust — whichever you choose, you can interact with everyone else. Anyone can run their own Mastodon instance and participate in the social network seamlessly.</source>
-        <translation>Mastodon ist ein freies, auf OpenSource begründetes Soziales Netzwerk. Es bietet eine dezentralisierte Alternative zu den kommerziellen Plattformen, vermeidet aber das Risiko, dass ein einzelnes Unternehmen das Monopol auf deine gesamte Kommunikation erhält. Wähle selbst einen Server (Instanz) der du vertraust - egal welche du wählst, du kannst mit allen kommunizieren. Oder du betreibst deine eigene Mastodon Instanz und verbindest dich nahtlos mit dem Mastodon Netzwerk.</translation>
+        <translation>Mastodon ist ein freies, quelloffenes soziales Netzwerk. Im Gegensatz zu kommerziellen Plattformen, ist Mastodon als dezentrales Netzwerk konzipiert. Somit wird das Risiko vermieden, dass ein einziges Unternehmen die volle Kontrolle über die Kommunikation der Benutzer hat. Benutzer können einer beliebigen Instanz beitreten oder selbst eine eigene betreiben.</translation>
     </message>
     <message>
         <source>Reload</source>
-        <translation type="unfinished"></translation>
+        <translation>Neu laden</translation>
+    </message>
+    <message>
+        <source>Enter a valid Mastodon instance URL</source>
+        <translation>Eine gültige Mastodon-Instanz URL eingeben</translation>
     </message>
 </context>
 <context>
@@ -128,14 +128,14 @@
     </message>
     <message>
         <source>Federated</source>
-        <translation>Vereinigt</translation>
+        <translation>Föderiert</translation>
     </message>
 </context>
 <context>
     <name>MiniStatus</name>
     <message>
         <source>boosted</source>
-        <translation>verstärkt</translation>
+        <translation>geboostet</translation>
     </message>
     <message>
         <source>favourited</source>
@@ -217,11 +217,11 @@
     </message>
     <message>
         <source>Bio</source>
-        <translation type="unfinished"></translation>
+        <translation>Bio</translation>
     </message>
     <message>
         <source>Open Profile in Browser</source>
-        <translation type="unfinished"></translation>
+        <translation>Profil in Browser öffnen</translation>
     </message>
 </context>
 <context>
@@ -232,74 +232,78 @@
     </message>
     <message>
         <source>Remove Account</source>
-        <translation>Account löschen</translation>
+        <translation>Konto entfernen</translation>
     </message>
     <message>
         <source>Add Account</source>
-        <translation>Account hinzufügen</translation>
+        <translation>Konto hinzufügen</translation>
     </message>
     <message>
         <source>Deauthorize this app and remove your account</source>
-        <translation>Der App Autorisierung entziehen und Account entfernen</translation>
+        <translation>Konto entfernen und für diese Anwendung deaktivieren</translation>
     </message>
     <message>
         <source>Authorize this app to use your Mastodon account in your behalf</source>
-        <translation>Autorisiere diese App deinen Mastodon Account in deinem Namen zu nutzen</translation>
-    </message>
-    <message>
-        <source>Load images in toots</source>
-        <translation>Lade Bilder in den Toots</translation>
+        <translation>Zugriff durch diese Anwendung auf eigenes Mastodon-Konto erlauben</translation>
     </message>
     <message>
         <source>Disable this option if you want to preserve your data connection</source>
-        <translation>Deaktiviere diese Option um deinen Datenverbindung zu schonen</translation>
+        <translation>Diese Option deaktivieren um Datenvolumen zu sparen</translation>
     </message>
     <message>
-        <source>Translate</source>
-        <translation>Übersetzen</translation>
-    </message>
-    <message>
-        <source>Use Transifex to help with app translation to your language</source>
-        <translation>Nutze Transifex um bei der Übersetzung in deine Sprache zu helfen</translation>
+        <source>About</source>
+        <translation>Über</translation>
     </message>
     <message>
         <source>Credits</source>
-        <translation>Credits</translation>
+        <translation>Entwickler</translation>
     </message>
     <message>
         <source>UI/UX design and development</source>
-        <translation>UI/UX Design und Implementierung</translation>
+        <translation>UI/UX-Gestaltung und Entwicklung</translation>
+    </message>
+    <message>
+        <source>This application is a forked version of the Mastodon client Tooter, originally developed by Duško Angirević, which fixes various bugs. Source code on &lt;a href=&apos;https://github.com/molan-git/harbour-tooter&apos;&gt;GitHub&lt;/a&gt;.</source>
+        <translation>Dies ist ein Fork und Weiterentwicklung der Mastodon-Anwendung Tooter, welche urpsrünglich von Duško Angirević entwickelt wurde. Quellcode auf &lt;a href=&apos;https://github.com/molan-git/harbour-tooter&apos;&gt;GitHub&lt;/a&gt;.</translation>
+    </message>
+    <message>
+        <source>Load Images in Toots</source>
+        <translation>Bilder in Toots laden</translation>
+    </message>
+    <message>
+        <source>Maintainer of this release</source>
+        <translation>Entwicklung dieser Version</translation>
     </message>
     <message>
         <source>Visual identity</source>
-        <translation type="unfinished"></translation>
+        <translation>Visuelle Identität</translation>
     </message>
     <message>
         <source>Occitan &amp; French translation</source>
-        <translation type="unfinished"></translation>
+        <translation>Franzözische Übersetzung</translation>
     </message>
     <message>
         <source>Dutch translation</source>
-        <translation type="unfinished"></translation>
+        <translation>Niederländische Übersetzung</translation>
     </message>
     <message>
         <source>Spanish translation</source>
-        <translation type="unfinished"></translation>
+        <translation>Spanische Übersetzung</translation>
     </message>
     <message>
         <source>Added README file</source>
-        <translation type="unfinished"></translation>
+        <translation>README-Datei erstellt</translation>
     </message>
     <message>
-        <source>Development and maintenence</source>
-        <translation type="unfinished"></translation>
+        <source>Chinese translation</source>
+        <translation>Chinesische Übersetzung</translation>
     </message>
 </context>
 <context>
     <name>Toot</name>
     <message>
         <source>boosted</source>
-        <translation>verstärkt</translation>
+        <translation>geboostet</translation>
     </message>
     <message>
         <source>favourited</source>
@@ -314,19 +318,19 @@
     <name>VisualContainer</name>
     <message>
         <source>Unboost</source>
-        <translation>Schwäche</translation>
+        <translation>Nicht boosten</translation>
     </message>
     <message>
         <source>Boost</source>
-        <translation>Verstärke</translation>
+        <translation>Boosten</translation>
     </message>
     <message>
         <source>Unfavorite</source>
-        <translation>Aus Favoriten entfernen</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Favorite</source>
-        <translation>Zu Favoriten</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 </TS>

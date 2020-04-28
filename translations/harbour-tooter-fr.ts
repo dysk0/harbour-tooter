@@ -40,27 +40,27 @@
     </message>
     <message>
         <source>Write your warning here</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>What&apos;s on your mind?</source>
-        <translation type="unfinished"></translation>
+        <translation>Avertissement du contenu</translation>
     </message>
     <message>
         <source>Public</source>
-        <translation type="unfinished"></translation>
+        <translation>Public</translation>
     </message>
     <message>
         <source>Unlisted</source>
-        <translation type="unfinished"></translation>
+        <translation>Non coté</translation>
     </message>
     <message>
         <source>Followers-only</source>
-        <translation type="unfinished"></translation>
+        <translation>Que Followers</translation>
     </message>
     <message>
         <source>Direct</source>
-        <translation type="unfinished"></translation>
+        <translation>Direct</translation>
+    </message>
+    <message>
+        <source>What&apos;s on your mind?</source>
+        <translation>A quoi penses-tu?</translation>
     </message>
 </context>
 <context>
@@ -88,16 +88,16 @@
         <translation>Instance</translation>
     </message>
     <message>
-        <source>Enter an Mastodon instance URL</source>
-        <translation>Saisissez l’URL d’une instance Mastodon</translation>
-    </message>
-    <message>
         <source>Mastodon is a free, open-source social network. A decentralized alternative to commercial platforms, it avoids the risks of a single company monopolizing your communication. Pick a server that you trust — whichever you choose, you can interact with everyone else. Anyone can run their own Mastodon instance and participate in the social network seamlessly.</source>
-        <translation>Mastodon est un réseau libre et open source. Il s’agit d&apos;une alternative aux plateformes commerciales, pour éviter qu&apos;une seule entreprise monopolise vos communications. Choisissez un serveur dans lequel vous avez confiance - quelque que soit votre choix vous pourrez interagir avec d’autres personnes. Tout le monde peut monter sa propre instance Mastodon et participer rendre le réseau plus robuste.</translation>
+        <translation>Mastodon est un réseau social et logiciel à source ouverte de microblog auto-hébergé, libre, distribué et acentré. Il permet de partager des messages, images et autres contenus. Mastodon peut être fédéré à un réseau d&apos;instances capables de communiquer entre elles.</translation>
     </message>
     <message>
         <source>Reload</source>
         <translation>Recharger</translation>
+    </message>
+    <message>
+        <source>Enter a valid Mastodon instance URL</source>
+        <translation type="unfinished">Entrer l&apos;URL d&apos;une instance de Mastodon</translation>
     </message>
 </context>
 <context>
@@ -221,77 +221,81 @@
     </message>
     <message>
         <source>Open Profile in Browser</source>
-        <translation type="unfinished"></translation>
+        <translation>Ouvrir dans le navigateur</translation>
     </message>
 </context>
 <context>
     <name>Settings</name>
     <message>
         <source>Settings</source>
-        <translation>Préférences</translation>
+        <translation>Paramètres</translation>
     </message>
     <message>
         <source>Remove Account</source>
-        <translation>Supprimer le compte</translation>
+        <translation>Enlever compte</translation>
     </message>
     <message>
         <source>Add Account</source>
-        <translation>Ajouter un compte</translation>
+        <translation>Ajouter compte</translation>
     </message>
     <message>
         <source>Deauthorize this app and remove your account</source>
-        <translation>Supprimer votre compte de l&apos;application</translation>
+        <translation>Désautoriser cette application et enlever votre compte</translation>
     </message>
     <message>
         <source>Authorize this app to use your Mastodon account in your behalf</source>
-        <translation>Autoriser cette application à utiliser votre compte Mastodon en votre nom</translation>
-    </message>
-    <message>
-        <source>Load images in toots</source>
-        <translation>Charger les images des pouets</translation>
+        <translation>Autoriser cette application d&apos;utiliser votre compte</translation>
     </message>
     <message>
         <source>Disable this option if you want to preserve your data connection</source>
-        <translation>Désactivez cette option si vous souhaitez économiser votre consommation de données</translation>
+        <translation>Désactiver cette option pour économiser des données mobiles</translation>
     </message>
     <message>
-        <source>Translate</source>
-        <translation>Traduire</translation>
-    </message>
-    <message>
-        <source>Use Transifex to help with app translation to your language</source>
-        <translation>Utilisez Transifex pour aider à la traduction de l&apos;application dans votre langue</translation>
+        <source>About</source>
+        <translation>À propos</translation>
     </message>
     <message>
         <source>Credits</source>
-        <translation>Crédits</translation>
+        <translation>Développement</translation>
     </message>
     <message>
         <source>UI/UX design and development</source>
-        <translation>design et développement de l&apos;interface</translation>
+        <translation>Design UI/UX et développement</translation>
+    </message>
+    <message>
+        <source>This application is a forked version of the Mastodon client Tooter, originally developed by Duško Angirević, which fixes various bugs. Source code on &lt;a href=&apos;https://github.com/molan-git/harbour-tooter&apos;&gt;GitHub&lt;/a&gt;.</source>
+        <translation>Cette application est un fork de Tooter (développée par Duško Angirević). Cette version continue le développement et corrige plusieurs bugs trouvés.</translation>
+    </message>
+    <message>
+        <source>Load Images in Toots</source>
+        <translation>Charger images dans pouets</translation>
+    </message>
+    <message>
+        <source>Maintainer of this release</source>
+        <translation>Développement de cette version</translation>
     </message>
     <message>
         <source>Visual identity</source>
-        <translation type="unfinished"></translation>
+        <translation>Identité visuelle</translation>
     </message>
     <message>
         <source>Occitan &amp; French translation</source>
-        <translation type="unfinished"></translation>
+        <translation>Traduction français</translation>
     </message>
     <message>
         <source>Dutch translation</source>
-        <translation type="unfinished"></translation>
+        <translation>Traduction néerlandaise</translation>
     </message>
     <message>
         <source>Spanish translation</source>
-        <translation type="unfinished"></translation>
+        <translation>Traduction espagnole</translation>
+    </message>
+    <message>
+        <source>Chinese translation</source>
+        <translation>Traduction chinoise</translation>
     </message>
     <message>
         <source>Added README file</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Development and maintenence</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -314,19 +318,19 @@
     <name>VisualContainer</name>
     <message>
         <source>Unboost</source>
-        <translation>ne plus partager</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Boost</source>
-        <translation>partager</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Unfavorite</source>
-        <translation>supprimer de ses favoris </translation>
+        <translation>Defavoriser</translation>
     </message>
     <message>
         <source>Favorite</source>
-        <translation>ajouter aux favoris</translation>
+        <translation>Favoriser</translation>
     </message>
 </context>
 </TS>

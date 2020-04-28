@@ -43,10 +43,6 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>What&apos;s on your mind?</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <source>Public</source>
         <translation type="unfinished"></translation>
     </message>
@@ -60,6 +56,10 @@
     </message>
     <message>
         <source>Direct</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>What&apos;s on your mind?</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -81,14 +81,10 @@
     <name>LoginPage</name>
     <message>
         <source>Login</source>
-        <translation>Σύνδεση</translation>
-    </message>
-    <message>
-        <source>Instance</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>Enter an Mastodon instance URL</source>
+        <source>Instance</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -97,6 +93,10 @@
     </message>
     <message>
         <source>Reload</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Enter a valid Mastodon instance URL</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -228,47 +228,51 @@
     <name>Settings</name>
     <message>
         <source>Settings</source>
-        <translation>Ρυθμίσεις</translation>
+        <translation type="unfinished">Ρυθμίσεις</translation>
     </message>
     <message>
         <source>Remove Account</source>
-        <translation>Αφαίρεση λογαριασμού</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Add Account</source>
-        <translation>Προσθήκη λογαριασμού</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Deauthorize this app and remove your account</source>
-        <translation>Άρση της αδειοδότησης της εφαρμογής και αφαίρεση του λογαριασμού σας</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Authorize this app to use your Mastodon account in your behalf</source>
-        <translation>Να επιτρέπεται στην εφαρμογή να χρησιμοποιεί τον λογαριασμό σας στο Mastodon εκ μέρους σας</translation>
-    </message>
-    <message>
-        <source>Load images in toots</source>
-        <translation>Φόρτωση των εικόνων στα toot</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Disable this option if you want to preserve your data connection</source>
-        <translation>Απενεργοποιήστε αυτήν την επιλογή αν θέλετε να διατηρήσετε την σύνδεση των δεδομένων σας</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>Translate</source>
-        <translation>Μετάφραση</translation>
-    </message>
-    <message>
-        <source>Use Transifex to help with app translation to your language</source>
-        <translation>Χρησιμοποιήστε το Transifex για να βοηθήσετε την μετάφραση της εφαρμογής στην γλώσσα σας</translation>
+        <source>About</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Credits</source>
-        <translation>Ευχαριστίες</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>UI/UX design and development</source>
-        <translation>UI/UX σχεδιασμός και ανάπτυξη</translation>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>This application is a forked version of the Mastodon client Tooter, originally developed by Duško Angirević, which fixes various bugs. Source code on &lt;a href=&apos;https://github.com/molan-git/harbour-tooter&apos;&gt;GitHub&lt;/a&gt;.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Load Images in Toots</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Maintainer of this release</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Visual identity</source>
@@ -291,7 +295,7 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>Development and maintenence</source>
+        <source>Chinese translation</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -314,19 +318,19 @@
     <name>VisualContainer</name>
     <message>
         <source>Unboost</source>
-        <translation>Αναίρεση προώθησης</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Boost</source>
-        <translation>Προώθηση</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Unfavorite</source>
-        <translation>Αφαίρεση από τους σελιδοδείκτες</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Favorite</source>
-        <translation>Σελιδοδείκτης</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 </TS>

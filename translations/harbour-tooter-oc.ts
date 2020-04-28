@@ -43,10 +43,6 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>What&apos;s on your mind?</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <source>Public</source>
         <translation type="unfinished"></translation>
     </message>
@@ -60,6 +56,10 @@
     </message>
     <message>
         <source>Direct</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>What&apos;s on your mind?</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -81,22 +81,22 @@
     <name>LoginPage</name>
     <message>
         <source>Login</source>
-        <translation>Connexion</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Instance</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>Enter an Mastodon instance URL</source>
-        <translation>Picatz l’URL d’una instància Mastodon</translation>
-    </message>
-    <message>
         <source>Mastodon is a free, open-source social network. A decentralized alternative to commercial platforms, it avoids the risks of a single company monopolizing your communication. Pick a server that you trust — whichever you choose, you can interact with everyone else. Anyone can run their own Mastodon instance and participate in the social network seamlessly.</source>
-        <translation>Mastodon es un malhum liure e open source. Es una alternativa descentralizada a las plataformas comercialas, per empachar qu&apos;una sola entrepresa monopolize vòstras comunicacions. Causissètz un servidor que vos fisatz - qualque siá vòstre causida poiretz interagir amb los autres. Tot lo monde pòt montar sa pròpria instància Mastodon e atal participar a construire un malhum mai solid.</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Reload</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Enter a valid Mastodon instance URL</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -228,47 +228,51 @@
     <name>Settings</name>
     <message>
         <source>Settings</source>
-        <translation>Paramètres</translation>
+        <translation type="unfinished">Parmètres</translation>
     </message>
     <message>
         <source>Remove Account</source>
-        <translation>Levar un compte</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Add Account</source>
-        <translation>Ajustar un compte</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Deauthorize this app and remove your account</source>
-        <translation>Revocar l’aplicacion e levar vòstre compte</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Authorize this app to use your Mastodon account in your behalf</source>
-        <translation>Autorizar aquesta aplicacion a utilizar vòstre compte Mastodon per vos</translation>
-    </message>
-    <message>
-        <source>Load images in toots</source>
-        <translation>Cargar los imatges dels tuts</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Disable this option if you want to preserve your data connection</source>
-        <translation>Desactivar aquesta opcion per estalviar vòstra connexion de donadas</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>Translate</source>
-        <translation>Traduire</translation>
-    </message>
-    <message>
-        <source>Use Transifex to help with app translation to your language</source>
-        <translation>Utilizar Transifex per ajudar a traduire l’aplicacion dins vòstra lenga</translation>
+        <source>About</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Credits</source>
-        <translation>Crèdits</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>UI/UX design and development</source>
-        <translation>UI/UX design e desvlopament</translation>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>This application is a forked version of the Mastodon client Tooter, originally developed by Duško Angirević, which fixes various bugs. Source code on &lt;a href=&apos;https://github.com/molan-git/harbour-tooter&apos;&gt;GitHub&lt;/a&gt;.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Load Images in Toots</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Maintainer of this release</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Visual identity</source>
@@ -291,7 +295,7 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>Development and maintenence</source>
+        <source>Chinese translation</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -314,19 +318,19 @@
     <name>VisualContainer</name>
     <message>
         <source>Unboost</source>
-        <translation>Partejar pas mai</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Boost</source>
-        <translation>Partejar</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Unfavorite</source>
-        <translation>Levar dels favorits</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Favorite</source>
-        <translation>Ajustar als favorits</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 </TS>

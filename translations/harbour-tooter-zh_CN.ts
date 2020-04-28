@@ -17,26 +17,7 @@
     </message>
     <message>
         <source>said</source>
-        <translation>说的</translation>
-    </message>
-</context>
-<context>
-    <name>Browser</name>
-    <message>
-        <source>Open in Browser</source>
-        <translation>在浏览器打开</translation>
-    </message>
-    <message>
-        <source>Web mode</source>
-        <translation>网页模式</translation>
-    </message>
-    <message>
-        <source>Reading mode</source>
-        <translation>阅读模式</translation>
-    </message>
-    <message>
-        <source>Copy URL</source>
-        <translation>复制链接</translation>
+        <translation>说过</translation>
     </message>
 </context>
 <context>
@@ -44,26 +25,6 @@
     <message>
         <source>Conversation</source>
         <translation>对话</translation>
-    </message>
-    <message>
-        <source>Content warning!</source>
-        <translation>内容警告!</translation>
-    </message>
-    <message>
-        <source>public</source>
-        <translation>公共区域</translation>
-    </message>
-    <message>
-        <source>unlisted</source>
-        <translation>未列的</translation>
-    </message>
-    <message>
-        <source>followers only</source>
-        <translation>仅关注者</translation>
-    </message>
-    <message>
-        <source>direct</source>
-        <translation>直接</translation>
     </message>
     <message>
         <source>Delete</source>
@@ -75,7 +36,31 @@
     </message>
     <message>
         <source>Tap to insert</source>
-        <translation>点击插入</translation>
+        <translation>点击以插入</translation>
+    </message>
+    <message>
+        <source>Write your warning here</source>
+        <translation>在此编写你的警告信息</translation>
+    </message>
+    <message>
+        <source>Public</source>
+        <translation>公共区域</translation>
+    </message>
+    <message>
+        <source>Unlisted</source>
+        <translation>不公开</translation>
+    </message>
+    <message>
+        <source>Followers-only</source>
+        <translation>仅关注者</translation>
+    </message>
+    <message>
+        <source>Direct</source>
+        <translation>私信</translation>
+    </message>
+    <message>
+        <source>What&apos;s on your mind?</source>
+        <translation>有何想法?</translation>
     </message>
 </context>
 <context>
@@ -103,21 +88,16 @@
         <translation>实例</translation>
     </message>
     <message>
-        <source>Enter an Mastodon instance URL</source>
-        <translation>输入一个 Mastodon 实例链接</translation>
-    </message>
-    <message>
         <source>Mastodon is a free, open-source social network. A decentralized alternative to commercial platforms, it avoids the risks of a single company monopolizing your communication. Pick a server that you trust — whichever you choose, you can interact with everyone else. Anyone can run their own Mastodon instance and participate in the social network seamlessly.</source>
-        <translation>​Mastodon 是一个自由且开源的社交网络。一个去中心的商业平台的替代品。它能够避免某个公司垄断你的通讯方式的风险。选择一个你所信任的服务器——无论你选择什么，你都可以和其他人进行互动。任何人都能运行他们自己的 Mastodon 实例，然后无缝加入社交网站。</translation>
-
+        <translation>​Mastodon 是一个自由且开源的社交网络。一个去中心化的商业平台的替代品。它能够避免某个公司垄断你的通讯方式的风险。选择一个你所信任的服务器——无论你选择什么，你都可以和其他人进行互动。任何人都能运行他们自己的 Mastodon 实例，然后无缝加入社交网站。</translation>
     </message>
     <message>
         <source>Reload</source>
         <translation>重新加载</translation>
     </message>
     <message>
-        <source>Enter an Mastodon instance URL</source>
-        <translation type="unfinished"></translation>
+        <source>Enter a valid Mastodon instance URL</source>
+        <translation>输入一个有效的 Mastodon 实例 URL</translation>
     </message>
 </context>
 <context>
@@ -182,19 +162,18 @@
     </message>
     <message>
         <source>please wait...</source>
-        <translation>请等候......</translation>
+        <translation>稍等片刻......</translation>
     </message>
 </context>
 <context>
     <name>Profile</name>
     <message>
         <source>Unfollow</source>
-
-        <translation>未关注</translation>
+        <translation>取消关注</translation>
     </message>
     <message>
         <source>Follow request sent!</source>
-        <translation>关注请求已寄出！</translation>
+        <translation>已寄出关注请求！</translation>
     </message>
     <message>
         <source>Following</source>
@@ -253,35 +232,27 @@
     </message>
     <message>
         <source>Remove Account</source>
-        <translation>移除账户</translation>
+        <translation>移除账号</translation>
     </message>
     <message>
         <source>Add Account</source>
-        <translation>添加账户</translation>
+        <translation>添加账号</translation>
     </message>
     <message>
         <source>Deauthorize this app and remove your account</source>
-        <translation>取消对此软件的授权并移除你的账户</translation>
+        <translation>取消授权此软件并移除你的账号</translation>
     </message>
     <message>
         <source>Authorize this app to use your Mastodon account in your behalf</source>
-        <translation>授权此软件使用你的 Mastodon 账户</translation>
-    </message>
-    <message>
-        <source>Load images in toots</source>
-        <translation>在嘟嘟加载图片</translation>
+        <translation>授权此软件使用你的 Mastodon 账号</translation>
     </message>
     <message>
         <source>Disable this option if you want to preserve your data connection</source>
-        <translation>如果你想保护你的数据连接 请禁用此操作</translation>
+        <translation>如果你想保护你的数据连接，请禁用此选项</translation>
     </message>
     <message>
-        <source>Translate</source>
-        <translation>翻译</translation>
-    </message>
-    <message>
-        <source>Use Transifex to help with app translation to your language</source>
-        <translation>使用 Transifex 帮助翻译此软件到你所使用的语言。</translation>
+        <source>About</source>
+        <translation>关于</translation>
     </message>
     <message>
         <source>Credits</source>
@@ -289,7 +260,43 @@
     </message>
     <message>
         <source>UI/UX design and development</source>
-        <translation>UI/UX 设计及开发</translation>
+        <translation>UI/UX设计及开发</translation>
+    </message>
+    <message>
+        <source>This application is a forked version of the Mastodon client Tooter, originally developed by Duško Angirević, which fixes various bugs. Source code on &lt;a href=&apos;https://github.com/molan-git/harbour-tooter&apos;&gt;GitHub&lt;/a&gt;.</source>
+        <translation>此软件是一个 Mastodon 客户端 Tooter，原作者为 Duško Angirević。该分支修复了大量缺陷，你可以在此处找到源代码 &lt;a href=&apos;https://github.com/molan-git/harbour-tooter&apos;&gt;GitHub&lt;/a&gt; 。</translation>
+    </message>
+    <message>
+        <source>Load Images in Toots</source>
+        <translation>在嘟嘟加载图片</translation>
+    </message>
+    <message>
+        <source>Maintainer of this release</source>
+        <translation>该发布的维护者</translation>
+    </message>
+    <message>
+        <source>Visual identity</source>
+        <translation>视觉识别</translation>
+    </message>
+    <message>
+        <source>Occitan &amp; French translation</source>
+        <translation>奥克西坦语及法语翻译</translation>
+    </message>
+    <message>
+        <source>Dutch translation</source>
+        <translation>尼德兰语翻译</translation>
+    </message>
+    <message>
+        <source>Spanish translation</source>
+        <translation>西班牙语翻译</translation>
+    </message>
+    <message>
+        <source>Added README file</source>
+        <translation>添加 README 文件</translation>
+    </message>
+    <message>
+        <source>Chinese translation</source>
+        <translation>汉语翻译</translation>
     </message>
 </context>
 <context>
@@ -319,12 +326,11 @@
     </message>
     <message>
         <source>Unfavorite</source>
-
-        <translation>取消收藏</translation>
+        <translation>取消关注</translation>
     </message>
     <message>
         <source>Favorite</source>
-        <translation>收藏</translation>
+        <translation>关注</translation>
     </message>
 </context>
 </TS>

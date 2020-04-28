@@ -40,27 +40,27 @@
     </message>
     <message>
         <source>Write your warning here</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>What&apos;s on your mind?</source>
-        <translation type="unfinished"></translation>
+        <translation>Escribe aquí tu aviso</translation>
     </message>
     <message>
         <source>Public</source>
-        <translation type="unfinished"></translation>
+        <translation>Público</translation>
     </message>
     <message>
         <source>Unlisted</source>
-        <translation type="unfinished"></translation>
+        <translation>Sin federar</translation>
     </message>
     <message>
         <source>Followers-only</source>
-        <translation type="unfinished"></translation>
+        <translation>Sólo seguidores</translation>
     </message>
     <message>
         <source>Direct</source>
-        <translation type="unfinished"></translation>
+        <translation>Directo</translation>
+    </message>
+    <message>
+        <source>What&apos;s on your mind?</source>
+        <translation>¿Qué tienes en mente?</translation>
     </message>
 </context>
 <context>
@@ -88,16 +88,16 @@
         <translation>Instancia</translation>
     </message>
     <message>
-        <source>Enter an Mastodon instance URL</source>
-        <translation>Introduce URL de una instancia de Mastodon</translation>
-    </message>
-    <message>
         <source>Mastodon is a free, open-source social network. A decentralized alternative to commercial platforms, it avoids the risks of a single company monopolizing your communication. Pick a server that you trust — whichever you choose, you can interact with everyone else. Anyone can run their own Mastodon instance and participate in the social network seamlessly.</source>
-        <translation>Mastodon es una red social gratuita y de código abierto. Una alternativa descentralizada a las plataformas comerciales, evita los riesgos de una única compañía que monopolice tu comunicación. Elije un servidor en el que confíes — cualquiera que elijas, puede interactuar con todos los demás. Cualquiera puede ejecutar su propia instancia de Mastodon y participar en la red social sin problemas.</translation>
+        <translation>Mastodon es una red social libre y de código abierto. Una alternativa descentralizada a las plataformas comerciales, evita los riesgos de una única compañía que monopolice tu comunicación. Elije un servidor en el que confíes — cualquiera que elijas, puede interactuar con todos los demás. Cualquiera puede ejecutar su propia instancia de Mastodon y participar en la red social sin problemas.</translation>
     </message>
     <message>
         <source>Reload</source>
         <translation>Volver a cargar</translation>
+    </message>
+    <message>
+        <source>Enter a valid Mastodon instance URL</source>
+        <translation>Introduce una URL de instancia de Mastodon válida</translation>
     </message>
 </context>
 <context>
@@ -217,11 +217,11 @@
     </message>
     <message>
         <source>Bio</source>
-        <translation type="unfinished"></translation>
+        <translation>Bio</translation>
     </message>
     <message>
         <source>Open Profile in Browser</source>
-        <translation type="unfinished"></translation>
+        <translation>Abrir perfil en navegador</translation>
     </message>
 </context>
 <context>
@@ -244,23 +244,15 @@
     </message>
     <message>
         <source>Authorize this app to use your Mastodon account in your behalf</source>
-        <translation>Autoriza a esta aplicación a usar tu cuenta de Mastodon en tu nombre</translation>
-    </message>
-    <message>
-        <source>Load images in toots</source>
-        <translation>Cargar imágenes en toots</translation>
+        <translation>Autoriza a esta aplicación para usar tu cuenta de Mastodon en tu nombre</translation>
     </message>
     <message>
         <source>Disable this option if you want to preserve your data connection</source>
         <translation>Deshabilita esta opción si quieres ahorrar en tu conexión de datos</translation>
     </message>
     <message>
-        <source>Translate</source>
-        <translation>Traducir</translation>
-    </message>
-    <message>
-        <source>Use Transifex to help with app translation to your language</source>
-        <translation>Usa Transifex para ayudar en la traducción a tu idioma de esta aplicación</translation>
+        <source>About</source>
+        <translation>Acerca de</translation>
     </message>
     <message>
         <source>Credits</source>
@@ -271,28 +263,40 @@
         <translation>Diseño UI/UX y desarrollo</translation>
     </message>
     <message>
+        <source>This application is a forked version of the Mastodon client Tooter, originally developed by Duško Angirević, which fixes various bugs. Source code on &lt;a href=&apos;https://github.com/molan-git/harbour-tooter&apos;&gt;GitHub&lt;/a&gt;.</source>
+        <translation>Esta aplicación es una versión bifurcada del cliente de Mastodon Tooter, desarrollada originalmente por Duško Angirević, que corrige varios errores. Código fuente en &lt;a href=&apos;https://github.com/molan-git/harbour-tooter&apos;&gt;GitHub&lt;/a&gt;.</translation>
+    </message>
+    <message>
+        <source>Load Images in Toots</source>
+        <translation>Cargar imágenes en toots</translation>
+    </message>
+    <message>
+        <source>Maintainer of this release</source>
+        <translation>Mantenedor de esta publicación</translation>
+    </message>
+    <message>
         <source>Visual identity</source>
-        <translation type="unfinished"></translation>
+        <translation>Identidad visual</translation>
     </message>
     <message>
         <source>Occitan &amp; French translation</source>
-        <translation type="unfinished"></translation>
+        <translation>Traducción al occitano y francés</translation>
     </message>
     <message>
         <source>Dutch translation</source>
-        <translation type="unfinished"></translation>
+        <translation>Traducción al holandés</translation>
     </message>
     <message>
         <source>Spanish translation</source>
-        <translation type="unfinished"></translation>
+        <translation>Traducción al español</translation>
     </message>
     <message>
         <source>Added README file</source>
-        <translation type="unfinished"></translation>
+        <translation>Añadido archivo README</translation>
     </message>
     <message>
-        <source>Development and maintenence</source>
-        <translation type="unfinished"></translation>
+        <source>Chinese translation</source>
+        <translation>Traducción al chino</translation>
     </message>
 </context>
 <context>

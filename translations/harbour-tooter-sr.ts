@@ -43,10 +43,6 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>What&apos;s on your mind?</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <source>Public</source>
         <translation type="unfinished"></translation>
     </message>
@@ -60,6 +56,10 @@
     </message>
     <message>
         <source>Direct</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>What&apos;s on your mind?</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -81,23 +81,23 @@
     <name>LoginPage</name>
     <message>
         <source>Login</source>
-        <translation>Пријава</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Instance</source>
-        <translation>Инстанца</translation>
-    </message>
-    <message>
-        <source>Enter an Mastodon instance URL</source>
-        <translation>Унесите URL ваше Мастодон инстанце</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Mastodon is a free, open-source social network. A decentralized alternative to commercial platforms, it avoids the risks of a single company monopolizing your communication. Pick a server that you trust — whichever you choose, you can interact with everyone else. Anyone can run their own Mastodon instance and participate in the social network seamlessly.</source>
-        <translation>Mastodon је бесплатна, open-source друштвена мрежа. Децентрализована алтернатива комерцијалним платформама која избегава ризике једне компаније која монополизује вашу комуникацију. Одаберите сервер у који имате поверења и без обзира на ваш избор - комуницирајте с осталим корисницима других мрежа. Свако може водити сопствену инстанцу Mastodon мреже и учестовати у комуникацији с другим инстанцама.</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Reload</source>
-        <translation>освежи</translation>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Enter a valid Mastodon instance URL</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -228,47 +228,51 @@
     <name>Settings</name>
     <message>
         <source>Settings</source>
-        <translation>Подешавања</translation>
+        <translation type="unfinished">Подешавања</translation>
     </message>
     <message>
         <source>Remove Account</source>
-        <translation>Уклони налог</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Add Account</source>
-        <translation>Додај налог</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Deauthorize this app and remove your account</source>
-        <translation>Укините дозволе за кориштење и уклоните налог с телефона</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Authorize this app to use your Mastodon account in your behalf</source>
-        <translation>Дозволите овој апликацији да користи ваш Mastodon налог</translation>
-    </message>
-    <message>
-        <source>Load images in toots</source>
-        <translation>Прикажи слике у објавама</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Disable this option if you want to preserve your data connection</source>
-        <translation>Искључите ову опцију уколико желите да уштедите на преносу података</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>Translate</source>
-        <translation>Преведи</translation>
-    </message>
-    <message>
-        <source>Use Transifex to help with app translation to your language</source>
-        <translation>Користите Transifex и помозите у преводу апликације на други језик</translation>
+        <source>About</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Credits</source>
-        <translation>Спомен плоча</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>UI/UX design and development</source>
-        <translation>интерфејс дизајн и развој</translation>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>This application is a forked version of the Mastodon client Tooter, originally developed by Duško Angirević, which fixes various bugs. Source code on &lt;a href=&apos;https://github.com/molan-git/harbour-tooter&apos;&gt;GitHub&lt;/a&gt;.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Load Images in Toots</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Maintainer of this release</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Visual identity</source>
@@ -291,7 +295,7 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>Development and maintenence</source>
+        <source>Chinese translation</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -314,19 +318,19 @@
     <name>VisualContainer</name>
     <message>
         <source>Unboost</source>
-        <translation>Уклони разглас</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Boost</source>
-        <translation>Разгласи</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Unfavorite</source>
-        <translation>Уклони из омиљених</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Favorite</source>
-        <translation>Омиљено</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 </TS>
