@@ -25,7 +25,7 @@ Page {
                 IconTextSwitch {
                     id: removeAccount
                     text: Logic.conf['login'] ? qsTr("Remove Account") : qsTr("Add Account")
-                    description: Logic.conf['login'] ? qsTr("Deauthorize this app and remove your account") : qsTr("Authorize this app to use your Mastodon account in your behalf")
+                    description: Logic.conf['login'] ? qsTr("Deauthorize this app and remove your account") : qsTr("Authorize this app to access your Mastodon account")
                     icon.source: Logic.conf['login'] ? "image://theme/icon-m-people" : "image://theme/icon-m-add"
 
 
