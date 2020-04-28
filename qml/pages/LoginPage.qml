@@ -62,7 +62,7 @@ Page {
             TextField {
                 id: instance
                 focus: true
-                label: qsTr("Enter an Mastodon instance URL")
+                label: qsTr("Enter a valid Mastodon instance URL")
                 text: "https://"
                 placeholderText: "https://mastodon.social"
                 width: parent.width
