@@ -108,7 +108,7 @@ Page {
                         }
                         ListElement {
                             name: "Molan"
-                            desc: qsTr("Development, maintenance and translations")
+                            desc: qsTr("Development and translations")
                             mastodon: ""
                             mail: "mol_an@sunrise.ch"
                         }
