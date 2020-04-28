@@ -1,28 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE TS>
-<TS version="2.1">
+<TS version="2.1" language="it">
 <context>
     <name>API</name>
     <message>
         <location filename="../qml/lib/API.js" line="158"/>
         <source>favourited</source>
-        <translation type="unfinished"></translation>
+        <translation>ha apprezzato il tuo post</translation>
     </message>
     <message>
         <location filename="../qml/lib/API.js" line="169"/>
         <source>followed you</source>
-        <translation type="unfinished"></translation>
+        <translation>ha iniziato a seguirti</translation>
     </message>
     <message>
         <location filename="../qml/lib/API.js" line="179"/>
         <source>boosted</source>
-        <translation type="unfinished"></translation>
+        <translation>ha condiviso il tuo post</translation>
     </message>
     <message>
         <location filename="../qml/lib/API.js" line="189"/>
         <location filename="../qml/lib/API.js" line="191"/>
         <source>said</source>
-        <translation type="unfinished"></translation>
+        <translation>ha detto</translation>
     </message>
 </context>
 <context>
@@ -30,52 +30,52 @@
     <message>
         <location filename="../qml/pages/Conversation.qml" line="65"/>
         <source>Conversation</source>
-        <translation type="unfinished"></translation>
+        <translation>Conversazione</translation>
     </message>
     <message>
         <location filename="../qml/pages/Conversation.qml" line="182"/>
         <source>Write your warning here</source>
-        <translation type="unfinished"></translation>
+        <translation>Contenuto avviso</translation>
     </message>
     <message>
         <location filename="../qml/pages/Conversation.qml" line="213"/>
         <source>What&apos;s on your mind?</source>
-        <translation type="unfinished"></translation>
+        <translation>A cosa stai pensando?</translation>
     </message>
     <message>
         <location filename="../qml/pages/Conversation.qml" line="274"/>
         <source>Delete</source>
-        <translation type="unfinished"></translation>
+        <translation>Elimina</translation>
     </message>
     <message>
         <location filename="../qml/pages/Conversation.qml" line="372"/>
         <source>Public</source>
-        <translation type="unfinished"></translation>
+        <translation>Pubblico</translation>
     </message>
     <message>
         <location filename="../qml/pages/Conversation.qml" line="375"/>
         <source>Unlisted</source>
-        <translation type="unfinished"></translation>
+        <translation>Non elencato</translation>
     </message>
     <message>
         <location filename="../qml/pages/Conversation.qml" line="378"/>
         <source>Followers-only</source>
-        <translation type="unfinished"></translation>
+        <translation>Solo ai seguaci</translation>
     </message>
     <message>
         <location filename="../qml/pages/Conversation.qml" line="381"/>
         <source>Direct</source>
-        <translation type="unfinished"></translation>
+        <translation>Diretto</translation>
     </message>
     <message>
         <location filename="../qml/pages/Conversation.qml" line="494"/>
         <source>Emojis</source>
-        <translation type="unfinished"></translation>
+        <translation>Emojis</translation>
     </message>
     <message>
         <location filename="../qml/pages/Conversation.qml" line="495"/>
         <source>Tap to insert</source>
-        <translation type="unfinished"></translation>
+        <translation>Tap per inserire</translation>
     </message>
 </context>
 <context>
@@ -83,7 +83,7 @@
     <message>
         <location filename="../qml/pages/components/ImageFullScreen.qml" line="287"/>
         <source>Error loading</source>
-        <translation type="unfinished"></translation>
+        <translation>Errore caricamento</translation>
     </message>
 </context>
 <context>
@@ -91,7 +91,7 @@
     <message>
         <location filename="../src/imageuploader.cpp" line="83"/>
         <source>The file %1 does not exists</source>
-        <translation type="unfinished"></translation>
+        <translation>Il file %1 non esiste</translation>
     </message>
 </context>
 <context>
@@ -99,27 +99,27 @@
     <message>
         <location filename="../qml/pages/LoginPage.qml" line="56"/>
         <source>Login</source>
-        <translation type="unfinished"></translation>
+        <translation>Accesso</translation>
     </message>
     <message>
         <location filename="../qml/pages/LoginPage.qml" line="59"/>
         <source>Instance</source>
-        <translation type="unfinished"></translation>
+        <translation>Istanza</translation>
     </message>
     <message>
         <location filename="../qml/pages/LoginPage.qml" line="65"/>
         <source>Enter a valid Mastodon instance URL</source>
-        <translation type="unfinished"></translation>
+        <translation>Inserire URL di una istanza Mastodon valida</translation>
     </message>
     <message>
         <location filename="../qml/pages/LoginPage.qml" line="121"/>
         <source>Mastodon is a free, open-source social network. A decentralized alternative to commercial platforms, it avoids the risks of a single company monopolizing your communication. Pick a server that you trust — whichever you choose, you can interact with everyone else. Anyone can run their own Mastodon instance and participate in the social network seamlessly.</source>
-        <translation type="unfinished"></translation>
+        <translation>Mastodon è un servizio di rete sociale in software libero, costituito in una federazione d'istanze. Mastodon fa parte del più ampio Fediverso, permettendo ai suoi utenti di interagire anche con utenti su diverse piattaforme aperte che supportano lo stesso protocollo.</translation>
     </message>
     <message>
         <location filename="../qml/pages/LoginPage.qml" line="192"/>
         <source>Reload</source>
-        <translation type="unfinished"></translation>
+        <translation>Ricarica</translation>
     </message>
 </context>
 <context>
@@ -127,37 +127,37 @@
     <message>
         <location filename="../qml/pages/MainPage.qml" line="64"/>
         <source>Home</source>
-        <translation type="unfinished"></translation>
+        <translation>Home</translation>
     </message>
     <message>
         <location filename="../qml/pages/MainPage.qml" line="73"/>
         <source>Notifications</source>
-        <translation type="unfinished"></translation>
+        <translation>Notifiche</translation>
     </message>
     <message>
         <location filename="../qml/pages/MainPage.qml" line="83"/>
         <source>Local</source>
-        <translation type="unfinished"></translation>
+        <translation>Locale</translation>
     </message>
     <message>
         <location filename="../qml/pages/MainPage.qml" line="93"/>
         <source>Federated</source>
-        <translation type="unfinished"></translation>
+        <translation>Federazione</translation>
     </message>
     <message>
         <location filename="../qml/pages/MainPage.qml" line="120"/>
         <source>Search</source>
-        <translation type="unfinished"></translation>
+        <translation>Cerca</translation>
     </message>
     <message>
         <location filename="../qml/pages/MainPage.qml" line="125"/>
         <source>@user or #term</source>
-        <translation type="unfinished"></translation>
+        <translation>@utente o #termine</translation>
     </message>
     <message>
         <location filename="../qml/pages/MainPage.qml" line="249"/>
         <source>New Toot</source>
-        <translation type="unfinished"></translation>
+        <translation>Nuovo toot</translation>
     </message>
 </context>
 <context>
@@ -165,17 +165,17 @@
     <message>
         <location filename="../qml/pages/components/MiniStatus.qml" line="36"/>
         <source>boosted</source>
-        <translation type="unfinished"></translation>
+        <translation>ha condiviso il tuo post</translation>
     </message>
     <message>
         <location filename="../qml/pages/components/MiniStatus.qml" line="39"/>
         <source>favourited</source>
-        <translation type="unfinished"></translation>
+        <translation>ha apprezzato il tuo post</translation>
     </message>
     <message>
         <location filename="../qml/pages/components/MiniStatus.qml" line="42"/>
         <source>followed you</source>
-        <translation type="unfinished"></translation>
+        <translation>ha iniziato a seguirti</translation>
     </message>
 </context>
 <context>
@@ -183,22 +183,22 @@
     <message>
         <location filename="../qml/pages/components/MyList.qml" line="10"/>
         <source>Loading</source>
-        <translation type="unfinished"></translation>
+        <translation>Caricamento</translation>
     </message>
     <message>
         <location filename="../qml/pages/components/MyList.qml" line="11"/>
         <source>please wait...</source>
-        <translation type="unfinished"></translation>
+        <translation>Attendere un momento...</translation>
     </message>
     <message>
         <location filename="../qml/pages/components/MyList.qml" line="63"/>
         <source>Settings</source>
-        <translation type="unfinished"></translation>
+        <translation>Impostazioni</translation>
     </message>
     <message>
         <location filename="../qml/pages/components/MyList.qml" line="70"/>
         <source>Load more</source>
-        <translation type="unfinished"></translation>
+        <translation>Caricare altri</translation>
     </message>
 </context>
 <context>
@@ -206,72 +206,72 @@
     <message>
         <location filename="../qml/pages/Profile.qml" line="172"/>
         <source>Summary</source>
-        <translation type="unfinished"></translation>
+        <translation>Sintesi</translation>
     </message>
     <message>
         <location filename="../qml/pages/Profile.qml" line="178"/>
         <source>Followers</source>
-        <translation type="unfinished"></translation>
+        <translation>Seguaci</translation>
     </message>
     <message>
         <location filename="../qml/pages/Profile.qml" line="183"/>
         <source>Following</source>
-        <translation type="unfinished"></translation>
+        <translation>Segue</translation>
     </message>
     <message>
         <location filename="../qml/pages/Profile.qml" line="188"/>
         <source>Statuses</source>
-        <translation type="unfinished"></translation>
+        <translation>Toots</translation>
     </message>
     <message>
         <location filename="../qml/pages/Profile.qml" line="193"/>
         <source>Favourites</source>
-        <translation type="unfinished"></translation>
+        <translation>Apprezzati</translation>
     </message>
     <message>
         <location filename="../qml/pages/Profile.qml" line="202"/>
         <source>Unfollow</source>
-        <translation type="unfinished"></translation>
+        <translation>Smetti di seguire</translation>
     </message>
     <message>
         <location filename="../qml/pages/Profile.qml" line="202"/>
         <source>Follow request sent!</source>
-        <translation type="unfinished"></translation>
+        <translation>Richiesta di seguito inviata</translation>
     </message>
     <message>
         <location filename="../qml/pages/Profile.qml" line="202"/>
         <source>Follow</source>
-        <translation type="unfinished"></translation>
+        <translation>Segui</translation>
     </message>
     <message>
         <location filename="../qml/pages/Profile.qml" line="215"/>
         <source>Unmute</source>
-        <translation type="unfinished"></translation>
+        <translation>Non silenziare</translation>
     </message>
     <message>
         <location filename="../qml/pages/Profile.qml" line="215"/>
         <source>Mute</source>
-        <translation type="unfinished"></translation>
+        <translation>Silenzia</translation>
     </message>
     <message>
         <location filename="../qml/pages/Profile.qml" line="228"/>
         <source>Unblock</source>
-        <translation type="unfinished"></translation>
+        <translation>Sblocca</translation>
     </message>
     <message>
         <location filename="../qml/pages/Profile.qml" line="228"/>
         <source>Block</source>
-        <translation type="unfinished"></translation>
+        <translation>Blocca</translation>
     </message>
     <message>
         <location filename="../qml/pages/Profile.qml" line="247"/>
         <source>Bio</source>
-        <translation type="unfinished"></translation>
+        <translation>Biografia</translation>
     </message>
     <message>
         <location filename="../qml/pages/Profile.qml" line="294"/>
         <source>Open Profile in Browser</source>
-        <translation type="unfinished"></translation>
+        <translation>Aprire profile nel browser</translation>
     </message>
 </context>
 <context>
@@ -279,32 +279,32 @@
     <message>
         <location filename="../qml/pages/Settings.qml" line="20"/>
         <source>Settings</source>
-        <translation type="unfinished"></translation>
+        <translation>Impostazione</translation>
     </message>
     <message>
         <location filename="../qml/pages/Settings.qml" line="27"/>
         <source>Remove Account</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Rimozione del account</translation>
     </message>
     <message>
         <location filename="../qml/pages/Settings.qml" line="27"/>
         <source>Add Account</source>
-        <translation type="unfinished"></translation>
+        <translation>Aggiungi account</translation>
     </message>
     <message>
         <location filename="../qml/pages/Settings.qml" line="28"/>
         <source>Deauthorize this app and remove your account</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Annullare l'autorizzazione dell'app e rimuovere l'account</translation>
     </message>
     <message>
         <location filename="../qml/pages/Settings.qml" line="28"/>
         <source>Authorize this app to use your Mastodon account in your behalf</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Autorizzare l'app all'utilizzo del conto Mastodon</translation>
     </message>
     <message>
         <location filename="../qml/pages/Settings.qml" line="60"/>
         <source>Load images in toots</source>
-        <translation type="unfinished"></translation>
+        <translation>Caricare immagini nei toots</translation>
     </message>
     <message>
         <location filename="../qml/pages/Settings.qml" line="61"/>
@@ -314,12 +314,12 @@
     <message>
         <location filename="../qml/pages/Settings.qml" line="68"/>
         <source>Translate</source>
-        <translation type="unfinished"></translation>
+        <translation>Tradurre</translation>
     </message>
     <message>
         <location filename="../qml/pages/Settings.qml" line="69"/>
         <source>Use Transifex to help with app translation to your language</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Utilizzare Transifex per aiutare nella traduzione dell'app</translation>
     </message>
     <message>
         <location filename="../qml/pages/Settings.qml" line="85"/>
@@ -372,17 +372,17 @@
     <message>
         <location filename="../qml/pages/components/Toot.qml" line="35"/>
         <source>boosted</source>
-        <translation type="unfinished"></translation>
+        <translation>ha condiviso il tuo post</translation>
     </message>
     <message>
         <location filename="../qml/pages/components/Toot.qml" line="38"/>
         <source>favourited</source>
-        <translation type="unfinished"></translation>
+        <translation>ha apprezzato il tuo post</translation>
     </message>
     <message>
         <location filename="../qml/pages/components/Toot.qml" line="41"/>
         <source>followed you</source>
-        <translation type="unfinished"></translation>
+        <translation>ha iniziato a seguirti</translation>
     </message>
 </context>
 <context>
@@ -390,22 +390,22 @@
     <message>
         <location filename="../qml/pages/components/VisualContainer.qml" line="198"/>
         <source>Unboost</source>
-        <translation type="unfinished"></translation>
+        <translation>Annulla condivisione</translation>
     </message>
     <message>
         <location filename="../qml/pages/components/VisualContainer.qml" line="198"/>
         <source>Boost</source>
-        <translation type="unfinished"></translation>
+        <translation>Condividi</translation>
     </message>
     <message>
         <location filename="../qml/pages/components/VisualContainer.qml" line="235"/>
         <source>Unfavorite</source>
-        <translation type="unfinished"></translation>
+        <translation>Annulla apprezzamento</translation>
     </message>
     <message>
         <location filename="../qml/pages/components/VisualContainer.qml" line="235"/>
         <source>Favorite</source>
-        <translation type="unfinished"></translation>
+        <translation>Apprezzato</translation>
     </message>
 </context>
 </TS>
