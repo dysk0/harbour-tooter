@@ -251,28 +251,12 @@
         <translation>Désactiver cette option pour économiser des données mobiles</translation>
     </message>
     <message>
-        <source>About</source>
-        <translation>À propos</translation>
-    </message>
-    <message>
         <source>Credits</source>
         <translation>Développement</translation>
     </message>
     <message>
         <source>UI/UX design and development</source>
         <translation>Design UI/UX et développement</translation>
-    </message>
-    <message>
-        <source>This application is a forked version of the Mastodon client Tooter, originally developed by Duško Angirević, which fixes various bugs. Source code on &lt;a href=&apos;https://github.com/molan-git/harbour-tooter&apos;&gt;GitHub&lt;/a&gt;.</source>
-        <translation>Cette application est un fork de Tooter (développée par Duško Angirević). Cette version continue le développement et corrige plusieurs bugs trouvés.</translation>
-    </message>
-    <message>
-        <source>Load Images in Toots</source>
-        <translation>Charger images dans pouets</translation>
-    </message>
-    <message>
-        <source>Maintainer of this release</source>
-        <translation>Développement de cette version</translation>
     </message>
     <message>
         <source>Visual identity</source>
@@ -296,7 +280,23 @@
     </message>
     <message>
         <source>Added README file</source>
-        <translation type="unfinished"></translation>
+        <translation>Ajouté fichier README</translation>
+    </message>
+    <message>
+        <source>Load images in toots</source>
+        <translation>Charger images dans les pouets</translation>
+    </message>
+    <message>
+        <source>Translate</source>
+        <translation>Traduire</translation>
+    </message>
+    <message>
+        <source>Use Transifex to help with app translation to your language</source>
+        <translation>Utiliser Transifex pour aider avec les traductions de l&apos;application</translation>
+    </message>
+    <message>
+        <source>Development and translations</source>
+        <translation>Développement et traductions</translation>
     </message>
 </context>
 <context>
@@ -318,15 +318,15 @@
     <name>VisualContainer</name>
     <message>
         <source>Unboost</source>
-        <translation type="unfinished"></translation>
+        <translation>Pas booster</translation>
     </message>
     <message>
         <source>Boost</source>
-        <translation type="unfinished"></translation>
+        <translation>Booster</translation>
     </message>
     <message>
         <source>Unfavorite</source>
-        <translation>Defavoriser</translation>
+        <translation>Défavoriser</translation>
     </message>
     <message>
         <source>Favorite</source>

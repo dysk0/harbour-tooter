@@ -251,28 +251,12 @@
         <translation>Deshabilita esta opción si quieres ahorrar en tu conexión de datos</translation>
     </message>
     <message>
-        <source>About</source>
-        <translation>Acerca de</translation>
-    </message>
-    <message>
         <source>Credits</source>
         <translation>Créditos</translation>
     </message>
     <message>
         <source>UI/UX design and development</source>
         <translation>Diseño UI/UX y desarrollo</translation>
-    </message>
-    <message>
-        <source>This application is a forked version of the Mastodon client Tooter, originally developed by Duško Angirević, which fixes various bugs. Source code on &lt;a href=&apos;https://github.com/molan-git/harbour-tooter&apos;&gt;GitHub&lt;/a&gt;.</source>
-        <translation>Esta aplicación es una versión bifurcada del cliente de Mastodon Tooter, desarrollada originalmente por Duško Angirević, que corrige varios errores. Código fuente en &lt;a href=&apos;https://github.com/molan-git/harbour-tooter&apos;&gt;GitHub&lt;/a&gt;.</translation>
-    </message>
-    <message>
-        <source>Load Images in Toots</source>
-        <translation>Cargar imágenes en toots</translation>
-    </message>
-    <message>
-        <source>Maintainer of this release</source>
-        <translation>Mantenedor de esta publicación</translation>
     </message>
     <message>
         <source>Visual identity</source>
@@ -297,6 +281,22 @@
     <message>
         <source>Chinese translation</source>
         <translation>Traducción al chino</translation>
+    </message>
+    <message>
+        <source>Load images in toots</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Translate</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Use Transifex to help with app translation to your language</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Development and translations</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>

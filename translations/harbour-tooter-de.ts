@@ -158,7 +158,7 @@
     </message>
     <message>
         <source>Loading</source>
-        <translation>Lädt...</translation>
+        <translation>Wird geladen</translation>
     </message>
     <message>
         <source>please wait...</source>
@@ -251,28 +251,12 @@
         <translation>Diese Option deaktivieren um Datenvolumen zu sparen</translation>
     </message>
     <message>
-        <source>About</source>
-        <translation>Über</translation>
-    </message>
-    <message>
         <source>Credits</source>
-        <translation>Entwickler</translation>
+        <translation>Über</translation>
     </message>
     <message>
         <source>UI/UX design and development</source>
         <translation>UI/UX-Gestaltung und Entwicklung</translation>
-    </message>
-    <message>
-        <source>This application is a forked version of the Mastodon client Tooter, originally developed by Duško Angirević, which fixes various bugs. Source code on &lt;a href=&apos;https://github.com/molan-git/harbour-tooter&apos;&gt;GitHub&lt;/a&gt;.</source>
-        <translation>Dies ist ein Fork und Weiterentwicklung der Mastodon-Anwendung Tooter, welche urpsrünglich von Duško Angirević entwickelt wurde. Quellcode auf &lt;a href=&apos;https://github.com/molan-git/harbour-tooter&apos;&gt;GitHub&lt;/a&gt;.</translation>
-    </message>
-    <message>
-        <source>Load Images in Toots</source>
-        <translation>Bilder in Toots laden</translation>
-    </message>
-    <message>
-        <source>Maintainer of this release</source>
-        <translation>Entwicklung dieser Version</translation>
     </message>
     <message>
         <source>Visual identity</source>
@@ -280,7 +264,7 @@
     </message>
     <message>
         <source>Occitan &amp; French translation</source>
-        <translation>Franzözische Übersetzung</translation>
+        <translation>Französische Übersetzung</translation>
     </message>
     <message>
         <source>Dutch translation</source>
@@ -297,6 +281,22 @@
     <message>
         <source>Chinese translation</source>
         <translation>Chinesische Übersetzung</translation>
+    </message>
+    <message>
+        <source>Load images in toots</source>
+        <translation>Bilder in Toots laden</translation>
+    </message>
+    <message>
+        <source>Translate</source>
+        <translation>Übersetzungen</translation>
+    </message>
+    <message>
+        <source>Use Transifex to help with app translation to your language</source>
+        <translation>Transifex benutzen um bei den Übersetzungen mitzuhelfen</translation>
+    </message>
+    <message>
+        <source>Development and translations</source>
+        <translation>Entwicklung und Übersetzungen</translation>
     </message>
 </context>
 <context>
@@ -326,11 +326,11 @@
     </message>
     <message>
         <source>Unfavorite</source>
-        <translation type="unfinished"></translation>
+        <translation>Nicht favorisieren</translation>
     </message>
     <message>
         <source>Favorite</source>
-        <translation type="unfinished"></translation>
+        <translation>Favorisieren</translation>
     </message>
 </context>
 </TS>

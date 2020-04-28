@@ -251,28 +251,12 @@
         <translation>如果你想保护你的数据连接，请禁用此选项</translation>
     </message>
     <message>
-        <source>About</source>
-        <translation>关于</translation>
-    </message>
-    <message>
         <source>Credits</source>
         <translation>信誉</translation>
     </message>
     <message>
         <source>UI/UX design and development</source>
         <translation>UI/UX设计及开发</translation>
-    </message>
-    <message>
-        <source>This application is a forked version of the Mastodon client Tooter, originally developed by Duško Angirević, which fixes various bugs. Source code on &lt;a href=&apos;https://github.com/molan-git/harbour-tooter&apos;&gt;GitHub&lt;/a&gt;.</source>
-        <translation>此软件是一个 Mastodon 客户端 Tooter，原作者为 Duško Angirević。该分支修复了大量缺陷，你可以在此处找到源代码 &lt;a href=&apos;https://github.com/molan-git/harbour-tooter&apos;&gt;GitHub&lt;/a&gt; 。</translation>
-    </message>
-    <message>
-        <source>Load Images in Toots</source>
-        <translation>在嘟嘟加载图片</translation>
-    </message>
-    <message>
-        <source>Maintainer of this release</source>
-        <translation>该发布的维护者</translation>
     </message>
     <message>
         <source>Visual identity</source>
@@ -297,6 +281,22 @@
     <message>
         <source>Chinese translation</source>
         <translation>汉语翻译</translation>
+    </message>
+    <message>
+        <source>Load images in toots</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Translate</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Use Transifex to help with app translation to your language</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Development and translations</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
