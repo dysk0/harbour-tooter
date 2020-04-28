@@ -114,7 +114,7 @@
     <message>
         <location filename="../qml/pages/LoginPage.qml" line="121"/>
         <source>Mastodon is a free, open-source social network. A decentralized alternative to commercial platforms, it avoids the risks of a single company monopolizing your communication. Pick a server that you trust — whichever you choose, you can interact with everyone else. Anyone can run their own Mastodon instance and participate in the social network seamlessly.</source>
-        <translation>Mastodon è un servizio di rete sociale in software libero, costituito in una federazione d'istanze. Mastodon fa parte del più ampio Fediverso, permettendo ai suoi utenti di interagire anche con utenti su diverse piattaforme aperte che supportano lo stesso protocollo.</translation>
+        <translation>Mastodon è un servizio di rete sociale in software libero, costituito in una federazione d&apos;istanze. Mastodon fa parte del più ampio Fediverso, permettendo ai suoi utenti di interagire anche con utenti su diverse piattaforme aperte che supportano lo stesso protocollo.</translation>
     </message>
     <message>
         <location filename="../qml/pages/LoginPage.qml" line="192"/>
@@ -204,72 +204,72 @@
 <context>
     <name>Profile</name>
     <message>
-        <location filename="../qml/pages/Profile.qml" line="172"/>
+        <location filename="../qml/pages/Profile.qml" line="173"/>
         <source>Summary</source>
         <translation>Sintesi</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Profile.qml" line="178"/>
+        <location filename="../qml/pages/Profile.qml" line="179"/>
         <source>Followers</source>
         <translation>Seguaci</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Profile.qml" line="183"/>
+        <location filename="../qml/pages/Profile.qml" line="184"/>
         <source>Following</source>
         <translation>Segue</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Profile.qml" line="188"/>
+        <location filename="../qml/pages/Profile.qml" line="189"/>
         <source>Statuses</source>
         <translation>Toots</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Profile.qml" line="193"/>
+        <location filename="../qml/pages/Profile.qml" line="194"/>
         <source>Favourites</source>
         <translation>Apprezzati</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Profile.qml" line="202"/>
+        <location filename="../qml/pages/Profile.qml" line="203"/>
         <source>Unfollow</source>
         <translation>Smetti di seguire</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Profile.qml" line="202"/>
+        <location filename="../qml/pages/Profile.qml" line="203"/>
         <source>Follow request sent!</source>
         <translation>Richiesta di seguito inviata</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Profile.qml" line="202"/>
+        <location filename="../qml/pages/Profile.qml" line="203"/>
         <source>Follow</source>
         <translation>Segui</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Profile.qml" line="215"/>
+        <location filename="../qml/pages/Profile.qml" line="216"/>
         <source>Unmute</source>
         <translation>Non silenziare</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Profile.qml" line="215"/>
+        <location filename="../qml/pages/Profile.qml" line="216"/>
         <source>Mute</source>
         <translation>Silenzia</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Profile.qml" line="228"/>
+        <location filename="../qml/pages/Profile.qml" line="229"/>
         <source>Unblock</source>
         <translation>Sblocca</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Profile.qml" line="228"/>
+        <location filename="../qml/pages/Profile.qml" line="229"/>
         <source>Block</source>
         <translation>Blocca</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Profile.qml" line="247"/>
+        <location filename="../qml/pages/Profile.qml" line="248"/>
         <source>Bio</source>
         <translation>Biografia</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Profile.qml" line="294"/>
+        <location filename="../qml/pages/Profile.qml" line="295"/>
         <source>Open Profile in Browser</source>
         <translation>Aprire profile nel browser</translation>
     </message>
@@ -294,12 +294,12 @@
     <message>
         <location filename="../qml/pages/Settings.qml" line="28"/>
         <source>Deauthorize this app and remove your account</source>
-        <translation type="unfinished">Annullare l'autorizzazione dell'app e rimuovere l'account</translation>
+        <translation type="unfinished">Annullare l&apos;autorizzazione dell&apos;app e rimuovere l&apos;account</translation>
     </message>
     <message>
         <location filename="../qml/pages/Settings.qml" line="28"/>
-        <source>Authorize this app to use your Mastodon account in your behalf</source>
-        <translation type="unfinished">Autorizzare l'app all'utilizzo del conto Mastodon</translation>
+        <source>Authorize this app to access your Mastodon account</source>
+        <translation>Autorizzare l&apos;app all&apos;utilizzo del conto Mastodon</translation>
     </message>
     <message>
         <location filename="../qml/pages/Settings.qml" line="60"/>
@@ -319,7 +319,7 @@
     <message>
         <location filename="../qml/pages/Settings.qml" line="69"/>
         <source>Use Transifex to help with app translation to your language</source>
-        <translation type="unfinished">Utilizzare Transifex per aiutare nella traduzione dell'app</translation>
+        <translation>Utilizzare Transifex per aiutare nella traduzione dell&apos;app</translation>
     </message>
     <message>
         <location filename="../qml/pages/Settings.qml" line="85"/>

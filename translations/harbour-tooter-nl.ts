@@ -243,7 +243,7 @@
         <translation>Trek autorisaties van deze app in en verwijder je account</translation>
     </message>
     <message>
-        <source>Authorize this app to use your Mastodon account in your behalf</source>
+        <source>Authorize this app to access your Mastodon account</source>
         <translation>Autoriseer deze app om je Mastodon namens jou te gebruiken</translation>
     </message>
     <message>

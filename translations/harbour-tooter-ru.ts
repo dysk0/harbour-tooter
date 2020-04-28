@@ -243,7 +243,7 @@
         <translation>удалить учетную запись с устройства</translation>
     </message>
     <message>
-        <source>Authorize this app to use your Mastodon account in your behalf</source>
+        <source>Authorize this app to access your Mastodon account</source>
         <translation>Уполномочить это приложение использовать свою учетную запись Mastodon от вашего имени</translation>
     </message>
     <message>

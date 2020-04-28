@@ -243,7 +243,7 @@
         <translation>取消授权此软件并移除你的账号</translation>
     </message>
     <message>
-        <source>Authorize this app to use your Mastodon account in your behalf</source>
+        <source>Authorize this app to access your Mastodon account</source>
         <translation>授权此软件使用你的 Mastodon 账号</translation>
     </message>
     <message>

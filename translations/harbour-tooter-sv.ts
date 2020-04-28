@@ -243,7 +243,7 @@
         <translation>Avauktorisera  denna app och radera ditt konto</translation>
     </message>
     <message>
-        <source>Authorize this app to use your Mastodon account in your behalf</source>
+        <source>Authorize this app to access your Mastodon account</source>
         <translation>Godkänn denna app att använda ditt Mastodon-konto på dina vägnar</translation>
     </message>
     <message>

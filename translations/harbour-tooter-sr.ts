@@ -243,7 +243,7 @@
         <translation>Укините дозволе за кориштење и уклоните налог с телефона</translation>
     </message>
     <message>
-        <source>Authorize this app to use your Mastodon account in your behalf</source>
+        <source>Authorize this app to access your Mastodon account</source>
         <translation>Дозволите овој апликацији да користи ваш Mastodon налог</translation>
     </message>
     <message>

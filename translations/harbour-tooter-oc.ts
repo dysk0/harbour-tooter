@@ -243,7 +243,7 @@
         <translation>Revocar l’aplicacion e levar vòstre compte</translation>
     </message>
     <message>
-        <source>Authorize this app to use your Mastodon account in your behalf</source>
+        <source>Authorize this app to access your Mastodon account</source>
         <translation>Autorizar aquesta aplicacion a utilizar vòstre compte Mastodon per vos</translation>
     </message>
     <message>

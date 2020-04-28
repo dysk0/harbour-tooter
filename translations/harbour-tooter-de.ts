@@ -243,7 +243,7 @@
         <translation>Konto entfernen und für diese Anwendung deaktivieren</translation>
     </message>
     <message>
-        <source>Authorize this app to use your Mastodon account in your behalf</source>
+        <source>Authorize this app to access your Mastodon account</source>
         <translation>Zugriff durch diese Anwendung auf eigenes Mastodon-Konto erlauben</translation>
     </message>
     <message>

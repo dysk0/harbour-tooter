@@ -243,7 +243,7 @@
         <translation>Retira la autorización a esta aplicación y elimina tu cuenta</translation>
     </message>
     <message>
-        <source>Authorize this app to use your Mastodon account in your behalf</source>
+        <source>Authorize this app to access your Mastodon account</source>
         <translation>Autoriza a esta aplicación para usar tu cuenta de Mastodon en tu nombre</translation>
     </message>
     <message>
