@@ -284,19 +284,19 @@
     </message>
     <message>
         <source>Load images in toots</source>
-        <translation type="unfinished"></translation>
+        <translation>Cargar imágenes en messages</translation>
     </message>
     <message>
         <source>Translate</source>
-        <translation type="unfinished"></translation>
+        <translation>Traducir</translation>
     </message>
     <message>
         <source>Use Transifex to help with app translation to your language</source>
-        <translation type="unfinished"></translation>
+        <translation>Usar Transifex para ayudar con traducciones</translation>
     </message>
     <message>
         <source>Development and translations</source>
-        <translation type="unfinished"></translation>
+        <translation>Desarrollo y traducciones</translation>
     </message>
 </context>
 <context>
