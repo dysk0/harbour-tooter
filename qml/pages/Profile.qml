@@ -72,7 +72,7 @@ Page {
                 // line below was commented out, reason unknown
                 // username = messageObject.data
                 break;
-            case 'locked':m
+            case 'locked':
                 locked = messageObject.data
                 break;
             case 'created_at':
