@@ -48,11 +48,11 @@
     </message>
     <message>
         <source>Unlisted</source>
-        <translation>Non coté</translation>
+        <translation>Non listé</translation>
     </message>
     <message>
         <source>Followers-only</source>
-        <translation>Que Followers</translation>
+        <translation>Abonné(e)s uniquement</translation>
     </message>
     <message>
         <source>Direct</source>
@@ -60,7 +60,7 @@
     </message>
     <message>
         <source>What&apos;s on your mind?</source>
-        <translation>A quoi penses-tu?</translation>
+        <translation>Qu&apos;avez-vous en tête?</translation>
     </message>
 </context>
 <context>
@@ -81,23 +81,23 @@
     <name>LoginPage</name>
     <message>
         <source>Login</source>
-        <translation>Login</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Instance</source>
-        <translation>Instance</translation>
-    </message>
-    <message>
-        <source>Mastodon is a free, open-source social network. A decentralized alternative to commercial platforms, it avoids the risks of a single company monopolizing your communication. Pick a server that you trust — whichever you choose, you can interact with everyone else. Anyone can run their own Mastodon instance and participate in the social network seamlessly.</source>
-        <translation>Mastodon est un réseau social et logiciel à source ouverte de microblog auto-hébergé, libre, distribué et acentré. Il permet de partager des messages, images et autres contenus. Mastodon peut être fédéré à un réseau d&apos;instances capables de communiquer entre elles.</translation>
-    </message>
-    <message>
-        <source>Reload</source>
-        <translation>Recharger</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Enter a valid Mastodon instance URL</source>
-        <translation type="unfinished">Entrer l&apos;URL d&apos;une instance de Mastodon</translation>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Mastodon is a free, open-source social network. A decentralized alternative to commercial platforms, it avoids the risks of a single company monopolizing your communication. Pick a server that you trust — whichever you choose, you can interact with everyone else. Anyone can run their own Mastodon instance and participate in the social network seamlessly.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Reload</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -116,7 +116,7 @@
     </message>
     <message>
         <source>Search</source>
-        <translation>Recherche</translation>
+        <translation>Chercher</translation>
     </message>
     <message>
         <source>@user or #term</source>
@@ -124,18 +124,18 @@
     </message>
     <message>
         <source>Local</source>
-        <translation>Local</translation>
+        <translation>Fil public local</translation>
     </message>
     <message>
         <source>Federated</source>
-        <translation>Fédéré</translation>
+        <translation>Fil public global</translation>
     </message>
 </context>
 <context>
     <name>MiniStatus</name>
     <message>
         <source>boosted</source>
-        <translation>a partagé</translation>
+        <translation>a partagé votre statut</translation>
     </message>
     <message>
         <source>favourited</source>
@@ -143,7 +143,7 @@
     </message>
     <message>
         <source>followed you</source>
-        <translation>vous a suivi</translation>
+        <translation>vous suit</translation>
     </message>
 </context>
 <context>
@@ -197,7 +197,7 @@
     </message>
     <message>
         <source>Statuses</source>
-        <translation>Status</translation>
+        <translation>Pouets</translation>
     </message>
     <message>
         <source>Favourites</source>
@@ -213,11 +213,11 @@
     </message>
     <message>
         <source>Followers</source>
-        <translation>Abonnés</translation>
+        <translation>Abonné(e)s</translation>
     </message>
     <message>
         <source>Bio</source>
-        <translation type="unfinished"></translation>
+        <translation>Bio</translation>
     </message>
     <message>
         <source>Open Profile in Browser</source>
@@ -303,7 +303,7 @@
     <name>Toot</name>
     <message>
         <source>boosted</source>
-        <translation>boosté</translation>
+        <translation>a partagé votre statut</translation>
     </message>
     <message>
         <source>favourited</source>
@@ -318,11 +318,11 @@
     <name>VisualContainer</name>
     <message>
         <source>Unboost</source>
-        <translation>Pas booster</translation>
+        <translation>Annuler le partage</translation>
     </message>
     <message>
         <source>Boost</source>
-        <translation>Booster</translation>
+        <translation>Partager</translation>
     </message>
     <message>
         <source>Unfavorite</source>
@@ -330,7 +330,7 @@
     </message>
     <message>
         <source>Favorite</source>
-        <translation>Favoriser</translation>
+        <translation>Ajouter au favoris</translation>
     </message>
 </context>
 </TS>

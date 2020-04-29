@@ -5,15 +5,15 @@
     <name>API</name>
     <message>
         <source>favourited</source>
-        <translation>favorisiert</translation>
+        <translation>hat deinen Beitrag favorisiert</translation>
     </message>
     <message>
         <source>followed you</source>
-        <translation>sind dir gefolgt</translation>
+        <translation>folgt dir</translation>
     </message>
     <message>
         <source>boosted</source>
-        <translation>geboostet</translation>
+        <translation>hat deinen Beitrag geteilt</translation>
     </message>
     <message>
         <source>said</source>
@@ -40,7 +40,7 @@
     </message>
     <message>
         <source>Write your warning here</source>
-        <translation>Füge eine Inhaltswarnung hinzu</translation>
+        <translation>Inhaltswarnung</translation>
     </message>
     <message>
         <source>Public</source>
@@ -52,15 +52,15 @@
     </message>
     <message>
         <source>Followers-only</source>
-        <translation>Nur Follower</translation>
+        <translation>Nur für Folgende</translation>
     </message>
     <message>
         <source>Direct</source>
-        <translation>Direkt</translation>
+        <translation>Direktnachricht</translation>
     </message>
     <message>
         <source>What&apos;s on your mind?</source>
-        <translation>Was möchtest du mitteilen?</translation>
+        <translation>Was gibt&apos;s Neues?</translation>
     </message>
 </context>
 <context>
@@ -81,23 +81,23 @@
     <name>LoginPage</name>
     <message>
         <source>Login</source>
-        <translation>Login</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Instance</source>
-        <translation>Instanz</translation>
-    </message>
-    <message>
-        <source>Mastodon is a free, open-source social network. A decentralized alternative to commercial platforms, it avoids the risks of a single company monopolizing your communication. Pick a server that you trust — whichever you choose, you can interact with everyone else. Anyone can run their own Mastodon instance and participate in the social network seamlessly.</source>
-        <translation>Mastodon ist ein freies, quelloffenes soziales Netzwerk. Im Gegensatz zu kommerziellen Plattformen, ist Mastodon als dezentrales Netzwerk konzipiert. Somit wird das Risiko vermieden, dass ein einziges Unternehmen die volle Kontrolle über die Kommunikation der Benutzer hat. Benutzer können einer beliebigen Instanz beitreten oder selbst eine eigene betreiben.</translation>
-    </message>
-    <message>
-        <source>Reload</source>
-        <translation>Neu laden</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Enter a valid Mastodon instance URL</source>
-        <translation>Eine gültige Mastodon-Instanz URL eingeben</translation>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Mastodon is a free, open-source social network. A decentralized alternative to commercial platforms, it avoids the risks of a single company monopolizing your communication. Pick a server that you trust — whichever you choose, you can interact with everyone else. Anyone can run their own Mastodon instance and participate in the social network seamlessly.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Reload</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -120,7 +120,7 @@
     </message>
     <message>
         <source>@user or #term</source>
-        <translation>@User oder #Ausdruck</translation>
+        <translation>@Benutzer oder #Ausdruck</translation>
     </message>
     <message>
         <source>Local</source>
@@ -128,22 +128,22 @@
     </message>
     <message>
         <source>Federated</source>
-        <translation>Föderiert</translation>
+        <translation>Föderation</translation>
     </message>
 </context>
 <context>
     <name>MiniStatus</name>
     <message>
         <source>boosted</source>
-        <translation>geboostet</translation>
+        <translation>hat deinen Beitrag geteilt</translation>
     </message>
     <message>
         <source>favourited</source>
-        <translation>favorisiert</translation>
+        <translation>hat deinen Beitrag favorisiert</translation>
     </message>
     <message>
         <source>followed you</source>
-        <translation>sind dir gefolgt</translation>
+        <translation>folgt dir</translation>
     </message>
 </context>
 <context>
@@ -169,7 +169,7 @@
     <name>Profile</name>
     <message>
         <source>Unfollow</source>
-        <translation>Nicht mehr folgen</translation>
+        <translation>Entfolgen</translation>
     </message>
     <message>
         <source>Follow request sent!</source>
@@ -177,15 +177,15 @@
     </message>
     <message>
         <source>Following</source>
-        <translation>Folgend</translation>
+        <translation>Folgt</translation>
     </message>
     <message>
         <source>Mute</source>
-        <translation>Stumm</translation>
+        <translation>Stummschalten</translation>
     </message>
     <message>
         <source>Unmute</source>
-        <translation>Nicht stumm</translation>
+        <translation>Nicht stummschalten</translation>
     </message>
     <message>
         <source>Unblock</source>
@@ -197,7 +197,7 @@
     </message>
     <message>
         <source>Statuses</source>
-        <translation>Status</translation>
+        <translation>Beiträge</translation>
     </message>
     <message>
         <source>Favourites</source>
@@ -205,7 +205,7 @@
     </message>
     <message>
         <source>Follow</source>
-        <translation>Folge</translation>
+        <translation>Folgen</translation>
     </message>
     <message>
         <source>Summary</source>
@@ -213,7 +213,7 @@
     </message>
     <message>
         <source>Followers</source>
-        <translation>Anhänger</translation>
+        <translation>Folgende</translation>
     </message>
     <message>
         <source>Bio</source>
@@ -221,7 +221,7 @@
     </message>
     <message>
         <source>Open Profile in Browser</source>
-        <translation>Profil in Browser öffnen</translation>
+        <translation>Profil im Browser öffnen</translation>
     </message>
 </context>
 <context>
@@ -276,7 +276,7 @@
     </message>
     <message>
         <source>Added README file</source>
-        <translation>README-Datei erstellt</translation>
+        <translation>Erstellung README-Datei</translation>
     </message>
     <message>
         <source>Chinese translation</source>
@@ -303,11 +303,11 @@
     <name>Toot</name>
     <message>
         <source>boosted</source>
-        <translation>geboostet</translation>
+        <translation>hat deinen Beitrag geteilt</translation>
     </message>
     <message>
         <source>favourited</source>
-        <translation>favorisiert</translation>
+        <translation>hat deinen Beitrag favorisiert</translation>
     </message>
     <message>
         <source>followed you</source>
@@ -318,11 +318,11 @@
     <name>VisualContainer</name>
     <message>
         <source>Unboost</source>
-        <translation>Nicht boosten</translation>
+        <translation>Nicht mehr teilen</translation>
     </message>
     <message>
         <source>Boost</source>
-        <translation>Boosten</translation>
+        <translation>Teilen</translation>
     </message>
     <message>
         <source>Unfavorite</source>

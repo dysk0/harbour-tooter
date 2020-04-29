@@ -99,27 +99,27 @@
     <message>
         <location filename="../qml/pages/LoginPage.qml" line="56"/>
         <source>Login</source>
-        <translation>Accesso</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qml/pages/LoginPage.qml" line="59"/>
         <source>Instance</source>
-        <translation>Istanza</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qml/pages/LoginPage.qml" line="65"/>
         <source>Enter a valid Mastodon instance URL</source>
-        <translation>Inserire URL di una istanza Mastodon valida</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/pages/LoginPage.qml" line="121"/>
+        <location filename="../qml/pages/LoginPage.qml" line="123"/>
         <source>Mastodon is a free, open-source social network. A decentralized alternative to commercial platforms, it avoids the risks of a single company monopolizing your communication. Pick a server that you trust — whichever you choose, you can interact with everyone else. Anyone can run their own Mastodon instance and participate in the social network seamlessly.</source>
-        <translation>Mastodon è un servizio di rete sociale in software libero, costituito in una federazione d&apos;istanze. Mastodon fa parte del più ampio Fediverso, permettendo ai suoi utenti di interagire anche con utenti su diverse piattaforme aperte che supportano lo stesso protocollo.</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/pages/LoginPage.qml" line="192"/>
+        <location filename="../qml/pages/LoginPage.qml" line="194"/>
         <source>Reload</source>
-        <translation>Ricarica</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -204,72 +204,72 @@
 <context>
     <name>Profile</name>
     <message>
-        <location filename="../qml/pages/Profile.qml" line="173"/>
+        <location filename="../qml/pages/Profile.qml" line="172"/>
         <source>Summary</source>
         <translation>Sintesi</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Profile.qml" line="179"/>
+        <location filename="../qml/pages/Profile.qml" line="178"/>
         <source>Followers</source>
         <translation>Seguaci</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Profile.qml" line="184"/>
+        <location filename="../qml/pages/Profile.qml" line="183"/>
         <source>Following</source>
         <translation>Segue</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Profile.qml" line="189"/>
+        <location filename="../qml/pages/Profile.qml" line="188"/>
         <source>Statuses</source>
         <translation>Toots</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Profile.qml" line="194"/>
+        <location filename="../qml/pages/Profile.qml" line="193"/>
         <source>Favourites</source>
         <translation>Apprezzati</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Profile.qml" line="203"/>
+        <location filename="../qml/pages/Profile.qml" line="202"/>
         <source>Unfollow</source>
         <translation>Smetti di seguire</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Profile.qml" line="203"/>
+        <location filename="../qml/pages/Profile.qml" line="202"/>
         <source>Follow request sent!</source>
-        <translation>Richiesta di seguito inviata</translation>
+        <translation>Richiesta di seguito inviata!</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Profile.qml" line="203"/>
+        <location filename="../qml/pages/Profile.qml" line="202"/>
         <source>Follow</source>
         <translation>Segui</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Profile.qml" line="216"/>
+        <location filename="../qml/pages/Profile.qml" line="215"/>
         <source>Unmute</source>
         <translation>Non silenziare</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Profile.qml" line="216"/>
+        <location filename="../qml/pages/Profile.qml" line="215"/>
         <source>Mute</source>
         <translation>Silenzia</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Profile.qml" line="229"/>
+        <location filename="../qml/pages/Profile.qml" line="228"/>
         <source>Unblock</source>
         <translation>Sblocca</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Profile.qml" line="229"/>
+        <location filename="../qml/pages/Profile.qml" line="228"/>
         <source>Block</source>
         <translation>Blocca</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Profile.qml" line="248"/>
+        <location filename="../qml/pages/Profile.qml" line="247"/>
         <source>Bio</source>
         <translation>Biografia</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Profile.qml" line="295"/>
+        <location filename="../qml/pages/Profile.qml" line="294"/>
         <source>Open Profile in Browser</source>
         <translation>Aprire profile nel browser</translation>
     </message>
@@ -284,7 +284,7 @@
     <message>
         <location filename="../qml/pages/Settings.qml" line="27"/>
         <source>Remove Account</source>
-        <translation type="unfinished">Rimozione del account</translation>
+        <translation>Rimozione del account</translation>
     </message>
     <message>
         <location filename="../qml/pages/Settings.qml" line="27"/>
@@ -294,7 +294,7 @@
     <message>
         <location filename="../qml/pages/Settings.qml" line="28"/>
         <source>Deauthorize this app and remove your account</source>
-        <translation type="unfinished">Annullare l&apos;autorizzazione dell&apos;app e rimuovere l&apos;account</translation>
+        <translation>Annullare l&apos;autorizzazione dell&apos;app e rimuovere l&apos;account</translation>
     </message>
     <message>
         <location filename="../qml/pages/Settings.qml" line="28"/>
@@ -309,7 +309,7 @@
     <message>
         <location filename="../qml/pages/Settings.qml" line="61"/>
         <source>Disable this option if you want to preserve your data connection</source>
-        <translation type="unfinished"></translation>
+        <translation>Disabilitare questa opzione per conservare connessione dati</translation>
     </message>
     <message>
         <location filename="../qml/pages/Settings.qml" line="68"/>
@@ -324,47 +324,47 @@
     <message>
         <location filename="../qml/pages/Settings.qml" line="85"/>
         <source>Credits</source>
-        <translation type="unfinished"></translation>
+        <translation>Sviluppo</translation>
     </message>
     <message>
         <location filename="../qml/pages/Settings.qml" line="99"/>
         <source>UI/UX design and development</source>
-        <translation type="unfinished"></translation>
+        <translation>Design UI/UX e sviluppo</translation>
     </message>
     <message>
         <location filename="../qml/pages/Settings.qml" line="105"/>
         <source>Visual identity</source>
-        <translation type="unfinished"></translation>
+        <translation>Identità visiva</translation>
     </message>
     <message>
         <location filename="../qml/pages/Settings.qml" line="111"/>
         <source>Development and translations</source>
-        <translation type="unfinished"></translation>
+        <translation>Sviluppo e traduzioni</translation>
     </message>
     <message>
         <location filename="../qml/pages/Settings.qml" line="117"/>
         <source>Occitan &amp; French translation</source>
-        <translation type="unfinished"></translation>
+        <translation>Traduzione francese e occitanica</translation>
     </message>
     <message>
         <location filename="../qml/pages/Settings.qml" line="123"/>
         <source>Chinese translation</source>
-        <translation type="unfinished"></translation>
+        <translation>Traduzione cinese</translation>
     </message>
     <message>
         <location filename="../qml/pages/Settings.qml" line="129"/>
         <source>Dutch translation</source>
-        <translation type="unfinished"></translation>
+        <translation>Traduzione olandese</translation>
     </message>
     <message>
         <location filename="../qml/pages/Settings.qml" line="135"/>
         <source>Spanish translation</source>
-        <translation type="unfinished"></translation>
+        <translation>Traduzione spagnola</translation>
     </message>
     <message>
         <location filename="../qml/pages/Settings.qml" line="141"/>
         <source>Added README file</source>
-        <translation type="unfinished"></translation>
+        <translation>Aggiunto file README</translation>
     </message>
 </context>
 <context>

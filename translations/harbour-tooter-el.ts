@@ -81,11 +81,15 @@
     <name>LoginPage</name>
     <message>
         <source>Login</source>
-        <translation>Σύνδεση</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Instance</source>
-        <translation>Παράδειγμα</translation>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Enter a valid Mastodon instance URL</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Mastodon is a free, open-source social network. A decentralized alternative to commercial platforms, it avoids the risks of a single company monopolizing your communication. Pick a server that you trust — whichever you choose, you can interact with everyone else. Anyone can run their own Mastodon instance and participate in the social network seamlessly.</source>
@@ -93,10 +97,6 @@
     </message>
     <message>
         <source>Reload</source>
-        <translation>Φορτώνω πάλι</translation>
-    </message>
-    <message>
-        <source>Enter a valid Mastodon instance URL</source>
         <translation type="unfinished"></translation>
     </message>
 </context>

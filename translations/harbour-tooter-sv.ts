@@ -81,23 +81,23 @@
     <name>LoginPage</name>
     <message>
         <source>Login</source>
-        <translation>Logga in</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Instance</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
+        <source>Enter a valid Mastodon instance URL</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <source>Mastodon is a free, open-source social network. A decentralized alternative to commercial platforms, it avoids the risks of a single company monopolizing your communication. Pick a server that you trust — whichever you choose, you can interact with everyone else. Anyone can run their own Mastodon instance and participate in the social network seamlessly.</source>
-        <translation>Mastodon är ett fritt och öppet socialt nätverk byggt på öppen källkod. Ett decentraliserat alternativ till kommersiella plattformar, vilket undviker att ett ensamt företag monopoliserar din kommunikation. Välj en server du litar på --- beroende på vilken du väljer, kan du interagera med alla andra. Vem som helst kan köra deras egen Mastodoninstans och delta i nätverket. Även du!</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Reload</source>
         <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Enter a valid Mastodon instance URL</source>
-        <translation>Fyll i URL till Mastodoninstans</translation>
     </message>
 </context>
 <context>

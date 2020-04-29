@@ -81,23 +81,23 @@
     <name>LoginPage</name>
     <message>
         <source>Login</source>
-        <translation>Пријава</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Instance</source>
-        <translation>Инстанца</translation>
-    </message>
-    <message>
-        <source>Mastodon is a free, open-source social network. A decentralized alternative to commercial platforms, it avoids the risks of a single company monopolizing your communication. Pick a server that you trust — whichever you choose, you can interact with everyone else. Anyone can run their own Mastodon instance and participate in the social network seamlessly.</source>
-        <translation>Mastodon је бесплатна, open-source друштвена мрежа. Децентрализована алтернатива комерцијалним платформама која избегава ризике једне компаније која монополизује вашу комуникацију. Одаберите сервер у који имате поверења и без обзира на ваш избор - комуницирајте с осталим корисницима других мрежа. Свако може водити сопствену инстанцу Mastodon мреже и учестовати у комуникацији с другим инстанцама.</translation>
-    </message>
-    <message>
-        <source>Reload</source>
-        <translation>освежи</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Enter a valid Mastodon instance URL</source>
-        <translation>Унесите URL ваше Мастодон инстанце</translation>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Mastodon is a free, open-source social network. A decentralized alternative to commercial platforms, it avoids the risks of a single company monopolizing your communication. Pick a server that you trust — whichever you choose, you can interact with everyone else. Anyone can run their own Mastodon instance and participate in the social network seamlessly.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Reload</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
