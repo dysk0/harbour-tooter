@@ -37,7 +37,12 @@ Item {
         asynchronous: true
         width: description === "" ? Theme.iconSizeMedium : Theme.iconSizeLarge
         height: width
-        source: image
+        source:
+        if (icon.status === Image.Error)
+            source = "../../images/icon-l-profile.svg?" + (pressed
+             ? Theme.highlightColor
+             : Theme.primaryColor)
+        else image
     }
     Column {
         anchors {
