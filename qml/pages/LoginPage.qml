@@ -68,7 +68,8 @@ Page {
                 width: parent.width
                 validator: RegExpValidator { regExp: /^(ftp|http|https):\/\/[^ "]+$/ }
                 EnterKey.enabled: instance.acceptableInput;
-                EnterKey.iconSource: "image://theme/icon-m-enter-next"
+                EnterKey.highlighted: instance.acceptableInput;
+                EnterKey.iconSource: "image://theme/icon-m-accept"
                 EnterKey.onClicked: {
                     Logic.api = new Logic.MastodonAPI({ instance: instance.text, api_user_token: "" });
                     Logic.api.registerApplication("Tooter",
@@ -110,13 +111,14 @@ Page {
                 anchors {
                     left: parent.left
                     right: parent.right
-                    leftMargin: Theme.paddingLarge
-                    rightMargin: Theme.paddingLarge
+                    topMargin: Theme.paddingMedium
+                    leftMargin: Theme.horizontalPageMargin
+                    rightMargin: Theme.horizontalPageMargin
                 }
 
                 width: parent.width
                 wrapMode: Text.WordWrap
-                color: Theme.secondaryHighlightColor
+                color: Theme.highlightColor
                 font.pixelSize: Theme.fontSizeExtraSmall
                 text: qsTr("Mastodon is a free, open-source social network. A decentralized alternative to commercial platforms, it avoids the risks of a single company monopolizing your communication. Pick a server that you trust — whichever you choose, you can interact with everyone else. Anyone can run their own Mastodon instance and participate in the social network seamlessly.")
             }
