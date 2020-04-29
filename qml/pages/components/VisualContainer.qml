@@ -46,7 +46,7 @@ BackgroundItem {
         visible: true
         onStatusChanged: {
             if (avatar.status === Image.Error)
-                source = "image://theme/icon-m-person?" + (pressed
+                source = "../../images/icon-m-profile.svg?" + (pressed
                  ? Theme.highlightColor
                  : Theme.primaryColor)
         }
