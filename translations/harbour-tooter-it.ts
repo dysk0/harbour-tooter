@@ -99,27 +99,27 @@
     <message>
         <location filename="../qml/pages/LoginPage.qml" line="56"/>
         <source>Login</source>
-        <translation type="unfinished"></translation>
+        <translation>Accesso</translation>
     </message>
     <message>
         <location filename="../qml/pages/LoginPage.qml" line="59"/>
         <source>Instance</source>
-        <translation type="unfinished"></translation>
+        <translation>Istanza</translation>
     </message>
     <message>
         <location filename="../qml/pages/LoginPage.qml" line="65"/>
         <source>Enter a valid Mastodon instance URL</source>
-        <translation type="unfinished"></translation>
+        <translation>Inserire URL di una istanza Mastodon valida</translation>
     </message>
     <message>
         <location filename="../qml/pages/LoginPage.qml" line="123"/>
         <source>Mastodon is a free, open-source social network. A decentralized alternative to commercial platforms, it avoids the risks of a single company monopolizing your communication. Pick a server that you trust — whichever you choose, you can interact with everyone else. Anyone can run their own Mastodon instance and participate in the social network seamlessly.</source>
-        <translation type="unfinished"></translation>
+        <translation>Mastodon è un servizio di rete sociale in software libero, costituito in una federazione d&apos;istanze. Mastodon fa parte del più ampio Fediverso, permettendo ai suoi utenti di interagire anche con utenti su diverse piattaforme aperte che supportano lo stesso protocollo.</translation>
     </message>
     <message>
         <location filename="../qml/pages/LoginPage.qml" line="194"/>
         <source>Reload</source>
-        <translation type="unfinished"></translation>
+        <translation>Ricarica</translation>
     </message>
 </context>
 <context>
