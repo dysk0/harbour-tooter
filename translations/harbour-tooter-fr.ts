@@ -303,7 +303,7 @@
     <name>Toot</name>
     <message>
         <source>boosted</source>
-        <translation>a partagé votre statut</translation>
+        <translation>a partagé ce statut</translation>
     </message>
     <message>
         <source>favourited</source>
