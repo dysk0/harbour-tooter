@@ -81,11 +81,11 @@
     <name>LoginPage</name>
     <message>
         <source>Login</source>
-        <translation type="unfinished"></translation>
+        <translation>Σύνδεση</translation>
     </message>
     <message>
         <source>Instance</source>
-        <translation type="unfinished"></translation>
+        <translation>Παράδειγμα</translation>
     </message>
     <message>
         <source>Enter a valid Mastodon instance URL</source>
