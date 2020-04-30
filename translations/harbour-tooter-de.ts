@@ -303,11 +303,11 @@
     <name>Toot</name>
     <message>
         <source>boosted</source>
-        <translation>hat deinen Beitrag geteilt</translation>
+        <translation>hat den Beitrag geteilt</translation>
     </message>
     <message>
         <source>favourited</source>
-        <translation>hat deinen Beitrag favorisiert</translation>
+        <translation>hat den Beitrag favorisiert</translation>
     </message>
     <message>
         <source>followed you</source>
