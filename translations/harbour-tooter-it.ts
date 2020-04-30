@@ -372,12 +372,12 @@
     <message>
         <location filename="../qml/pages/components/Toot.qml" line="35"/>
         <source>boosted</source>
-        <translation>ha condiviso il tuo post</translation>
+        <translation>ha condiviso il post</translation>
     </message>
     <message>
         <location filename="../qml/pages/components/Toot.qml" line="38"/>
         <source>favourited</source>
-        <translation>ha apprezzato il tuo post</translation>
+        <translation>ha apprezzato il post</translation>
     </message>
     <message>
         <location filename="../qml/pages/components/Toot.qml" line="41"/>
