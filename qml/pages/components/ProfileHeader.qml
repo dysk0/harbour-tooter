@@ -66,7 +66,7 @@ Item {
         Label {
             height: description === "" ? 0 : contentHeight
             text: description
-            color: Theme.primaryColor
+            color: Theme.secondaryColor
             font.pixelSize: Theme.fontSizeSmall
             font.family: Theme.fontFamilyHeading
             horizontalAlignment: Text.AlignRight
