@@ -135,7 +135,7 @@
     <name>MiniStatus</name>
     <message>
         <source>boosted</source>
-        <translation>a partagé ce statut</translation>
+        <translation>a partagé</translation>
     </message>
     <message>
         <source>favourited</source>
@@ -303,7 +303,7 @@
     <name>Toot</name>
     <message>
         <source>boosted</source>
-        <translation>a partagé ce statut</translation>
+        <translation>a partagé</translation>
     </message>
     <message>
         <source>favourited</source>
