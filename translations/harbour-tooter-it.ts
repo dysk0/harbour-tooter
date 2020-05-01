@@ -6,7 +6,7 @@
     <message>
         <location filename="../qml/lib/API.js" line="158"/>
         <source>favourited</source>
-        <translation>ha apprezzato il post</translation>
+        <translation>ha apprezzato</translation>
     </message>
     <message>
         <location filename="../qml/lib/API.js" line="169"/>
@@ -16,7 +16,7 @@
     <message>
         <location filename="../qml/lib/API.js" line="179"/>
         <source>boosted</source>
-        <translation>ha condiviso il post</translation>
+        <translation>ha condiviso</translation>
     </message>
     <message>
         <location filename="../qml/lib/API.js" line="189"/>
@@ -165,12 +165,12 @@
     <message>
         <location filename="../qml/pages/components/MiniStatus.qml" line="36"/>
         <source>boosted</source>
-        <translation>ha condiviso il post</translation>
+        <translation>ha condiviso</translation>
     </message>
     <message>
         <location filename="../qml/pages/components/MiniStatus.qml" line="39"/>
         <source>favourited</source>
-        <translation>ha apprezzato il post</translation>
+        <translation>ha apprezzato</translation>
     </message>
     <message>
         <location filename="../qml/pages/components/MiniStatus.qml" line="42"/>
@@ -372,12 +372,12 @@
     <message>
         <location filename="../qml/pages/components/Toot.qml" line="35"/>
         <source>boosted</source>
-        <translation>ha condiviso il post</translation>
+        <translation>ha condiviso</translation>
     </message>
     <message>
         <location filename="../qml/pages/components/Toot.qml" line="38"/>
         <source>favourited</source>
-        <translation>ha apprezzato il post</translation>
+        <translation>ha apprezzato</translation>
     </message>
     <message>
         <location filename="../qml/pages/components/Toot.qml" line="41"/>
