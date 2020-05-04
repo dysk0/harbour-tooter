@@ -209,8 +209,9 @@ Page {
 																		 0) == '#') ? description + ' ' : ''
             height: Math.max(270, Math.min(900, implicitHeight))
             //height: implicitHeight
-			horizontalAlignment: Text.AlignLeft
+	    horizontalAlignment: Text.AlignLeft
             placeholderText: qsTr("What's on your mind?")
+	    font.pixelSize: Theme.fontSizeSmall
 			EnterKey.onClicked: {
 				//tweet()
 			}
