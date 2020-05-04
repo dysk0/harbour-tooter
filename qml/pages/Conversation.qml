@@ -157,7 +157,6 @@ Page {
 		Rectangle {
 			id: progressBar
 			width: toot.text.length ? panel.width * (toot.text.length / tootMaxChar) : 0
-
 			height: Theme.itemSizeSmall * 0.05
 			color: Theme.highlightBackgroundColor
 			opacity: 0.7
@@ -179,6 +178,7 @@ Page {
 			}
 			autoScrollEnabled: true
 			labelVisible: false
+            font.pixelSize: Theme.fontSizeSmall
             placeholderText: qsTr("Write your warning here")
             placeholderColor: palette.highlightColor
             color: palette.highlightColor
@@ -198,8 +198,8 @@ Page {
 				top: warningContent.bottom
 				topMargin: Theme.paddingMedium
 				left: parent.left
-				right: parent.right
-				rightMargin: Theme.paddingMedium
+                right: parent.right
+                rightMargin: Theme.paddingLarge * 2
 			}
 			autoScrollEnabled: true
 			labelVisible: false
@@ -392,7 +392,7 @@ Page {
 				+ (pressed ? Theme.highlightColor : Theme.primaryColor)
 			anchors {
                 top: toot.bottom
-                topMargin: -Theme.paddingSmall * 2
+                topMargin: -Theme.paddingSmall * 1.5
 				right: parent.right
                 rightMargin: Theme.paddingSmall
 			}
