@@ -243,6 +243,7 @@ Page {
 				right: parent.right
 				rightMargin: Theme.paddingSmall
 			}
+            opacity: 0.8
             icon.source: "../../qml/images/emojiselect.svg" + (pressed ? Theme.highlightColor : (warningContent.visible ? Theme.secondaryHighlightColor : Theme.primaryColor))
 			onClicked: pageStack.push(firstWizardPage)
 		}
