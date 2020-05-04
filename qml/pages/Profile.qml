@@ -141,7 +141,7 @@ Page {
         header: ProfileHeader {
             id: header
             title: display_name
-            description:  username
+            description: username
             image: profileImage
         }
 
