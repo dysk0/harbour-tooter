@@ -54,7 +54,11 @@ Item {
         }
         Label {
             id: ttl
-            text: title
+            text:
+                if (title === "") {
+                    description.split('@')[0]
+                }
+                else title
             height: contentHeight
             color: Theme.primaryColor
             font.pixelSize: Theme.fontSizeLarge
