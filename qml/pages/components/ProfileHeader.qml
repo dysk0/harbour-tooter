@@ -60,7 +60,7 @@ Item {
                 }
                 else title
             height: contentHeight
-            color: Theme.primaryColor
+            color: Theme.highlightColor
             font.pixelSize: Theme.fontSizeLarge
             font.family: Theme.fontFamilyHeading
             horizontalAlignment: Text.AlignRight
@@ -70,7 +70,7 @@ Item {
         Label {
             height: description === "" ? 0 : contentHeight
             text: description
-            color: Theme.secondaryColor
+            color: Theme.secondaryHighlightColor
             font.pixelSize: Theme.fontSizeSmall
             font.family: Theme.fontFamilyHeading
             horizontalAlignment: Text.AlignRight
