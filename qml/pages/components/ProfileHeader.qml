@@ -56,7 +56,7 @@ Item {
             id: ttl
             text:
                 if (title === "") {
-                    description.split('@')[0]
+                    description.split('')[0]
                 }
                 else title
             height: contentHeight
