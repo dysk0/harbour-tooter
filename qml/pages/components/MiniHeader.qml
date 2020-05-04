@@ -12,7 +12,11 @@ Item {
             left: parent.left
             leftMargin: Theme.paddingMedium
         }
-        text: account_display_name
+        text:
+            if (account_display_name === "") {
+            account_username.split('@')[0]
+            }
+            else account_display_name
         width: contentWidth > parent.width /2 ? parent.width /2 : contentWidth
         truncationMode: TruncationMode.Fade
         font.weight: Font.Bold
