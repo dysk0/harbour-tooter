@@ -390,6 +390,7 @@ Page {
 				+ (pressed ? Theme.highlightColor : Theme.primaryColor)
 			anchors {
                 top: toot.bottom
+                topMargin: -Theme.paddingSmall * 2
 				right: parent.right
                 rightMargin: Theme.paddingSmall
 			}

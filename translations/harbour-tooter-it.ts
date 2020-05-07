@@ -43,37 +43,37 @@
         <translation>A cosa stai pensando?</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Conversation.qml" line="274"/>
+        <location filename="../qml/pages/Conversation.qml" line="275"/>
         <source>Delete</source>
         <translation>Elimina</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Conversation.qml" line="372"/>
+        <location filename="../qml/pages/Conversation.qml" line="373"/>
         <source>Public</source>
         <translation>Pubblico</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Conversation.qml" line="375"/>
+        <location filename="../qml/pages/Conversation.qml" line="376"/>
         <source>Unlisted</source>
         <translation>Non elencato</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Conversation.qml" line="378"/>
+        <location filename="../qml/pages/Conversation.qml" line="379"/>
         <source>Followers-only</source>
         <translation>Solo ai seguaci</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Conversation.qml" line="381"/>
+        <location filename="../qml/pages/Conversation.qml" line="382"/>
         <source>Direct</source>
         <translation>Diretto</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Conversation.qml" line="494"/>
+        <location filename="../qml/pages/Conversation.qml" line="496"/>
         <source>Emojis</source>
         <translation>Emojis</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Conversation.qml" line="495"/>
+        <location filename="../qml/pages/Conversation.qml" line="497"/>
         <source>Tap to insert</source>
         <translation>Tap per inserire</translation>
     </message>
