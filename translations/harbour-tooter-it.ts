@@ -73,7 +73,7 @@
         <translation>Emojis</translation>
     </message>
     <message>
-        <location filename="../qml/pages/Conversation.qml" line="497"/>
+        <location filename="../qml/pages/Conversation.qml" line="497"/>1
         <source>Tap to insert</source>
         <translation>Tap per inserire</translation>
     </message>
