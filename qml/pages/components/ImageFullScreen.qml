@@ -57,10 +57,10 @@ Page {
                 console.log(playbackState)
                 switch (playbackState){
                 case MediaPlayer.PlayingState:
-                    playerIcon.icon.source = "image://theme/icon-m-play"
+                    playerIcon.icon.source = "image://theme/icon-m-pause"
                     return;
                 case MediaPlayer.PausedState:
-                    playerIcon.icon.source = "image://theme/icon-m-pause"
+                    playerIcon.icon.source = "image://theme/icon-m-play"
                     return;
                 case MediaPlayer.StoppedState:
                     playerIcon.icon.source = "image://theme/icon-m-stop"
