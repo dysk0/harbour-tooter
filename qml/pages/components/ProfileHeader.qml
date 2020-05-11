@@ -69,7 +69,7 @@ Item {
         }
         Label {
             height: description === "" ? 0 : contentHeight
-            text: description
+            text: "@"+description
             color: Theme.secondaryHighlightColor
             font.pixelSize: Theme.fontSizeSmall
             font.family: Theme.fontFamilyHeading
