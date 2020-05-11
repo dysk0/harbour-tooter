@@ -40,7 +40,7 @@
     </message>
     <message>
         <source>Write your warning here</source>
-        <translation>Escribe aquí tu aviso</translation>
+        <translation>Escribe aquí tu advertencia</translation>
     </message>
     <message>
         <source>Public</source>
@@ -60,7 +60,7 @@
     </message>
     <message>
         <source>What&apos;s on your mind?</source>
-        <translation>¿Qué tienes en mente?</translation>
+        <translation>¿En qué estás pensando?</translation>
     </message>
 </context>
 <context>
@@ -85,7 +85,7 @@
     </message>
     <message>
         <source>Instance</source>
-        <translation>Instancia</translation>>
+        <translation>Instancia</translation>
     </message>
     <message>
         <source>Enter a valid Mastodon instance URL</source>
@@ -221,7 +221,7 @@
     </message>
     <message>
         <source>Open Profile in Browser</source>
-        <translation>Abrir perfil en navegador</translation>
+        <translation>Abrir perfil en el navegador</translation>
     </message>
 </context>
 <context>

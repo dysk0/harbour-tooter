@@ -40,7 +40,7 @@
     </message>
     <message>
         <source>Write your warning here</source>
-        <translation>Avertissement du contenu</translation>
+        <translation>Rédigez votre alerte ici</translation>
     </message>
     <message>
         <source>Public</source>
@@ -81,7 +81,7 @@
     <name>LoginPage</name>
     <message>
         <source>Login</source>
-        <translation>Login</translation>
+        <translation>Connexion</translation>
     </message>
     <message>
         <source>Instance</source>
@@ -93,7 +93,7 @@
     </message>
     <message>
         <source>Mastodon is a free, open-source social network. A decentralized alternative to commercial platforms, it avoids the risks of a single company monopolizing your communication. Pick a server that you trust — whichever you choose, you can interact with everyone else. Anyone can run their own Mastodon instance and participate in the social network seamlessly.</source>
-        <translation>Mastodon est un réseau libre et open source. Il s’agit d&apos;une alternative aux plateformes commerciales, pour éviter qu&apos;une seule entreprise monopolise vos communications. Choisissez un serveur dans lequel vous avez confiance - quelque que soit votre choix vous pourrez interagir avec d’autres personnes. Tout le monde peut monter sa propre instance Mastodon et participer rendre le réseau plus robuste.</translation>
+        <translation>Mastodon est un réseau libre et open source : une alternative décentralisée aux plateformes commerciales, afin d’éviter le contrôle monopolistique de vos communications par une entreprise. Choisissez un serveur dans lequel vous avez confiance - quelque que soit votre choix vous pourrez interagir avec tous les utilisateurs du réseau Mastodon. Tout le monde peut monter sa propre instance Mastodon et ainsi contribuer à la croissance du réseau.</translation>
     </message>
     <message>
         <source>Reload</source>
@@ -116,7 +116,7 @@
     </message>
     <message>
         <source>Search</source>
-        <translation>Chercher</translation>
+        <translation>Rechercher</translation>
     </message>
     <message>
         <source>@user or #term</source>
@@ -173,7 +173,7 @@
     </message>
     <message>
         <source>Follow request sent!</source>
-        <translation>Demande de suivi envoyée !</translation>
+        <translation>Demande d’abonnement envoyée !</translation>
     </message>
     <message>
         <source>Following</source>
@@ -232,7 +232,7 @@
     </message>
     <message>
         <source>Remove Account</source>
-        <translation>Enlever compte</translation>
+        <translation>Déconnecter votre compte</translation>
     </message>
     <message>
         <source>Add Account</source>
@@ -244,7 +244,7 @@
     </message>
     <message>
         <source>Authorize this app to access your Mastodon account</source>
-        <translation>Autoriser cette application d&apos;utiliser votre compte</translation>
+        <translation>Autoriser l’accès à votre compte pour cette application</translation>
     </message>
     <message>
         <source>Disable this option if you want to preserve your data connection</source>
@@ -280,7 +280,7 @@
     </message>
     <message>
         <source>Added README file</source>
-        <translation>Ajouté fichier README</translation>
+        <translation>Fichier README ajouté</translation>
     </message>
     <message>
         <source>Load images in toots</source>
@@ -292,7 +292,7 @@
     </message>
     <message>
         <source>Use Transifex to help with app translation to your language</source>
-        <translation>Utiliser Transifex pour aider avec les traductions de l&apos;application</translation>
+        <translation>Utiliser Transifex pour aider à traduire cette application</translation>
     </message>
     <message>
         <source>Development and translations</source>
@@ -326,11 +326,11 @@
     </message>
     <message>
         <source>Unfavorite</source>
-        <translation>Défavoriser</translation>
+        <translation>Retirer des favoris</translation>
     </message>
     <message>
         <source>Favorite</source>
-        <translation>Ajouter au favoris</translation>
+        <translation>Ajouter aux favoris</translation>
     </message>
 </context>
 </TS>
