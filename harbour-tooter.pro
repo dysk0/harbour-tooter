@@ -73,16 +73,14 @@ DISTFILES += qml/harbour-tooter.qml \
     qml/pages/Settings.qml \
     qml/lib/API.js \
     qml/images/notification.svg \
-    qml/images/home.svg \
-    qml/images/mesagess.svg \
-    qml/images/search.svg \
     qml/images/verified.svg \
-    qml/images/local.svg \
-    qml/images/federated.svg \
+    qml/images/boosted.svg \
     qml/images/tooter.svg \
+    qml/images/emojiselect.svg \
+    qml/images/icon-m-profile.svg \
+    qml/images/icon-l-profile.svg \
     qml/lib/Mastodon.js \
     qml/lib/Worker.js \
-    qml/images/boosted.svg \
     config/icon-lock-harbour-tooter.png \
     config/x-harbour.tooter.activity.conf \
     rpm/harbour-tooter.changes \
@@ -115,3 +113,4 @@ TRANSLATIONS += translations/harbour-tooter-ru.ts
 TRANSLATIONS += translations/harbour-tooter-sr.ts
 TRANSLATIONS += translations/harbour-tooter-sv.ts
 TRANSLATIONS += translations/harbour-tooter-zh_CN.ts
+TRANSLATIONS += translations/harbour-tooter-it.ts

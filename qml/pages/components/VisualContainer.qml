@@ -46,7 +46,7 @@ BackgroundItem {
         visible: true
         onStatusChanged: {
             if (avatar.status === Image.Error)
-                source = "image://theme/icon-m-person?" + (pressed
+                source = "../../images/icon-m-profile.svg?" + (pressed
                  ? Theme.highlightColor
                  : Theme.primaryColor)
         }
@@ -145,7 +145,7 @@ BackgroundItem {
         text: content.replace(new RegExp("<a ", 'g'), '<a style="text-decoration: none; color:'+(pressed ?  Theme.secondaryColor : Theme.highlightColor)+'" ')
         linkColor : Theme.highlightColor
         wrapMode: Text.WordWrap
-            textFormat: Text.StyledText
+        textFormat: Text.RichText
         font.pixelSize: Theme.fontSizeSmall
         color: (pressed ? Theme.highlightColor : (!highlight ? Theme.primaryColor : Theme.secondaryColor))
         Rectangle {

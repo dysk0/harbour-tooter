@@ -157,7 +157,6 @@ Page {
 		Rectangle {
 			id: progressBar
 			width: toot.text.length ? panel.width * (toot.text.length / tootMaxChar) : 0
-
 			height: Theme.itemSizeSmall * 0.05
 			color: Theme.highlightBackgroundColor
 			opacity: 0.7
@@ -179,6 +178,7 @@ Page {
 			}
 			autoScrollEnabled: true
 			labelVisible: false
+            font.pixelSize: Theme.fontSizeSmall
             placeholderText: qsTr("Write your warning here")
             placeholderColor: palette.highlightColor
             color: palette.highlightColor
@@ -198,8 +198,8 @@ Page {
 				top: warningContent.bottom
 				topMargin: Theme.paddingMedium
 				left: parent.left
-				right: parent.right
-				rightMargin: Theme.paddingMedium
+                right: parent.right
+                rightMargin: Theme.paddingLarge * 2
 			}
 			autoScrollEnabled: true
 			labelVisible: false
@@ -209,8 +209,9 @@ Page {
 																		 0) == '#') ? description + ' ' : ''
             height: Math.max(270, Math.min(900, implicitHeight))
             //height: implicitHeight
-			horizontalAlignment: Text.AlignLeft
+            horizontalAlignment: Text.AlignLeft
             placeholderText: qsTr("What's on your mind?")
+            font.pixelSize: Theme.fontSizeSmall
 			EnterKey.onClicked: {
 				//tweet()
 			}
@@ -242,6 +243,7 @@ Page {
 				right: parent.right
 				rightMargin: Theme.paddingSmall
 			}
+            opacity: 0.8
             icon.source: "../../qml/images/emojiselect.svg" + (pressed ? Theme.highlightColor : (warningContent.visible ? Theme.secondaryHighlightColor : Theme.primaryColor))
 			onClicked: pageStack.push(firstWizardPage)
 		}
@@ -305,7 +307,8 @@ Page {
 
 			id: btnContentWarning
 			anchors {
-				verticalCenter: privacy.verticalCenter
+                top: toot.bottom
+                topMargin: -Theme.paddingSmall * 1.5
 				left: parent.left
 				leftMargin: Theme.paddingMedium
 			}
@@ -317,7 +320,8 @@ Page {
 			id: btnAddImage
 			enabled: mediaModel.count < 4
 			anchors {
-				verticalCenter: privacy.verticalCenter
+                top: toot.bottom
+                topMargin: -Theme.paddingSmall * 1.5
 				left: btnContentWarning.right
 				leftMargin: Theme.paddingSmall
 			}
@@ -363,7 +367,7 @@ Page {
 			id: privacy
 			anchors {
                 top: toot.bottom
-				topMargin: -Theme.paddingSmall * 2
+                topMargin: -Theme.paddingSmall * 1.5
 				left: btnAddImage.right
 				right: btnSend.left
 			}
@@ -389,6 +393,7 @@ Page {
 				+ (pressed ? Theme.highlightColor : Theme.primaryColor)
 			anchors {
                 top: toot.bottom
+                topMargin: -Theme.paddingSmall * 1.5
 				right: parent.right
                 rightMargin: Theme.paddingSmall
 			}

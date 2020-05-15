@@ -43,10 +43,6 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>What&apos;s on your mind?</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <source>Public</source>
         <translation type="unfinished"></translation>
     </message>
@@ -60,6 +56,10 @@
     </message>
     <message>
         <source>Direct</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>What&apos;s on your mind?</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -85,10 +85,10 @@
     </message>
     <message>
         <source>Instance</source>
-        <translation type="unfinished"></translation>
+        <translation>Παράδειγμα</translation>
     </message>
     <message>
-        <source>Enter an Mastodon instance URL</source>
+        <source>Enter a valid Mastodon instance URL</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -243,24 +243,12 @@
         <translation>Άρση της αδειοδότησης της εφαρμογής και αφαίρεση του λογαριασμού σας</translation>
     </message>
     <message>
-        <source>Authorize this app to use your Mastodon account in your behalf</source>
+        <source>Authorize this app to access your Mastodon account</source>
         <translation>Να επιτρέπεται στην εφαρμογή να χρησιμοποιεί τον λογαριασμό σας στο Mastodon εκ μέρους σας</translation>
-    </message>
-    <message>
-        <source>Load images in toots</source>
-        <translation>Φόρτωση των εικόνων στα toot</translation>
     </message>
     <message>
         <source>Disable this option if you want to preserve your data connection</source>
         <translation>Απενεργοποιήστε αυτήν την επιλογή αν θέλετε να διατηρήσετε την σύνδεση των δεδομένων σας</translation>
-    </message>
-    <message>
-        <source>Translate</source>
-        <translation>Μετάφραση</translation>
-    </message>
-    <message>
-        <source>Use Transifex to help with app translation to your language</source>
-        <translation>Χρησιμοποιήστε το Transifex για να βοηθήσετε την μετάφραση της εφαρμογής στην γλώσσα σας</translation>
     </message>
     <message>
         <source>Credits</source>
@@ -291,7 +279,23 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>Development and maintenence</source>
+        <source>Chinese translation</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Load images in toots</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Translate</source>
+        <translation>Μετάφραση</translation>
+    </message>
+    <message>
+        <source>Use Transifex to help with app translation to your language</source>
+        <translation>Χρησιμοποιήστε το Transifex για να βοηθήσετε την μετάφραση της εφαρμογής στην γλώσσα σας</translation>
+    </message>
+    <message>
+        <source>Development and translations</source>
         <translation type="unfinished"></translation>
     </message>
 </context>

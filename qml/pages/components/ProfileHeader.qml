@@ -37,7 +37,12 @@ Item {
         asynchronous: true
         width: description === "" ? Theme.iconSizeMedium : Theme.iconSizeLarge
         height: width
-        source: image
+        source:
+        if (icon.status === Image.Error)
+            source = "../../images/icon-l-profile.svg?" + (pressed
+             ? Theme.highlightColor
+             : Theme.primaryColor)
+        else image
     }
     Column {
         anchors {
@@ -49,9 +54,13 @@ Item {
         }
         Label {
             id: ttl
-            text: title
+            text:
+                if (title === "") {
+                    description.split('@')[0]
+                }
+                else title
             height: contentHeight
-            color: Theme.primaryColor
+            color: Theme.highlightColor
             font.pixelSize: Theme.fontSizeLarge
             font.family: Theme.fontFamilyHeading
             horizontalAlignment: Text.AlignRight
@@ -60,8 +69,8 @@ Item {
         }
         Label {
             height: description === "" ? 0 : contentHeight
-            text: description
-            color: Theme.primaryColor
+            text: "@"+description
+            color: Theme.secondaryHighlightColor
             font.pixelSize: Theme.fontSizeSmall
             font.family: Theme.fontFamilyHeading
             horizontalAlignment: Text.AlignRight

@@ -170,7 +170,7 @@ BackgroundItem {
 
         }
         text: content
-        textFormat: Text.StyledText
+        textFormat: Text.RichText
         linkColor : Theme.highlightColor
         wrapMode: Text.Wrap
         maximumLineCount: 6

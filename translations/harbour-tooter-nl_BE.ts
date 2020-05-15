@@ -43,10 +43,6 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>What&apos;s on your mind?</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <source>Public</source>
         <translation type="unfinished"></translation>
     </message>
@@ -60,6 +56,10 @@
     </message>
     <message>
         <source>Direct</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>What&apos;s on your mind?</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -88,7 +88,7 @@
         <translation>Instantie</translation>
     </message>
     <message>
-        <source>Enter an Mastodon instance URL</source>
+        <source>Enter a valid Mastodon instance URL</source>
         <translation>Voert den URL van een Mastodon-instantie in</translation>
     </message>
     <message>
@@ -243,24 +243,12 @@
         <translation>Trekt autorisaties van dezen app in en verwijdert uwen account</translation>
     </message>
     <message>
-        <source>Authorize this app to use your Mastodon account in your behalf</source>
+        <source>Authorize this app to access your Mastodon account</source>
         <translation>Autoriseert dezen app voor uwe Mastodon-account namens u te gebruiken</translation>
-    </message>
-    <message>
-        <source>Load images in toots</source>
-        <translation>Afbeeldingen in toots laden</translation>
     </message>
     <message>
         <source>Disable this option if you want to preserve your data connection</source>
         <translation>Schakelt dees optie uit als ge uw verbinding wilt behouden</translation>
-    </message>
-    <message>
-        <source>Translate</source>
-        <translation>Vertalen</translation>
-    </message>
-    <message>
-        <source>Use Transifex to help with app translation to your language</source>
-        <translation>Gebruikt Transifex voor te helpen met dezen app in uw taal te vertalen</translation>
     </message>
     <message>
         <source>Credits</source>
@@ -291,7 +279,23 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>Development and maintenence</source>
+        <source>Chinese translation</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Load images in toots</source>
+        <translation>Afbeeldingen in toots laden</translation>
+    </message>
+    <message>
+        <source>Translate</source>
+        <translation>Vertalen</translation>
+    </message>
+    <message>
+        <source>Use Transifex to help with app translation to your language</source>
+        <translation>Gebruikt Transifex voor te helpen met dezen app in uw taal te vertalen</translation>
+    </message>
+    <message>
+        <source>Development and translations</source>
         <translation type="unfinished"></translation>
     </message>
 </context>

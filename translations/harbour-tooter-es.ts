@@ -40,27 +40,27 @@
     </message>
     <message>
         <source>Write your warning here</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>What&apos;s on your mind?</source>
-        <translation type="unfinished"></translation>
+        <translation>Escribe aquí tu advertencia</translation>
     </message>
     <message>
         <source>Public</source>
-        <translation type="unfinished"></translation>
+        <translation>Público</translation>
     </message>
     <message>
         <source>Unlisted</source>
-        <translation type="unfinished"></translation>
+        <translation>Sin federar</translation>
     </message>
     <message>
         <source>Followers-only</source>
-        <translation type="unfinished"></translation>
+        <translation>Sólo seguidores</translation>
     </message>
     <message>
         <source>Direct</source>
-        <translation type="unfinished"></translation>
+        <translation>Directo</translation>
+    </message>
+    <message>
+        <source>What&apos;s on your mind?</source>
+        <translation>¿En qué estás pensando?</translation>
     </message>
 </context>
 <context>
@@ -88,12 +88,12 @@
         <translation>Instancia</translation>
     </message>
     <message>
-        <source>Enter an Mastodon instance URL</source>
-        <translation>Introduce URL de una instancia de Mastodon</translation>
+        <source>Enter a valid Mastodon instance URL</source>
+        <translation>Introduce una URL de instancia de Mastodon válida</translation>
     </message>
     <message>
         <source>Mastodon is a free, open-source social network. A decentralized alternative to commercial platforms, it avoids the risks of a single company monopolizing your communication. Pick a server that you trust — whichever you choose, you can interact with everyone else. Anyone can run their own Mastodon instance and participate in the social network seamlessly.</source>
-        <translation>Mastodon es una red social gratuita y de código abierto. Una alternativa descentralizada a las plataformas comerciales, evita los riesgos de una única compañía que monopolice tu comunicación. Elije un servidor en el que confíes — cualquiera que elijas, puede interactuar con todos los demás. Cualquiera puede ejecutar su propia instancia de Mastodon y participar en la red social sin problemas.</translation>
+        <translation>Mastodon es una red social libre y de código abierto. Una alternativa descentralizada a las plataformas comerciales, evita los riesgos de una única compañía que monopolice tu comunicación. Elije un servidor en el que confíes — cualquiera que elijas, puede interactuar con todos los demás. Cualquiera puede ejecutar su propia instancia de Mastodon y participar en la red social sin problemas.</translation>
     </message>
     <message>
         <source>Reload</source>
@@ -217,11 +217,11 @@
     </message>
     <message>
         <source>Bio</source>
-        <translation type="unfinished"></translation>
+        <translation>Bio</translation>
     </message>
     <message>
         <source>Open Profile in Browser</source>
-        <translation type="unfinished"></translation>
+        <translation>Abrir perfil en el navegador</translation>
     </message>
 </context>
 <context>
@@ -243,24 +243,12 @@
         <translation>Retira la autorización a esta aplicación y elimina tu cuenta</translation>
     </message>
     <message>
-        <source>Authorize this app to use your Mastodon account in your behalf</source>
-        <translation>Autoriza a esta aplicación a usar tu cuenta de Mastodon en tu nombre</translation>
-    </message>
-    <message>
-        <source>Load images in toots</source>
-        <translation>Cargar imágenes en toots</translation>
+        <source>Authorize this app to access your Mastodon account</source>
+        <translation>Autoriza a esta aplicación para usar tu cuenta de Mastodon en tu nombre</translation>
     </message>
     <message>
         <source>Disable this option if you want to preserve your data connection</source>
         <translation>Deshabilita esta opción si quieres ahorrar en tu conexión de datos</translation>
-    </message>
-    <message>
-        <source>Translate</source>
-        <translation>Traducir</translation>
-    </message>
-    <message>
-        <source>Use Transifex to help with app translation to your language</source>
-        <translation>Usa Transifex para ayudar en la traducción a tu idioma de esta aplicación</translation>
     </message>
     <message>
         <source>Credits</source>
@@ -272,27 +260,43 @@
     </message>
     <message>
         <source>Visual identity</source>
-        <translation type="unfinished"></translation>
+        <translation>Identidad visual</translation>
     </message>
     <message>
         <source>Occitan &amp; French translation</source>
-        <translation type="unfinished"></translation>
+        <translation>Traducción al occitano y francés</translation>
     </message>
     <message>
         <source>Dutch translation</source>
-        <translation type="unfinished"></translation>
+        <translation>Traducción al holandés</translation>
     </message>
     <message>
         <source>Spanish translation</source>
-        <translation type="unfinished"></translation>
+        <translation>Traducción al español</translation>
     </message>
     <message>
         <source>Added README file</source>
-        <translation type="unfinished"></translation>
+        <translation>Añadido archivo README</translation>
     </message>
     <message>
-        <source>Development and maintenence</source>
-        <translation type="unfinished"></translation>
+        <source>Chinese translation</source>
+        <translation>Traducción al chino</translation>
+    </message>
+    <message>
+        <source>Load images in toots</source>
+        <translation>Cargar imágenes en messages</translation>
+    </message>
+    <message>
+        <source>Translate</source>
+        <translation>Traducir</translation>
+    </message>
+    <message>
+        <source>Use Transifex to help with app translation to your language</source>
+        <translation>Usar Transifex para ayudar con traducciones</translation>
+    </message>
+    <message>
+        <source>Development and translations</source>
+        <translation>Desarrollo y traducciones</translation>
     </message>
 </context>
 <context>

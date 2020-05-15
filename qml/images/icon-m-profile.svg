@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 21.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 64 64" style="enable-background:new 0 0 64 64;" xml:space="preserve">
+<style type="text/css">
+	.st0{opacity:0.5;fill:#FFFFFF;}
+	.st1{fill:#FFFFFF;fill-opacity:0;}
+	.st2{opacity:0.6;fill:#FFFFFF;enable-background:new    ;}
+	.st3{fill:#FFFFFF;}
+</style>
+<g id="Layer_2">
+	<rect y="0" class="st0" width="64" height="64"/>
+</g>
+<g id="Layer_1">
+	<g id="icon-m-contact">
+		<rect id="icon-m-contact_1_" y="0" class="st1" width="64" height="64"/>
+		<g>
+			<path class="st2" d="M22,41.5h20c5,0,9,4,9,9c0,0.3,0,0.7-0.1,1h2c0-0.3,0-0.7,0-1c0-6.1-4.9-11-11-11H22c-6.1,0-11,4.9-11,11
+				c0,0.3,0,0.7,0,1h2c0-0.3-0.1-0.7-0.1-1C13,45.5,17,41.5,22,41.5z"/>
+			<path class="st3" d="M32,35.5c-6.6,0-12-5.4-12-12s5.4-12,12-12s12,5.4,12,12S38.6,35.5,32,35.5z M32,13.5c-5.5,0-10,4.5-10,10
+				s4.5,10,10,10s10-4.5,10-10S37.5,13.5,32,13.5z"/>
+		</g>
+	</g>
+</g>
+</svg>

@@ -43,10 +43,6 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>What&apos;s on your mind?</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <source>Public</source>
         <translation type="unfinished"></translation>
     </message>
@@ -60,6 +56,10 @@
     </message>
     <message>
         <source>Direct</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>What&apos;s on your mind?</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -81,14 +81,14 @@
     <name>LoginPage</name>
     <message>
         <source>Login</source>
-        <translation>Авторизоваться</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Instance</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>Enter an Mastodon instance URL</source>
+        <source>Enter a valid Mastodon instance URL</source>
         <translation>Введите URL-адрес экземпляра Mastodon</translation>
     </message>
     <message>
@@ -243,24 +243,12 @@
         <translation>удалить учетную запись с устройства</translation>
     </message>
     <message>
-        <source>Authorize this app to use your Mastodon account in your behalf</source>
+        <source>Authorize this app to access your Mastodon account</source>
         <translation>Уполномочить это приложение использовать свою учетную запись Mastodon от вашего имени</translation>
-    </message>
-    <message>
-        <source>Load images in toots</source>
-        <translation>Загружать изображения</translation>
     </message>
     <message>
         <source>Disable this option if you want to preserve your data connection</source>
         <translation>Отключите эту опцию, если вы хотите сохранить подключение к данным</translation>
-    </message>
-    <message>
-        <source>Translate</source>
-        <translation>Переведите</translation>
-    </message>
-    <message>
-        <source>Use Transifex to help with app translation to your language</source>
-        <translation>Используйте Transifex, чтобы помочь с переводом приложения на ваш язык</translation>
     </message>
     <message>
         <source>Credits</source>
@@ -291,7 +279,23 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>Development and maintenence</source>
+        <source>Chinese translation</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Load images in toots</source>
+        <translation>Загружать изображения</translation>
+    </message>
+    <message>
+        <source>Translate</source>
+        <translation>Переведите</translation>
+    </message>
+    <message>
+        <source>Use Transifex to help with app translation to your language</source>
+        <translation>Используйте Transifex, чтобы помочь с переводом приложения на ваш язык</translation>
+    </message>
+    <message>
+        <source>Development and translations</source>
         <translation type="unfinished"></translation>
     </message>
 </context>

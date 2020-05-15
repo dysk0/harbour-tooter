@@ -43,10 +43,6 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>What&apos;s on your mind?</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <source>Public</source>
         <translation type="unfinished"></translation>
     </message>
@@ -60,6 +56,10 @@
     </message>
     <message>
         <source>Direct</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>What&apos;s on your mind?</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -88,7 +88,7 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>Enter an Mastodon instance URL</source>
+        <source>Enter a valid Mastodon instance URL</source>
         <translation>Fyll i URL till Mastodoninstans</translation>
     </message>
     <message>
@@ -243,24 +243,12 @@
         <translation>Avauktorisera  denna app och radera ditt konto</translation>
     </message>
     <message>
-        <source>Authorize this app to use your Mastodon account in your behalf</source>
+        <source>Authorize this app to access your Mastodon account</source>
         <translation>Godkänn denna app att använda ditt Mastodon-konto på dina vägnar</translation>
     </message>
     <message>
-        <source>Load images in toots</source>
-        <translation>Ladda bilder i toots</translation>
-    </message>
-    <message>
         <source>Disable this option if you want to preserve your data connection</source>
-        <translation>Inaktivera det här alternativet om du vill behålla din dataanslutning </translation>
-    </message>
-    <message>
-        <source>Translate</source>
-        <translation>Översätt</translation>
-    </message>
-    <message>
-        <source>Use Transifex to help with app translation to your language</source>
-        <translation>Använd Transifex för att hjälpa med app-översättningar till ditt språk</translation>
+        <translation>Inaktivera det här alternativet om du vill behålla din dataanslutning</translation>
     </message>
     <message>
         <source>Credits</source>
@@ -291,8 +279,24 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>Development and maintenence</source>
+        <source>Chinese translation</source>
         <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Load images in toots</source>
+        <translation>Ladda bilder i toots</translation>
+    </message>
+    <message>
+        <source>Translate</source>
+        <translation>Översätt</translation>
+    </message>
+    <message>
+        <source>Use Transifex to help with app translation to your language</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Development and translations</source>
+        <translation>Använd Transifex för att hjälpa med app-översättningar till ditt språk</translation>
     </message>
 </context>
 <context>

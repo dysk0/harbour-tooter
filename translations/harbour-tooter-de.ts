@@ -5,15 +5,15 @@
     <name>API</name>
     <message>
         <source>favourited</source>
-        <translation>favorisiert</translation>
+        <translation>hat favorisiert</translation>
     </message>
     <message>
         <source>followed you</source>
-        <translation>sind dir gefolgt</translation>
+        <translation>folgt dir</translation>
     </message>
     <message>
         <source>boosted</source>
-        <translation>verstärkt</translation>
+        <translation>hat geteilt</translation>
     </message>
     <message>
         <source>said</source>
@@ -40,27 +40,27 @@
     </message>
     <message>
         <source>Write your warning here</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>What&apos;s on your mind?</source>
-        <translation type="unfinished"></translation>
+        <translation>Inhaltswarnung</translation>
     </message>
     <message>
         <source>Public</source>
-        <translation type="unfinished"></translation>
+        <translation>Öffentlich</translation>
     </message>
     <message>
         <source>Unlisted</source>
-        <translation type="unfinished"></translation>
+        <translation>Nicht gelistet</translation>
     </message>
     <message>
         <source>Followers-only</source>
-        <translation type="unfinished"></translation>
+        <translation>Nur für Folgende</translation>
     </message>
     <message>
         <source>Direct</source>
-        <translation type="unfinished"></translation>
+        <translation>Direktnachricht</translation>
+    </message>
+    <message>
+        <source>What&apos;s on your mind?</source>
+        <translation>Was gibt&apos;s Neues?</translation>
     </message>
 </context>
 <context>
@@ -85,19 +85,19 @@
     </message>
     <message>
         <source>Instance</source>
-        <translation type="unfinished"></translation>
+        <translation>Instanz</translation>
     </message>
     <message>
-        <source>Enter an Mastodon instance URL</source>
-        <translation>Gib eine Mastadon Instance URL ein</translation>
+        <source>Enter a valid Mastodon instance URL</source>
+        <translation>Eine gültige Mastodon-Instanz URL eingeben</translation>
     </message>
     <message>
         <source>Mastodon is a free, open-source social network. A decentralized alternative to commercial platforms, it avoids the risks of a single company monopolizing your communication. Pick a server that you trust — whichever you choose, you can interact with everyone else. Anyone can run their own Mastodon instance and participate in the social network seamlessly.</source>
-        <translation>Mastodon ist ein freies, auf OpenSource begründetes Soziales Netzwerk. Es bietet eine dezentralisierte Alternative zu den kommerziellen Plattformen, vermeidet aber das Risiko, dass ein einzelnes Unternehmen das Monopol auf deine gesamte Kommunikation erhält. Wähle selbst einen Server (Instanz) der du vertraust - egal welche du wählst, du kannst mit allen kommunizieren. Oder du betreibst deine eigene Mastodon Instanz und verbindest dich nahtlos mit dem Mastodon Netzwerk.</translation>
+        <translation>Mastodon ist ein freies, quelloffenes soziales Netzwerk. Im Gegensatz zu kommerziellen Plattformen, ist Mastodon als dezentrales Netzwerk konzipiert. Somit wird das Risiko vermieden, dass ein einziges Unternehmen die volle Kontrolle über die Kommunikation der Benutzer hat. Benutzer können einer beliebigen Instanz beitreten oder selbst eine eigene betreiben.</translation>
     </message>
     <message>
         <source>Reload</source>
-        <translation type="unfinished"></translation>
+        <translation>Neu laden</translation>
     </message>
 </context>
 <context>
@@ -120,7 +120,7 @@
     </message>
     <message>
         <source>@user or #term</source>
-        <translation>@User oder #Ausdruck</translation>
+        <translation>@Benutzer oder #Ausdruck</translation>
     </message>
     <message>
         <source>Local</source>
@@ -128,22 +128,22 @@
     </message>
     <message>
         <source>Federated</source>
-        <translation>Vereinigt</translation>
+        <translation>Föderation</translation>
     </message>
 </context>
 <context>
     <name>MiniStatus</name>
     <message>
         <source>boosted</source>
-        <translation>verstärkt</translation>
+        <translation>hat geteilt</translation>
     </message>
     <message>
         <source>favourited</source>
-        <translation>favorisiert</translation>
+        <translation>hat favorisiert</translation>
     </message>
     <message>
         <source>followed you</source>
-        <translation>sind dir gefolgt</translation>
+        <translation>folgt dir</translation>
     </message>
 </context>
 <context>
@@ -158,7 +158,7 @@
     </message>
     <message>
         <source>Loading</source>
-        <translation>Lädt...</translation>
+        <translation>Wird geladen</translation>
     </message>
     <message>
         <source>please wait...</source>
@@ -169,7 +169,7 @@
     <name>Profile</name>
     <message>
         <source>Unfollow</source>
-        <translation>Nicht mehr folgen</translation>
+        <translation>Entfolgen</translation>
     </message>
     <message>
         <source>Follow request sent!</source>
@@ -177,15 +177,15 @@
     </message>
     <message>
         <source>Following</source>
-        <translation>Folgend</translation>
+        <translation>Folgt</translation>
     </message>
     <message>
         <source>Mute</source>
-        <translation>Stumm</translation>
+        <translation>Stummschalten</translation>
     </message>
     <message>
         <source>Unmute</source>
-        <translation>Nicht stumm</translation>
+        <translation>Nicht stummschalten</translation>
     </message>
     <message>
         <source>Unblock</source>
@@ -197,7 +197,7 @@
     </message>
     <message>
         <source>Statuses</source>
-        <translation>Status</translation>
+        <translation>Beiträge</translation>
     </message>
     <message>
         <source>Favourites</source>
@@ -205,7 +205,7 @@
     </message>
     <message>
         <source>Follow</source>
-        <translation>Folge</translation>
+        <translation>Folgen</translation>
     </message>
     <message>
         <source>Summary</source>
@@ -213,15 +213,15 @@
     </message>
     <message>
         <source>Followers</source>
-        <translation>Anhänger</translation>
+        <translation>Folgende</translation>
     </message>
     <message>
         <source>Bio</source>
-        <translation type="unfinished"></translation>
+        <translation>Bio</translation>
     </message>
     <message>
         <source>Open Profile in Browser</source>
-        <translation type="unfinished"></translation>
+        <translation>Profil im Browser öffnen</translation>
     </message>
 </context>
 <context>
@@ -232,78 +232,82 @@
     </message>
     <message>
         <source>Remove Account</source>
-        <translation>Account löschen</translation>
+        <translation>Konto entfernen</translation>
     </message>
     <message>
         <source>Add Account</source>
-        <translation>Account hinzufügen</translation>
+        <translation>Konto hinzufügen</translation>
     </message>
     <message>
         <source>Deauthorize this app and remove your account</source>
-        <translation>Der App Autorisierung entziehen und Account entfernen</translation>
+        <translation>Konto entfernen und für diese Anwendung deaktivieren</translation>
     </message>
     <message>
-        <source>Authorize this app to use your Mastodon account in your behalf</source>
-        <translation>Autorisiere diese App deinen Mastodon Account in deinem Namen zu nutzen</translation>
-    </message>
-    <message>
-        <source>Load images in toots</source>
-        <translation>Lade Bilder in den Toots</translation>
+        <source>Authorize this app to access your Mastodon account</source>
+        <translation>Zugriff durch diese Anwendung auf eigenes Mastodon-Konto erlauben</translation>
     </message>
     <message>
         <source>Disable this option if you want to preserve your data connection</source>
-        <translation>Deaktiviere diese Option um deinen Datenverbindung zu schonen</translation>
-    </message>
-    <message>
-        <source>Translate</source>
-        <translation>Übersetzen</translation>
-    </message>
-    <message>
-        <source>Use Transifex to help with app translation to your language</source>
-        <translation>Nutze Transifex um bei der Übersetzung in deine Sprache zu helfen</translation>
+        <translation>Diese Option deaktivieren um Datenvolumen zu sparen</translation>
     </message>
     <message>
         <source>Credits</source>
-        <translation>Credits</translation>
+        <translation>Über</translation>
     </message>
     <message>
         <source>UI/UX design and development</source>
-        <translation>UI/UX Design und Implementierung</translation>
+        <translation>UI/UX-Gestaltung und Entwicklung</translation>
     </message>
     <message>
         <source>Visual identity</source>
-        <translation type="unfinished"></translation>
+        <translation>Visuelle Identität</translation>
     </message>
     <message>
         <source>Occitan &amp; French translation</source>
-        <translation type="unfinished"></translation>
+        <translation>Französische Übersetzung</translation>
     </message>
     <message>
         <source>Dutch translation</source>
-        <translation type="unfinished"></translation>
+        <translation>Niederländische Übersetzung</translation>
     </message>
     <message>
         <source>Spanish translation</source>
-        <translation type="unfinished"></translation>
+        <translation>Spanische Übersetzung</translation>
     </message>
     <message>
         <source>Added README file</source>
-        <translation type="unfinished"></translation>
+        <translation>Erstellung README-Datei</translation>
     </message>
     <message>
-        <source>Development and maintenence</source>
-        <translation type="unfinished"></translation>
+        <source>Chinese translation</source>
+        <translation>Chinesische Übersetzung</translation>
+    </message>
+    <message>
+        <source>Load images in toots</source>
+        <translation>Bilder in Toots laden</translation>
+    </message>
+    <message>
+        <source>Translate</source>
+        <translation>Übersetzungen</translation>
+    </message>
+    <message>
+        <source>Use Transifex to help with app translation to your language</source>
+        <translation>Transifex benutzen um bei den Übersetzungen mitzuhelfen</translation>
+    </message>
+    <message>
+        <source>Development and translations</source>
+        <translation>Entwicklung und Übersetzungen</translation>
     </message>
 </context>
 <context>
     <name>Toot</name>
     <message>
         <source>boosted</source>
-        <translation>verstärkt</translation>
+        <translation>hat geteilt</translation>
     </message>
     <message>
         <source>favourited</source>
-        <translation>favorisiert</translation>
+        <translation>hat favorisiert</translation>
     </message>
     <message>
         <source>followed you</source>
@@ -314,19 +318,19 @@
     <name>VisualContainer</name>
     <message>
         <source>Unboost</source>
-        <translation>Schwäche</translation>
+        <translation>Nicht mehr teilen</translation>
     </message>
     <message>
         <source>Boost</source>
-        <translation>Verstärke</translation>
+        <translation>Teilen</translation>
     </message>
     <message>
         <source>Unfavorite</source>
-        <translation>Aus Favoriten entfernen</translation>
+        <translation>Nicht favorisieren</translation>
     </message>
     <message>
         <source>Favorite</source>
-        <translation>Zu Favoriten</translation>
+        <translation>Favorisieren</translation>
     </message>
 </context>
 </TS>

@@ -40,27 +40,27 @@
     </message>
     <message>
         <source>Write your warning here</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>What&apos;s on your mind?</source>
-        <translation type="unfinished"></translation>
+        <translation>Rédigez votre alerte ici</translation>
     </message>
     <message>
         <source>Public</source>
-        <translation type="unfinished"></translation>
+        <translation>Public</translation>
     </message>
     <message>
         <source>Unlisted</source>
-        <translation type="unfinished"></translation>
+        <translation>Non listé</translation>
     </message>
     <message>
         <source>Followers-only</source>
-        <translation type="unfinished"></translation>
+        <translation>Abonné(e)s uniquement</translation>
     </message>
     <message>
         <source>Direct</source>
-        <translation type="unfinished"></translation>
+        <translation>Direct</translation>
+    </message>
+    <message>
+        <source>What&apos;s on your mind?</source>
+        <translation>Qu&apos;avez-vous en tête?</translation>
     </message>
 </context>
 <context>
@@ -81,19 +81,19 @@
     <name>LoginPage</name>
     <message>
         <source>Login</source>
-        <translation>Login</translation>
+        <translation>Connexion</translation>
     </message>
     <message>
         <source>Instance</source>
         <translation>Instance</translation>
     </message>
     <message>
-        <source>Enter an Mastodon instance URL</source>
+        <source>Enter a valid Mastodon instance URL</source>
         <translation>Saisissez l’URL d’une instance Mastodon</translation>
     </message>
     <message>
         <source>Mastodon is a free, open-source social network. A decentralized alternative to commercial platforms, it avoids the risks of a single company monopolizing your communication. Pick a server that you trust — whichever you choose, you can interact with everyone else. Anyone can run their own Mastodon instance and participate in the social network seamlessly.</source>
-        <translation>Mastodon est un réseau libre et open source. Il s’agit d&apos;une alternative aux plateformes commerciales, pour éviter qu&apos;une seule entreprise monopolise vos communications. Choisissez un serveur dans lequel vous avez confiance - quelque que soit votre choix vous pourrez interagir avec d’autres personnes. Tout le monde peut monter sa propre instance Mastodon et participer rendre le réseau plus robuste.</translation>
+        <translation>Mastodon est un réseau libre et open source : une alternative décentralisée aux plateformes commerciales, afin d’éviter le contrôle monopolistique de vos communications par une entreprise. Choisissez un serveur dans lequel vous avez confiance - quelque que soit votre choix vous pourrez interagir avec tous les utilisateurs du réseau Mastodon. Tout le monde peut monter sa propre instance Mastodon et ainsi contribuer à la croissance du réseau.</translation>
     </message>
     <message>
         <source>Reload</source>
@@ -116,7 +116,7 @@
     </message>
     <message>
         <source>Search</source>
-        <translation>Recherche</translation>
+        <translation>Rechercher</translation>
     </message>
     <message>
         <source>@user or #term</source>
@@ -124,11 +124,11 @@
     </message>
     <message>
         <source>Local</source>
-        <translation>Local</translation>
+        <translation>Fil public local</translation>
     </message>
     <message>
         <source>Federated</source>
-        <translation>Fédéré</translation>
+        <translation>Fil public global</translation>
     </message>
 </context>
 <context>
@@ -143,7 +143,7 @@
     </message>
     <message>
         <source>followed you</source>
-        <translation>vous a suivi</translation>
+        <translation>vous suit</translation>
     </message>
 </context>
 <context>
@@ -173,7 +173,7 @@
     </message>
     <message>
         <source>Follow request sent!</source>
-        <translation>Demande de suivi envoyée !</translation>
+        <translation>Demande d’abonnement envoyée !</translation>
     </message>
     <message>
         <source>Following</source>
@@ -197,7 +197,7 @@
     </message>
     <message>
         <source>Statuses</source>
-        <translation>Status</translation>
+        <translation>Pouets</translation>
     </message>
     <message>
         <source>Favourites</source>
@@ -213,46 +213,78 @@
     </message>
     <message>
         <source>Followers</source>
-        <translation>Abonnés</translation>
+        <translation>Abonné(e)s</translation>
     </message>
     <message>
         <source>Bio</source>
-        <translation type="unfinished"></translation>
+        <translation>Bio</translation>
     </message>
     <message>
         <source>Open Profile in Browser</source>
-        <translation type="unfinished"></translation>
+        <translation>Ouvrir dans le navigateur</translation>
     </message>
 </context>
 <context>
     <name>Settings</name>
     <message>
         <source>Settings</source>
-        <translation>Préférences</translation>
+        <translation>Paramètres</translation>
     </message>
     <message>
         <source>Remove Account</source>
-        <translation>Supprimer le compte</translation>
+        <translation>Déconnecter votre compte</translation>
     </message>
     <message>
         <source>Add Account</source>
-        <translation>Ajouter un compte</translation>
+        <translation>Ajouter compte</translation>
     </message>
     <message>
         <source>Deauthorize this app and remove your account</source>
-        <translation>Supprimer votre compte de l&apos;application</translation>
+        <translation>Désautoriser cette application et enlever votre compte</translation>
     </message>
     <message>
-        <source>Authorize this app to use your Mastodon account in your behalf</source>
-        <translation>Autoriser cette application à utiliser votre compte Mastodon en votre nom</translation>
-    </message>
-    <message>
-        <source>Load images in toots</source>
-        <translation>Charger les images des pouets</translation>
+        <source>Authorize this app to access your Mastodon account</source>
+        <translation>Autoriser l’accès à votre compte pour cette application</translation>
     </message>
     <message>
         <source>Disable this option if you want to preserve your data connection</source>
-        <translation>Désactivez cette option si vous souhaitez économiser votre consommation de données</translation>
+        <translation>Désactiver cette option pour économiser des données mobiles</translation>
+    </message>
+    <message>
+        <source>Credits</source>
+        <translation>Développement</translation>
+    </message>
+    <message>
+        <source>UI/UX design and development</source>
+        <translation>Design UI/UX et développement</translation>
+    </message>
+    <message>
+        <source>Visual identity</source>
+        <translation>Identité visuelle</translation>
+    </message>
+    <message>
+        <source>Occitan &amp; French translation</source>
+        <translation>Traduction français</translation>
+    </message>
+    <message>
+        <source>Dutch translation</source>
+        <translation>Traduction néerlandaise</translation>
+    </message>
+    <message>
+        <source>Spanish translation</source>
+        <translation>Traduction espagnole</translation>
+    </message>
+    <message>
+        <source>Chinese translation</source>
+        <translation>Traduction chinoise</translation>
+    </message>
+    <message>
+        <source>Added README file</source>
+        <translation>Fichier README ajouté</translation>
+    </message>
+    <message>
+        <source>Load images in toots</source>
+        <translation>Charger images dans les pouets</translation>
     </message>
     <message>
         <source>Translate</source>
@@ -260,46 +292,18 @@
     </message>
     <message>
         <source>Use Transifex to help with app translation to your language</source>
-        <translation>Utilisez Transifex pour aider à la traduction de l&apos;application dans votre langue</translation>
+        <translation>Utiliser Transifex pour aider à traduire cette application</translation>
     </message>
     <message>
-        <source>Credits</source>
-        <translation>Crédits</translation>
-    </message>
-    <message>
-        <source>UI/UX design and development</source>
-        <translation>design et développement de l&apos;interface</translation>
-    </message>
-    <message>
-        <source>Visual identity</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Occitan &amp; French translation</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Dutch translation</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Spanish translation</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Added README file</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Development and maintenence</source>
-        <translation type="unfinished"></translation>
+        <source>Development and translations</source>
+        <translation>Développement et traductions</translation>
     </message>
 </context>
 <context>
     <name>Toot</name>
     <message>
         <source>boosted</source>
-        <translation>boosté</translation>
+        <translation>a partagé</translation>
     </message>
     <message>
         <source>favourited</source>
@@ -314,19 +318,19 @@
     <name>VisualContainer</name>
     <message>
         <source>Unboost</source>
-        <translation>ne plus partager</translation>
+        <translation>Annuler le partage</translation>
     </message>
     <message>
         <source>Boost</source>
-        <translation>partager</translation>
+        <translation>Partager</translation>
     </message>
     <message>
         <source>Unfavorite</source>
-        <translation>supprimer de ses favoris </translation>
+        <translation>Retirer des favoris</translation>
     </message>
     <message>
         <source>Favorite</source>
-        <translation>ajouter aux favoris</translation>
+        <translation>Ajouter aux favoris</translation>
     </message>
 </context>
 </TS>

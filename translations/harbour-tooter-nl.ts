@@ -43,10 +43,6 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>What&apos;s on your mind?</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <source>Public</source>
         <translation type="unfinished"></translation>
     </message>
@@ -60,6 +56,10 @@
     </message>
     <message>
         <source>Direct</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>What&apos;s on your mind?</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -88,8 +88,8 @@
         <translation>Instantie</translation>
     </message>
     <message>
-        <source>Enter an Mastodon instance URL</source>
-        <translation>Voer de URL van een Mastodon-instantie in</translation>
+        <source>Enter a valid Mastodon instance URL</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Mastodon is a free, open-source social network. A decentralized alternative to commercial platforms, it avoids the risks of a single company monopolizing your communication. Pick a server that you trust — whichever you choose, you can interact with everyone else. Anyone can run their own Mastodon instance and participate in the social network seamlessly.</source>
@@ -243,24 +243,12 @@
         <translation>Trek autorisaties van deze app in en verwijder je account</translation>
     </message>
     <message>
-        <source>Authorize this app to use your Mastodon account in your behalf</source>
+        <source>Authorize this app to access your Mastodon account</source>
         <translation>Autoriseer deze app om je Mastodon namens jou te gebruiken</translation>
-    </message>
-    <message>
-        <source>Load images in toots</source>
-        <translation>Laden afbeeldingen in toots</translation>
     </message>
     <message>
         <source>Disable this option if you want to preserve your data connection</source>
         <translation>Schakel deze optie uit als je je dataverbinding wilt behouden</translation>
-    </message>
-    <message>
-        <source>Translate</source>
-        <translation>Vertalen</translation>
-    </message>
-    <message>
-        <source>Use Transifex to help with app translation to your language</source>
-        <translation>Gebruik Transifex om deze app te helpen vertalen in jouw taal</translation>
     </message>
     <message>
         <source>Credits</source>
@@ -291,8 +279,24 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>Development and maintenence</source>
+        <source>Chinese translation</source>
         <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Load images in toots</source>
+        <translation>Laden afbeeldingen in toots</translation>
+    </message>
+    <message>
+        <source>Translate</source>
+        <translation>Vertalen</translation>
+    </message>
+    <message>
+        <source>Use Transifex to help with app translation to your language</source>
+        <translation>Gebruik Transifex om deze app te helpen vertalen in jouw taal</translation>
+    </message>
+    <message>
+        <source>Development and translations</source>
+        <translation>Ontwikkeling en vertalingen</translation>
     </message>
 </context>
 <context>
